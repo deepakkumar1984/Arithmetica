@@ -9,13 +9,12 @@ namespace Arithmatica.Test
         [TestMethod]
         public void CreateVar()
         {
-            Vector a = new Vector(5, DType.Float32);
-            a.Fill(1);
+            Vector3 a = new Vector3(1);
+            a[0] = (1, 2, 1);
 
-            Vector b = new Vector(5, DType.Float32);
-            b.Fill(2);
+            Vector3 b = Vector3.Unit(2, 1, 2);
 
-            Vector c = AM.Sin(a + b);
+            var c = Vector3.Dot(a, b);
             c.Print();
         }
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Vector
     {
         public static Vector Sin(Vector src) => Vector.Out(ArrayOps.Sin(src.variable));
         

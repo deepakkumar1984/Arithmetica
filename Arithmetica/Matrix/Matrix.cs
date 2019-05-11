@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public class Matrix
+    public partial class Matrix
     {
         internal ArithArray variable;
 
@@ -24,11 +24,6 @@ namespace Arithmetica
             }
         }
 
-        public Matrix(ArithArray v)
-        {
-            variable = v;
-        }
-
         public Matrix(long rows, long cols)
         {
             variable = new ArithArray(rows, cols);
@@ -37,6 +32,52 @@ namespace Arithmetica
         public Matrix(long rows, long cols, DType dataType)
         {
             variable = new ArithArray(new long[] { rows, cols }, dataType);
+        }
+
+        private Matrix(ArithArray v)
+        {
+            variable = v;
+        }
+
+        public static Matrix Matrix3x2(params float[] data)
+        {
+            var x = new ArithArray(new long[] { 3, 2 });
+            if(data.Length == 6)
+            {
+                x.CopyFrom(data);
+            }
+
+            return Out(x);
+        }
+
+        public static Matrix Matrix4x4(params float[] data)
+        {
+            var x = new ArithArray(new long[] { 4, 4 });
+            if (data.Length == 8)
+            {
+                x.CopyFrom(data);
+            }
+
+            return Out(x);
+        }
+
+        public static Matrix Ones(int rows, int cols)
+        {
+            var x = new ArithArray(new long[] { rows, cols });
+            x.Fill(1);
+            return Out(x);
+        }
+
+        public static Matrix Zeros(int rows, int cols)
+        {
+            var x = new ArithArray(new long[] { rows, cols });
+            x.Fill(0);
+            return Out(x);
+        }
+
+        public void LoadArray(params float[] data)
+        {
+            variable.CopyFrom(data);
         }
 
         internal static ArithArray In(Matrix x)

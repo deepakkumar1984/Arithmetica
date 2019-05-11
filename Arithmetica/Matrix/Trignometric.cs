@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Matrix
     {
         public static Matrix Sin(Matrix src) => Matrix.Out(ArrayOps.Sin(src.variable));
         

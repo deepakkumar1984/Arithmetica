@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Matrix
     {
         public static Matrix Pow(Matrix src, float value) => Matrix.Out(ArrayOps.Pow(src.variable, value));
 

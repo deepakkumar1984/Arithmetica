@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Matrix
     {
         public static Matrix Dot(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
 

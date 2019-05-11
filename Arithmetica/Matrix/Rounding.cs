@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Matrix
     {
         public static Matrix Floor(Matrix src) => Matrix.Out(ArrayOps.Floor(src.variable));
         

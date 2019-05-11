@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Matrix
     {
         public static Matrix GreaterThan(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.GreaterThan(lhs.variable, rhs.variable));
 

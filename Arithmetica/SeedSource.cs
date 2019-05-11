@@ -40,9 +40,12 @@ namespace Arithmetica
         /// Initializes a new instance of the <see cref="SeedSource"/> class.
         /// </summary>
         /// <param name="seed">The seed.</param>
-        public SeedSource(int seed)
+        public SeedSource(int? seed)
         {
-            rng = new Random();
+            if(seed.HasValue)
+                rng = new Random(seed.Value);
+            else
+                rng = new Random();
         }
 
         /// <summary>

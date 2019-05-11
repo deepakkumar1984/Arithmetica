@@ -33,5 +33,9 @@ namespace Arithmetica
         public static ArithArray Var(ArithArray src) => ArrayOps.Var(src);
 
         public static ArithArray Var(ArithArray src, bool normByN, int dimension) => ArrayOps.Var(src, dimension, normByN);
+
+        public static ArithArray Argmin(ArithArray src, int dimension) => ArrayOps.Argmin(src, dimension);
+
+        public static ArithArray Argmax(ArithArray src, int dimension) => ArrayOps.Argmax(src, dimension);
     }
 }

@@ -9,13 +9,15 @@ namespace Arithmatica.Test
         [TestMethod]
         public void CreateVar()
         {
-            Matrix a = new Matrix(4, 6, DType.Float32);
+            Matrix a = new Matrix(4, 6);
             a.Fill(1);
 
-            Matrix b = new Matrix(4, 6, DType.Float32);
+            Matrix b = new Matrix(4, 6);
             b.Fill(2);
 
-            Matrix c = AM.Sin(a + b);
+            var m = Matrix.Matrix4x4();
+
+            Matrix c = Matrix.Sin(a + b);
             c.Print();
         }
     }

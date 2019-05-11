@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Vector
     {
         public static Vector GreaterThan(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.GreaterThan(lhs.variable, rhs.variable));
 

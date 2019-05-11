@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Vector
     {
-        public static Vector Dot(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
+        public static Vector Dot(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.Dot(lhs.variable, rhs.variable.Transpose()));
 
         public static Vector Addmm(float beta, Vector src, float alpha, Vector m1, Vector m2)
             => Vector.Out(ArrayOps.Addmm(beta, src.variable, alpha, m1.variable, m2.variable));

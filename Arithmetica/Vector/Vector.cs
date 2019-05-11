@@ -4,37 +4,57 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public class Vector
+    public partial class Vector
     {
         internal ArithArray variable;
 
-        public long Size
+        public long Length
         {
             get
             {
-                return variable.ElementCount();
+                return variable.Shape[0];
             }
         }
 
-        public Vector(ArithArray v)
+        public Vector(long length)
+        {
+            variable = new ArithArray(length, 1);
+        }
+
+        public Vector(int length, DType dataType)
+        {
+            variable = new ArithArray(new long[] { length, 1 }, dataType);
+        }
+
+        public static Vector Unit(float X)
+        {
+            Vector x = new Vector(1);
+            x.LoadArray(X);
+            return x;
+        }
+
+        private Vector(ArithArray v)
         {
             variable = v;
         }
 
-        public Vector(long size, bool arrangeByRow = false)
+        public static Vector Ones(long length)
         {
-            if(arrangeByRow)
-                variable = new ArithArray(size, 1);
-            else
-                variable = new ArithArray(1, size);
+            var x = new Vector(length);
+            x.Fill(1);
+            return x;
         }
 
-        public Vector(long size, DType dataType, bool arrangeByRow = false)
+        public static Vector Zeros(long length)
         {
-            if (arrangeByRow)
-                variable = new ArithArray(new long[] { size, 1 }, dataType);
-            else
-                variable = new ArithArray(new long[] { 1, size }, dataType);
+            var x = new Vector(length);
+            x.Fill(0);
+            return x;
+        }
+
+        public void LoadArray(params float[] data)
+        {
+            variable.CopyFrom(data);
         }
 
         internal static ArithArray In(Vector x)
@@ -60,6 +80,18 @@ namespace Arithmetica
             get
             {
                 return variable.ToArray();
+            }
+        }
+
+        public float this[long index]
+        {
+            get
+            {
+                return variable.GetElementAsFloat(index, 0);
+            }
+            set
+            {
+                variable.SetElementAsFloat(value, index, 0);
             }
         }
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Vector
     {
         public static Vector Exp(Vector src) => Vector.Out(ArrayOps.Exp(src.variable));
 

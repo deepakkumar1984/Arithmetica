@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class Vector
     {
         public static Vector Sum(Vector src) => Vector.Out(ArrayOps.Sum(src.variable));
 
@@ -33,5 +33,9 @@ namespace Arithmetica
         public static Vector Var(Vector src) => Vector.Out(ArrayOps.Var(src.variable));
 
         public static Vector Var(Vector src, bool normByN, int dimension) => Vector.Out(ArrayOps.Var(src.variable, dimension, normByN));
+
+        public static Vector Argmin(Vector src, int dimension) => Vector.Out(ArrayOps.Argmin(src.variable, dimension));
+
+        public static Vector Argmax(Vector src, int dimension) => Vector.Out(ArrayOps.Argmax(src.variable, dimension));
     }
 }
