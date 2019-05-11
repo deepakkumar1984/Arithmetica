@@ -25,7 +25,7 @@ namespace Arithmetica.Cpu
     /// Class CpuBasicOps.
     /// </summary>
     [OpsClass]
-    public class CpuBasicOps
+    internal class CpuBasicOps
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CpuBasicOps"/> class.

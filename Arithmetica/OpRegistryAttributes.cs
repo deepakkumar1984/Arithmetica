@@ -25,7 +25,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="System.Attribute" />
     [AttributeUsage(AttributeTargets.Class)]
-    public class OpsClassAttribute : Attribute
+    internal class OpsClassAttribute : Attribute
     {
     }
 
@@ -35,7 +35,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="System.Attribute" />
     [AttributeUsage(AttributeTargets.Method)]
-    public abstract class RegisterOp : Attribute
+    internal abstract class RegisterOp : Attribute
     {
         /// <summary>
         /// Gets the name of the op.
@@ -67,7 +67,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="Arithmetica.RegisterOp" />
     [AttributeUsage(AttributeTargets.Method)]
-    public class RegisterOpArgCount : RegisterOp
+    internal class RegisterOpArgCount : RegisterOp
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="RegisterOpArgCount"/> class.
@@ -100,7 +100,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="Arithmetica.RegisterOp" />
     [AttributeUsage(AttributeTargets.Method)]
-    public class RegisterOpStorageType : RegisterOp
+    internal class RegisterOpStorageType : RegisterOp
     {
         /// <summary>
         /// The storage type
@@ -151,7 +151,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="System.Attribute" />
     [AttributeUsage(AttributeTargets.Parameter)]
-    public abstract class ArgConstraintAttribute : Attribute
+    internal abstract class ArgConstraintAttribute : Attribute
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ArgConstraintAttribute"/> class.
@@ -175,7 +175,7 @@ namespace Arithmetica
     /// </summary>
     /// <seealso cref="Arithmetica.ArgConstraintAttribute" />
     [AttributeUsage(AttributeTargets.Parameter)]
-    public class OpArgStorageType : ArgConstraintAttribute
+    internal class OpArgStorageType : ArgConstraintAttribute
     {
         /// <summary>
         /// The storage type

@@ -75,6 +75,22 @@ namespace Arithmetica
             return Out(x);
         }
 
+        public static Matrix Diagonal(params float[] data)
+        {
+            var x = new ArithArray(new long[] { data.Length, 1 });
+            x.CopyFrom(data);
+            x = ArrayOps.Diag(x);
+            return Out(x);
+        }
+
+        public static Matrix Identity(int diagElementCount)
+        {
+            var x = new ArithArray(new long[] { diagElementCount });
+            x.Fill(1);
+            x = ArrayOps.Diag(x);
+            return Out(x);
+        }
+
         public void LoadArray(params float[] data)
         {
             variable.CopyFrom(data);

@@ -21,7 +21,7 @@ namespace Arithmetica
     /// <summary>
     /// Class TensorDimensionHelpers.
     /// </summary>
-    public static class ArrayDimensionHelpers
+    internal static class ArrayDimensionHelpers
     {
         /// <summary>
         /// Elements the count.

@@ -22,7 +22,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Class CpuNativeHelpers.
     /// </summary>
-    public static class CpuNativeHelpers
+    internal static class CpuNativeHelpers
     {
         /// <summary>
         /// Gets the buffer start.

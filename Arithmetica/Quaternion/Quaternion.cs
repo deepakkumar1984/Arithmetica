@@ -26,7 +26,7 @@ namespace Arithmetica
             variable = new ArithArray(new long[] { length, 4 }, dataType);
         }
 
-        public static Quaternion Unit(float W, float X, float Y, float Z)
+        public static Quaternion Unit(float X, float Y, float Z, float W)
         {
             Quaternion x = new Quaternion(1);
             x.LoadArray(X, Y, Z, W);

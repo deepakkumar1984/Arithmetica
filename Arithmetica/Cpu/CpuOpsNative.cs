@@ -19,7 +19,7 @@ using System.Text;
 
 namespace Arithmetica.Cpu
 {
-    public enum CpuDType : int
+    internal enum CpuDType : int
     {
         /// <summary>
         /// The float32
@@ -47,7 +47,7 @@ namespace Arithmetica.Cpu
     /// Struct TensorRef64
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct TensorRef64
+    internal struct TensorRef64
     {
         /// <summary>
         /// The buffer
@@ -75,7 +75,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Class CpuOpsNative.
     /// </summary>
-    public static class CpuOpsNative
+    internal static class CpuOpsNative
     {
         /// <summary>
         /// The DLL

@@ -23,7 +23,7 @@ namespace Arithmetica.Cpu
     /// Class CpuRandom.
     /// </summary>
     [OpsClass]
-    public class CpuRandom
+    internal class CpuRandom
     {
         /// <summary>
         /// The seed gen

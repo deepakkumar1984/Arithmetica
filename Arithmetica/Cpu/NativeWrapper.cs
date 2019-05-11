@@ -24,7 +24,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Class NativeWrapper.
     /// </summary>
-    public static class NativeWrapper
+    internal static class NativeWrapper
     {
         /// <summary>
         /// Gets the method.

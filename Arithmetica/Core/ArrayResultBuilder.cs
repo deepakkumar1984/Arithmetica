@@ -19,7 +19,7 @@ namespace Arithmetica.Core
     /// <summary>
     /// Class TensorResultBuilder.
     /// </summary>
-    public static class ArrayResultBuilder
+    internal static class ArrayResultBuilder
     {
         // If a maybeResult is null, a new array will be constructed using the device id and element type of newTemplate
         /// <summary>

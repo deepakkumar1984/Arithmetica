@@ -22,7 +22,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Enum BlasOp
     /// </summary>
-    public enum BlasOp : byte
+    internal enum BlasOp : byte
     {
         /// <summary>
         /// The non IntTranspose
@@ -42,7 +42,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Class MatrixMultiplication.
     /// </summary>
-    public static class MatrixMultiplication
+    internal static class MatrixMultiplication
     {
         /// <summary>
         /// Dots the specified result.

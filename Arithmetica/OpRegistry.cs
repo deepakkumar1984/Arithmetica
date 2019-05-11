@@ -29,7 +29,7 @@ namespace Arithmetica
     /// <summary>
     /// Class OpRegistry.
     /// </summary>
-    public static class OpRegistry
+    internal static class OpRegistry
     {
         /// <summary>
         /// Class OpInstance.

@@ -19,7 +19,7 @@ namespace Arithmetica.Core
     /// <summary>
     /// Class Tensor Concatenation.
     /// </summary>
-    public static class ArrayConcat
+    internal static class ArrayConcat
     {
         // Requires an implementation of *copy* for the given Array types
         /// <summary>

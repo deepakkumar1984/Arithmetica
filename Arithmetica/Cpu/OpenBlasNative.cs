@@ -23,7 +23,7 @@ namespace Arithmetica.Cpu
     /// <summary>
     /// Class OpenBlasNative.
     /// </summary>
-    public static class OpenBlasNative
+    internal static class OpenBlasNative
     {
         /// <summary>
         /// The DLL

@@ -1,0 +1,42 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(397,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  ConvolutionUnfold.cpp
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(150): warning C4018: '<': signed/unsigned mismatch
+  E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.cpp(19): note: see reference to function template instantiation 'void unfolded_copy<float>(TensorRef *,TensorRef *,int,int,int,int,int,int,int,int,int,int,int)' being compiled
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(170): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(182): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(188): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(66): warning C4018: '<': signed/unsigned mismatch
+  E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.cpp(39): note: see reference to function template instantiation 'void unfolded_acc<float>(TensorRef *,TensorRef *,int,int,int,int,int,int,int,int,int,int,int)' being compiled
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(70): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(72): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(78): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(90): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(102): warning C4018: '<': signed/unsigned mismatch
+E:\DeepakProj\git\Arithmetica\arith_ops\ConvolutionUnfold.h(108): warning C4018: '<': signed/unsigned mismatch
+  FillCopyOps.cpp
+  DimensionwiseOps.cpp
+  ElementwiseOps.cpp
+  GatherScatterOps.cpp
+  General.cpp
+  ImUtil.cpp
+E:\DeepakProj\git\Arithmetica\arith_ops\ImUtil.cpp(50): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+  E:\DeepakProj\git\Arithmetica\arith_ops\ImUtil.cpp(114): note: see reference to function template instantiation 'void im2cols<int>(const TensorRef *,const int,const int,const int,const int,const int,const int,const int,const int,const int,const int,const int,int,int,TensorRef *)' being compiled
+E:\DeepakProj\git\Arithmetica\arith_ops\ImUtil.cpp(50): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=unsigned char
+          ]
+  E:\DeepakProj\git\Arithmetica\arith_ops\ImUtil.cpp(114): note: see reference to function template instantiation 'void im2cols<unsigned char>(const TensorRef *,const int,const int,const int,const int,const int,const int,const int,const int,const int,const int,const int,int,int,TensorRef *)' being compiled
+  ImUtil.h
+  MaxPoolingFrame.cpp
+  RandomGenerator.cpp
+  TensorRandom.cpp
+  Generating Code...
+  dllmain.cpp
+Debug\ImUtil.obj : warning LNK4042: object specified more than once; extras ignored
+     Creating library .\Build\arith_ops.lib and object .\Build\arith_ops.exp
+  arith_ops..vcxproj -> E:\DeepakProj\git\Arithmetica\arith_ops\.\Build\arith_ops.dll

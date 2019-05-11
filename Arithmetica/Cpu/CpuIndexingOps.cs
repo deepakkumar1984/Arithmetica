@@ -24,7 +24,7 @@ namespace Arithmetica.Cpu
     /// Class CpuIndexingOps.
     /// </summary>
     [OpsClass]
-    public class CpuIndexingOps
+    internal class CpuIndexingOps
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CpuIndexingOps"/> class.

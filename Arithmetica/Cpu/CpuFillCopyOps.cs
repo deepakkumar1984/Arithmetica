@@ -24,7 +24,7 @@ namespace Arithmetica.Cpu
     /// Class CpuFillCopyOps.
     /// </summary>
     [OpsClass]
-    public class CpuFillCopyOps
+    internal class CpuFillCopyOps
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CpuFillCopyOps"/> class.
