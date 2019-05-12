@@ -58,7 +58,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="allocator">The allocator.</param>
         /// <param name="stream">The stream.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Deserialize(IAllocator allocator, Stream stream)
         {
             // Note: don't dispose reader - it does not own the stream's lifetime

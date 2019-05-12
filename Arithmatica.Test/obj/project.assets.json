@@ -1674,7 +1674,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Arithmetica/1.0.0": {
+      "Arithmetica/0.4.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -5970,7 +5970,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Arithmetica/1.0.0": {
+    "Arithmetica/0.4.1": {
       "type": "project",
       "path": "../Arithmetica/Arithmetica.csproj",
       "msbuildProject": "../Arithmetica/Arithmetica.csproj"
@@ -5978,7 +5978,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Arithmetica >= 1.0.0",
+      "Arithmetica >= 0.4.1",
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",

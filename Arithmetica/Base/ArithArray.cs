@@ -6,7 +6,7 @@
 // Last Modified By : Deepak Battini
 // Last Modified On : 11-25-2018
 // ***********************************************************************
-// <copyright file="Tensor.cs" company="Arithmetica">
+// <copyright file="ArithArray.cs" company="Arithmetica">
 //     Copyright (c) . All rights reserved.
 // </copyright>
 // <summary></summary>
@@ -21,7 +21,8 @@ using Arithmetica.Core;
 namespace Arithmetica
 {
     /// <summary>
-    /// Class Tensor.
+    /// Arith Array is a base tensor for the Arithmetica. 
+    /// It's a multi dimensional array with implementation with basic arithmetics, trignometric, hyperbolic, rounding, 
     /// Implements the <see cref="System.IDisposable" />
     /// </summary>
     /// <seealso cref="System.IDisposable" />
@@ -117,7 +118,7 @@ namespace Arithmetica
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        /// <exception cref="ObjectDisposedException">Tensor</exception>
+        /// <exception cref="ObjectDisposedException">ArithArray</exception>
         public void Dispose()
         {
             if (!isDisposed)
@@ -127,7 +128,7 @@ namespace Arithmetica
             }
             else
             {
-                throw new ObjectDisposedException("Tensor");
+                throw new ObjectDisposedException("ArithArray");
             }
         }
 
@@ -212,10 +213,10 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Returns a new Tensor object which points to the same storage as this,
+        /// Returns a new ArithArray object which points to the same storage as this,
         /// incrementing the refcount of the storage object.
         /// </summary>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public ArithArray CopyRef()
         {
             return new ArithArray(shape, strides, storage, storageOffset);
@@ -339,7 +340,7 @@ namespace Arithmetica
         /// Views the specified sizes.
         /// </summary>
         /// <param name="sizes">The sizes.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">
         /// Cannot use View on a non-contiguous tensor000
         /// or
@@ -383,7 +384,7 @@ namespace Arithmetica
         /// <param name="dimension">The dimension.</param>
         /// <param name="startIndex">The start index.</param>
         /// <param name="size">The size.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentOutOfRangeException">
         /// dimension
         /// or
@@ -409,7 +410,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="dimension">The dimension.</param>
         /// <param name="index">The index.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">Select requires 2 or more dimensions</exception>
         /// <exception cref="ArgumentOutOfRangeException">
         /// dimension
@@ -438,7 +439,7 @@ namespace Arithmetica
         /// <summary>
         /// Transposes this instance without NewContiguous.
         /// </summary>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">Parameterless Transpose is only valid on 2d tensors</exception>
         internal ArithArray IntTranspose()
         {
@@ -452,7 +453,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="dimension1">The dimension1.</param>
         /// <param name="dimension2">The dimension2.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentOutOfRangeException">
         /// dimension1
         /// or
@@ -484,7 +485,7 @@ namespace Arithmetica
         /// Permutes the specified dims.
         /// </summary>
         /// <param name="dims">The dims.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">The number of permutation indices must equal the number of array dimensions</exception>
         public ArithArray Transpose(params int[] dims)
         {
@@ -506,7 +507,7 @@ namespace Arithmetica
         /// Expand one or more singleton dimensions (dimensions with size 1) by using a stride of 0
         /// </summary>
         /// <param name="newSizes">The new sizes.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">
         /// number of elements of newSizes must match the dimension count of array
         /// or
@@ -536,7 +537,7 @@ namespace Arithmetica
         /// <summary>
         /// Return a new array where **all** singleton dimensions have been removed
         /// </summary>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public ArithArray Squeeze()
         {
             var newSizeStrides = shape.Zip(strides, Tuple.Create)
@@ -554,7 +555,7 @@ namespace Arithmetica
         /// Return a new array where the given singleton dimension has been removed
         /// </summary>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">Squeeze requires 2 or more dimensions</exception>
         /// <exception cref="ArgumentOutOfRangeException">dimension</exception>
         public ArithArray Squeeze(int dimension)
@@ -578,7 +579,7 @@ namespace Arithmetica
         /// <param name="dimension">The dimension.</param>
         /// <param name="size">The size.</param>
         /// <param name="step">The step.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">Cannot unfold an empty array</exception>
         /// <exception cref="ArgumentOutOfRangeException">
         /// dimension is out of range - dimension
@@ -637,7 +638,7 @@ namespace Arithmetica
         /// Pads to dim count.
         /// </summary>
         /// <param name="newDimCount">The new dim count.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         private ArithArray PadToDimCount(int newDimCount)
         {
             var newSizes = Pad1Prepend(this.shape, newDimCount);
@@ -652,7 +653,7 @@ namespace Arithmetica
         /// Repeats the array.
         /// </summary>
         /// <param name="repetitions">The repetitions.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">
         /// repetitions must be at least the same length as the number of array dimensions
         /// or
@@ -690,7 +691,7 @@ namespace Arithmetica
         }
 
         /*
-            private Tensor GetRegion(long[] dimensionStarts, long[] dimensionSizes)
+            private ArithArray GetRegion(long[] dimensionStarts, long[] dimensionSizes)
         {
             var result = this.CopyRef();
             for (int i = 0; i < dimensionStarts.Length; ++i)
@@ -708,19 +709,19 @@ namespace Arithmetica
         /// </summary>
         /// <param name="array">The array.</param>
         /// <exception cref="InvalidOperationException">
-        /// Tensor must be contiguous to copy from CLR array
+        /// ArithArray must be contiguous to copy from CLR array
         /// or
-        /// Tensor and array must have the same number of elements
+        /// ArithArray and array must have the same number of elements
         /// or
-        /// Tensor and array must have the same element types
+        /// ArithArray and array must have the same element types
         /// </exception>
         public void CopyFrom(Array array)
         {
             var elementType = DTypeBuilder.FromCLRType(array.GetType().GetElementType());
 
-            if (!this.IsContiguous()) throw new InvalidOperationException("Tensor must be contiguous to copy from CLR array");
-            if (this.ElementCount() != array.LongLength) throw new InvalidOperationException("Tensor and array must have the same number of elements");
-            if (this.ElementType != elementType) throw new InvalidOperationException("Tensor and array must have the same element types");
+            if (!this.IsContiguous()) throw new InvalidOperationException("ArithArray must be contiguous to copy from CLR array");
+            if (this.ElementCount() != array.LongLength) throw new InvalidOperationException("ArithArray and array must have the same number of elements");
+            if (this.ElementType != elementType) throw new InvalidOperationException("ArithArray and array must have the same element types");
 
             var handle = GCHandle.Alloc(array, GCHandleType.Pinned);
             try
@@ -740,7 +741,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="allocator">The allocator.</param>
         /// <param name="array">The array.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray FromArray(IAllocator allocator, Array array)
         {
             // From the CLI spec(section 8.9.1):
@@ -855,7 +856,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="allocator">The allocator.</param>
         /// <param name="stream">The stream.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Deserialize(IAllocator allocator, System.IO.Stream stream)
         {
             return ArraySerialization.Deserialize(allocator, stream);

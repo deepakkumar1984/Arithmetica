@@ -41,7 +41,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="NotSupportedException"></exception>
         [RegisterOpStorageType("dot", typeof(CpuStorage))]
         public ArithArray Dot(ArithArray result, ArithArray lhs, ArithArray rhs)
@@ -73,7 +73,7 @@ namespace Arithmetica.Cpu
         /// <param name="alpha">The alpha.</param>
         /// <param name="m1">The m1.</param>
         /// <param name="m2">The m2.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">
         /// All tensors must have the same element type
         /// or
@@ -135,7 +135,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("abs", typeof(CpuStorage))]
         public ArithArray Abs(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(abs_func, result, src); }
 
@@ -148,7 +148,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("neg", typeof(CpuStorage))]
         public ArithArray Neg(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(neg_func, result, src); }
 
@@ -161,7 +161,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sign", typeof(CpuStorage))]
         public ArithArray Sign(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(sign_func, result, src); }
 
@@ -175,7 +175,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sqrt", typeof(CpuStorage))]
         public ArithArray Sqrt(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(sqrt_func, result, src); }
 
@@ -188,7 +188,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("exp", typeof(CpuStorage))]
         public ArithArray Exp(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(exp_func, result, src); }
 
@@ -201,7 +201,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("log", typeof(CpuStorage))]
         public ArithArray Log(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(log_func, result, src); }
 
@@ -214,7 +214,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("log1p", typeof(CpuStorage))]
         public ArithArray Log1p(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(log1p_func, result, src); }
 
@@ -227,7 +227,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("floor", typeof(CpuStorage))]
         public ArithArray Floor(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(floor_func, result, src); }
 
@@ -240,7 +240,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("ceil", typeof(CpuStorage))]
         public ArithArray Ceil(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(ceil_func, result, src); }
 
@@ -253,7 +253,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("round", typeof(CpuStorage))]
         public ArithArray Round(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(round_func, result, src); }
 
@@ -266,7 +266,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("trunc", typeof(CpuStorage))]
         public ArithArray Trunc(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(trunc_func, result, src); }
 
@@ -279,7 +279,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("frac", typeof(CpuStorage))]
         public ArithArray Frac(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(frac_func, result, src); }
 
@@ -293,7 +293,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sin", typeof(CpuStorage))]
         public ArithArray Sin(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(sin_func, result, src); }
 
@@ -306,7 +306,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("cos", typeof(CpuStorage))]
         public ArithArray Cos(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(cos_func, result, src); }
 
@@ -319,7 +319,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("tan", typeof(CpuStorage))]
         public ArithArray Tan(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(tan_func, result, src); }
 
@@ -333,7 +333,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("asin", typeof(CpuStorage))]
         public ArithArray Asin(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(asin_func, result, src); }
 
@@ -346,7 +346,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("acos", typeof(CpuStorage))]
         public ArithArray Acos(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(acos_func, result, src); }
 
@@ -359,7 +359,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("atan", typeof(CpuStorage))]
         public ArithArray Atan(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(atan_func, result, src); }
 
@@ -373,7 +373,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sinh", typeof(CpuStorage))]
         public ArithArray Sinh(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(sinh_func, result, src); }
 
@@ -386,7 +386,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("cosh", typeof(CpuStorage))]
         public ArithArray Cosh(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(cosh_func, result, src); }
 
@@ -399,7 +399,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("tanh", typeof(CpuStorage))]
         public ArithArray Tanh(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(tanh_func, result, src); }
 
@@ -413,7 +413,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sigmoid", typeof(CpuStorage))]
         public ArithArray Sigmoid(ArithArray result, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(sigmoid_func, result, src); }
 
@@ -428,7 +428,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="srcY">The source y.</param>
         /// <param name="srcX">The source x.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("atan2", typeof(CpuStorage))]
         public ArithArray Atan2(ArithArray result, ArithArray srcY, ArithArray srcX) { return NativeWrapper.InvokeNullableResultElementwise(atan2_func, result, srcY, srcX); }
 
@@ -442,7 +442,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("pow", typeof(CpuStorage))]
         public ArithArray Pow(ArithArray result, ArithArray src, float value) { return NativeWrapper.InvokeNullableResultElementwise(pow_func, result, src, value); }
 
@@ -456,7 +456,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="value">The value.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("tpow", typeof(CpuStorage))]
         public ArithArray Tpow(ArithArray result, float value, ArithArray src) { return NativeWrapper.InvokeNullableResultElementwise(tpow_func, result, value, src); }
 
@@ -471,7 +471,7 @@ namespace Arithmetica.Cpu
         /// <param name="srcA">The source a.</param>
         /// <param name="srcB">The source b.</param>
         /// <param name="weight">The weight.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("lerp", typeof(CpuStorage))]
         public ArithArray Lerp(ArithArray result, ArithArray srcA, ArithArray srcB, float weight) { return NativeWrapper.InvokeNullableResultElementwise(lerp_func, result, srcA, srcB, weight); }
 
@@ -486,7 +486,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("clamp", typeof(CpuStorage))]
         public ArithArray Clamp(ArithArray result, ArithArray src, float min, float max) { return NativeWrapper.InvokeNullableResultElementwise(clamp_func, result, src, min, max); }
 
@@ -502,7 +502,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("addv", typeof(CpuStorage))]
         public ArithArray Add(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(add_func, result, lhs, rhs); }
 
@@ -516,7 +516,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("subv", typeof(CpuStorage))]
         public ArithArray Sub(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(sub_func, result, lhs, rhs); }
 
@@ -530,7 +530,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("rsubv", typeof(CpuStorage))]
         public ArithArray Sub(ArithArray result, float lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(rsub_func, result, rhs, lhs); }
 
@@ -544,7 +544,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("mulv", typeof(CpuStorage))]
         public ArithArray Mul(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(mul_func, result, lhs, rhs); }
 
@@ -558,7 +558,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("divv", typeof(CpuStorage))]
         public ArithArray Div(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(div_func, result, lhs, rhs); }
 
@@ -572,7 +572,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("rdivv", typeof(CpuStorage))]
         public ArithArray Div(ArithArray result, float lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(rdiv_func, result, rhs, lhs); }
 
@@ -586,7 +586,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("modv", typeof(CpuStorage))]
         public ArithArray Mod(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(mod_func, result, lhs, rhs); }
 
@@ -601,7 +601,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("gtValue", typeof(CpuStorage))]
         public ArithArray GreaterThan(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(gtValue_func, result, lhs, rhs); }
 
@@ -615,7 +615,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("ltValue", typeof(CpuStorage))]
         public ArithArray LessThan(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(ltValue_func, result, lhs, rhs); }
 
@@ -629,7 +629,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("geValue", typeof(CpuStorage))]
         public ArithArray GreaterOrEqual(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(geValue_func, result, lhs, rhs); }
 
@@ -643,7 +643,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("leValue", typeof(CpuStorage))]
         public ArithArray LessOrEqual(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(leValue_func, result, lhs, rhs); }
 
@@ -657,7 +657,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("eqValue", typeof(CpuStorage))]
         public ArithArray EqualTo(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(eqValue_func, result, lhs, rhs); }
 
@@ -671,7 +671,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("neValue", typeof(CpuStorage))]
         public ArithArray NotEqual(ArithArray result, ArithArray lhs, float rhs) { return NativeWrapper.InvokeNullableResultElementwise(neValue_func, result, lhs, rhs); }
 
@@ -687,7 +687,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("addt", typeof(CpuStorage))]
         public ArithArray Add(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(cadd_func, result, lhs, rhs); }
 
@@ -701,7 +701,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("subt", typeof(CpuStorage))]
         public ArithArray Sub(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(csub_func, result, lhs, rhs); }
 
@@ -715,7 +715,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("mult", typeof(CpuStorage))]
         public ArithArray Mul(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(cmul_func, result, lhs, rhs); }
 
@@ -729,7 +729,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("divt", typeof(CpuStorage))]
         public ArithArray Div(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(cdiv_func, result, lhs, rhs); }
 
@@ -743,7 +743,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("modt", typeof(CpuStorage))]
         public ArithArray Mod(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(cmod_func, result, lhs, rhs); }
 
@@ -758,7 +758,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("gtTensor", typeof(CpuStorage))]
         public ArithArray GreaterThan(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(gtTensor_func, result, lhs, rhs); }
 
@@ -772,7 +772,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("gtTensor", typeof(CpuStorage))]
         public ArithArray LessThan(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(ltTensor_func, result, lhs, rhs); }
 
@@ -786,7 +786,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("geTensor", typeof(CpuStorage))]
         public ArithArray GreaterOrEqual(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(geTensor_func, result, lhs, rhs); }
 
@@ -800,7 +800,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("leTensor", typeof(CpuStorage))]
         public ArithArray LessOrEqual(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(leTensor_func, result, lhs, rhs); }
 
@@ -814,7 +814,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("eqTensor", typeof(CpuStorage))]
         public ArithArray EqualTo(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(eqTensor_func, result, lhs, rhs); }
 
@@ -828,7 +828,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("neTensor", typeof(CpuStorage))]
         public ArithArray NotEqual(ArithArray result, ArithArray lhs, ArithArray rhs) { return NativeWrapper.InvokeNullableResultElementwise(neTensor_func, result, lhs, rhs); }
 
@@ -843,7 +843,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sum", typeof(CpuStorage))]
         public ArithArray Sum(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(sum_func, result, src, dimension); }
 
@@ -857,7 +857,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("prod", typeof(CpuStorage))]
         public ArithArray Prod(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(prod_func, result, src, dimension); }
 
@@ -871,7 +871,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("min", typeof(CpuStorage))]
         public ArithArray Min(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(min_func, result, src, dimension); }
 
@@ -885,7 +885,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("max", typeof(CpuStorage))]
         public ArithArray Max(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(max_func, result, src, dimension); }
 
@@ -900,7 +900,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("argmin", typeof(CpuStorage))]
         public ArithArray Argmin(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(argmax_func, result, src, dimension); }
 
@@ -914,7 +914,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("argmax", typeof(CpuStorage))]
         public ArithArray Argmax(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(argmax_func, result, src, dimension); }
 
@@ -930,7 +930,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("mean", typeof(CpuStorage))]
         public ArithArray Mean(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(mean_func, result, src, dimension); }
 
@@ -945,7 +945,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("norm", typeof(CpuStorage))]
         public ArithArray Norm(ArithArray result, ArithArray src, int dimension, float value) { return NativeWrapper.InvokeNullableResultDimensionwise(norm_func, result, src, dimension, value); }
 
@@ -960,7 +960,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="normByN">if set to <c>true</c> [norm by n].</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("std", typeof(CpuStorage))]
         public ArithArray Std(ArithArray result, ArithArray src, int dimension, bool normByN) { return NativeWrapper.InvokeNullableResultDimensionwise(std_func, result, src, dimension, normByN); }
 
@@ -975,7 +975,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="normByN">if set to <c>true</c> [norm by n].</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("var", typeof(CpuStorage))]
         public ArithArray Var(ArithArray result, ArithArray src, int dimension, bool normByN) { return NativeWrapper.InvokeNullableResultDimensionwise(var_func, result, src, dimension, normByN); }
 
@@ -990,7 +990,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("sumall", typeof(CpuStorage))]
         public ArithArray SumAll(ArithArray result, ArithArray src)
         {
@@ -1008,7 +1008,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("prodall", typeof(CpuStorage))]
         public ArithArray ProdAll(ArithArray result, ArithArray src)
         {
@@ -1026,7 +1026,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("prodall", typeof(CpuStorage))]
         public ArithArray MinAll(ArithArray result, ArithArray src)
         {
@@ -1044,7 +1044,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("maxall", typeof(CpuStorage))]
         public ArithArray MaxAll(ArithArray result, ArithArray src)
         {
@@ -1063,7 +1063,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("meanall", typeof(CpuStorage))]
         public ArithArray MeanAll(ArithArray result, ArithArray src)
         {
@@ -1081,7 +1081,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("varall", typeof(CpuStorage))]
         public ArithArray VarAll(ArithArray result, ArithArray src)
         {
@@ -1099,7 +1099,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("stdall", typeof(CpuStorage))]
         public ArithArray StdAll(ArithArray result, ArithArray src)
         {
@@ -1118,7 +1118,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         [RegisterOpStorageType("normall", typeof(CpuStorage))]
         public ArithArray NormAll(ArithArray result, ArithArray src, float value)
         {

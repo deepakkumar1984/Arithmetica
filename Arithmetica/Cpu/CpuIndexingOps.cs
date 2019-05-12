@@ -54,7 +54,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">
         /// result and src must have same number of dimensions
         /// or
@@ -87,7 +87,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentNullException">result</exception>
         /// <exception cref="InvalidOperationException">
         /// result and src must have same number of dimensions
@@ -123,7 +123,7 @@ namespace Arithmetica.Cpu
         /// <param name="value">The value.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentNullException">result</exception>
         /// <exception cref="ArgumentOutOfRangeException">dim</exception>
         /// <exception cref="InvalidOperationException">

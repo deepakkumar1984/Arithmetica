@@ -17,7 +17,7 @@ namespace Arithmetica.Core
     using System.Linq;
 
     /// <summary>
-    /// Class Tensor Concatenation.
+    /// Class ArithArray Concatenation.
     /// </summary>
     internal static class ArrayConcat
     {
@@ -28,7 +28,7 @@ namespace Arithmetica.Core
         /// <param name="result">The result.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="inputs">The inputs.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentException">Concat: at least two tensors required - inputs</exception>
         public static ArithArray Concat(ArithArray result, int dimension, params ArithArray[] inputs)
         {

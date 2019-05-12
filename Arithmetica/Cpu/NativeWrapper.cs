@@ -41,7 +41,7 @@ namespace Arithmetica.Cpu
         /// </summary>
         /// <param name="method">The method.</param>
         /// <param name="args">The arguments.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray InvokeNullableResultElementwise(MethodInfo method, params object[] args)
         {
             ArithArray resultTensor;
@@ -70,7 +70,7 @@ namespace Arithmetica.Cpu
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="extraArgs">The extra arguments.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="ArgumentOutOfRangeException">dimension</exception>
         public static ArithArray InvokeNullableResultDimensionwise(MethodInfo method, ArithArray result, ArithArray src, int dimension, params object[] extraArgs)
         {

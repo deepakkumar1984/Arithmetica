@@ -29,7 +29,7 @@ namespace Arithmetica.Core
         /// <param name="newTemplate">The new template.</param>
         /// <param name="requireContiguous">if set to <c>true</c> [require contiguous].</param>
         /// <param name="requiredSizes">The required sizes.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray GetWriteTarget(ArithArray maybeResult, ArithArray newTemplate, bool requireContiguous, params long[] requiredSizes)
         {
             return GetWriteTarget(maybeResult, newTemplate.Allocator, newTemplate.ElementType, requireContiguous, requiredSizes);
@@ -43,7 +43,7 @@ namespace Arithmetica.Core
         /// <param name="elementTypeForNew">The element type for new.</param>
         /// <param name="requireContiguous">if set to <c>true</c> [require contiguous].</param>
         /// <param name="requiredSizes">The required sizes.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException"></exception>
         public static ArithArray GetWriteTarget(ArithArray maybeResult, IAllocator allocatorForNew, DType elementTypeForNew, bool requireContiguous, params long[] requiredSizes)
         {
@@ -51,7 +51,7 @@ namespace Arithmetica.Core
             {
                 if (!MatchesRequirements(maybeResult, requireContiguous, requiredSizes))
                 {
-                    var message = string.Format("output array does not match requirements. Tensor must have sizes {0}{1}",
+                    var message = string.Format("output array does not match requirements. ArithArray must have sizes {0}{1}",
                         string.Join(", ", requiredSizes),
                         requireContiguous ? "; and must be contiguous" : "");
 

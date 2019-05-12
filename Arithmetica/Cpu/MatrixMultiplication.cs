@@ -50,7 +50,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">All tensors must have the same element type</exception>
         /// <exception cref="ArgumentException">
         /// result must be a CPU array - result
@@ -134,7 +134,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">All tensors must have the same element type</exception>
         /// <exception cref="ArgumentException">
         /// result must be a CPU array - result
@@ -258,7 +258,7 @@ namespace Arithmetica.Cpu
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         /// <exception cref="InvalidOperationException">All tensors must have the same element type</exception>
         /// <exception cref="ArgumentException">
         /// result must be a CPU array - result

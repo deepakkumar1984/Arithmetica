@@ -31,7 +31,7 @@ namespace Arithmetica
         /// Creates new contiguous.
         /// </summary>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray NewContiguous(ArithArray src)
         {
             var result = new ArithArray((long[])src.Shape.Clone(), src.ElementType);
@@ -43,7 +43,7 @@ namespace Arithmetica
         /// Ases the contiguous.
         /// </summary>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray AsContiguous(ArithArray src)
         {
             if (src.IsContiguous())
@@ -58,7 +58,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="inputs">The inputs.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Concat( int dimension, params ArithArray[] inputs)
         {
             return ArrayConcat.Concat(null, dimension, inputs);
@@ -141,7 +141,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Dot( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("dot", null, lhs, rhs); }
         /// <summary>
         /// Addmms the specified result.
@@ -152,7 +152,7 @@ namespace Arithmetica
         /// <param name="alpha">The alpha.</param>
         /// <param name="m1">The m1.</param>
         /// <param name="m2">The m2.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Addmm( float beta, ArithArray src, float alpha, ArithArray m1, ArithArray m2) { return (ArithArray)OpRegistry.Invoke("addmm", null, beta, src, alpha, m1, m2); }
 
         /// <summary>
@@ -160,7 +160,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Abs( ArithArray src) { return (ArithArray)OpRegistry.Invoke("abs", null, src); }
 
         /// <summary>
@@ -168,7 +168,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Neg( ArithArray src) { return (ArithArray)OpRegistry.Invoke("neg", null, src); }
 
         /// <summary>
@@ -176,7 +176,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sign( ArithArray src) { return (ArithArray)OpRegistry.Invoke("sign", null, src); }
 
         /// <summary>
@@ -184,63 +184,63 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sqrt( ArithArray src) { return (ArithArray)OpRegistry.Invoke("sqrt", null, src); }
         /// <summary>
         /// Exps the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Exp( ArithArray src) { return (ArithArray)OpRegistry.Invoke("exp", null, src); }
         /// <summary>
         /// Logs the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Log( ArithArray src) { return (ArithArray)OpRegistry.Invoke("log", null, src); }
         /// <summary>
         /// Log1ps the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Log1p( ArithArray src) { return (ArithArray)OpRegistry.Invoke("log1p", null, src); }
         /// <summary>
         /// Floors the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Floor( ArithArray src) { return (ArithArray)OpRegistry.Invoke("floor", null, src); }
         /// <summary>
         /// Ceils the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Ceil( ArithArray src) { return (ArithArray)OpRegistry.Invoke("ceil", null, src); }
         /// <summary>
         /// Rounds the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Round( ArithArray src) { return (ArithArray)OpRegistry.Invoke("round", null, src); }
         /// <summary>
         /// Truncs the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Trunc( ArithArray src) { return (ArithArray)OpRegistry.Invoke("trunc", null, src); }
         /// <summary>
         /// Fracs the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Frac( ArithArray src) { return (ArithArray)OpRegistry.Invoke("frac", null, src); }
 
         /// <summary>
@@ -248,21 +248,21 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sin(ArithArray src) { return (ArithArray)OpRegistry.Invoke("sin", null, src); }
         /// <summary>
         /// Coses the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Cos( ArithArray src) { return (ArithArray)OpRegistry.Invoke("cos", null, src); }
         /// <summary>
         /// Tans the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Tan( ArithArray src) { return (ArithArray)OpRegistry.Invoke("tan", null, src); }
 
         /// <summary>
@@ -270,21 +270,21 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Asin( ArithArray src) { return (ArithArray)OpRegistry.Invoke("asin", null, src); }
         /// <summary>
         /// Acoses the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Acos( ArithArray src) { return (ArithArray)OpRegistry.Invoke("acos", null, src); }
         /// <summary>
         /// Atans the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Atan( ArithArray src) { return (ArithArray)OpRegistry.Invoke("atan", null, src); }
 
         /// <summary>
@@ -292,21 +292,21 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sinh( ArithArray src) { return (ArithArray)OpRegistry.Invoke("sinh", null, src); }
         /// <summary>
         /// Coshes the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Cosh( ArithArray src) { return (ArithArray)OpRegistry.Invoke("cosh", null, src); }
         /// <summary>
         /// Tanhes the specified result.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Tanh( ArithArray src) { return (ArithArray)OpRegistry.Invoke("tanh", null, src); }
 
         /// <summary>
@@ -314,7 +314,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sigmoid( ArithArray src) { return (ArithArray)OpRegistry.Invoke("sigmoid", null, src); }
 
 
@@ -324,7 +324,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="srcY">The source y.</param>
         /// <param name="srcX">The source x.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Atan2( ArithArray srcY, ArithArray srcX) { return (ArithArray)OpRegistry.Invoke("atan2", null, srcY, srcX); }
         /// <summary>
         /// Pows the specified result.
@@ -332,7 +332,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Pow( ArithArray src, float value) { return (ArithArray)OpRegistry.Invoke("pow", null, src, value); }
 
         /// <summary>
@@ -341,7 +341,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Square(ArithArray src) { return (ArithArray)OpRegistry.Invoke("pow", null, src, 2); }
 
         /// <summary>
@@ -350,7 +350,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="value">The value.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Tpow( float value, ArithArray src) { return (ArithArray)OpRegistry.Invoke("tpow", null, value, src); }
 
 
@@ -361,7 +361,7 @@ namespace Arithmetica
         /// <param name="srcA">The source a.</param>
         /// <param name="srcB">The source b.</param>
         /// <param name="weight">The weight.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Lerp( ArithArray srcA, ArithArray srcB, float weight) { return (ArithArray)OpRegistry.Invoke("lerp", null, srcA, srcB); }
         /// <summary>
         /// Clamps the specified result.
@@ -370,7 +370,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Clip( ArithArray src, float min, float max) { return (ArithArray)OpRegistry.Invoke("clamp", null, src, min, max); }
 
 
@@ -380,7 +380,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Add( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("addv", null, lhs, rhs); }
         /// <summary>
         /// Subs the specified result.
@@ -388,7 +388,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sub( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("subv", null, lhs, rhs); }
         /// <summary>
         /// Subs the specified result.
@@ -396,7 +396,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sub( float lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("rsubv", null, lhs, rhs); }
         /// <summary>
         /// Muls the specified result.
@@ -404,7 +404,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mul( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("mulv", null, lhs, rhs); }
         /// <summary>
         /// Divs the specified result.
@@ -412,7 +412,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Div( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("divv", null, lhs, rhs); }
         /// <summary>
         /// Divs the specified result.
@@ -420,7 +420,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Div( float lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("rdivv", null, lhs, rhs); }
         /// <summary>
         /// Mods the specified result.
@@ -428,7 +428,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mod( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("modv", null, lhs, rhs); }
 
         /// <summary>
@@ -437,7 +437,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray GreaterThan( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("gtValue", null, lhs, rhs); }
         /// <summary>
         /// Lesses the than.
@@ -445,7 +445,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray LessThan( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("ltValue", null, lhs, rhs); }
         /// <summary>
         /// Greaters the or equal.
@@ -453,7 +453,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray GreaterOrEqual( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("geValue", null, lhs, rhs); }
         /// <summary>
         /// Lesses the or equal.
@@ -461,7 +461,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray LessOrEqual( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("leValue", null, lhs, rhs); }
         /// <summary>
         /// Equals to.
@@ -469,7 +469,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray EqualTo( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("eqValue", null, lhs, rhs); }
         /// <summary>
         /// Nots the equal.
@@ -477,7 +477,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray NotEqual( ArithArray lhs, float rhs) { return (ArithArray)OpRegistry.Invoke("neValue", null, lhs, rhs); }
 
         /// <summary>
@@ -486,7 +486,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Add(ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("addt", null, lhs, rhs); }
         /// <summary>
         /// Subs the specified result.
@@ -494,7 +494,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sub(ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("subt", null, lhs, rhs); }
         /// <summary>
         /// Muls the specified result.
@@ -502,7 +502,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mul(ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("mult", null, lhs, rhs); }
         /// <summary>
         /// Divs the specified result.
@@ -510,7 +510,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Div(ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("divt", null, lhs, rhs); }
         /// <summary>
         /// Mods the specified result.
@@ -518,7 +518,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mod(ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("modt", null, lhs, rhs); }
 
         /// <summary>
@@ -527,7 +527,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray GreaterThan( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("gtTensor", null, lhs, rhs); }
         /// <summary>
         /// Lesses the than.
@@ -535,7 +535,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray LessThan( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("ltTensor", null, lhs, rhs); }
         /// <summary>
         /// Greaters the or equal.
@@ -543,7 +543,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray GreaterOrEqual( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("geTensor", null, lhs, rhs); }
         /// <summary>
         /// Lesses the or equal.
@@ -551,7 +551,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray LessOrEqual( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("leTensor", null, lhs, rhs); }
         /// <summary>
         /// Equals to.
@@ -559,7 +559,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray EqualTo( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("eqTensor", null, lhs, rhs); }
         /// <summary>
         /// Nots the equal.
@@ -567,7 +567,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray NotEqual( ArithArray lhs, ArithArray rhs) { return (ArithArray)OpRegistry.Invoke("neTensor", null, lhs, rhs); }
 
 
@@ -577,7 +577,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sum(ArithArray src, int dimension)
         {
             dimension = dimension < 0 ? src.DimensionCount + dimension : dimension;
@@ -600,7 +600,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Prod( ArithArray src, int dimension) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("prod", null, src, dimension); }
         /// <summary>
         /// Determines the minimum of the parameters.
@@ -608,7 +608,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Min( ArithArray src, int dimension) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("min", null, src, dimension); }
         /// <summary>
         /// Determines the maximun of the parameters.
@@ -616,7 +616,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Max( ArithArray src, int dimension)
         {
             dimension = dimension < 0 ? src.DimensionCount + dimension : dimension;
@@ -642,7 +642,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Argmin(ArithArray src, int dimension) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("argmin", null, src, dimension); }
         /// <summary>
         /// Argmaxes the specified result.
@@ -650,7 +650,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Argmax(ArithArray src, int dimension) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("argmax", null, src, dimension); }
 
         /// <summary>
@@ -659,7 +659,7 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mean(ArithArray src, int dimension)
         {
             dimension = dimension < 0 ? src.DimensionCount + dimension : dimension;
@@ -684,7 +684,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Norm( ArithArray src, int dimension, float value) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("norm", null, src, dimension, value); }
         /// <summary>
         /// Standards the specified result.
@@ -693,7 +693,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="normByN">if set to <c>true</c> [norm by n].</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Std( ArithArray src, int dimension, bool normByN) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("std", null, src, dimension, normByN); }
         /// <summary>
         /// Variables the specified result.
@@ -702,7 +702,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dimension">The dimension.</param>
         /// <param name="normByN">if set to <c>true</c> [norm by n].</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Var( ArithArray src, int dimension, bool normByN) { dimension = dimension < 0 ? src.DimensionCount + dimension : dimension; return (ArithArray)OpRegistry.Invoke("var", null, src, dimension, normByN); }
 
         /// <summary>
@@ -710,28 +710,28 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Sum( ArithArray src) { return (ArithArray)OpRegistry.Invoke("sumall", null, src); }
         /// <summary>
         /// Products all.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Prod( ArithArray src) { return (ArithArray)OpRegistry.Invoke("prodall", null, src); }
         /// <summary>
         /// Minimums all.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Min( ArithArray src) { return (ArithArray)OpRegistry.Invoke("minall", null, src); }
         /// <summary>
         /// Maximums all.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Max( ArithArray src) { return (ArithArray)OpRegistry.Invoke("maxall", null, src); }
 
         /// <summary>
@@ -739,7 +739,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Mean( ArithArray src) { return (ArithArray)OpRegistry.Invoke("meanall", null, src); }
         /// <summary>
         /// Norms all.
@@ -747,21 +747,21 @@ namespace Arithmetica
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
         /// <param name="value">The value.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Norm( ArithArray src, float value) { return (ArithArray)OpRegistry.Invoke("normall", null, src, value); }
         /// <summary>
         /// Standards all.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Std( ArithArray src) { return (ArithArray)OpRegistry.Invoke("stdall", null, src); }
         /// <summary>
         /// Variables all.
         /// </summary>
         /// <param name="result">The result.</param>
         /// <param name="src">The source.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Var( ArithArray src) { return (ArithArray)OpRegistry.Invoke("varall", null, src); }
 
 
@@ -824,7 +824,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray IndexSelect( ArithArray src, int dim, ArithArray indices) { return (ArithArray)OpRegistry.Invoke("index_select", null, src, dim, indices); }
         /// <summary>
         /// Gathers the specified result.
@@ -833,7 +833,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Gather( ArithArray src, int dim, ArithArray indices) { return (ArithArray)OpRegistry.Invoke("gather", null, src, dim, indices); }
         /// <summary>
         /// Scatters the specified result.
@@ -842,7 +842,7 @@ namespace Arithmetica
         /// <param name="src">The source.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray Scatter( ArithArray src, int dim, ArithArray indices)
         {
             var result = src;
@@ -856,7 +856,7 @@ namespace Arithmetica
         /// <param name="value">The value.</param>
         /// <param name="dim">The dim.</param>
         /// <param name="indices">The indices.</param>
-        /// <returns>Tensor.</returns>
+        /// <returns>ArithArray.</returns>
         public static ArithArray ScatterFill( float value, int dim, ArithArray indices) { return (ArithArray)OpRegistry.Invoke("scatter_fill", null, value, dim, indices); }
 
 

@@ -26,7 +26,7 @@ namespace Arithmetica
     public static class ArrayImageExtensions
     {
         /// <summary>
-        /// Converts a Tensor to a Bitmap. Elements of the array are assumed to be normalized in the range [0, 1]
+        /// Converts a ArithArray to a Bitmap. Elements of the array are assumed to be normalized in the range [0, 1]
         /// The array must have one of the following structures:
         /// * 2D array - output is a 24bit BGR bitmap in greyscale
         /// * 3D array where first dimension has length 1 - output is 24bit BGR bitmap in greyscale
