@@ -6,10 +6,26 @@ namespace Arithmetica
 {
     public partial class Vector
     {
+        /// <summary>
+        /// Reduced Sum of the matrix elements on all dimension.
+        /// </summary>
+        /// <param name="src">The source matrix.</param>
+        /// <returns></returns>
         public static Vector Sum(Vector src) => Vector.Out(ArrayOps.Sum(src.variable));
 
+        /// <summary>
+        /// Reduced Sum of the matrix elements on a specific dimension.
+        /// </summary>
+        /// <param name="src">The source matrix.</param>
+        /// <param name="dimension">The dimension.</param>
+        /// <returns></returns>
         public static Vector Sum(Vector src, int dimension) => Vector.Out(ArrayOps.Sum(src.variable, dimension));
 
+        /// <summary>
+        /// Reduced Prod of the matrix elements on all dimension.
+        /// </summary>
+        /// <param name="src">The source matrix.</param>
+        /// <returns></returns>
         public static Vector Prod(Vector src) => Vector.Out(ArrayOps.Prod(src.variable));
 
         public static Vector Prod(Vector src, int dimension) => Vector.Out(ArrayOps.Prod(src.variable, dimension));

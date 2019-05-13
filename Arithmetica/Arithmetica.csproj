@@ -13,11 +13,35 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>E:\DeepakProj\git\Arithmetica\Arithmetica\Arithmetica.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Plane\LogExp.cs" />
+    <Compile Remove="Plane\Powers.cs" />
+    <Compile Remove="Plane\Random.cs" />
+    <Compile Remove="Plane\Reducing.cs" />
+    <Compile Remove="Plane\Rounding.cs" />
+    <Compile Remove="Plane\Trignometric.cs" />
+    <Compile Remove="Quaternion\LogExp.cs" />
+    <Compile Remove="Quaternion\Powers.cs" />
+    <Compile Remove="Quaternion\Random.cs" />
+    <Compile Remove="Quaternion\Reducing.cs" />
+    <Compile Remove="Quaternion\Rounding.cs" />
+    <Compile Remove="Quaternion\Trignometric.cs" />
+    <Compile Remove="Vector2\Reducing.cs" />
+    <Compile Remove="Vector2\Trignometric.cs" />
+    <Compile Remove="Vector3\Reducing.cs" />
+    <Compile Remove="Vector3\Trignometric.cs" />
+    <Compile Remove="Vector4\Reducing.cs" />
+    <Compile Remove="Vector4\Trignometric.cs" />
+    <Compile Remove="Vector\Reducing.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.5.1" />

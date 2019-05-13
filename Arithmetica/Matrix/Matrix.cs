@@ -44,7 +44,7 @@ namespace Arithmetica
             var x = new ArithArray(new long[] { 3, 2 });
             if(data.Length == 6)
             {
-                x.CopyFrom(data);
+                x.LoadFrom(data);
             }
 
             return Out(x);
@@ -55,7 +55,7 @@ namespace Arithmetica
             var x = new ArithArray(new long[] { 4, 4 });
             if (data.Length == 8)
             {
-                x.CopyFrom(data);
+                x.LoadFrom(data);
             }
 
             return Out(x);
@@ -78,7 +78,7 @@ namespace Arithmetica
         public static Matrix Diagonal(params float[] data)
         {
             var x = new ArithArray(new long[] { data.Length, 1 });
-            x.CopyFrom(data);
+            x.LoadFrom(data);
             x = ArrayOps.Diag(x);
             return Out(x);
         }
@@ -93,7 +93,7 @@ namespace Arithmetica
 
         public void LoadArray(params float[] data)
         {
-            variable.CopyFrom(data);
+            variable.LoadFrom(data);
         }
 
         internal static ArithArray In(Matrix x)

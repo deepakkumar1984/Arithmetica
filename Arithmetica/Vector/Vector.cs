@@ -54,7 +54,7 @@ namespace Arithmetica
 
         public void LoadArray(params float[] data)
         {
-            variable.CopyFrom(data);
+            variable.LoadFrom(data);
         }
 
         internal static ArithArray In(Vector x)

@@ -48,12 +48,6 @@ namespace ArithConsole
                 r[i] = (float)Math.Exp(r[i]);
             });
 
-            double final = 0;
-            Parallel.For(0, count, i =>
-            {
-                final += r[i];
-            });
-
 
             sw.Stop();
 
@@ -77,8 +71,6 @@ namespace ArithConsole
             Vector r = Vector.Sqrt(Vector.Abs(a) + Vector.Square(b)) * Vector.Tanh(b) * Vector.Cos(c);
             r = Vector.Exp(r);
 
-            Vector final = Vector.Sum(r);
-            sw.Stop();
 
             Console.WriteLine(sw.ElapsedMilliseconds);
         }

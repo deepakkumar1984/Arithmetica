@@ -200,7 +200,7 @@ namespace Arithmetica
         /// <value>The dimension count.</value>
         public int DimensionCount { get { return shape.Length; } }
 
-        public bool PossibleVector
+        internal bool PossibleVector
         {
             get
             {
@@ -346,7 +346,7 @@ namespace Arithmetica
         /// or
         /// Output array must have the same number of elements as the input
         /// </exception>
-        public ArithArray View(params long[] sizes)
+        internal ArithArray View(params long[] sizes)
         {
             if (!this.IsContiguous()) throw new InvalidOperationException("Cannot use View on a non-contiguous array");
 
@@ -633,9 +633,8 @@ namespace Arithmetica
             return result;
         }
 
-        // Prepend singleton dimensions until DimensionCount equals newDimCount
         /// <summary>
-        /// Pads to dim count.
+        /// Prepend singleton dimensions until DimensionCount equals newDimCount. Pads to dim count.
         /// </summary>
         /// <param name="newDimCount">The new dim count.</param>
         /// <returns>ArithArray.</returns>
@@ -650,7 +649,7 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Repeats the array.
+        /// Repeats the array along the dimension.
         /// </summary>
         /// <param name="repetitions">The repetitions.</param>
         /// <returns>ArithArray.</returns>
@@ -690,8 +689,7 @@ namespace Arithmetica
             return ArrayOps.Tile(this, repetitions);
         }
 
-        /*
-            private ArithArray GetRegion(long[] dimensionStarts, long[] dimensionSizes)
+        public ArithArray GetRegion(long[] dimensionStarts, long[] dimensionSizes)
         {
             var result = this.CopyRef();
             for (int i = 0; i < dimensionStarts.Length; ++i)
@@ -700,8 +698,9 @@ namespace Arithmetica
                 result.Narrow(i, dimensionStarts[i], dimensionSizes[i]);
                 resultOld.Dispose();
             }
+
             return result;
-        }*/
+        }
 
 
         /// <summary>
@@ -715,7 +714,7 @@ namespace Arithmetica
         /// or
         /// ArithArray and array must have the same element types
         /// </exception>
-        public void CopyFrom(Array array)
+        public void LoadFrom(Array array)
         {
             var elementType = DTypeBuilder.FromCLRType(array.GetType().GetElementType());
 
@@ -761,7 +760,7 @@ namespace Arithmetica
                 .ToArray();
 
             var result = new ArithArray(dimSizes, elementType);
-            result.CopyFrom(array);
+            result.LoadFrom(array);
             return result;
         }
 
@@ -934,7 +933,7 @@ namespace Arithmetica
             }
 
             result = new ArithArray(1, data.Count);
-            result.CopyFrom(data.ToArray());
+            result.LoadFrom(data.ToArray());
             return result;
         }
 
