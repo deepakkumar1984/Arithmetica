@@ -45,4 +45,5 @@ c.Print();
 
 Nuget package available, search with name Arithmetica
 
-# Documentation (Coming soon)
+API Documentation: https://deepakkumar1984.github.io/Arithmetica/api/Arithmetica.html
+
