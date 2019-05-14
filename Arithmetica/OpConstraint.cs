@@ -21,7 +21,7 @@ namespace Arithmetica
     /// <summary>
     /// Class OpConstraint.
     /// </summary>
-    public abstract class OpConstraint
+    internal abstract class OpConstraint
     {
         /// <summary>
         /// Satisfieds for.
@@ -36,7 +36,7 @@ namespace Arithmetica
     /// Implements the <see cref="Arithmetica.OpConstraint" />
     /// </summary>
     /// <seealso cref="Arithmetica.OpConstraint" />
-    public class ArgCountConstraint : OpConstraint
+    internal class ArgCountConstraint : OpConstraint
     {
         /// <summary>
         /// The argument count
@@ -65,7 +65,7 @@ namespace Arithmetica
     /// Implements the <see cref="Arithmetica.OpConstraint" />
     /// </summary>
     /// <seealso cref="Arithmetica.OpConstraint" />
-    public class ArgTypeConstraint : OpConstraint
+    internal class ArgTypeConstraint : OpConstraint
     {
         /// <summary>
         /// The argument index
@@ -103,7 +103,7 @@ namespace Arithmetica
     /// Implements the <see cref="Arithmetica.OpConstraint" />
     /// </summary>
     /// <seealso cref="Arithmetica.OpConstraint" />
-    public class ArgStorageTypeConstraint : OpConstraint
+    internal class ArgStorageTypeConstraint : OpConstraint
     {
         /// <summary>
         /// The argument index

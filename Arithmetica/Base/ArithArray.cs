@@ -182,7 +182,8 @@ namespace Arithmetica
         /// Gets the storage.
         /// </summary>
         /// <value>The storage.</value>
-        public Storage Storage { get { return storage; } }
+        internal Storage Storage { get { return storage; } }
+
         /// <summary>
         /// Gets the storage offset.
         /// </summary>
@@ -192,7 +193,7 @@ namespace Arithmetica
         /// Gets the allocator.
         /// </summary>
         /// <value>The allocator.</value>
-        public IAllocator Allocator { get { return storage.Allocator; } }
+        internal IAllocator Allocator { get { return storage.Allocator; } }
 
         /// <summary>
         /// Gets the dimension count.
@@ -741,7 +742,7 @@ namespace Arithmetica
         /// <param name="allocator">The allocator.</param>
         /// <param name="array">The array.</param>
         /// <returns>ArithArray.</returns>
-        public static ArithArray FromArray(IAllocator allocator, Array array)
+        public static ArithArray FromArray(Array array)
         {
             // From the CLI spec(section 8.9.1):
             // Array elements shall be laid out within the array object in row - major order
@@ -856,9 +857,9 @@ namespace Arithmetica
         /// <param name="allocator">The allocator.</param>
         /// <param name="stream">The stream.</param>
         /// <returns>ArithArray.</returns>
-        public static ArithArray Deserialize(IAllocator allocator, System.IO.Stream stream)
+        public static ArithArray Deserialize(System.IO.Stream stream)
         {
-            return ArraySerialization.Deserialize(allocator, stream);
+            return ArraySerialization.Deserialize(stream);
         }
 
         public void Print(uint count = 0, string title = "")
@@ -915,7 +916,7 @@ namespace Arithmetica
             ArrayOps.Fill(this, value);
         }
 
-        public static ArithArray Constant(float value, IAllocator allocator, DType dtype, params long[] sizes)
+        public static ArithArray Constant(float value, DType dtype, params long[] sizes)
         {
             ArithArray array = new ArithArray(sizes, dtype);
             ArrayOps.Fill(array, value);
@@ -984,7 +985,7 @@ namespace Arithmetica
 
         public static ArithArray operator <(ArithArray lhs, float rhs)
         {
-            ArithArray rhs_t = ArithArray.Constant(rhs, lhs.Allocator, lhs.ElementType, lhs.shape);
+            ArithArray rhs_t = ArithArray.Constant(rhs, lhs.ElementType, lhs.shape);
             return ArrayOps.GreaterThan(rhs_t, lhs);
         }
 
@@ -999,7 +1000,7 @@ namespace Arithmetica
 
         public static ArithArray operator <=(ArithArray lhs, float rhs)
         {
-            ArithArray rhs_t = ArithArray.Constant(rhs, lhs.Allocator, lhs.ElementType, lhs.shape);
+            ArithArray rhs_t = ArithArray.Constant(rhs, lhs.ElementType, lhs.shape);
             return ArrayOps.GreaterOrEqual(rhs_t, lhs);
         }
     }

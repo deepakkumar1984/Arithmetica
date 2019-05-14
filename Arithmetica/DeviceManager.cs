@@ -26,7 +26,7 @@ namespace Arithmetica
         //}
     }
 
-    public enum Backend
+    internal enum Backend
     {
         CPU,
         CUDA

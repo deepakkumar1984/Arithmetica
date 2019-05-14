@@ -50,7 +50,7 @@ namespace Arithmetica
     /// Struct Half
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct Half
+    internal struct Half
     {
         /// <summary>
         /// The value
@@ -62,7 +62,7 @@ namespace Arithmetica
     /// <summary>
     /// Class DTypeExtensions.
     /// </summary>
-    public static class DTypeExtensions
+    internal static class DTypeExtensions
     {
         /// <summary>
         /// Sizes the specified value.
@@ -108,7 +108,7 @@ namespace Arithmetica
     /// <summary>
     /// Class DTypeBuilder.
     /// </summary>
-    public static class DTypeBuilder
+    internal static class DTypeBuilder
     {
         /// <summary>
         /// Froms the type of the color.

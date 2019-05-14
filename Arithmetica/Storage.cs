@@ -24,7 +24,7 @@ namespace Arithmetica
     /// Implements the <see cref="Arithmetica.RefCounted" />
     /// </summary>
     /// <seealso cref="Arithmetica.RefCounted" />
-    public abstract class Storage : RefCounted
+    internal abstract class Storage : RefCounted
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Storage"/> class.

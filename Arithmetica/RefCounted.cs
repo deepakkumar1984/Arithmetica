@@ -23,7 +23,7 @@ namespace Arithmetica
     /// Provides a thread safe reference counting implementation. Inheritors need only implement the Destroy() method,
     /// which will be called when the reference count reaches zero. The reference count automatically starts at 1.
     /// </summary>
-    public abstract class RefCounted
+    internal abstract class RefCounted
     {
         /// <summary>
         /// The reference count

@@ -25,7 +25,7 @@ namespace Arithmetica.Cpu
     /// Implements the <see cref="Arithmetica.Storage" />
     /// </summary>
     /// <seealso cref="Arithmetica.Storage" />
-    public class CpuStorage : Storage
+    internal class CpuStorage : Storage
     {
         /// <summary>
         /// The buffer

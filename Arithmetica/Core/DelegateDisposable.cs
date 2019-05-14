@@ -20,7 +20,7 @@ namespace Arithmetica.Core
     /// Implements the <see cref="System.IDisposable" />
     /// </summary>
     /// <seealso cref="System.IDisposable" />
-    public class DelegateDisposable : IDisposable
+    internal class DelegateDisposable : IDisposable
     {
         /// <summary>
         /// The action

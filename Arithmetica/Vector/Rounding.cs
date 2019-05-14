@@ -7,7 +7,7 @@ namespace Arithmetica
     public partial class Vector
     {
         /// <summary>
-        /// Return the floor of the input, element-wise. The floor of the scalar x is the largest integer i, such that i <= x.
+        /// Return the floor of the input, element-wise. The floor of the scalar x is the largest integer i.
         /// </summary>
         /// <param name="src">The source vector.</param>
         /// <returns></returns>

@@ -21,7 +21,7 @@ namespace Arithmetica
     /// <summary>
     /// Class SeedSource.
     /// </summary>
-    public class SeedSource
+    internal class SeedSource
     {
         /// <summary>
         /// The RNG

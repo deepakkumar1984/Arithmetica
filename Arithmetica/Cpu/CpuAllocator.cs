@@ -23,7 +23,7 @@ namespace Arithmetica.Cpu
     /// Implements the <see cref="Arithmetica.IAllocator" />
     /// </summary>
     /// <seealso cref="Arithmetica.IAllocator" />
-    public class CpuAllocator : IAllocator
+    internal class CpuAllocator : IAllocator
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CpuAllocator"/> class.

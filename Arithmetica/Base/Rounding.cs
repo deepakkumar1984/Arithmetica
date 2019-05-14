@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class ArithArray
     {
         /// <summary>
-        /// Return the floor of the input, element-wise. The floor of the scalar x is the largest integer i, such that i <= x.
+        /// Return the floor of the input, element-wise. The floor of the scalar x is the largest integer i.
         /// </summary>
         /// <param name="src">The source array.</param>
         /// <returns></returns>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class Rnd
+    public partial class Sampler
     {
         public static void Bernoulli(Vector4 src, float p, int? seed = null)
             => ArrayOps.RandomBernoulli(src.variable, new SeedSource(seed), p);

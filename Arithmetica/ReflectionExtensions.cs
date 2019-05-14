@@ -22,7 +22,7 @@ namespace Arithmetica
     /// <summary>
     /// Class AssemblyExtensions.
     /// </summary>
-    public static class AssemblyExtensions
+    internal static class AssemblyExtensions
     {
         /// <summary>
         /// Typeses the with attribute.
@@ -47,7 +47,7 @@ namespace Arithmetica
     /// <summary>
     /// Class TypeExtensions.
     /// </summary>
-    public static class TypeExtensions
+    internal static class TypeExtensions
     {
         /// <summary>
         /// Methodses the with attribute.
@@ -72,7 +72,7 @@ namespace Arithmetica
     /// <summary>
     /// Class MethodExtensions.
     /// </summary>
-    public static class MethodExtensions
+    internal static class MethodExtensions
     {
         /// <summary>
         /// Parameterses the with attribute.

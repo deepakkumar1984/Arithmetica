@@ -7,7 +7,7 @@ using Arithmetica.Core;
 
 namespace Arithmetica.Cpu
 {
-    public class Im2ColCpu
+    internal class Im2ColCpu
     {
         private MethodInfo im2cols_func = NativeWrapper.GetMethod("TS_Im2Cols");
      

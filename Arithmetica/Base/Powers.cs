@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arithmetica
 {
-    public partial class AM
+    public partial class ArithArray
     {
         /// <summary>
         /// Performs elementwise power to the scalar operation elemenwise for the array

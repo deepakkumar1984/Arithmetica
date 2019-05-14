@@ -24,7 +24,7 @@ namespace Arithmetica
     /// </summary>
     /// <param name="args">The arguments.</param>
     /// <returns>System.Object.</returns>
-    public delegate object OpHandler(object[] args);
+    internal delegate object OpHandler(object[] args);
 
     /// <summary>
     /// Class OpRegistry.

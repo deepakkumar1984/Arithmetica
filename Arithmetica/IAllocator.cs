@@ -21,7 +21,7 @@ namespace Arithmetica
     /// <summary>
     /// Interface IAllocator
     /// </summary>
-    public interface IAllocator
+    internal interface IAllocator
     {
         /// <summary>
         /// Allocates the specified element type.

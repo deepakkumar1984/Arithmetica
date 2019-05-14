@@ -24,7 +24,7 @@ namespace Arithmetica.CUDA.Util
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <seealso cref="System.IDisposable" />
-    public class PooledObject<T> : IDisposable
+    internal class PooledObject<T> : IDisposable
     {
         /// <summary>
         /// The on dispose
@@ -92,7 +92,7 @@ namespace Arithmetica.CUDA.Util
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <seealso cref="System.IDisposable" />
-    public class ObjectPool<T> : IDisposable
+    internal class ObjectPool<T> : IDisposable
     {
         /// <summary>
         /// The constructor
@@ -157,7 +157,7 @@ namespace Arithmetica.CUDA.Util
         /// Gets this instance.
         /// </summary>
         /// <returns>PooledObject&lt;T&gt;.</returns>
-        public PooledObject<T> Get()
+        internal PooledObject<T> Get()
         {
             T value = freeList.Count > 0 ? freeList.Pop() : constructor();
             return new PooledObject<T>(value, Release);
