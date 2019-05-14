@@ -26,7 +26,7 @@ namespace Arithmetica
     /// Implements the <see cref="System.IDisposable" />
     /// </summary>
     /// <seealso cref="System.IDisposable" />
-    public class ArithArray : IDisposable
+    public partial class ArithArray : IDisposable
     {
         /// <summary>
         /// The sizes
