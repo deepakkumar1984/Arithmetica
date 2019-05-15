@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Arithmetica
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class Vector
     {
         internal ArithArray variable;
