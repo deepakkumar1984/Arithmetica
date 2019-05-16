@@ -73,7 +73,8 @@
   
   <h1 id="Arithmetica_Vector2" data-uid="Arithmetica.Vector2" class="text-break">Class Vector2
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a Vector with X and Y components and can hold multiple Vector2</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,15 +118,16 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2__ctor_System_Int32_Arithmetica_DType_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.%23ctor(System.Int32%2CArithmetica.DType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L24">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L92">View Source</a>
   </span>
   <a id="Arithmetica_Vector2__ctor_" data-uid="Arithmetica.Vector2.#ctor*"></a>
   <h4 id="Arithmetica_Vector2__ctor_System_Int32_Arithmetica_DType_" data-uid="Arithmetica.Vector2.#ctor(System.Int32,Arithmetica.DType)">Vector2(Int32, DType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Vector2.html">Vector2</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(int length, DType dataType)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2(int size, DType dataType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,13 +141,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Defines number of vectors in the list.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.DType.html">DType</a></td>
         <td><span class="parametername">dataType</span></td>
-        <td></td>
+        <td><p>The data type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,15 +158,16 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2__ctor_System_Int64_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.%23ctor(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L19">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L72">View Source</a>
   </span>
   <a id="Arithmetica_Vector2__ctor_" data-uid="Arithmetica.Vector2.#ctor*"></a>
   <h4 id="Arithmetica_Vector2__ctor_System_Int64_" data-uid="Arithmetica.Vector2.#ctor(System.Int64)">Vector2(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Vector2.html">Vector2</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2(long size = 1L)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,8 +181,49 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Defines number of vectors in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2__ctor_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.%23ctor(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L82">View Source</a>
+  </span>
+  <a id="Arithmetica_Vector2__ctor_" data-uid="Arithmetica.Vector2.#ctor*"></a>
+  <h4 id="Arithmetica_Vector2__ctor_System_Single_System_Single_" data-uid="Arithmetica.Vector2.#ctor(System.Single,System.Single)">Vector2(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Vector2.html">Vector2</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2(float X, float Y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">X</span></td>
+        <td><p>The x value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Y</span></td>
+        <td><p>The y value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -188,11 +234,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_ArithArray.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.ArithArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L70">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L179">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_ArithArray_" data-uid="Arithmetica.Vector2.ArithArray*"></a>
   <h4 id="Arithmetica_Vector2_ArithArray" data-uid="Arithmetica.Vector2.ArithArray">ArithArray</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the generalised arith array which is a multi dimensional array</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -209,7 +256,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.ArithArray.html">ArithArray</a></td>
-        <td></td>
+        <td><p>The arith array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,11 +266,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Data.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L78">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L193">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Data_" data-uid="Arithmetica.Vector2.Data*"></a>
   <h4 id="Arithmetica_Vector2_Data" data-uid="Arithmetica.Vector2.Data">Data</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the data in the .NET Array format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -239,7 +288,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Array</span></td>
-        <td></td>
+        <td><p>The data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -248,11 +298,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Item_System_Int64_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Item(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L86">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L209">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Item_" data-uid="Arithmetica.Vector2.Item*"></a>
   <h4 id="Arithmetica_Vector2_Item_System_Int64_" data-uid="Arithmetica.Vector2.Item(System.Int64)">Item[Int64]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the vector value at the specified index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,7 +322,8 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The index.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,24 +338,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
-        <td></td>
+        <td><p>Get the (X, Y) value at the index</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Length.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Size.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L11">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L20">View Source</a>
   </span>
-  <a id="Arithmetica_Vector2_Length_" data-uid="Arithmetica.Vector2.Length*"></a>
-  <h4 id="Arithmetica_Vector2_Length" data-uid="Arithmetica.Vector2.Length">Length</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Arithmetica_Vector2_Size_" data-uid="Arithmetica.Vector2.Size*"></a>
+  <h4 id="Arithmetica_Vector2_Size" data-uid="Arithmetica.Vector2.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Gets the number of the Vector2 in this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Length { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long Size { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -316,7 +370,104 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td></td>
+        <td><p>The size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_X.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.X%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L35">View Source</a>
+  </span>
+  <a id="Arithmetica_Vector2_X_" data-uid="Arithmetica.Vector2.X*"></a>
+  <h4 id="Arithmetica_Vector2_X" data-uid="Arithmetica.Vector2.X">X</h4>
+  <div class="markdown level1 summary"><p>Gets the X value for the Vector. Usually gets the first Vector value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float X { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The x.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Not initialized</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Y.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Y%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L55">View Source</a>
+  </span>
+  <a id="Arithmetica_Vector2_Y_" data-uid="Arithmetica.Vector2.Y*"></a>
+  <h4 id="Arithmetica_Vector2_Y" data-uid="Arithmetica.Vector2.Y">Y</h4>
+  <div class="markdown level1 summary"><p>Gets the Y value for the Vector. Usually gets the first Vector value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Y { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The y.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Not initialized</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1060,11 +1211,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Fill_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Fill(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L99">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L236">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Fill_" data-uid="Arithmetica.Vector2.Fill*"></a>
   <h4 id="Arithmetica_Vector2_Fill_System_Single_" data-uid="Arithmetica.Vector2.Fill(System.Single)">Fill(Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fills all the values in the vector with specified value</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1083,7 +1235,8 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1163,6 +1316,104 @@
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">src</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_FromArray_System_Single___.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.FromArray(System.Single%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L146">View Source</a>
+  </span>
+  <a id="Arithmetica_Vector2_FromArray_" data-uid="Arithmetica.Vector2.FromArray*"></a>
+  <h4 id="Arithmetica_Vector2_FromArray_System_Single___" data-uid="Arithmetica.Vector2.FromArray(System.Single[])">FromArray(Single[])</h4>
+  <div class="markdown level1 summary"><p>Create a Vector2 from the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 FromArray(params float[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data array to be loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Get_System_Int64_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Get(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L227">View Source</a>
+  </span>
+  <a id="Arithmetica_Vector2_Get_" data-uid="Arithmetica.Vector2.Get*"></a>
+  <h4 id="Arithmetica_Vector2_Get_System_Int64_" data-uid="Arithmetica.Vector2.Get(System.Int64)">Get(Int64)</h4>
+  <div class="markdown level1 summary"><p>Gets the Vector value at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Get(long index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1650,38 +1901,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_LoadArray_System_Single___.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.LoadArray(System.Single%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L55">View Source</a>
-  </span>
-  <a id="Arithmetica_Vector2_LoadArray_" data-uid="Arithmetica.Vector2.LoadArray*"></a>
-  <h4 id="Arithmetica_Vector2_LoadArray_System_Single___" data-uid="Arithmetica.Vector2.LoadArray(System.Single[])">LoadArray(Single[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadArray(params float[] data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span>[]</td>
-        <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2248,15 +2467,16 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Ones_System_Int64_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Ones(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L41">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L122">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Ones_" data-uid="Arithmetica.Vector2.Ones*"></a>
   <h4 id="Arithmetica_Vector2_Ones_System_Int64_" data-uid="Arithmetica.Vector2.Ones(System.Int64)">Ones(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a Vector2 of specified size and all filled with 1</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector2 Ones(long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector2 Ones(long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2270,8 +2490,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Defines number of vectors in the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2347,11 +2568,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Print.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Print%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L104">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L244">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Print_" data-uid="Arithmetica.Vector2.Print*"></a>
   <h4 id="Arithmetica_Vector2_Print" data-uid="Arithmetica.Vector2.Print">Print()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Prints this vector.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2909,11 +3131,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Unit_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Unit(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L29">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L103">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Unit_" data-uid="Arithmetica.Vector2.Unit*"></a>
   <h4 id="Arithmetica_Vector2_Unit_System_Single_System_Single_" data-uid="Arithmetica.Vector2.Unit(System.Single,System.Single)">Unit(Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a Unit vector which is vector of size 1</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2932,12 +3155,14 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">X</span></td>
-        <td></td>
+        <td><p>The x value.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">Y</span></td>
-        <td></td>
+        <td><p>The y value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2961,15 +3186,16 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_Zeros_System_Int64_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.Zeros(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L48">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L134">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_Zeros_" data-uid="Arithmetica.Vector2.Zeros*"></a>
   <h4 id="Arithmetica_Vector2_Zeros_System_Int64_" data-uid="Arithmetica.Vector2.Zeros(System.Int64)">Zeros(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a Vector of specified size and all filled with 0</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector2 Zeros(long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector2 Zeros(long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2983,8 +3209,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Defines number of vectors in the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3010,11 +3237,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Addition_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Addition(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L109">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L257">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Addition_" data-uid="Arithmetica.Vector2.op_Addition*"></a>
   <h4 id="Arithmetica_Vector2_op_Addition_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Addition(Arithmetica.Vector2,Arithmetica.Vector2)">Addition(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator +.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3033,12 +3261,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3053,7 +3283,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3062,11 +3293,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Addition_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Addition(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L111">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L267">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Addition_" data-uid="Arithmetica.Vector2.op_Addition*"></a>
   <h4 id="Arithmetica_Vector2_op_Addition_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_Addition(Arithmetica.Vector2,System.Single)">Addition(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator +.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3085,12 +3317,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3105,7 +3339,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3114,11 +3349,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Addition_System_Single_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Addition(System.Single%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L113">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L277">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Addition_" data-uid="Arithmetica.Vector2.op_Addition*"></a>
   <h4 id="Arithmetica_Vector2_op_Addition_System_Single_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Addition(System.Single,Arithmetica.Vector2)">Addition(Single, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator +.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3137,12 +3373,14 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3157,7 +3395,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3166,11 +3405,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Division_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Division(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L127">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L347">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Division_" data-uid="Arithmetica.Vector2.op_Division*"></a>
   <h4 id="Arithmetica_Vector2_op_Division_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Division(Arithmetica.Vector2,Arithmetica.Vector2)">Division(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator /.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3189,12 +3429,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3209,7 +3451,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3218,11 +3461,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Division_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Division(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L129">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L357">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Division_" data-uid="Arithmetica.Vector2.op_Division*"></a>
   <h4 id="Arithmetica_Vector2_op_Division_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_Division(Arithmetica.Vector2,System.Single)">Division(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator /.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3241,12 +3485,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3261,7 +3507,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3270,11 +3517,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Division_System_Single_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Division(System.Single%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L131">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L367">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Division_" data-uid="Arithmetica.Vector2.op_Division*"></a>
   <h4 id="Arithmetica_Vector2_op_Division_System_Single_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Division(System.Single,Arithmetica.Vector2)">Division(Single, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator /.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3293,12 +3541,14 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3313,7 +3563,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3322,11 +3573,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_GreaterThan_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_GreaterThan(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L133">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L377">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_GreaterThan_" data-uid="Arithmetica.Vector2.op_GreaterThan*"></a>
   <h4 id="Arithmetica_Vector2_op_GreaterThan_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_GreaterThan(Arithmetica.Vector2,Arithmetica.Vector2)">GreaterThan(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3345,12 +3597,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3365,7 +3619,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3374,11 +3629,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_GreaterThan_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_GreaterThan(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L135">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L387">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_GreaterThan_" data-uid="Arithmetica.Vector2.op_GreaterThan*"></a>
   <h4 id="Arithmetica_Vector2_op_GreaterThan_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_GreaterThan(Arithmetica.Vector2,System.Single)">GreaterThan(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3397,12 +3653,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3417,7 +3675,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3426,11 +3685,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_GreaterThanOrEqual_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_GreaterThanOrEqual(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L141">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L417">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_GreaterThanOrEqual_" data-uid="Arithmetica.Vector2.op_GreaterThanOrEqual*"></a>
   <h4 id="Arithmetica_Vector2_op_GreaterThanOrEqual_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_GreaterThanOrEqual(Arithmetica.Vector2,Arithmetica.Vector2)">GreaterThanOrEqual(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3449,12 +3709,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3469,7 +3731,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3478,11 +3741,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_GreaterThanOrEqual_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_GreaterThanOrEqual(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L143">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L427">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_GreaterThanOrEqual_" data-uid="Arithmetica.Vector2.op_GreaterThanOrEqual*"></a>
   <h4 id="Arithmetica_Vector2_op_GreaterThanOrEqual_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_GreaterThanOrEqual(Arithmetica.Vector2,System.Single)">GreaterThanOrEqual(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3501,12 +3765,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3521,7 +3787,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3530,11 +3797,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_LessThan_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_LessThan(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L137">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L397">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_LessThan_" data-uid="Arithmetica.Vector2.op_LessThan*"></a>
   <h4 id="Arithmetica_Vector2_op_LessThan_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_LessThan(Arithmetica.Vector2,Arithmetica.Vector2)">LessThan(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3553,12 +3821,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3573,7 +3843,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3582,11 +3853,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_LessThan_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_LessThan(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L139">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L407">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_LessThan_" data-uid="Arithmetica.Vector2.op_LessThan*"></a>
   <h4 id="Arithmetica_Vector2_op_LessThan_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_LessThan(Arithmetica.Vector2,System.Single)">LessThan(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3605,12 +3877,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3625,7 +3899,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3634,11 +3909,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_LessThanOrEqual_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_LessThanOrEqual(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L145">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L437">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_LessThanOrEqual_" data-uid="Arithmetica.Vector2.op_LessThanOrEqual*"></a>
   <h4 id="Arithmetica_Vector2_op_LessThanOrEqual_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_LessThanOrEqual(Arithmetica.Vector2,Arithmetica.Vector2)">LessThanOrEqual(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3657,12 +3933,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3677,7 +3955,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3686,11 +3965,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_LessThanOrEqual_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_LessThanOrEqual(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L147">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L447">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_LessThanOrEqual_" data-uid="Arithmetica.Vector2.op_LessThanOrEqual*"></a>
   <h4 id="Arithmetica_Vector2_op_LessThanOrEqual_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_LessThanOrEqual(Arithmetica.Vector2,System.Single)">LessThanOrEqual(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3709,12 +3989,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3729,7 +4011,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3738,11 +4021,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Multiply_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Multiply(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L121">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L317">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Multiply_" data-uid="Arithmetica.Vector2.op_Multiply*"></a>
   <h4 id="Arithmetica_Vector2_op_Multiply_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Multiply(Arithmetica.Vector2,Arithmetica.Vector2)">Multiply(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator *.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3761,12 +4045,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3781,7 +4067,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3790,11 +4077,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Multiply_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Multiply(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L123">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L327">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Multiply_" data-uid="Arithmetica.Vector2.op_Multiply*"></a>
   <h4 id="Arithmetica_Vector2_op_Multiply_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_Multiply(Arithmetica.Vector2,System.Single)">Multiply(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator *.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3813,12 +4101,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3833,7 +4123,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3842,11 +4133,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Multiply_System_Single_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Multiply(System.Single%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L125">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L337">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Multiply_" data-uid="Arithmetica.Vector2.op_Multiply*"></a>
   <h4 id="Arithmetica_Vector2_op_Multiply_System_Single_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Multiply(System.Single,Arithmetica.Vector2)">Multiply(Single, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator *.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3865,12 +4157,14 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3885,7 +4179,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3894,11 +4189,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Subtraction_Arithmetica_Vector2_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Subtraction(Arithmetica.Vector2%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L115">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L287">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Subtraction_" data-uid="Arithmetica.Vector2.op_Subtraction*"></a>
   <h4 id="Arithmetica_Vector2_op_Subtraction_Arithmetica_Vector2_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Subtraction(Arithmetica.Vector2,Arithmetica.Vector2)">Subtraction(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator -.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3917,12 +4213,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3937,7 +4235,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3946,11 +4245,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Subtraction_Arithmetica_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Subtraction(Arithmetica.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L117">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L297">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Subtraction_" data-uid="Arithmetica.Vector2.op_Subtraction*"></a>
   <h4 id="Arithmetica_Vector2_op_Subtraction_Arithmetica_Vector2_System_Single_" data-uid="Arithmetica.Vector2.op_Subtraction(Arithmetica.Vector2,System.Single)">Subtraction(Vector2, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator -.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3969,12 +4269,14 @@
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3989,7 +4291,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3998,11 +4301,12 @@
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2_op_Subtraction_System_Single_Arithmetica_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2.op_Subtraction(System.Single%2CArithmetica.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L119">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L307">View Source</a>
   </span>
   <a id="Arithmetica_Vector2_op_Subtraction_" data-uid="Arithmetica.Vector2.op_Subtraction*"></a>
   <h4 id="Arithmetica_Vector2_op_Subtraction_System_Single_Arithmetica_Vector2_" data-uid="Arithmetica.Vector2.op_Subtraction(System.Single,Arithmetica.Vector2)">Subtraction(Single, Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator -.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -4021,12 +4325,14 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">lhs</span></td>
-        <td></td>
+        <td><p>The LHS.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
         <td><span class="parametername">rhs</span></td>
-        <td></td>
+        <td><p>The RHS.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -4041,7 +4347,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Arithmetica.Vector2.html">Vector2</a></td>
-        <td></td>
+        <td><p>The result of the operator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -4056,7 +4363,7 @@
                     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Vector2.md&amp;value=---%0Auid%3A%20Arithmetica.Vector2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Vector2/Vector2.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

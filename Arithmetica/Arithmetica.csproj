@@ -22,18 +22,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Plane\LogExp.cs" />
-    <Compile Remove="Plane\Powers.cs" />
-    <Compile Remove="Plane\Random.cs" />
-    <Compile Remove="Plane\Reducing.cs" />
-    <Compile Remove="Plane\Rounding.cs" />
-    <Compile Remove="Plane\Trignometric.cs" />
-    <Compile Remove="Quaternion\LogExp.cs" />
-    <Compile Remove="Quaternion\Powers.cs" />
-    <Compile Remove="Quaternion\Random.cs" />
-    <Compile Remove="Quaternion\Reducing.cs" />
-    <Compile Remove="Quaternion\Rounding.cs" />
-    <Compile Remove="Quaternion\Trignometric.cs" />
+    <Compile Remove="Geometry\Plane\LogExp.cs" />
+    <Compile Remove="Geometry\Plane\Powers.cs" />
+    <Compile Remove="Geometry\Plane\Random.cs" />
+    <Compile Remove="Geometry\Plane\Reducing.cs" />
+    <Compile Remove="Geometry\Plane\Rounding.cs" />
+    <Compile Remove="Geometry\Plane\Trignometric.cs" />
+    <Compile Remove="Geometry\Quaternion\LogExp.cs" />
+    <Compile Remove="Geometry\Quaternion\Powers.cs" />
+    <Compile Remove="Geometry\Quaternion\Random.cs" />
+    <Compile Remove="Geometry\Quaternion\Reducing.cs" />
+    <Compile Remove="Geometry\Quaternion\Rounding.cs" />
+    <Compile Remove="Geometry\Quaternion\Trignometric.cs" />
     <Compile Remove="Vector2\Reducing.cs" />
     <Compile Remove="Vector2\Trignometric.cs" />
     <Compile Remove="Vector3\Reducing.cs" />

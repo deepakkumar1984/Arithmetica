@@ -15,7 +15,7 @@ namespace Arithmetica
         internal ArithArray variable;
 
         /// <summary>
-        /// Gets the size of the Vector2.
+        /// Gets the number of the Vector3 in this instance.
         /// </summary>
         /// <value>
         /// The size.
@@ -91,8 +91,8 @@ namespace Arithmetica
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector3"/> class.
         /// </summary>
-        /// <param name="size">The size of the Vector3.</param>
-        public Vector3(long size)
+        /// <param name="size">Defines number of Vector3 in the list.</param>
+        public Vector3(long size = 1)
         {
             variable = new ArithArray(size, 3);
         }
@@ -111,7 +111,7 @@ namespace Arithmetica
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector3"/> class.
         /// </summary>
-        /// <param name="size">The size of the Vector3.</param>
+        /// <param name="size">Defines number of Vector3 in the list.</param>
         /// <param name="dataType">The data type.</param>
         public Vector3(int size, DType dataType)
         {
@@ -142,7 +142,7 @@ namespace Arithmetica
         /// <summary>
         /// Creates a Vector3 of specified size and all filled with 1
         /// </summary>
-        /// <param name="size">The size of the vector.</param>
+        /// <param name="size">Defines number of Vector3 in the list.</param>
         /// <returns></returns>
         public static Vector3 Ones(long size)
         {
@@ -154,7 +154,7 @@ namespace Arithmetica
         /// <summary>
         /// Creates a Vector3 of specified size and all filled with 0
         /// </summary>
-        /// <param name="size">The size of the vector.</param>
+        /// <param name="size">Defines number of vectors in the list.</param>
         /// <returns></returns>
         public static Vector3 Zeros(long size)
         {

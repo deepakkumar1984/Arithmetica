@@ -15,7 +15,7 @@ namespace Arithmetica
         internal ArithArray variable;
 
         /// <summary>
-        /// Gets the size of the Vector4.
+        /// Gets the number of the Vector4 in this instance.
         /// </summary>
         /// <value>
         /// The size.
@@ -111,8 +111,8 @@ namespace Arithmetica
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector4"/> class.
         /// </summary>
-        /// <param name="size">The size of the vector4.</param>
-        public Vector4(long size)
+        /// <param name="size">Defines number of vectors in the list.</param>
+        public Vector4(long size = 1)
         {
             variable = new ArithArray(size, 4);
         }
@@ -120,7 +120,7 @@ namespace Arithmetica
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector4"/> class.
         /// </summary>
-        /// <param name="size">The size.</param>
+        /// <param name="size">Defines number of vectors in the list.</param>
         /// <param name="dataType">the data type.</param>
         public Vector4(int size, DType dataType)
         {
@@ -137,6 +137,16 @@ namespace Arithmetica
         public Vector4(float X, float Y, float Z, float W) : this(1)
         {
             variable.LoadFrom(new float[] { X, Y, Z, W });
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// </summary>
+        /// <param name="vector3">The Vector3 which will have X, Y, Z components.</param>
+        /// <param name="W">The w value.</param>
+        public Vector4(Vector3 vector3, float W) : this(vector3.X, vector3.Y, vector3.Z, W)
+        {
+
         }
 
         /// <summary>
@@ -164,7 +174,7 @@ namespace Arithmetica
         /// <summary>
         /// Creates a Vector4 of specified size and all filled with 1
         /// </summary>
-        /// <param name="size">The size.</param>
+        /// <param name="size">Defines number of vectors in the list.</param>
         /// <returns></returns>
         public static Vector4 Ones(long size)
         {
@@ -176,7 +186,7 @@ namespace Arithmetica
         /// <summary>
         /// Creates a Vector3 of specified size and all filled with 0
         /// </summary>
-        /// <param name="size">The size.</param>
+        /// <param name="size">Defines number of vectors in the list.</param>
         /// <returns></returns>
         public static Vector4 Zeros(long size)
         {

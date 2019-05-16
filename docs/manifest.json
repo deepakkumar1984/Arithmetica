@@ -39,7 +39,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Extensions.ArrayImageExtensions.html",
-          "hash": "SzrS8glSrRk2E4GSlIRO4A=="
+          "hash": "Ta0lqFXbyKpmusN1WX8lYQ=="
         }
       },
       "is_incremental": false,
@@ -52,6 +52,45 @@
         ".html": {
           "relative_path": "api/Arithmetica.Extensions.html",
           "hash": "UW1BhbfMd+V5IhjvBOTljA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Geometry.Plane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Geometry.Plane.html",
+          "hash": "3cooiZ8hnt3C6SUBN2RJ+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Geometry.Quaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Geometry.Quaternion.html",
+          "hash": "TPd95uCE2VRS0Nik9yz2pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Geometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Geometry.html",
+          "hash": "fOBI2+daPIVbdHTqKrmZJQ=="
         }
       },
       "is_incremental": false,
@@ -71,30 +110,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Arithmetica.Plane.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Arithmetica.Plane.html",
-          "hash": "I2XFzzSvqRVGJdtv9m32wA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Arithmetica.Quaternion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Arithmetica.Quaternion.html",
-          "hash": "BNwDW6ECbQIoEj7Jx5E/QA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Sampler.yml",
       "output": {
         ".html": {
@@ -106,48 +121,60 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Vector.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector.html",
-          "hash": "9UxOtFdArzezGNoAIUWsIg=="
+          "hash": "2CL2hi1aiNNvNW54gI4Vlg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Vector2.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector2.html",
-          "hash": "MrjdhsuwAolHCURobaOU6g=="
+          "hash": "LlPnkx2LkfIGLT15m21Dlg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Vector3.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector3.html",
-          "hash": "voU/RZoUfRhN4y8YmThptg=="
+          "hash": "+lfIM3Zxmb7z+ALbETTQrQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Vector4.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector4.html",
-          "hash": "OmR4kOSiBUVO2OfkswT9dw=="
+          "hash": "WOkVmyKuuKY2HBko3r5Ang=="
         }
       },
       "is_incremental": false,
@@ -159,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.html",
-          "hash": "48plLC8lv1cVLpIqxPbS9Q=="
+          "hash": "G+R9BqsipYE2Sils+VtJNQ=="
         }
       },
       "is_incremental": false,
@@ -183,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "M6QEx0i7DwCjw+OGiJvKEw=="
+          "hash": "YO2IyG+nrhpbxIv7xLA8ow=="
         }
       },
       "is_incremental": false,
@@ -198,7 +225,7 @@
           "hash": "yelJB6l5i2ZkbC2Er0vWtw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -222,7 +249,7 @@
           "hash": "D/6Rro2ZY5LwCKGQLU5UXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -241,25 +268,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 14,
+          "skipped_file_count": 5
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -272,8 +297,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

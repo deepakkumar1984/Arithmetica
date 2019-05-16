@@ -1602,6 +1602,1326 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Extensions.ArrayImageExtensions.ToBitmap
   nameWithType: ArrayImageExtensions.ToBitmap
+- uid: Arithmetica.Geometry
+  name: Arithmetica.Geometry
+  href: api/Arithmetica.Geometry.html
+  commentId: N:Arithmetica.Geometry
+  fullName: Arithmetica.Geometry
+  nameWithType: Arithmetica.Geometry
+- uid: Arithmetica.Geometry.Plane
+  name: Plane
+  href: api/Arithmetica.Geometry.Plane.html
+  commentId: T:Arithmetica.Geometry.Plane
+  fullName: Arithmetica.Geometry.Plane
+  nameWithType: Plane
+- uid: Arithmetica.Geometry.Plane.#ctor(System.Int32,Arithmetica.DType)
+  name: Plane(Int32, DType)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane__ctor_System_Int32_Arithmetica_DType_
+  commentId: M:Arithmetica.Geometry.Plane.#ctor(System.Int32,Arithmetica.DType)
+  fullName: Arithmetica.Geometry.Plane.Plane(System.Int32, Arithmetica.DType)
+  nameWithType: Plane.Plane(Int32, DType)
+- uid: Arithmetica.Geometry.Plane.#ctor(System.Int64)
+  name: Plane(Int64)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane__ctor_System_Int64_
+  commentId: M:Arithmetica.Geometry.Plane.#ctor(System.Int64)
+  fullName: Arithmetica.Geometry.Plane.Plane(System.Int64)
+  nameWithType: Plane.Plane(Int64)
+- uid: Arithmetica.Geometry.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name: Plane(Single, Single, Single, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane__ctor_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Plane(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Plane.Plane(Single, Single, Single, Single)
+- uid: Arithmetica.Geometry.Plane.#ctor*
+  name: Plane
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane__ctor_
+  commentId: Overload:Arithmetica.Geometry.Plane.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Plane
+  nameWithType: Plane.Plane
+- uid: Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Add(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Add_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Add(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane,System.Single)
+  name: Add(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Add_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Add(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Add(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Add(System.Single,Arithmetica.Geometry.Plane)
+  name: Add(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Add_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Add(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Add(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Add(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.Add*
+  name: Add
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Add_
+  commentId: Overload:Arithmetica.Geometry.Plane.Add
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Add
+  nameWithType: Plane.Add
+- uid: Arithmetica.Geometry.Plane.Addmm(System.Single,Arithmetica.Geometry.Plane,System.Single,Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Addmm(Single, Plane, Single, Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Addmm_System_Single_Arithmetica_Geometry_Plane_System_Single_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Addmm(System.Single,Arithmetica.Geometry.Plane,System.Single,Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Addmm(System.Single, Arithmetica.Geometry.Plane, System.Single, Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Addmm(Single, Plane, Single, Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Addmm*
+  name: Addmm
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Addmm_
+  commentId: Overload:Arithmetica.Geometry.Plane.Addmm
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Addmm
+  nameWithType: Plane.Addmm
+- uid: Arithmetica.Geometry.Plane.ArithArray
+  name: ArithArray
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_ArithArray
+  commentId: P:Arithmetica.Geometry.Plane.ArithArray
+  fullName: Arithmetica.Geometry.Plane.ArithArray
+  nameWithType: Plane.ArithArray
+- uid: Arithmetica.Geometry.Plane.ArithArray*
+  name: ArithArray
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_ArithArray_
+  commentId: Overload:Arithmetica.Geometry.Plane.ArithArray
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.ArithArray
+  nameWithType: Plane.ArithArray
+- uid: Arithmetica.Geometry.Plane.D
+  name: D
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_D
+  commentId: P:Arithmetica.Geometry.Plane.D
+  fullName: Arithmetica.Geometry.Plane.D
+  nameWithType: Plane.D
+- uid: Arithmetica.Geometry.Plane.D*
+  name: D
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_D_
+  commentId: Overload:Arithmetica.Geometry.Plane.D
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.D
+  nameWithType: Plane.D
+- uid: Arithmetica.Geometry.Plane.Data
+  name: Data
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Data
+  commentId: P:Arithmetica.Geometry.Plane.Data
+  fullName: Arithmetica.Geometry.Plane.Data
+  nameWithType: Plane.Data
+- uid: Arithmetica.Geometry.Plane.Data*
+  name: Data
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Data_
+  commentId: Overload:Arithmetica.Geometry.Plane.Data
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Data
+  nameWithType: Plane.Data
+- uid: Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Div(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Div_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Div(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane,System.Single)
+  name: Div(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Div_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Div(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Div(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Div(System.Single,Arithmetica.Geometry.Plane)
+  name: Div(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Div_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Div(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Div(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Div(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.Div*
+  name: Div
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Div_
+  commentId: Overload:Arithmetica.Geometry.Plane.Div
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Div
+  nameWithType: Plane.Div
+- uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Dot(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Dot(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Matrix)
+  name: Dot(Plane, Matrix)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Matrix_
+  commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Matrix)
+  fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Matrix)
+  nameWithType: Plane.Dot(Plane, Matrix)
+- uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Vector4)
+  name: Dot(Plane, Vector4)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Vector4_
+  commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Vector4)
+  fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Vector4)
+  nameWithType: Plane.Dot(Plane, Vector4)
+- uid: Arithmetica.Geometry.Plane.Dot*
+  name: Dot
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_
+  commentId: Overload:Arithmetica.Geometry.Plane.Dot
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Dot
+  nameWithType: Plane.Dot
+- uid: Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: EqualTo(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_EqualTo_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.EqualTo(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane,System.Single)
+  name: EqualTo(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_EqualTo_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.EqualTo(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.EqualTo(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.EqualTo*
+  name: EqualTo
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_EqualTo_
+  commentId: Overload:Arithmetica.Geometry.Plane.EqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.EqualTo
+  nameWithType: Plane.EqualTo
+- uid: Arithmetica.Geometry.Plane.Fill(System.Single)
+  name: Fill(Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Fill_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Fill(System.Single)
+  fullName: Arithmetica.Geometry.Plane.Fill(System.Single)
+  nameWithType: Plane.Fill(Single)
+- uid: Arithmetica.Geometry.Plane.Fill*
+  name: Fill
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Fill_
+  commentId: Overload:Arithmetica.Geometry.Plane.Fill
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Fill
+  nameWithType: Plane.Fill
+- uid: Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: GreaterEqual(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterEqual_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.GreaterEqual(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane,System.Single)
+  name: GreaterEqual(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterEqual_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.GreaterEqual(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.GreaterEqual(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.GreaterEqual*
+  name: GreaterEqual
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterEqual_
+  commentId: Overload:Arithmetica.Geometry.Plane.GreaterEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.GreaterEqual
+  nameWithType: Plane.GreaterEqual
+- uid: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: GreaterThan(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterThan_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.GreaterThan(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane,System.Single)
+  name: GreaterThan(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterThan_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.GreaterThan(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_GreaterThan_
+  commentId: Overload:Arithmetica.Geometry.Plane.GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.GreaterThan
+  nameWithType: Plane.GreaterThan
+- uid: Arithmetica.Geometry.Plane.Item(System.Int64)
+  name: Item[Int64]
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Item_System_Int64_
+  commentId: P:Arithmetica.Geometry.Plane.Item(System.Int64)
+  name.vb: Item(Int64)
+  fullName: Arithmetica.Geometry.Plane.Item[System.Int64]
+  fullName.vb: Arithmetica.Geometry.Plane.Item(System.Int64)
+  nameWithType: Plane.Item[Int64]
+  nameWithType.vb: Plane.Item(Int64)
+- uid: Arithmetica.Geometry.Plane.Item*
+  name: Item
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Item_
+  commentId: Overload:Arithmetica.Geometry.Plane.Item
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Item
+  nameWithType: Plane.Item
+- uid: Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: LessEqual(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessEqual_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.LessEqual(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane,System.Single)
+  name: LessEqual(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessEqual_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.LessEqual(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.LessEqual(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.LessEqual*
+  name: LessEqual
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessEqual_
+  commentId: Overload:Arithmetica.Geometry.Plane.LessEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.LessEqual
+  nameWithType: Plane.LessEqual
+- uid: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: LessThan(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessThan_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.LessThan(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane,System.Single)
+  name: LessThan(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessThan_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.LessThan(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.LessThan*
+  name: LessThan
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LessThan_
+  commentId: Overload:Arithmetica.Geometry.Plane.LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.LessThan
+  nameWithType: Plane.LessThan
+- uid: Arithmetica.Geometry.Plane.LoadArray(System.Single[])
+  name: LoadArray(Single[])
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LoadArray_System_Single___
+  commentId: M:Arithmetica.Geometry.Plane.LoadArray(System.Single[])
+  name.vb: LoadArray(Single())
+  fullName: Arithmetica.Geometry.Plane.LoadArray(System.Single[])
+  fullName.vb: Arithmetica.Geometry.Plane.LoadArray(System.Single())
+  nameWithType: Plane.LoadArray(Single[])
+  nameWithType.vb: Plane.LoadArray(Single())
+- uid: Arithmetica.Geometry.Plane.LoadArray*
+  name: LoadArray
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_LoadArray_
+  commentId: Overload:Arithmetica.Geometry.Plane.LoadArray
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.LoadArray
+  nameWithType: Plane.LoadArray
+- uid: Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Maximum(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Maximum_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Maximum(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane,System.Single)
+  name: Maximum(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Maximum_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Maximum(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Maximum(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Maximum*
+  name: Maximum
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Maximum_
+  commentId: Overload:Arithmetica.Geometry.Plane.Maximum
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Maximum
+  nameWithType: Plane.Maximum
+- uid: Arithmetica.Geometry.Plane.Mod(Arithmetica.Geometry.Plane,System.Single)
+  name: Mod(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mod_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Mod(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Mod(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Mod(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Mod*
+  name: Mod
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mod_
+  commentId: Overload:Arithmetica.Geometry.Plane.Mod
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Mod
+  nameWithType: Plane.Mod
+- uid: Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Mul(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mul_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Mul(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane,System.Single)
+  name: Mul(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mul_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Mul(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Mul(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Mul(System.Single,Arithmetica.Geometry.Plane)
+  name: Mul(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mul_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Mul(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Mul(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Mul(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.Mul*
+  name: Mul
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Mul_
+  commentId: Overload:Arithmetica.Geometry.Plane.Mul
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Mul
+  nameWithType: Plane.Mul
+- uid: Arithmetica.Geometry.Plane.Neg(Arithmetica.Geometry.Plane)
+  name: Neg(Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Neg_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Neg(Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Neg(Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Neg(Plane)
+- uid: Arithmetica.Geometry.Plane.Neg*
+  name: Neg
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Neg_
+  commentId: Overload:Arithmetica.Geometry.Plane.Neg
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Neg
+  nameWithType: Plane.Neg
+- uid: Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: NotEqualTo(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_NotEqualTo_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.NotEqualTo(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane,System.Single)
+  name: NotEqualTo(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_NotEqualTo_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.NotEqualTo(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.NotEqualTo(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.NotEqualTo*
+  name: NotEqualTo
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_NotEqualTo_
+  commentId: Overload:Arithmetica.Geometry.Plane.NotEqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.NotEqualTo
+  nameWithType: Plane.NotEqualTo
+- uid: Arithmetica.Geometry.Plane.Ones(System.Int64)
+  name: Ones(Int64)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Ones_System_Int64_
+  commentId: M:Arithmetica.Geometry.Plane.Ones(System.Int64)
+  fullName: Arithmetica.Geometry.Plane.Ones(System.Int64)
+  nameWithType: Plane.Ones(Int64)
+- uid: Arithmetica.Geometry.Plane.Ones*
+  name: Ones
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Ones_
+  commentId: Overload:Arithmetica.Geometry.Plane.Ones
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Ones
+  nameWithType: Plane.Ones
+- uid: Arithmetica.Geometry.Plane.op_Addition(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Addition(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Addition_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Addition(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Addition(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Addition(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Addition(Arithmetica.Geometry.Plane,System.Single)
+  name: Addition(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Addition_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_Addition(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Addition(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Addition(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_Addition(System.Single,Arithmetica.Geometry.Plane)
+  name: Addition(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Addition_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Addition(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Addition(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Addition(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Addition*
+  name: Addition
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Addition_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_Addition
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Addition
+  nameWithType: Plane.Addition
+- uid: Arithmetica.Geometry.Plane.op_Division(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Division(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Division_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Division(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Division(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Division(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Division(Arithmetica.Geometry.Plane,System.Single)
+  name: Division(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Division_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_Division(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Division(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Division(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_Division(System.Single,Arithmetica.Geometry.Plane)
+  name: Division(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Division_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Division(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Division(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Division(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Division*
+  name: Division
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Division_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_Division
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Division
+  nameWithType: Plane.Division
+- uid: Arithmetica.Geometry.Plane.op_GreaterThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: GreaterThan(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThan_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_GreaterThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.GreaterThan(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_GreaterThan(Arithmetica.Geometry.Plane,System.Single)
+  name: GreaterThan(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThan_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_GreaterThan(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.GreaterThan(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.GreaterThan(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThan_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.GreaterThan
+  nameWithType: Plane.GreaterThan
+- uid: Arithmetica.Geometry.Plane.op_GreaterThanOrEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: GreaterThanOrEqual(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThanOrEqual_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_GreaterThanOrEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.GreaterThanOrEqual(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.GreaterThanOrEqual(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_GreaterThanOrEqual(Arithmetica.Geometry.Plane,System.Single)
+  name: GreaterThanOrEqual(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThanOrEqual_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_GreaterThanOrEqual(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.GreaterThanOrEqual(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.GreaterThanOrEqual(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_GreaterThanOrEqual_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.GreaterThanOrEqual
+  nameWithType: Plane.GreaterThanOrEqual
+- uid: Arithmetica.Geometry.Plane.op_LessThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: LessThan(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThan_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_LessThan(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.LessThan(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_LessThan(Arithmetica.Geometry.Plane,System.Single)
+  name: LessThan(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThan_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_LessThan(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.LessThan(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.LessThan(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_LessThan*
+  name: LessThan
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThan_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.LessThan
+  nameWithType: Plane.LessThan
+- uid: Arithmetica.Geometry.Plane.op_LessThanOrEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: LessThanOrEqual(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThanOrEqual_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_LessThanOrEqual(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.LessThanOrEqual(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.LessThanOrEqual(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_LessThanOrEqual(Arithmetica.Geometry.Plane,System.Single)
+  name: LessThanOrEqual(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThanOrEqual_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_LessThanOrEqual(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.LessThanOrEqual(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.LessThanOrEqual(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_LessThanOrEqual_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.LessThanOrEqual
+  nameWithType: Plane.LessThanOrEqual
+- uid: Arithmetica.Geometry.Plane.op_Multiply(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Multiply(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Multiply_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Multiply(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Multiply(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Multiply(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Multiply(Arithmetica.Geometry.Plane,System.Single)
+  name: Multiply(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Multiply_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_Multiply(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Multiply(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Multiply(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_Multiply(System.Single,Arithmetica.Geometry.Plane)
+  name: Multiply(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Multiply_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Multiply(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Multiply(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Multiply(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Multiply*
+  name: Multiply
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Multiply_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_Multiply
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Multiply
+  nameWithType: Plane.Multiply
+- uid: Arithmetica.Geometry.Plane.op_Subtraction(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Subtraction(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Subtraction_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Subtraction(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Subtraction(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Subtraction(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Subtraction(Arithmetica.Geometry.Plane,System.Single)
+  name: Subtraction(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Subtraction_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.op_Subtraction(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Subtraction(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Subtraction(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.op_Subtraction(System.Single,Arithmetica.Geometry.Plane)
+  name: Subtraction(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Subtraction_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.op_Subtraction(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Subtraction(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Subtraction(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.op_Subtraction*
+  name: Subtraction
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_op_Subtraction_
+  commentId: Overload:Arithmetica.Geometry.Plane.op_Subtraction
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Subtraction
+  nameWithType: Plane.Subtraction
+- uid: Arithmetica.Geometry.Plane.Print
+  name: Print()
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Print
+  commentId: M:Arithmetica.Geometry.Plane.Print
+  fullName: Arithmetica.Geometry.Plane.Print()
+  nameWithType: Plane.Print()
+- uid: Arithmetica.Geometry.Plane.Print*
+  name: Print
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Print_
+  commentId: Overload:Arithmetica.Geometry.Plane.Print
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Print
+  nameWithType: Plane.Print
+- uid: Arithmetica.Geometry.Plane.Size
+  name: Size
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Size
+  commentId: P:Arithmetica.Geometry.Plane.Size
+  fullName: Arithmetica.Geometry.Plane.Size
+  nameWithType: Plane.Size
+- uid: Arithmetica.Geometry.Plane.Size*
+  name: Size
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Size_
+  commentId: Overload:Arithmetica.Geometry.Plane.Size
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Size
+  nameWithType: Plane.Size
+- uid: Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  name: Sub(Plane, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Sub_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Sub(Plane, Plane)
+- uid: Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane,System.Single)
+  name: Sub(Plane, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Sub_Arithmetica_Geometry_Plane_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Sub(Arithmetica.Geometry.Plane, System.Single)
+  nameWithType: Plane.Sub(Plane, Single)
+- uid: Arithmetica.Geometry.Plane.Sub(System.Single,Arithmetica.Geometry.Plane)
+  name: Sub(Single, Plane)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Sub_System_Single_Arithmetica_Geometry_Plane_
+  commentId: M:Arithmetica.Geometry.Plane.Sub(System.Single,Arithmetica.Geometry.Plane)
+  fullName: Arithmetica.Geometry.Plane.Sub(System.Single, Arithmetica.Geometry.Plane)
+  nameWithType: Plane.Sub(Single, Plane)
+- uid: Arithmetica.Geometry.Plane.Sub*
+  name: Sub
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Sub_
+  commentId: Overload:Arithmetica.Geometry.Plane.Sub
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Sub
+  nameWithType: Plane.Sub
+- uid: Arithmetica.Geometry.Plane.Unit(System.Single,System.Single,System.Single,System.Single)
+  name: Unit(Single, Single, Single, Single)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Unit_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Geometry.Plane.Unit(System.Single,System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Geometry.Plane.Unit(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Plane.Unit(Single, Single, Single, Single)
+- uid: Arithmetica.Geometry.Plane.Unit*
+  name: Unit
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Unit_
+  commentId: Overload:Arithmetica.Geometry.Plane.Unit
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Unit
+  nameWithType: Plane.Unit
+- uid: Arithmetica.Geometry.Plane.X
+  name: X
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_X
+  commentId: P:Arithmetica.Geometry.Plane.X
+  fullName: Arithmetica.Geometry.Plane.X
+  nameWithType: Plane.X
+- uid: Arithmetica.Geometry.Plane.X*
+  name: X
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_X_
+  commentId: Overload:Arithmetica.Geometry.Plane.X
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.X
+  nameWithType: Plane.X
+- uid: Arithmetica.Geometry.Plane.Y
+  name: Y
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Y
+  commentId: P:Arithmetica.Geometry.Plane.Y
+  fullName: Arithmetica.Geometry.Plane.Y
+  nameWithType: Plane.Y
+- uid: Arithmetica.Geometry.Plane.Y*
+  name: Y
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Y_
+  commentId: Overload:Arithmetica.Geometry.Plane.Y
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Y
+  nameWithType: Plane.Y
+- uid: Arithmetica.Geometry.Plane.Z
+  name: Z
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Z
+  commentId: P:Arithmetica.Geometry.Plane.Z
+  fullName: Arithmetica.Geometry.Plane.Z
+  nameWithType: Plane.Z
+- uid: Arithmetica.Geometry.Plane.Z*
+  name: Z
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Z_
+  commentId: Overload:Arithmetica.Geometry.Plane.Z
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Z
+  nameWithType: Plane.Z
+- uid: Arithmetica.Geometry.Plane.Zeros(System.Int64)
+  name: Zeros(Int64)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Zeros_System_Int64_
+  commentId: M:Arithmetica.Geometry.Plane.Zeros(System.Int64)
+  fullName: Arithmetica.Geometry.Plane.Zeros(System.Int64)
+  nameWithType: Plane.Zeros(Int64)
+- uid: Arithmetica.Geometry.Plane.Zeros*
+  name: Zeros
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Zeros_
+  commentId: Overload:Arithmetica.Geometry.Plane.Zeros
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Plane.Zeros
+  nameWithType: Plane.Zeros
+- uid: Arithmetica.Geometry.Quaternion
+  name: Quaternion
+  href: api/Arithmetica.Geometry.Quaternion.html
+  commentId: T:Arithmetica.Geometry.Quaternion
+  fullName: Arithmetica.Geometry.Quaternion
+  nameWithType: Quaternion
+- uid: Arithmetica.Geometry.Quaternion.#ctor(System.Int32,Arithmetica.DType)
+  name: Quaternion(Int32, DType)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion__ctor_System_Int32_Arithmetica_DType_
+  commentId: M:Arithmetica.Geometry.Quaternion.#ctor(System.Int32,Arithmetica.DType)
+  fullName: Arithmetica.Geometry.Quaternion.Quaternion(System.Int32, Arithmetica.DType)
+  nameWithType: Quaternion.Quaternion(Int32, DType)
+- uid: Arithmetica.Geometry.Quaternion.#ctor(System.Int64)
+  name: Quaternion(Int64)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion__ctor_System_Int64_
+  commentId: M:Arithmetica.Geometry.Quaternion.#ctor(System.Int64)
+  fullName: Arithmetica.Geometry.Quaternion.Quaternion(System.Int64)
+  nameWithType: Quaternion.Quaternion(Int64)
+- uid: Arithmetica.Geometry.Quaternion.#ctor*
+  name: Quaternion
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion__ctor_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Quaternion
+  nameWithType: Quaternion.Quaternion
+- uid: Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Add(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Add_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Add(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Add(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Add_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Add(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Add(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Add(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Add(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Add_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Add(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Add(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Add(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Add*
+  name: Add
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Add_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Add
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Add
+  nameWithType: Quaternion.Add
+- uid: Arithmetica.Geometry.Quaternion.Addmm(System.Single,Arithmetica.Geometry.Quaternion,System.Single,Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Addmm(Single, Quaternion, Single, Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Addmm_System_Single_Arithmetica_Geometry_Quaternion_System_Single_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Addmm(System.Single,Arithmetica.Geometry.Quaternion,System.Single,Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Addmm(System.Single, Arithmetica.Geometry.Quaternion, System.Single, Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Addmm(Single, Quaternion, Single, Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Addmm*
+  name: Addmm
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Addmm_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Addmm
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Addmm
+  nameWithType: Quaternion.Addmm
+- uid: Arithmetica.Geometry.Quaternion.ArithArray
+  name: ArithArray
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_ArithArray
+  commentId: P:Arithmetica.Geometry.Quaternion.ArithArray
+  fullName: Arithmetica.Geometry.Quaternion.ArithArray
+  nameWithType: Quaternion.ArithArray
+- uid: Arithmetica.Geometry.Quaternion.ArithArray*
+  name: ArithArray
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_ArithArray_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.ArithArray
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.ArithArray
+  nameWithType: Quaternion.ArithArray
+- uid: Arithmetica.Geometry.Quaternion.Data
+  name: Data
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Data
+  commentId: P:Arithmetica.Geometry.Quaternion.Data
+  fullName: Arithmetica.Geometry.Quaternion.Data
+  nameWithType: Quaternion.Data
+- uid: Arithmetica.Geometry.Quaternion.Data*
+  name: Data
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Data_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Data
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Data
+  nameWithType: Quaternion.Data
+- uid: Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Div(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Div_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Div(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Div(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Div_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Div(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Div(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Div(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Div(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Div_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Div(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Div(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Div(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Div*
+  name: Div
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Div_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Div
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Div
+  nameWithType: Quaternion.Div
+- uid: Arithmetica.Geometry.Quaternion.Dot(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Dot(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Dot_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Dot(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Dot(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Dot(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Dot*
+  name: Dot
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Dot_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Dot
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Dot
+  nameWithType: Quaternion.Dot
+- uid: Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: EqualTo(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_EqualTo_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.EqualTo(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion,System.Single)
+  name: EqualTo(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_EqualTo_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.EqualTo(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.EqualTo(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.EqualTo*
+  name: EqualTo
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_EqualTo_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.EqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.EqualTo
+  nameWithType: Quaternion.EqualTo
+- uid: Arithmetica.Geometry.Quaternion.Fill(System.Single)
+  name: Fill(Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Fill_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Fill(System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Fill(System.Single)
+  nameWithType: Quaternion.Fill(Single)
+- uid: Arithmetica.Geometry.Quaternion.Fill*
+  name: Fill
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Fill_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Fill
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Fill
+  nameWithType: Quaternion.Fill
+- uid: Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: GreaterEqual(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterEqual_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.GreaterEqual(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  name: GreaterEqual(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterEqual_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterEqual(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.GreaterEqual(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.GreaterEqual*
+  name: GreaterEqual
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterEqual_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.GreaterEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.GreaterEqual
+  nameWithType: Quaternion.GreaterEqual
+- uid: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: GreaterThan(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterThan_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.GreaterThan(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion,System.Single)
+  name: GreaterThan(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterThan_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.GreaterThan(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_GreaterThan_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan
+  nameWithType: Quaternion.GreaterThan
+- uid: Arithmetica.Geometry.Quaternion.Item(System.Int64)
+  name: Item[Int64]
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Item_System_Int64_
+  commentId: P:Arithmetica.Geometry.Quaternion.Item(System.Int64)
+  name.vb: Item(Int64)
+  fullName: Arithmetica.Geometry.Quaternion.Item[System.Int64]
+  fullName.vb: Arithmetica.Geometry.Quaternion.Item(System.Int64)
+  nameWithType: Quaternion.Item[Int64]
+  nameWithType.vb: Quaternion.Item(Int64)
+- uid: Arithmetica.Geometry.Quaternion.Item*
+  name: Item
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Item_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Item
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Item
+  nameWithType: Quaternion.Item
+- uid: Arithmetica.Geometry.Quaternion.Length
+  name: Length
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Length
+  commentId: P:Arithmetica.Geometry.Quaternion.Length
+  fullName: Arithmetica.Geometry.Quaternion.Length
+  nameWithType: Quaternion.Length
+- uid: Arithmetica.Geometry.Quaternion.Length*
+  name: Length
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Length_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Length
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Length
+  nameWithType: Quaternion.Length
+- uid: Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: LessEqual(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessEqual_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.LessEqual(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  name: LessEqual(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessEqual_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.LessEqual(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.LessEqual(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.LessEqual*
+  name: LessEqual
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessEqual_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.LessEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.LessEqual
+  nameWithType: Quaternion.LessEqual
+- uid: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: LessThan(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessThan_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.LessThan(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion,System.Single)
+  name: LessThan(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessThan_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.LessThan(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.LessThan*
+  name: LessThan
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LessThan_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.LessThan
+  nameWithType: Quaternion.LessThan
+- uid: Arithmetica.Geometry.Quaternion.LoadArray(System.Single[])
+  name: LoadArray(Single[])
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LoadArray_System_Single___
+  commentId: M:Arithmetica.Geometry.Quaternion.LoadArray(System.Single[])
+  name.vb: LoadArray(Single())
+  fullName: Arithmetica.Geometry.Quaternion.LoadArray(System.Single[])
+  fullName.vb: Arithmetica.Geometry.Quaternion.LoadArray(System.Single())
+  nameWithType: Quaternion.LoadArray(Single[])
+  nameWithType.vb: Quaternion.LoadArray(Single())
+- uid: Arithmetica.Geometry.Quaternion.LoadArray*
+  name: LoadArray
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_LoadArray_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.LoadArray
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.LoadArray
+  nameWithType: Quaternion.LoadArray
+- uid: Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Maximum(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Maximum_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Maximum(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Maximum(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Maximum_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Maximum(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Maximum(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Maximum*
+  name: Maximum
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Maximum_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Maximum
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Maximum
+  nameWithType: Quaternion.Maximum
+- uid: Arithmetica.Geometry.Quaternion.Mod(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Mod(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mod_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Mod(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Mod(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Mod(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Mod*
+  name: Mod
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mod_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Mod
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Mod
+  nameWithType: Quaternion.Mod
+- uid: Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Mul(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mul_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Mul(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Mul(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mul_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Mul(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Mul(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Mul(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Mul(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mul_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Mul(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Mul(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Mul(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Mul*
+  name: Mul
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Mul_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Mul
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Mul
+  nameWithType: Quaternion.Mul
+- uid: Arithmetica.Geometry.Quaternion.Neg(Arithmetica.Geometry.Quaternion)
+  name: Neg(Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Neg_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Neg(Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Neg(Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Neg(Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Neg*
+  name: Neg
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Neg_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Neg
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Neg
+  nameWithType: Quaternion.Neg
+- uid: Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: NotEqualTo(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_NotEqualTo_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.NotEqualTo(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion,System.Single)
+  name: NotEqualTo(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_NotEqualTo_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.NotEqualTo(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.NotEqualTo(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.NotEqualTo*
+  name: NotEqualTo
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_NotEqualTo_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.NotEqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.NotEqualTo
+  nameWithType: Quaternion.NotEqualTo
+- uid: Arithmetica.Geometry.Quaternion.Ones(System.Int64)
+  name: Ones(Int64)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Ones_System_Int64_
+  commentId: M:Arithmetica.Geometry.Quaternion.Ones(System.Int64)
+  fullName: Arithmetica.Geometry.Quaternion.Ones(System.Int64)
+  nameWithType: Quaternion.Ones(Int64)
+- uid: Arithmetica.Geometry.Quaternion.Ones*
+  name: Ones
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Ones_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Ones
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Ones
+  nameWithType: Quaternion.Ones
+- uid: Arithmetica.Geometry.Quaternion.op_Addition(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Addition(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Addition_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Addition(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Addition(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Addition(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Addition(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Addition(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Addition_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Addition(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Addition(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Addition(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_Addition(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Addition(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Addition_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Addition(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Addition(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Addition(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Addition*
+  name: Addition
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Addition_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_Addition
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Addition
+  nameWithType: Quaternion.Addition
+- uid: Arithmetica.Geometry.Quaternion.op_Division(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Division(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Division_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Division(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Division(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Division(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Division(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Division(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Division_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Division(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Division(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Division(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_Division(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Division(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Division_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Division(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Division(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Division(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Division*
+  name: Division
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Division_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_Division
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Division
+  nameWithType: Quaternion.Division
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: GreaterThan(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThan_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_GreaterThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.GreaterThan(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThan(Arithmetica.Geometry.Quaternion,System.Single)
+  name: GreaterThan(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThan_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_GreaterThan(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.GreaterThan(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThan_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThan
+  nameWithType: Quaternion.GreaterThan
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: GreaterThanOrEqual(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThanOrEqual_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThanOrEqual(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.GreaterThanOrEqual(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  name: GreaterThanOrEqual(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThanOrEqual_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThanOrEqual(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.GreaterThanOrEqual(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_GreaterThanOrEqual_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.GreaterThanOrEqual
+  nameWithType: Quaternion.GreaterThanOrEqual
+- uid: Arithmetica.Geometry.Quaternion.op_LessThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: LessThan(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThan_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_LessThan(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.LessThan(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_LessThan(Arithmetica.Geometry.Quaternion,System.Single)
+  name: LessThan(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThan_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_LessThan(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.LessThan(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.LessThan(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_LessThan*
+  name: LessThan
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThan_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.LessThan
+  nameWithType: Quaternion.LessThan
+- uid: Arithmetica.Geometry.Quaternion.op_LessThanOrEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: LessThanOrEqual(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThanOrEqual_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_LessThanOrEqual(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.LessThanOrEqual(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.LessThanOrEqual(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_LessThanOrEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  name: LessThanOrEqual(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThanOrEqual_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_LessThanOrEqual(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.LessThanOrEqual(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.LessThanOrEqual(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_LessThanOrEqual_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.LessThanOrEqual
+  nameWithType: Quaternion.LessThanOrEqual
+- uid: Arithmetica.Geometry.Quaternion.op_Multiply(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Multiply(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Multiply_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Multiply(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Multiply(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Multiply(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Multiply(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Multiply(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Multiply_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Multiply(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Multiply(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Multiply(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_Multiply(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Multiply(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Multiply_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Multiply(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Multiply(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Multiply(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Multiply*
+  name: Multiply
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Multiply_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_Multiply
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Multiply
+  nameWithType: Quaternion.Multiply
+- uid: Arithmetica.Geometry.Quaternion.op_Subtraction(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Subtraction(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Subtraction_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Subtraction(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Subtraction(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Subtraction(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Subtraction(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Subtraction(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Subtraction_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Subtraction(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Subtraction(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Subtraction(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.op_Subtraction(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Subtraction(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Subtraction_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.op_Subtraction(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Subtraction(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Subtraction(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.op_Subtraction*
+  name: Subtraction
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_op_Subtraction_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.op_Subtraction
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Subtraction
+  nameWithType: Quaternion.Subtraction
+- uid: Arithmetica.Geometry.Quaternion.Print
+  name: Print()
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Print
+  commentId: M:Arithmetica.Geometry.Quaternion.Print
+  fullName: Arithmetica.Geometry.Quaternion.Print()
+  nameWithType: Quaternion.Print()
+- uid: Arithmetica.Geometry.Quaternion.Print*
+  name: Print
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Print_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Print
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Print
+  nameWithType: Quaternion.Print
+- uid: Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  name: Sub(Quaternion, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Sub_Arithmetica_Geometry_Quaternion_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Sub(Quaternion, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion,System.Single)
+  name: Sub(Quaternion, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Sub_Arithmetica_Geometry_Quaternion_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Sub(Arithmetica.Geometry.Quaternion, System.Single)
+  nameWithType: Quaternion.Sub(Quaternion, Single)
+- uid: Arithmetica.Geometry.Quaternion.Sub(System.Single,Arithmetica.Geometry.Quaternion)
+  name: Sub(Single, Quaternion)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Sub_System_Single_Arithmetica_Geometry_Quaternion_
+  commentId: M:Arithmetica.Geometry.Quaternion.Sub(System.Single,Arithmetica.Geometry.Quaternion)
+  fullName: Arithmetica.Geometry.Quaternion.Sub(System.Single, Arithmetica.Geometry.Quaternion)
+  nameWithType: Quaternion.Sub(Single, Quaternion)
+- uid: Arithmetica.Geometry.Quaternion.Sub*
+  name: Sub
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Sub_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Sub
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Sub
+  nameWithType: Quaternion.Sub
+- uid: Arithmetica.Geometry.Quaternion.Unit(System.Single,System.Single,System.Single,System.Single)
+  name: Unit(Single, Single, Single, Single)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Unit_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Geometry.Quaternion.Unit(System.Single,System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Geometry.Quaternion.Unit(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Quaternion.Unit(Single, Single, Single, Single)
+- uid: Arithmetica.Geometry.Quaternion.Unit*
+  name: Unit
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Unit_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Unit
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Unit
+  nameWithType: Quaternion.Unit
+- uid: Arithmetica.Geometry.Quaternion.Zeros(System.Int64)
+  name: Zeros(Int64)
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Zeros_System_Int64_
+  commentId: M:Arithmetica.Geometry.Quaternion.Zeros(System.Int64)
+  fullName: Arithmetica.Geometry.Quaternion.Zeros(System.Int64)
+  nameWithType: Quaternion.Zeros(Int64)
+- uid: Arithmetica.Geometry.Quaternion.Zeros*
+  name: Zeros
+  href: api/Arithmetica.Geometry.Quaternion.html#Arithmetica_Geometry_Quaternion_Zeros_
+  commentId: Overload:Arithmetica.Geometry.Quaternion.Zeros
+  isSpec: "True"
+  fullName: Arithmetica.Geometry.Quaternion.Zeros
+  nameWithType: Quaternion.Zeros
 - uid: Arithmetica.Matrix
   name: Matrix
   href: api/Arithmetica.Matrix.html
@@ -2811,1250 +4131,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Matrix.Zeros
   nameWithType: Matrix.Zeros
-- uid: Arithmetica.Plane
-  name: Plane
-  href: api/Arithmetica.Plane.html
-  commentId: T:Arithmetica.Plane
-  fullName: Arithmetica.Plane
-  nameWithType: Plane
-- uid: Arithmetica.Plane.#ctor(System.Int32,Arithmetica.DType)
-  name: Plane(Int32, DType)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane__ctor_System_Int32_Arithmetica_DType_
-  commentId: M:Arithmetica.Plane.#ctor(System.Int32,Arithmetica.DType)
-  fullName: Arithmetica.Plane.Plane(System.Int32, Arithmetica.DType)
-  nameWithType: Plane.Plane(Int32, DType)
-- uid: Arithmetica.Plane.#ctor(System.Int64)
-  name: Plane(Int64)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane__ctor_System_Int64_
-  commentId: M:Arithmetica.Plane.#ctor(System.Int64)
-  fullName: Arithmetica.Plane.Plane(System.Int64)
-  nameWithType: Plane.Plane(Int64)
-- uid: Arithmetica.Plane.#ctor*
-  name: Plane
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane__ctor_
-  commentId: Overload:Arithmetica.Plane.#ctor
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Plane
-  nameWithType: Plane.Plane
-- uid: Arithmetica.Plane.Add(Arithmetica.Plane,Arithmetica.Plane)
-  name: Add(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Add_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Add(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Add(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Add(Plane, Plane)
-- uid: Arithmetica.Plane.Add(Arithmetica.Plane,System.Single)
-  name: Add(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Add_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Add(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Add(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Add(Plane, Single)
-- uid: Arithmetica.Plane.Add(System.Single,Arithmetica.Plane)
-  name: Add(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Add_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Add(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Add(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Add(Single, Plane)
-- uid: Arithmetica.Plane.Add*
-  name: Add
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Add_
-  commentId: Overload:Arithmetica.Plane.Add
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Add
-  nameWithType: Plane.Add
-- uid: Arithmetica.Plane.Addmm(System.Single,Arithmetica.Plane,System.Single,Arithmetica.Plane,Arithmetica.Plane)
-  name: Addmm(Single, Plane, Single, Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Addmm_System_Single_Arithmetica_Plane_System_Single_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Addmm(System.Single,Arithmetica.Plane,System.Single,Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Addmm(System.Single, Arithmetica.Plane, System.Single, Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Addmm(Single, Plane, Single, Plane, Plane)
-- uid: Arithmetica.Plane.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Addmm_
-  commentId: Overload:Arithmetica.Plane.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Addmm
-  nameWithType: Plane.Addmm
-- uid: Arithmetica.Plane.ArithArray
-  name: ArithArray
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_ArithArray
-  commentId: P:Arithmetica.Plane.ArithArray
-  fullName: Arithmetica.Plane.ArithArray
-  nameWithType: Plane.ArithArray
-- uid: Arithmetica.Plane.ArithArray*
-  name: ArithArray
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_ArithArray_
-  commentId: Overload:Arithmetica.Plane.ArithArray
-  isSpec: "True"
-  fullName: Arithmetica.Plane.ArithArray
-  nameWithType: Plane.ArithArray
-- uid: Arithmetica.Plane.Data
-  name: Data
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Data
-  commentId: P:Arithmetica.Plane.Data
-  fullName: Arithmetica.Plane.Data
-  nameWithType: Plane.Data
-- uid: Arithmetica.Plane.Data*
-  name: Data
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Data_
-  commentId: Overload:Arithmetica.Plane.Data
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Data
-  nameWithType: Plane.Data
-- uid: Arithmetica.Plane.Div(Arithmetica.Plane,Arithmetica.Plane)
-  name: Div(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Div_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Div(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Div(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Div(Plane, Plane)
-- uid: Arithmetica.Plane.Div(Arithmetica.Plane,System.Single)
-  name: Div(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Div_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Div(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Div(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Div(Plane, Single)
-- uid: Arithmetica.Plane.Div(System.Single,Arithmetica.Plane)
-  name: Div(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Div_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Div(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Div(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Div(Single, Plane)
-- uid: Arithmetica.Plane.Div*
-  name: Div
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Div_
-  commentId: Overload:Arithmetica.Plane.Div
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Div
-  nameWithType: Plane.Div
-- uid: Arithmetica.Plane.Dot(Arithmetica.Plane,Arithmetica.Plane)
-  name: Dot(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Dot_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Dot(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Dot(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Dot(Plane, Plane)
-- uid: Arithmetica.Plane.Dot*
-  name: Dot
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Dot_
-  commentId: Overload:Arithmetica.Plane.Dot
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Dot
-  nameWithType: Plane.Dot
-- uid: Arithmetica.Plane.EqualTo(Arithmetica.Plane,Arithmetica.Plane)
-  name: EqualTo(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_EqualTo_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.EqualTo(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.EqualTo(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.EqualTo(Plane, Plane)
-- uid: Arithmetica.Plane.EqualTo(Arithmetica.Plane,System.Single)
-  name: EqualTo(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_EqualTo_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.EqualTo(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.EqualTo(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.EqualTo(Plane, Single)
-- uid: Arithmetica.Plane.EqualTo*
-  name: EqualTo
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_EqualTo_
-  commentId: Overload:Arithmetica.Plane.EqualTo
-  isSpec: "True"
-  fullName: Arithmetica.Plane.EqualTo
-  nameWithType: Plane.EqualTo
-- uid: Arithmetica.Plane.Fill(System.Single)
-  name: Fill(Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Fill_System_Single_
-  commentId: M:Arithmetica.Plane.Fill(System.Single)
-  fullName: Arithmetica.Plane.Fill(System.Single)
-  nameWithType: Plane.Fill(Single)
-- uid: Arithmetica.Plane.Fill*
-  name: Fill
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Fill_
-  commentId: Overload:Arithmetica.Plane.Fill
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Fill
-  nameWithType: Plane.Fill
-- uid: Arithmetica.Plane.GreaterEqual(Arithmetica.Plane,Arithmetica.Plane)
-  name: GreaterEqual(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterEqual_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.GreaterEqual(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.GreaterEqual(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.GreaterEqual(Plane, Plane)
-- uid: Arithmetica.Plane.GreaterEqual(Arithmetica.Plane,System.Single)
-  name: GreaterEqual(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterEqual_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.GreaterEqual(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.GreaterEqual(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.GreaterEqual(Plane, Single)
-- uid: Arithmetica.Plane.GreaterEqual*
-  name: GreaterEqual
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterEqual_
-  commentId: Overload:Arithmetica.Plane.GreaterEqual
-  isSpec: "True"
-  fullName: Arithmetica.Plane.GreaterEqual
-  nameWithType: Plane.GreaterEqual
-- uid: Arithmetica.Plane.GreaterThan(Arithmetica.Plane,Arithmetica.Plane)
-  name: GreaterThan(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterThan_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.GreaterThan(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.GreaterThan(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.GreaterThan(Plane, Plane)
-- uid: Arithmetica.Plane.GreaterThan(Arithmetica.Plane,System.Single)
-  name: GreaterThan(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterThan_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.GreaterThan(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.GreaterThan(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.GreaterThan(Plane, Single)
-- uid: Arithmetica.Plane.GreaterThan*
-  name: GreaterThan
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_GreaterThan_
-  commentId: Overload:Arithmetica.Plane.GreaterThan
-  isSpec: "True"
-  fullName: Arithmetica.Plane.GreaterThan
-  nameWithType: Plane.GreaterThan
-- uid: Arithmetica.Plane.Item(System.Int64)
-  name: Item[Int64]
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Item_System_Int64_
-  commentId: P:Arithmetica.Plane.Item(System.Int64)
-  name.vb: Item(Int64)
-  fullName: Arithmetica.Plane.Item[System.Int64]
-  fullName.vb: Arithmetica.Plane.Item(System.Int64)
-  nameWithType: Plane.Item[Int64]
-  nameWithType.vb: Plane.Item(Int64)
-- uid: Arithmetica.Plane.Item*
-  name: Item
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Item_
-  commentId: Overload:Arithmetica.Plane.Item
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Item
-  nameWithType: Plane.Item
-- uid: Arithmetica.Plane.Length
-  name: Length
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Length
-  commentId: P:Arithmetica.Plane.Length
-  fullName: Arithmetica.Plane.Length
-  nameWithType: Plane.Length
-- uid: Arithmetica.Plane.Length*
-  name: Length
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Length_
-  commentId: Overload:Arithmetica.Plane.Length
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Length
-  nameWithType: Plane.Length
-- uid: Arithmetica.Plane.LessEqual(Arithmetica.Plane,Arithmetica.Plane)
-  name: LessEqual(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessEqual_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.LessEqual(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.LessEqual(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.LessEqual(Plane, Plane)
-- uid: Arithmetica.Plane.LessEqual(Arithmetica.Plane,System.Single)
-  name: LessEqual(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessEqual_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.LessEqual(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.LessEqual(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.LessEqual(Plane, Single)
-- uid: Arithmetica.Plane.LessEqual*
-  name: LessEqual
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessEqual_
-  commentId: Overload:Arithmetica.Plane.LessEqual
-  isSpec: "True"
-  fullName: Arithmetica.Plane.LessEqual
-  nameWithType: Plane.LessEqual
-- uid: Arithmetica.Plane.LessThan(Arithmetica.Plane,Arithmetica.Plane)
-  name: LessThan(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessThan_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.LessThan(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.LessThan(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.LessThan(Plane, Plane)
-- uid: Arithmetica.Plane.LessThan(Arithmetica.Plane,System.Single)
-  name: LessThan(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessThan_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.LessThan(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.LessThan(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.LessThan(Plane, Single)
-- uid: Arithmetica.Plane.LessThan*
-  name: LessThan
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LessThan_
-  commentId: Overload:Arithmetica.Plane.LessThan
-  isSpec: "True"
-  fullName: Arithmetica.Plane.LessThan
-  nameWithType: Plane.LessThan
-- uid: Arithmetica.Plane.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LoadArray_System_Single___
-  commentId: M:Arithmetica.Plane.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Plane.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Plane.LoadArray(System.Single())
-  nameWithType: Plane.LoadArray(Single[])
-  nameWithType.vb: Plane.LoadArray(Single())
-- uid: Arithmetica.Plane.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_LoadArray_
-  commentId: Overload:Arithmetica.Plane.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Plane.LoadArray
-  nameWithType: Plane.LoadArray
-- uid: Arithmetica.Plane.Maximum(Arithmetica.Plane,Arithmetica.Plane)
-  name: Maximum(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Maximum_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Maximum(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Maximum(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Maximum(Plane, Plane)
-- uid: Arithmetica.Plane.Maximum(Arithmetica.Plane,System.Single)
-  name: Maximum(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Maximum_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Maximum(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Maximum(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Maximum(Plane, Single)
-- uid: Arithmetica.Plane.Maximum*
-  name: Maximum
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Maximum_
-  commentId: Overload:Arithmetica.Plane.Maximum
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Maximum
-  nameWithType: Plane.Maximum
-- uid: Arithmetica.Plane.Mod(Arithmetica.Plane,System.Single)
-  name: Mod(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mod_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Mod(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Mod(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Mod(Plane, Single)
-- uid: Arithmetica.Plane.Mod*
-  name: Mod
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mod_
-  commentId: Overload:Arithmetica.Plane.Mod
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Mod
-  nameWithType: Plane.Mod
-- uid: Arithmetica.Plane.Mul(Arithmetica.Plane,Arithmetica.Plane)
-  name: Mul(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mul_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Mul(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Mul(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Mul(Plane, Plane)
-- uid: Arithmetica.Plane.Mul(Arithmetica.Plane,System.Single)
-  name: Mul(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mul_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Mul(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Mul(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Mul(Plane, Single)
-- uid: Arithmetica.Plane.Mul(System.Single,Arithmetica.Plane)
-  name: Mul(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mul_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Mul(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Mul(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Mul(Single, Plane)
-- uid: Arithmetica.Plane.Mul*
-  name: Mul
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Mul_
-  commentId: Overload:Arithmetica.Plane.Mul
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Mul
-  nameWithType: Plane.Mul
-- uid: Arithmetica.Plane.Neg(Arithmetica.Plane)
-  name: Neg(Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Neg_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Neg(Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Neg(Arithmetica.Plane)
-  nameWithType: Plane.Neg(Plane)
-- uid: Arithmetica.Plane.Neg*
-  name: Neg
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Neg_
-  commentId: Overload:Arithmetica.Plane.Neg
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Neg
-  nameWithType: Plane.Neg
-- uid: Arithmetica.Plane.NotEqualTo(Arithmetica.Plane,Arithmetica.Plane)
-  name: NotEqualTo(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_NotEqualTo_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.NotEqualTo(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.NotEqualTo(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.NotEqualTo(Plane, Plane)
-- uid: Arithmetica.Plane.NotEqualTo(Arithmetica.Plane,System.Single)
-  name: NotEqualTo(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_NotEqualTo_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.NotEqualTo(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.NotEqualTo(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.NotEqualTo(Plane, Single)
-- uid: Arithmetica.Plane.NotEqualTo*
-  name: NotEqualTo
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_NotEqualTo_
-  commentId: Overload:Arithmetica.Plane.NotEqualTo
-  isSpec: "True"
-  fullName: Arithmetica.Plane.NotEqualTo
-  nameWithType: Plane.NotEqualTo
-- uid: Arithmetica.Plane.Ones(System.Int64)
-  name: Ones(Int64)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Ones_System_Int64_
-  commentId: M:Arithmetica.Plane.Ones(System.Int64)
-  fullName: Arithmetica.Plane.Ones(System.Int64)
-  nameWithType: Plane.Ones(Int64)
-- uid: Arithmetica.Plane.Ones*
-  name: Ones
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Ones_
-  commentId: Overload:Arithmetica.Plane.Ones
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Ones
-  nameWithType: Plane.Ones
-- uid: Arithmetica.Plane.op_Addition(Arithmetica.Plane,Arithmetica.Plane)
-  name: Addition(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Addition_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Addition(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Addition(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Addition(Plane, Plane)
-- uid: Arithmetica.Plane.op_Addition(Arithmetica.Plane,System.Single)
-  name: Addition(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Addition_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_Addition(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Addition(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Addition(Plane, Single)
-- uid: Arithmetica.Plane.op_Addition(System.Single,Arithmetica.Plane)
-  name: Addition(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Addition_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Addition(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Addition(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Addition(Single, Plane)
-- uid: Arithmetica.Plane.op_Addition*
-  name: Addition
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Addition_
-  commentId: Overload:Arithmetica.Plane.op_Addition
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Addition
-  nameWithType: Plane.Addition
-- uid: Arithmetica.Plane.op_Division(Arithmetica.Plane,Arithmetica.Plane)
-  name: Division(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Division_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Division(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Division(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Division(Plane, Plane)
-- uid: Arithmetica.Plane.op_Division(Arithmetica.Plane,System.Single)
-  name: Division(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Division_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_Division(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Division(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Division(Plane, Single)
-- uid: Arithmetica.Plane.op_Division(System.Single,Arithmetica.Plane)
-  name: Division(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Division_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Division(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Division(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Division(Single, Plane)
-- uid: Arithmetica.Plane.op_Division*
-  name: Division
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Division_
-  commentId: Overload:Arithmetica.Plane.op_Division
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Division
-  nameWithType: Plane.Division
-- uid: Arithmetica.Plane.op_GreaterThan(Arithmetica.Plane,Arithmetica.Plane)
-  name: GreaterThan(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThan_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_GreaterThan(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.GreaterThan(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.GreaterThan(Plane, Plane)
-- uid: Arithmetica.Plane.op_GreaterThan(Arithmetica.Plane,System.Single)
-  name: GreaterThan(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThan_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_GreaterThan(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.GreaterThan(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.GreaterThan(Plane, Single)
-- uid: Arithmetica.Plane.op_GreaterThan*
-  name: GreaterThan
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThan_
-  commentId: Overload:Arithmetica.Plane.op_GreaterThan
-  isSpec: "True"
-  fullName: Arithmetica.Plane.GreaterThan
-  nameWithType: Plane.GreaterThan
-- uid: Arithmetica.Plane.op_GreaterThanOrEqual(Arithmetica.Plane,Arithmetica.Plane)
-  name: GreaterThanOrEqual(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThanOrEqual_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_GreaterThanOrEqual(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.GreaterThanOrEqual(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.GreaterThanOrEqual(Plane, Plane)
-- uid: Arithmetica.Plane.op_GreaterThanOrEqual(Arithmetica.Plane,System.Single)
-  name: GreaterThanOrEqual(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThanOrEqual_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_GreaterThanOrEqual(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.GreaterThanOrEqual(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.GreaterThanOrEqual(Plane, Single)
-- uid: Arithmetica.Plane.op_GreaterThanOrEqual*
-  name: GreaterThanOrEqual
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_GreaterThanOrEqual_
-  commentId: Overload:Arithmetica.Plane.op_GreaterThanOrEqual
-  isSpec: "True"
-  fullName: Arithmetica.Plane.GreaterThanOrEqual
-  nameWithType: Plane.GreaterThanOrEqual
-- uid: Arithmetica.Plane.op_LessThan(Arithmetica.Plane,Arithmetica.Plane)
-  name: LessThan(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThan_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_LessThan(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.LessThan(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.LessThan(Plane, Plane)
-- uid: Arithmetica.Plane.op_LessThan(Arithmetica.Plane,System.Single)
-  name: LessThan(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThan_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_LessThan(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.LessThan(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.LessThan(Plane, Single)
-- uid: Arithmetica.Plane.op_LessThan*
-  name: LessThan
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThan_
-  commentId: Overload:Arithmetica.Plane.op_LessThan
-  isSpec: "True"
-  fullName: Arithmetica.Plane.LessThan
-  nameWithType: Plane.LessThan
-- uid: Arithmetica.Plane.op_LessThanOrEqual(Arithmetica.Plane,Arithmetica.Plane)
-  name: LessThanOrEqual(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThanOrEqual_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_LessThanOrEqual(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.LessThanOrEqual(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.LessThanOrEqual(Plane, Plane)
-- uid: Arithmetica.Plane.op_LessThanOrEqual(Arithmetica.Plane,System.Single)
-  name: LessThanOrEqual(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThanOrEqual_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_LessThanOrEqual(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.LessThanOrEqual(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.LessThanOrEqual(Plane, Single)
-- uid: Arithmetica.Plane.op_LessThanOrEqual*
-  name: LessThanOrEqual
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_LessThanOrEqual_
-  commentId: Overload:Arithmetica.Plane.op_LessThanOrEqual
-  isSpec: "True"
-  fullName: Arithmetica.Plane.LessThanOrEqual
-  nameWithType: Plane.LessThanOrEqual
-- uid: Arithmetica.Plane.op_Multiply(Arithmetica.Plane,Arithmetica.Plane)
-  name: Multiply(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Multiply_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Multiply(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Multiply(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Multiply(Plane, Plane)
-- uid: Arithmetica.Plane.op_Multiply(Arithmetica.Plane,System.Single)
-  name: Multiply(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Multiply_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_Multiply(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Multiply(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Multiply(Plane, Single)
-- uid: Arithmetica.Plane.op_Multiply(System.Single,Arithmetica.Plane)
-  name: Multiply(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Multiply_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Multiply(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Multiply(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Multiply(Single, Plane)
-- uid: Arithmetica.Plane.op_Multiply*
-  name: Multiply
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Multiply_
-  commentId: Overload:Arithmetica.Plane.op_Multiply
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Multiply
-  nameWithType: Plane.Multiply
-- uid: Arithmetica.Plane.op_Subtraction(Arithmetica.Plane,Arithmetica.Plane)
-  name: Subtraction(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Subtraction_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Subtraction(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Subtraction(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Subtraction(Plane, Plane)
-- uid: Arithmetica.Plane.op_Subtraction(Arithmetica.Plane,System.Single)
-  name: Subtraction(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Subtraction_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.op_Subtraction(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Subtraction(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Subtraction(Plane, Single)
-- uid: Arithmetica.Plane.op_Subtraction(System.Single,Arithmetica.Plane)
-  name: Subtraction(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Subtraction_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.op_Subtraction(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Subtraction(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Subtraction(Single, Plane)
-- uid: Arithmetica.Plane.op_Subtraction*
-  name: Subtraction
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_op_Subtraction_
-  commentId: Overload:Arithmetica.Plane.op_Subtraction
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Subtraction
-  nameWithType: Plane.Subtraction
-- uid: Arithmetica.Plane.Print
-  name: Print()
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Print
-  commentId: M:Arithmetica.Plane.Print
-  fullName: Arithmetica.Plane.Print()
-  nameWithType: Plane.Print()
-- uid: Arithmetica.Plane.Print*
-  name: Print
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Print_
-  commentId: Overload:Arithmetica.Plane.Print
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Print
-  nameWithType: Plane.Print
-- uid: Arithmetica.Plane.Sub(Arithmetica.Plane,Arithmetica.Plane)
-  name: Sub(Plane, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Sub_Arithmetica_Plane_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Sub(Arithmetica.Plane,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Sub(Arithmetica.Plane, Arithmetica.Plane)
-  nameWithType: Plane.Sub(Plane, Plane)
-- uid: Arithmetica.Plane.Sub(Arithmetica.Plane,System.Single)
-  name: Sub(Plane, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Sub_Arithmetica_Plane_System_Single_
-  commentId: M:Arithmetica.Plane.Sub(Arithmetica.Plane,System.Single)
-  fullName: Arithmetica.Plane.Sub(Arithmetica.Plane, System.Single)
-  nameWithType: Plane.Sub(Plane, Single)
-- uid: Arithmetica.Plane.Sub(System.Single,Arithmetica.Plane)
-  name: Sub(Single, Plane)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Sub_System_Single_Arithmetica_Plane_
-  commentId: M:Arithmetica.Plane.Sub(System.Single,Arithmetica.Plane)
-  fullName: Arithmetica.Plane.Sub(System.Single, Arithmetica.Plane)
-  nameWithType: Plane.Sub(Single, Plane)
-- uid: Arithmetica.Plane.Sub*
-  name: Sub
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Sub_
-  commentId: Overload:Arithmetica.Plane.Sub
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Sub
-  nameWithType: Plane.Sub
-- uid: Arithmetica.Plane.Unit(System.Single,System.Single,System.Single,System.Single)
-  name: Unit(Single, Single, Single, Single)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Unit_System_Single_System_Single_System_Single_System_Single_
-  commentId: M:Arithmetica.Plane.Unit(System.Single,System.Single,System.Single,System.Single)
-  fullName: Arithmetica.Plane.Unit(System.Single, System.Single, System.Single, System.Single)
-  nameWithType: Plane.Unit(Single, Single, Single, Single)
-- uid: Arithmetica.Plane.Unit*
-  name: Unit
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Unit_
-  commentId: Overload:Arithmetica.Plane.Unit
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Unit
-  nameWithType: Plane.Unit
-- uid: Arithmetica.Plane.Zeros(System.Int64)
-  name: Zeros(Int64)
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Zeros_System_Int64_
-  commentId: M:Arithmetica.Plane.Zeros(System.Int64)
-  fullName: Arithmetica.Plane.Zeros(System.Int64)
-  nameWithType: Plane.Zeros(Int64)
-- uid: Arithmetica.Plane.Zeros*
-  name: Zeros
-  href: api/Arithmetica.Plane.html#Arithmetica_Plane_Zeros_
-  commentId: Overload:Arithmetica.Plane.Zeros
-  isSpec: "True"
-  fullName: Arithmetica.Plane.Zeros
-  nameWithType: Plane.Zeros
-- uid: Arithmetica.Quaternion
-  name: Quaternion
-  href: api/Arithmetica.Quaternion.html
-  commentId: T:Arithmetica.Quaternion
-  fullName: Arithmetica.Quaternion
-  nameWithType: Quaternion
-- uid: Arithmetica.Quaternion.#ctor(System.Int32,Arithmetica.DType)
-  name: Quaternion(Int32, DType)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion__ctor_System_Int32_Arithmetica_DType_
-  commentId: M:Arithmetica.Quaternion.#ctor(System.Int32,Arithmetica.DType)
-  fullName: Arithmetica.Quaternion.Quaternion(System.Int32, Arithmetica.DType)
-  nameWithType: Quaternion.Quaternion(Int32, DType)
-- uid: Arithmetica.Quaternion.#ctor(System.Int64)
-  name: Quaternion(Int64)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion__ctor_System_Int64_
-  commentId: M:Arithmetica.Quaternion.#ctor(System.Int64)
-  fullName: Arithmetica.Quaternion.Quaternion(System.Int64)
-  nameWithType: Quaternion.Quaternion(Int64)
-- uid: Arithmetica.Quaternion.#ctor*
-  name: Quaternion
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion__ctor_
-  commentId: Overload:Arithmetica.Quaternion.#ctor
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Quaternion
-  nameWithType: Quaternion.Quaternion
-- uid: Arithmetica.Quaternion.Add(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Add(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Add_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Add(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Add(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Add(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Add(Arithmetica.Quaternion,System.Single)
-  name: Add(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Add_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Add(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Add(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Add(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Add(System.Single,Arithmetica.Quaternion)
-  name: Add(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Add_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Add(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Add(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Add(Single, Quaternion)
-- uid: Arithmetica.Quaternion.Add*
-  name: Add
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Add_
-  commentId: Overload:Arithmetica.Quaternion.Add
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Add
-  nameWithType: Quaternion.Add
-- uid: Arithmetica.Quaternion.Addmm(System.Single,Arithmetica.Quaternion,System.Single,Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Addmm(Single, Quaternion, Single, Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Addmm_System_Single_Arithmetica_Quaternion_System_Single_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Addmm(System.Single,Arithmetica.Quaternion,System.Single,Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Addmm(System.Single, Arithmetica.Quaternion, System.Single, Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Addmm(Single, Quaternion, Single, Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Addmm_
-  commentId: Overload:Arithmetica.Quaternion.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Addmm
-  nameWithType: Quaternion.Addmm
-- uid: Arithmetica.Quaternion.ArithArray
-  name: ArithArray
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_ArithArray
-  commentId: P:Arithmetica.Quaternion.ArithArray
-  fullName: Arithmetica.Quaternion.ArithArray
-  nameWithType: Quaternion.ArithArray
-- uid: Arithmetica.Quaternion.ArithArray*
-  name: ArithArray
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_ArithArray_
-  commentId: Overload:Arithmetica.Quaternion.ArithArray
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.ArithArray
-  nameWithType: Quaternion.ArithArray
-- uid: Arithmetica.Quaternion.Data
-  name: Data
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Data
-  commentId: P:Arithmetica.Quaternion.Data
-  fullName: Arithmetica.Quaternion.Data
-  nameWithType: Quaternion.Data
-- uid: Arithmetica.Quaternion.Data*
-  name: Data
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Data_
-  commentId: Overload:Arithmetica.Quaternion.Data
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Data
-  nameWithType: Quaternion.Data
-- uid: Arithmetica.Quaternion.Div(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Div(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Div_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Div(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Div(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Div(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Div(Arithmetica.Quaternion,System.Single)
-  name: Div(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Div_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Div(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Div(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Div(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Div(System.Single,Arithmetica.Quaternion)
-  name: Div(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Div_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Div(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Div(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Div(Single, Quaternion)
-- uid: Arithmetica.Quaternion.Div*
-  name: Div
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Div_
-  commentId: Overload:Arithmetica.Quaternion.Div
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Div
-  nameWithType: Quaternion.Div
-- uid: Arithmetica.Quaternion.Dot(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Dot(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Dot_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Dot(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Dot(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Dot(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Dot*
-  name: Dot
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Dot_
-  commentId: Overload:Arithmetica.Quaternion.Dot
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Dot
-  nameWithType: Quaternion.Dot
-- uid: Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: EqualTo(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_EqualTo_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.EqualTo(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion,System.Single)
-  name: EqualTo(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_EqualTo_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.EqualTo(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.EqualTo(Quaternion, Single)
-- uid: Arithmetica.Quaternion.EqualTo*
-  name: EqualTo
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_EqualTo_
-  commentId: Overload:Arithmetica.Quaternion.EqualTo
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.EqualTo
-  nameWithType: Quaternion.EqualTo
-- uid: Arithmetica.Quaternion.Fill(System.Single)
-  name: Fill(Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Fill_System_Single_
-  commentId: M:Arithmetica.Quaternion.Fill(System.Single)
-  fullName: Arithmetica.Quaternion.Fill(System.Single)
-  nameWithType: Quaternion.Fill(Single)
-- uid: Arithmetica.Quaternion.Fill*
-  name: Fill
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Fill_
-  commentId: Overload:Arithmetica.Quaternion.Fill
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Fill
-  nameWithType: Quaternion.Fill
-- uid: Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: GreaterEqual(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterEqual_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.GreaterEqual(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion,System.Single)
-  name: GreaterEqual(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterEqual_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.GreaterEqual(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.GreaterEqual(Quaternion, Single)
-- uid: Arithmetica.Quaternion.GreaterEqual*
-  name: GreaterEqual
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterEqual_
-  commentId: Overload:Arithmetica.Quaternion.GreaterEqual
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.GreaterEqual
-  nameWithType: Quaternion.GreaterEqual
-- uid: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: GreaterThan(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterThan_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.GreaterThan(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion,System.Single)
-  name: GreaterThan(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterThan_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.GreaterThan(Quaternion, Single)
-- uid: Arithmetica.Quaternion.GreaterThan*
-  name: GreaterThan
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_GreaterThan_
-  commentId: Overload:Arithmetica.Quaternion.GreaterThan
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.GreaterThan
-  nameWithType: Quaternion.GreaterThan
-- uid: Arithmetica.Quaternion.Item(System.Int64)
-  name: Item[Int64]
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Item_System_Int64_
-  commentId: P:Arithmetica.Quaternion.Item(System.Int64)
-  name.vb: Item(Int64)
-  fullName: Arithmetica.Quaternion.Item[System.Int64]
-  fullName.vb: Arithmetica.Quaternion.Item(System.Int64)
-  nameWithType: Quaternion.Item[Int64]
-  nameWithType.vb: Quaternion.Item(Int64)
-- uid: Arithmetica.Quaternion.Item*
-  name: Item
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Item_
-  commentId: Overload:Arithmetica.Quaternion.Item
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Item
-  nameWithType: Quaternion.Item
-- uid: Arithmetica.Quaternion.Length
-  name: Length
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Length
-  commentId: P:Arithmetica.Quaternion.Length
-  fullName: Arithmetica.Quaternion.Length
-  nameWithType: Quaternion.Length
-- uid: Arithmetica.Quaternion.Length*
-  name: Length
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Length_
-  commentId: Overload:Arithmetica.Quaternion.Length
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Length
-  nameWithType: Quaternion.Length
-- uid: Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: LessEqual(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessEqual_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.LessEqual(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion,System.Single)
-  name: LessEqual(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessEqual_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.LessEqual(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.LessEqual(Quaternion, Single)
-- uid: Arithmetica.Quaternion.LessEqual*
-  name: LessEqual
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessEqual_
-  commentId: Overload:Arithmetica.Quaternion.LessEqual
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.LessEqual
-  nameWithType: Quaternion.LessEqual
-- uid: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: LessThan(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessThan_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.LessThan(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion,System.Single)
-  name: LessThan(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessThan_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.LessThan(Quaternion, Single)
-- uid: Arithmetica.Quaternion.LessThan*
-  name: LessThan
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LessThan_
-  commentId: Overload:Arithmetica.Quaternion.LessThan
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.LessThan
-  nameWithType: Quaternion.LessThan
-- uid: Arithmetica.Quaternion.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LoadArray_System_Single___
-  commentId: M:Arithmetica.Quaternion.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Quaternion.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Quaternion.LoadArray(System.Single())
-  nameWithType: Quaternion.LoadArray(Single[])
-  nameWithType.vb: Quaternion.LoadArray(Single())
-- uid: Arithmetica.Quaternion.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_LoadArray_
-  commentId: Overload:Arithmetica.Quaternion.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.LoadArray
-  nameWithType: Quaternion.LoadArray
-- uid: Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Maximum(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Maximum_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Maximum(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion,System.Single)
-  name: Maximum(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Maximum_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Maximum(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Maximum(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Maximum*
-  name: Maximum
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Maximum_
-  commentId: Overload:Arithmetica.Quaternion.Maximum
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Maximum
-  nameWithType: Quaternion.Maximum
-- uid: Arithmetica.Quaternion.Mod(Arithmetica.Quaternion,System.Single)
-  name: Mod(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mod_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Mod(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Mod(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Mod(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Mod*
-  name: Mod
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mod_
-  commentId: Overload:Arithmetica.Quaternion.Mod
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Mod
-  nameWithType: Quaternion.Mod
-- uid: Arithmetica.Quaternion.Mul(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Mul(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mul_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Mul(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Mul(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Mul(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Mul(Arithmetica.Quaternion,System.Single)
-  name: Mul(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mul_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Mul(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Mul(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Mul(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Mul(System.Single,Arithmetica.Quaternion)
-  name: Mul(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mul_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Mul(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Mul(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Mul(Single, Quaternion)
-- uid: Arithmetica.Quaternion.Mul*
-  name: Mul
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Mul_
-  commentId: Overload:Arithmetica.Quaternion.Mul
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Mul
-  nameWithType: Quaternion.Mul
-- uid: Arithmetica.Quaternion.Neg(Arithmetica.Quaternion)
-  name: Neg(Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Neg_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Neg(Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Neg(Arithmetica.Quaternion)
-  nameWithType: Quaternion.Neg(Quaternion)
-- uid: Arithmetica.Quaternion.Neg*
-  name: Neg
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Neg_
-  commentId: Overload:Arithmetica.Quaternion.Neg
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Neg
-  nameWithType: Quaternion.Neg
-- uid: Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: NotEqualTo(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_NotEqualTo_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.NotEqualTo(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion,System.Single)
-  name: NotEqualTo(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_NotEqualTo_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.NotEqualTo(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.NotEqualTo(Quaternion, Single)
-- uid: Arithmetica.Quaternion.NotEqualTo*
-  name: NotEqualTo
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_NotEqualTo_
-  commentId: Overload:Arithmetica.Quaternion.NotEqualTo
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.NotEqualTo
-  nameWithType: Quaternion.NotEqualTo
-- uid: Arithmetica.Quaternion.Ones(System.Int64)
-  name: Ones(Int64)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Ones_System_Int64_
-  commentId: M:Arithmetica.Quaternion.Ones(System.Int64)
-  fullName: Arithmetica.Quaternion.Ones(System.Int64)
-  nameWithType: Quaternion.Ones(Int64)
-- uid: Arithmetica.Quaternion.Ones*
-  name: Ones
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Ones_
-  commentId: Overload:Arithmetica.Quaternion.Ones
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Ones
-  nameWithType: Quaternion.Ones
-- uid: Arithmetica.Quaternion.op_Addition(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Addition(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Addition_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Addition(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Addition(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Addition(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_Addition(Arithmetica.Quaternion,System.Single)
-  name: Addition(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Addition_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_Addition(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Addition(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Addition(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_Addition(System.Single,Arithmetica.Quaternion)
-  name: Addition(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Addition_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Addition(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Addition(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Addition(Single, Quaternion)
-- uid: Arithmetica.Quaternion.op_Addition*
-  name: Addition
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Addition_
-  commentId: Overload:Arithmetica.Quaternion.op_Addition
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Addition
-  nameWithType: Quaternion.Addition
-- uid: Arithmetica.Quaternion.op_Division(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Division(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Division_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Division(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Division(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Division(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_Division(Arithmetica.Quaternion,System.Single)
-  name: Division(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Division_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_Division(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Division(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Division(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_Division(System.Single,Arithmetica.Quaternion)
-  name: Division(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Division_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Division(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Division(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Division(Single, Quaternion)
-- uid: Arithmetica.Quaternion.op_Division*
-  name: Division
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Division_
-  commentId: Overload:Arithmetica.Quaternion.op_Division
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Division
-  nameWithType: Quaternion.Division
-- uid: Arithmetica.Quaternion.op_GreaterThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: GreaterThan(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThan_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_GreaterThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.GreaterThan(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_GreaterThan(Arithmetica.Quaternion,System.Single)
-  name: GreaterThan(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThan_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_GreaterThan(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.GreaterThan(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.GreaterThan(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_GreaterThan*
-  name: GreaterThan
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThan_
-  commentId: Overload:Arithmetica.Quaternion.op_GreaterThan
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.GreaterThan
-  nameWithType: Quaternion.GreaterThan
-- uid: Arithmetica.Quaternion.op_GreaterThanOrEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: GreaterThanOrEqual(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThanOrEqual_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_GreaterThanOrEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.GreaterThanOrEqual(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.GreaterThanOrEqual(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_GreaterThanOrEqual(Arithmetica.Quaternion,System.Single)
-  name: GreaterThanOrEqual(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThanOrEqual_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_GreaterThanOrEqual(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.GreaterThanOrEqual(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.GreaterThanOrEqual(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_GreaterThanOrEqual*
-  name: GreaterThanOrEqual
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_GreaterThanOrEqual_
-  commentId: Overload:Arithmetica.Quaternion.op_GreaterThanOrEqual
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.GreaterThanOrEqual
-  nameWithType: Quaternion.GreaterThanOrEqual
-- uid: Arithmetica.Quaternion.op_LessThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: LessThan(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThan_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_LessThan(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.LessThan(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_LessThan(Arithmetica.Quaternion,System.Single)
-  name: LessThan(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThan_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_LessThan(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.LessThan(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.LessThan(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_LessThan*
-  name: LessThan
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThan_
-  commentId: Overload:Arithmetica.Quaternion.op_LessThan
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.LessThan
-  nameWithType: Quaternion.LessThan
-- uid: Arithmetica.Quaternion.op_LessThanOrEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: LessThanOrEqual(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThanOrEqual_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_LessThanOrEqual(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.LessThanOrEqual(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.LessThanOrEqual(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_LessThanOrEqual(Arithmetica.Quaternion,System.Single)
-  name: LessThanOrEqual(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThanOrEqual_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_LessThanOrEqual(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.LessThanOrEqual(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.LessThanOrEqual(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_LessThanOrEqual*
-  name: LessThanOrEqual
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_LessThanOrEqual_
-  commentId: Overload:Arithmetica.Quaternion.op_LessThanOrEqual
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.LessThanOrEqual
-  nameWithType: Quaternion.LessThanOrEqual
-- uid: Arithmetica.Quaternion.op_Multiply(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Multiply(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Multiply_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Multiply(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Multiply(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Multiply(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_Multiply(Arithmetica.Quaternion,System.Single)
-  name: Multiply(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Multiply_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_Multiply(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Multiply(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Multiply(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_Multiply(System.Single,Arithmetica.Quaternion)
-  name: Multiply(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Multiply_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Multiply(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Multiply(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Multiply(Single, Quaternion)
-- uid: Arithmetica.Quaternion.op_Multiply*
-  name: Multiply
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Multiply_
-  commentId: Overload:Arithmetica.Quaternion.op_Multiply
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Multiply
-  nameWithType: Quaternion.Multiply
-- uid: Arithmetica.Quaternion.op_Subtraction(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Subtraction(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Subtraction_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Subtraction(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Subtraction(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Subtraction(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.op_Subtraction(Arithmetica.Quaternion,System.Single)
-  name: Subtraction(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Subtraction_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.op_Subtraction(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Subtraction(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Subtraction(Quaternion, Single)
-- uid: Arithmetica.Quaternion.op_Subtraction(System.Single,Arithmetica.Quaternion)
-  name: Subtraction(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Subtraction_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.op_Subtraction(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Subtraction(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Subtraction(Single, Quaternion)
-- uid: Arithmetica.Quaternion.op_Subtraction*
-  name: Subtraction
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_op_Subtraction_
-  commentId: Overload:Arithmetica.Quaternion.op_Subtraction
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Subtraction
-  nameWithType: Quaternion.Subtraction
-- uid: Arithmetica.Quaternion.Print
-  name: Print()
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Print
-  commentId: M:Arithmetica.Quaternion.Print
-  fullName: Arithmetica.Quaternion.Print()
-  nameWithType: Quaternion.Print()
-- uid: Arithmetica.Quaternion.Print*
-  name: Print
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Print_
-  commentId: Overload:Arithmetica.Quaternion.Print
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Print
-  nameWithType: Quaternion.Print
-- uid: Arithmetica.Quaternion.Sub(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  name: Sub(Quaternion, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Sub_Arithmetica_Quaternion_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Sub(Arithmetica.Quaternion,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Sub(Arithmetica.Quaternion, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Sub(Quaternion, Quaternion)
-- uid: Arithmetica.Quaternion.Sub(Arithmetica.Quaternion,System.Single)
-  name: Sub(Quaternion, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Sub_Arithmetica_Quaternion_System_Single_
-  commentId: M:Arithmetica.Quaternion.Sub(Arithmetica.Quaternion,System.Single)
-  fullName: Arithmetica.Quaternion.Sub(Arithmetica.Quaternion, System.Single)
-  nameWithType: Quaternion.Sub(Quaternion, Single)
-- uid: Arithmetica.Quaternion.Sub(System.Single,Arithmetica.Quaternion)
-  name: Sub(Single, Quaternion)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Sub_System_Single_Arithmetica_Quaternion_
-  commentId: M:Arithmetica.Quaternion.Sub(System.Single,Arithmetica.Quaternion)
-  fullName: Arithmetica.Quaternion.Sub(System.Single, Arithmetica.Quaternion)
-  nameWithType: Quaternion.Sub(Single, Quaternion)
-- uid: Arithmetica.Quaternion.Sub*
-  name: Sub
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Sub_
-  commentId: Overload:Arithmetica.Quaternion.Sub
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Sub
-  nameWithType: Quaternion.Sub
-- uid: Arithmetica.Quaternion.Unit(System.Single,System.Single,System.Single,System.Single)
-  name: Unit(Single, Single, Single, Single)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Unit_System_Single_System_Single_System_Single_System_Single_
-  commentId: M:Arithmetica.Quaternion.Unit(System.Single,System.Single,System.Single,System.Single)
-  fullName: Arithmetica.Quaternion.Unit(System.Single, System.Single, System.Single, System.Single)
-  nameWithType: Quaternion.Unit(Single, Single, Single, Single)
-- uid: Arithmetica.Quaternion.Unit*
-  name: Unit
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Unit_
-  commentId: Overload:Arithmetica.Quaternion.Unit
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Unit
-  nameWithType: Quaternion.Unit
-- uid: Arithmetica.Quaternion.Zeros(System.Int64)
-  name: Zeros(Int64)
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Zeros_System_Int64_
-  commentId: M:Arithmetica.Quaternion.Zeros(System.Int64)
-  fullName: Arithmetica.Quaternion.Zeros(System.Int64)
-  nameWithType: Quaternion.Zeros(Int64)
-- uid: Arithmetica.Quaternion.Zeros*
-  name: Zeros
-  href: api/Arithmetica.Quaternion.html#Arithmetica_Quaternion_Zeros_
-  commentId: Overload:Arithmetica.Quaternion.Zeros
-  isSpec: "True"
-  fullName: Arithmetica.Quaternion.Zeros
-  nameWithType: Quaternion.Zeros
 - uid: Arithmetica.Sampler
   name: Sampler
   href: api/Arithmetica.Sampler.html
@@ -4803,6 +4879,35 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.Frac
   nameWithType: Vector.Frac
+- uid: Arithmetica.Vector.FromArray(System.Single[])
+  name: FromArray(Single[])
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_FromArray_System_Single___
+  commentId: M:Arithmetica.Vector.FromArray(System.Single[])
+  name.vb: FromArray(Single())
+  fullName: Arithmetica.Vector.FromArray(System.Single[])
+  fullName.vb: Arithmetica.Vector.FromArray(System.Single())
+  nameWithType: Vector.FromArray(Single[])
+  nameWithType.vb: Vector.FromArray(Single())
+- uid: Arithmetica.Vector.FromArray*
+  name: FromArray
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_FromArray_
+  commentId: Overload:Arithmetica.Vector.FromArray
+  isSpec: "True"
+  fullName: Arithmetica.Vector.FromArray
+  nameWithType: Vector.FromArray
+- uid: Arithmetica.Vector.Get(System.Int64)
+  name: Get(Int64)
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Get_System_Int64_
+  commentId: M:Arithmetica.Vector.Get(System.Int64)
+  fullName: Arithmetica.Vector.Get(System.Int64)
+  nameWithType: Vector.Get(Int64)
+- uid: Arithmetica.Vector.Get*
+  name: Get
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Get_
+  commentId: Overload:Arithmetica.Vector.Get
+  isSpec: "True"
+  fullName: Arithmetica.Vector.Get
+  nameWithType: Vector.Get
 - uid: Arithmetica.Vector.GreaterEqual(Arithmetica.Vector,Arithmetica.Vector)
   name: GreaterEqual(Vector, Vector)
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_GreaterEqual_Arithmetica_Vector_Arithmetica_Vector_
@@ -4857,19 +4962,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.Item
   nameWithType: Vector.Item
-- uid: Arithmetica.Vector.Length
-  name: Length
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Length
-  commentId: P:Arithmetica.Vector.Length
-  fullName: Arithmetica.Vector.Length
-  nameWithType: Vector.Length
-- uid: Arithmetica.Vector.Length*
-  name: Length
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Length_
-  commentId: Overload:Arithmetica.Vector.Length
-  isSpec: "True"
-  fullName: Arithmetica.Vector.Length
-  nameWithType: Vector.Length
 - uid: Arithmetica.Vector.Lerp(Arithmetica.Vector,Arithmetica.Vector,System.Single)
   name: Lerp(Vector, Vector, Single)
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_Lerp_Arithmetica_Vector_Arithmetica_Vector_System_Single_
@@ -4921,22 +5013,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.LessThan
   nameWithType: Vector.LessThan
-- uid: Arithmetica.Vector.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_LoadArray_System_Single___
-  commentId: M:Arithmetica.Vector.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Vector.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Vector.LoadArray(System.Single())
-  nameWithType: Vector.LoadArray(Single[])
-  nameWithType.vb: Vector.LoadArray(Single())
-- uid: Arithmetica.Vector.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_LoadArray_
-  commentId: Overload:Arithmetica.Vector.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Vector.LoadArray
-  nameWithType: Vector.LoadArray
 - uid: Arithmetica.Vector.Log(Arithmetica.Vector)
   name: Log(Vector)
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_Log_Arithmetica_Vector_
@@ -5319,6 +5395,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.Sinh
   nameWithType: Vector.Sinh
+- uid: Arithmetica.Vector.Size
+  name: Size
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Size
+  commentId: P:Arithmetica.Vector.Size
+  fullName: Arithmetica.Vector.Size
+  nameWithType: Vector.Size
+- uid: Arithmetica.Vector.Size*
+  name: Size
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Size_
+  commentId: Overload:Arithmetica.Vector.Size
+  isSpec: "True"
+  fullName: Arithmetica.Vector.Size
+  nameWithType: Vector.Size
 - uid: Arithmetica.Vector.Sqrt(Arithmetica.Vector)
   name: Sqrt(Vector)
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_Sqrt_Arithmetica_Vector_
@@ -5454,6 +5543,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.Unit
   nameWithType: Vector.Unit
+- uid: Arithmetica.Vector.X
+  name: X
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_X
+  commentId: P:Arithmetica.Vector.X
+  fullName: Arithmetica.Vector.X
+  nameWithType: Vector.X
+- uid: Arithmetica.Vector.X*
+  name: X
+  href: api/Arithmetica.Vector.html#Arithmetica_Vector_X_
+  commentId: Overload:Arithmetica.Vector.X
+  isSpec: "True"
+  fullName: Arithmetica.Vector.X
+  nameWithType: Vector.X
 - uid: Arithmetica.Vector.Zeros(System.Int64)
   name: Zeros(Int64)
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_Zeros_System_Int64_
@@ -5485,6 +5587,12 @@ references:
   commentId: M:Arithmetica.Vector2.#ctor(System.Int64)
   fullName: Arithmetica.Vector2.Vector2(System.Int64)
   nameWithType: Vector2.Vector2(Int64)
+- uid: Arithmetica.Vector2.#ctor(System.Single,System.Single)
+  name: Vector2(Single, Single)
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2__ctor_System_Single_System_Single_
+  commentId: M:Arithmetica.Vector2.#ctor(System.Single,System.Single)
+  fullName: Arithmetica.Vector2.Vector2(System.Single, System.Single)
+  nameWithType: Vector2.Vector2(Single, Single)
 - uid: Arithmetica.Vector2.#ctor*
   name: Vector2
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2__ctor_
@@ -5704,6 +5812,35 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.Frac
   nameWithType: Vector2.Frac
+- uid: Arithmetica.Vector2.FromArray(System.Single[])
+  name: FromArray(Single[])
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_FromArray_System_Single___
+  commentId: M:Arithmetica.Vector2.FromArray(System.Single[])
+  name.vb: FromArray(Single())
+  fullName: Arithmetica.Vector2.FromArray(System.Single[])
+  fullName.vb: Arithmetica.Vector2.FromArray(System.Single())
+  nameWithType: Vector2.FromArray(Single[])
+  nameWithType.vb: Vector2.FromArray(Single())
+- uid: Arithmetica.Vector2.FromArray*
+  name: FromArray
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_FromArray_
+  commentId: Overload:Arithmetica.Vector2.FromArray
+  isSpec: "True"
+  fullName: Arithmetica.Vector2.FromArray
+  nameWithType: Vector2.FromArray
+- uid: Arithmetica.Vector2.Get(System.Int64)
+  name: Get(Int64)
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Get_System_Int64_
+  commentId: M:Arithmetica.Vector2.Get(System.Int64)
+  fullName: Arithmetica.Vector2.Get(System.Int64)
+  nameWithType: Vector2.Get(Int64)
+- uid: Arithmetica.Vector2.Get*
+  name: Get
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Get_
+  commentId: Overload:Arithmetica.Vector2.Get
+  isSpec: "True"
+  fullName: Arithmetica.Vector2.Get
+  nameWithType: Vector2.Get
 - uid: Arithmetica.Vector2.GreaterEqual(Arithmetica.Vector2,Arithmetica.Vector2)
   name: GreaterEqual(Vector2, Vector2)
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_GreaterEqual_Arithmetica_Vector2_Arithmetica_Vector2_
@@ -5758,19 +5895,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.Item
   nameWithType: Vector2.Item
-- uid: Arithmetica.Vector2.Length
-  name: Length
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Length
-  commentId: P:Arithmetica.Vector2.Length
-  fullName: Arithmetica.Vector2.Length
-  nameWithType: Vector2.Length
-- uid: Arithmetica.Vector2.Length*
-  name: Length
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Length_
-  commentId: Overload:Arithmetica.Vector2.Length
-  isSpec: "True"
-  fullName: Arithmetica.Vector2.Length
-  nameWithType: Vector2.Length
 - uid: Arithmetica.Vector2.Lerp(Arithmetica.Vector2,Arithmetica.Vector2,System.Single)
   name: Lerp(Vector2, Vector2, Single)
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Lerp_Arithmetica_Vector2_Arithmetica_Vector2_System_Single_
@@ -5822,22 +5946,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.LessThan
   nameWithType: Vector2.LessThan
-- uid: Arithmetica.Vector2.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_LoadArray_System_Single___
-  commentId: M:Arithmetica.Vector2.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Vector2.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Vector2.LoadArray(System.Single())
-  nameWithType: Vector2.LoadArray(Single[])
-  nameWithType.vb: Vector2.LoadArray(Single())
-- uid: Arithmetica.Vector2.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_LoadArray_
-  commentId: Overload:Arithmetica.Vector2.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Vector2.LoadArray
-  nameWithType: Vector2.LoadArray
 - uid: Arithmetica.Vector2.Log(Arithmetica.Vector2)
   name: Log(Vector2)
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Log_Arithmetica_Vector2_
@@ -6194,6 +6302,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.Sign
   nameWithType: Vector2.Sign
+- uid: Arithmetica.Vector2.Size
+  name: Size
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Size
+  commentId: P:Arithmetica.Vector2.Size
+  fullName: Arithmetica.Vector2.Size
+  nameWithType: Vector2.Size
+- uid: Arithmetica.Vector2.Size*
+  name: Size
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Size_
+  commentId: Overload:Arithmetica.Vector2.Size
+  isSpec: "True"
+  fullName: Arithmetica.Vector2.Size
+  nameWithType: Vector2.Size
 - uid: Arithmetica.Vector2.Sqrt(Arithmetica.Vector2)
   name: Sqrt(Vector2)
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Sqrt_Arithmetica_Vector2_
@@ -6303,6 +6424,32 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.Unit
   nameWithType: Vector2.Unit
+- uid: Arithmetica.Vector2.X
+  name: X
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_X
+  commentId: P:Arithmetica.Vector2.X
+  fullName: Arithmetica.Vector2.X
+  nameWithType: Vector2.X
+- uid: Arithmetica.Vector2.X*
+  name: X
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_X_
+  commentId: Overload:Arithmetica.Vector2.X
+  isSpec: "True"
+  fullName: Arithmetica.Vector2.X
+  nameWithType: Vector2.X
+- uid: Arithmetica.Vector2.Y
+  name: Y
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Y
+  commentId: P:Arithmetica.Vector2.Y
+  fullName: Arithmetica.Vector2.Y
+  nameWithType: Vector2.Y
+- uid: Arithmetica.Vector2.Y*
+  name: Y
+  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Y_
+  commentId: Overload:Arithmetica.Vector2.Y
+  isSpec: "True"
+  fullName: Arithmetica.Vector2.Y
+  nameWithType: Vector2.Y
 - uid: Arithmetica.Vector2.Zeros(System.Int64)
   name: Zeros(Int64)
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Zeros_System_Int64_
@@ -6334,6 +6481,12 @@ references:
   commentId: M:Arithmetica.Vector3.#ctor(System.Int64)
   fullName: Arithmetica.Vector3.Vector3(System.Int64)
   nameWithType: Vector3.Vector3(Int64)
+- uid: Arithmetica.Vector3.#ctor(System.Single,System.Single,System.Single)
+  name: Vector3(Single, Single, Single)
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3__ctor_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Vector3.#ctor(System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Vector3.Vector3(System.Single, System.Single, System.Single)
+  nameWithType: Vector3.Vector3(Single, Single, Single)
 - uid: Arithmetica.Vector3.#ctor*
   name: Vector3
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3__ctor_
@@ -6553,6 +6706,35 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.Frac
   nameWithType: Vector3.Frac
+- uid: Arithmetica.Vector3.FromArray(System.Single[])
+  name: FromArray(Single[])
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_FromArray_System_Single___
+  commentId: M:Arithmetica.Vector3.FromArray(System.Single[])
+  name.vb: FromArray(Single())
+  fullName: Arithmetica.Vector3.FromArray(System.Single[])
+  fullName.vb: Arithmetica.Vector3.FromArray(System.Single())
+  nameWithType: Vector3.FromArray(Single[])
+  nameWithType.vb: Vector3.FromArray(Single())
+- uid: Arithmetica.Vector3.FromArray*
+  name: FromArray
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_FromArray_
+  commentId: Overload:Arithmetica.Vector3.FromArray
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.FromArray
+  nameWithType: Vector3.FromArray
+- uid: Arithmetica.Vector3.Get(System.Int64)
+  name: Get(Int64)
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Get_System_Int64_
+  commentId: M:Arithmetica.Vector3.Get(System.Int64)
+  fullName: Arithmetica.Vector3.Get(System.Int64)
+  nameWithType: Vector3.Get(Int64)
+- uid: Arithmetica.Vector3.Get*
+  name: Get
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Get_
+  commentId: Overload:Arithmetica.Vector3.Get
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.Get
+  nameWithType: Vector3.Get
 - uid: Arithmetica.Vector3.GreaterEqual(Arithmetica.Vector3,Arithmetica.Vector3)
   name: GreaterEqual(Vector3, Vector3)
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_GreaterEqual_Arithmetica_Vector3_Arithmetica_Vector3_
@@ -6607,19 +6789,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.Item
   nameWithType: Vector3.Item
-- uid: Arithmetica.Vector3.Length
-  name: Length
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Length
-  commentId: P:Arithmetica.Vector3.Length
-  fullName: Arithmetica.Vector3.Length
-  nameWithType: Vector3.Length
-- uid: Arithmetica.Vector3.Length*
-  name: Length
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Length_
-  commentId: Overload:Arithmetica.Vector3.Length
-  isSpec: "True"
-  fullName: Arithmetica.Vector3.Length
-  nameWithType: Vector3.Length
 - uid: Arithmetica.Vector3.Lerp(Arithmetica.Vector3,Arithmetica.Vector3,System.Single)
   name: Lerp(Vector3, Vector3, Single)
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Lerp_Arithmetica_Vector3_Arithmetica_Vector3_System_Single_
@@ -6671,22 +6840,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.LessThan
   nameWithType: Vector3.LessThan
-- uid: Arithmetica.Vector3.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_LoadArray_System_Single___
-  commentId: M:Arithmetica.Vector3.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Vector3.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Vector3.LoadArray(System.Single())
-  nameWithType: Vector3.LoadArray(Single[])
-  nameWithType.vb: Vector3.LoadArray(Single())
-- uid: Arithmetica.Vector3.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_LoadArray_
-  commentId: Overload:Arithmetica.Vector3.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Vector3.LoadArray
-  nameWithType: Vector3.LoadArray
 - uid: Arithmetica.Vector3.Log(Arithmetica.Vector3)
   name: Log(Vector3)
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Log_Arithmetica_Vector3_
@@ -7043,6 +7196,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.Sign
   nameWithType: Vector3.Sign
+- uid: Arithmetica.Vector3.Size
+  name: Size
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Size
+  commentId: P:Arithmetica.Vector3.Size
+  fullName: Arithmetica.Vector3.Size
+  nameWithType: Vector3.Size
+- uid: Arithmetica.Vector3.Size*
+  name: Size
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Size_
+  commentId: Overload:Arithmetica.Vector3.Size
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.Size
+  nameWithType: Vector3.Size
 - uid: Arithmetica.Vector3.Sqrt(Arithmetica.Vector3)
   name: Sqrt(Vector3)
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Sqrt_Arithmetica_Vector3_
@@ -7152,6 +7318,45 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.Unit
   nameWithType: Vector3.Unit
+- uid: Arithmetica.Vector3.X
+  name: X
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_X
+  commentId: P:Arithmetica.Vector3.X
+  fullName: Arithmetica.Vector3.X
+  nameWithType: Vector3.X
+- uid: Arithmetica.Vector3.X*
+  name: X
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_X_
+  commentId: Overload:Arithmetica.Vector3.X
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.X
+  nameWithType: Vector3.X
+- uid: Arithmetica.Vector3.Y
+  name: Y
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Y
+  commentId: P:Arithmetica.Vector3.Y
+  fullName: Arithmetica.Vector3.Y
+  nameWithType: Vector3.Y
+- uid: Arithmetica.Vector3.Y*
+  name: Y
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Y_
+  commentId: Overload:Arithmetica.Vector3.Y
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.Y
+  nameWithType: Vector3.Y
+- uid: Arithmetica.Vector3.Z
+  name: Z
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Z
+  commentId: P:Arithmetica.Vector3.Z
+  fullName: Arithmetica.Vector3.Z
+  nameWithType: Vector3.Z
+- uid: Arithmetica.Vector3.Z*
+  name: Z
+  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Z_
+  commentId: Overload:Arithmetica.Vector3.Z
+  isSpec: "True"
+  fullName: Arithmetica.Vector3.Z
+  nameWithType: Vector3.Z
 - uid: Arithmetica.Vector3.Zeros(System.Int64)
   name: Zeros(Int64)
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Zeros_System_Int64_
@@ -7171,6 +7376,12 @@ references:
   commentId: T:Arithmetica.Vector4
   fullName: Arithmetica.Vector4
   nameWithType: Vector4
+- uid: Arithmetica.Vector4.#ctor(Arithmetica.Vector3,System.Single)
+  name: Vector4(Vector3, Single)
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4__ctor_Arithmetica_Vector3_System_Single_
+  commentId: M:Arithmetica.Vector4.#ctor(Arithmetica.Vector3,System.Single)
+  fullName: Arithmetica.Vector4.Vector4(Arithmetica.Vector3, System.Single)
+  nameWithType: Vector4.Vector4(Vector3, Single)
 - uid: Arithmetica.Vector4.#ctor(System.Int32,Arithmetica.DType)
   name: Vector4(Int32, DType)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4__ctor_System_Int32_Arithmetica_DType_
@@ -7183,6 +7394,12 @@ references:
   commentId: M:Arithmetica.Vector4.#ctor(System.Int64)
   fullName: Arithmetica.Vector4.Vector4(System.Int64)
   nameWithType: Vector4.Vector4(Int64)
+- uid: Arithmetica.Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name: Vector4(Single, Single, Single, Single)
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4__ctor_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Vector4.Vector4(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Vector4.Vector4(Single, Single, Single, Single)
 - uid: Arithmetica.Vector4.#ctor*
   name: Vector4
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4__ctor_
@@ -7402,6 +7619,35 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Frac
   nameWithType: Vector4.Frac
+- uid: Arithmetica.Vector4.FromArray(System.Single[])
+  name: FromArray(Single[])
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_FromArray_System_Single___
+  commentId: M:Arithmetica.Vector4.FromArray(System.Single[])
+  name.vb: FromArray(Single())
+  fullName: Arithmetica.Vector4.FromArray(System.Single[])
+  fullName.vb: Arithmetica.Vector4.FromArray(System.Single())
+  nameWithType: Vector4.FromArray(Single[])
+  nameWithType.vb: Vector4.FromArray(Single())
+- uid: Arithmetica.Vector4.FromArray*
+  name: FromArray
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_FromArray_
+  commentId: Overload:Arithmetica.Vector4.FromArray
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.FromArray
+  nameWithType: Vector4.FromArray
+- uid: Arithmetica.Vector4.Get(System.Int64)
+  name: Get(Int64)
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Get_System_Int64_
+  commentId: M:Arithmetica.Vector4.Get(System.Int64)
+  fullName: Arithmetica.Vector4.Get(System.Int64)
+  nameWithType: Vector4.Get(Int64)
+- uid: Arithmetica.Vector4.Get*
+  name: Get
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Get_
+  commentId: Overload:Arithmetica.Vector4.Get
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.Get
+  nameWithType: Vector4.Get
 - uid: Arithmetica.Vector4.GreaterEqual(Arithmetica.Vector4,Arithmetica.Vector4)
   name: GreaterEqual(Vector4, Vector4)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_GreaterEqual_Arithmetica_Vector4_Arithmetica_Vector4_
@@ -7456,19 +7702,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Item
   nameWithType: Vector4.Item
-- uid: Arithmetica.Vector4.Length
-  name: Length
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Length
-  commentId: P:Arithmetica.Vector4.Length
-  fullName: Arithmetica.Vector4.Length
-  nameWithType: Vector4.Length
-- uid: Arithmetica.Vector4.Length*
-  name: Length
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Length_
-  commentId: Overload:Arithmetica.Vector4.Length
-  isSpec: "True"
-  fullName: Arithmetica.Vector4.Length
-  nameWithType: Vector4.Length
 - uid: Arithmetica.Vector4.Lerp(Arithmetica.Vector4,Arithmetica.Vector4,System.Single)
   name: Lerp(Vector4, Vector4, Single)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Lerp_Arithmetica_Vector4_Arithmetica_Vector4_System_Single_
@@ -7520,22 +7753,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.LessThan
   nameWithType: Vector4.LessThan
-- uid: Arithmetica.Vector4.LoadArray(System.Single[])
-  name: LoadArray(Single[])
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_LoadArray_System_Single___
-  commentId: M:Arithmetica.Vector4.LoadArray(System.Single[])
-  name.vb: LoadArray(Single())
-  fullName: Arithmetica.Vector4.LoadArray(System.Single[])
-  fullName.vb: Arithmetica.Vector4.LoadArray(System.Single())
-  nameWithType: Vector4.LoadArray(Single[])
-  nameWithType.vb: Vector4.LoadArray(Single())
-- uid: Arithmetica.Vector4.LoadArray*
-  name: LoadArray
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_LoadArray_
-  commentId: Overload:Arithmetica.Vector4.LoadArray
-  isSpec: "True"
-  fullName: Arithmetica.Vector4.LoadArray
-  nameWithType: Vector4.LoadArray
 - uid: Arithmetica.Vector4.Log(Arithmetica.Vector4)
   name: Log(Vector4)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Log_Arithmetica_Vector4_
@@ -7892,6 +8109,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Sign
   nameWithType: Vector4.Sign
+- uid: Arithmetica.Vector4.Size
+  name: Size
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Size
+  commentId: P:Arithmetica.Vector4.Size
+  fullName: Arithmetica.Vector4.Size
+  nameWithType: Vector4.Size
+- uid: Arithmetica.Vector4.Size*
+  name: Size
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Size_
+  commentId: Overload:Arithmetica.Vector4.Size
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.Size
+  nameWithType: Vector4.Size
 - uid: Arithmetica.Vector4.Sqrt(Arithmetica.Vector4)
   name: Sqrt(Vector4)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Sqrt_Arithmetica_Vector4_
@@ -8001,6 +8231,58 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Unit
   nameWithType: Vector4.Unit
+- uid: Arithmetica.Vector4.W
+  name: W
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_W
+  commentId: P:Arithmetica.Vector4.W
+  fullName: Arithmetica.Vector4.W
+  nameWithType: Vector4.W
+- uid: Arithmetica.Vector4.W*
+  name: W
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_W_
+  commentId: Overload:Arithmetica.Vector4.W
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.W
+  nameWithType: Vector4.W
+- uid: Arithmetica.Vector4.X
+  name: X
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_X
+  commentId: P:Arithmetica.Vector4.X
+  fullName: Arithmetica.Vector4.X
+  nameWithType: Vector4.X
+- uid: Arithmetica.Vector4.X*
+  name: X
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_X_
+  commentId: Overload:Arithmetica.Vector4.X
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.X
+  nameWithType: Vector4.X
+- uid: Arithmetica.Vector4.Y
+  name: Y
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Y
+  commentId: P:Arithmetica.Vector4.Y
+  fullName: Arithmetica.Vector4.Y
+  nameWithType: Vector4.Y
+- uid: Arithmetica.Vector4.Y*
+  name: Y
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Y_
+  commentId: Overload:Arithmetica.Vector4.Y
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.Y
+  nameWithType: Vector4.Y
+- uid: Arithmetica.Vector4.Z
+  name: Z
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Z
+  commentId: P:Arithmetica.Vector4.Z
+  fullName: Arithmetica.Vector4.Z
+  nameWithType: Vector4.Z
+- uid: Arithmetica.Vector4.Z*
+  name: Z
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Z_
+  commentId: Overload:Arithmetica.Vector4.Z
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.Z
+  nameWithType: Vector4.Z
 - uid: Arithmetica.Vector4.Zeros(System.Int64)
   name: Zeros(Int64)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Zeros_System_Int64_

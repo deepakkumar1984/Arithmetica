@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Arithmetica
+namespace Arithmetica.Geometry
 {
     public partial class Plane
     {
@@ -13,6 +13,22 @@ namespace Arithmetica
         /// <param name="rhs">The second plane.</param>
         /// <returns></returns>
         public static Plane Dot(Plane lhs, Plane rhs) => Plane.Out(ArrayOps.Dot(lhs.variable, rhs.variable.Transpose()));
+
+        /// <summary>
+        /// Performs the dot product between plan and Vector4.
+        /// </summary>
+        /// <param name="lhs">The plan.</param>
+        /// <param name="rhs">The vector4.</param>
+        /// <returns></returns>
+        public static Plane Dot(Plane lhs, Vector4 rhs) => Plane.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
+
+        /// <summary>
+        /// Performs the dot product between plan and Matrix (4 x n).
+        /// </summary>
+        /// <param name="lhs">The plane.</param>
+        /// <param name="rhs">The matrix (4 x n).</param>
+        /// <returns></returns>
+        public static Plane Dot(Plane lhs, Matrix rhs) => Plane.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
 
         /// <summary>The addmm function is an optimized version of the equation beta*mat + alpha*(mat1 @ mat2)</summary>
         /// <param name="beta">The beta value.</param>
