@@ -4,11 +4,23 @@ using System.Text;
 
 namespace Arithmetica
 {
+    /// <summary>
+    /// Represents a Vector with X, Y, Z and W components and can hold multiple Vector4
+    /// </summary>
     public partial class Vector4
     {
+        /// <summary>
+        /// The variable
+        /// </summary>
         internal ArithArray variable;
 
-        public long Length
+        /// <summary>
+        /// Gets the size of the Vector4.
+        /// </summary>
+        /// <value>
+        /// The size.
+        /// </value>
+        public long Size
         {
             get
             {
@@ -16,57 +28,201 @@ namespace Arithmetica
             }
         }
 
-        public Vector4(long length)
+        /// <summary>
+        /// Gets the X value for the Vector. Usually gets the first Vector value.
+        /// </summary>
+        /// <value>
+        /// The x.
+        /// </value>
+        /// <exception cref="Exception">Not initialized</exception>
+        public float X
         {
-            variable = new ArithArray(length, 4);
+            get
+            {
+                if (Size > 0)
+                {
+                    return this[0].Item1;
+                }
+
+                throw new Exception("Not initialized");
+            }
         }
 
-        public Vector4(int length, DType dataType)
+        /// <summary>
+        /// Gets the Y value for the Vector. Usually gets the first Vector value.
+        /// </summary>
+        /// <value>
+        /// The y.
+        /// </value>
+        /// <exception cref="Exception">Not initialized</exception>
+        public float Y
         {
-            variable = new ArithArray(new long[] { length, 4 }, dataType);
+            get
+            {
+                if (Size > 0)
+                {
+                    return this[0].Item2;
+                }
+
+                throw new Exception("Not initialized");
+            }
         }
 
-        public static Vector4 Unit(float W, float X, float Y, float Z)
+        /// <summary>
+        /// Gets the Z value for the Vector. Usually gets the first Vector value.
+        /// </summary>
+        /// <value>
+        /// The z.
+        /// </value>
+        /// <exception cref="Exception">Not initialized</exception>
+        public float Z
         {
-            Vector4 x = new Vector4(1);
-            x.LoadArray(X, Y, Z, W);
-            return x;
+            get
+            {
+                if (Size > 0)
+                {
+                    return this[0].Item3;
+                }
+
+                throw new Exception("Not initialized");
+            }
         }
 
+        /// <summary>
+        /// Gets the W value for the Vector. Usually gets the first Vector value.
+        /// </summary>
+        /// <value>
+        /// The z.
+        /// </value>
+        /// <exception cref="Exception">Not initialized</exception>
+        public float W
+        {
+            get
+            {
+                if (Size > 0)
+                {
+                    return this[0].Item4;
+                }
+
+                throw new Exception("Not initialized");
+            }
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// </summary>
+        /// <param name="size">The size of the vector4.</param>
+        public Vector4(long size)
+        {
+            variable = new ArithArray(size, 4);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// </summary>
+        /// <param name="size">The size.</param>
+        /// <param name="dataType">the data type.</param>
+        public Vector4(int size, DType dataType)
+        {
+            variable = new ArithArray(new long[] { size, 4 }, dataType);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Vector4" /> class.
+        /// </summary>
+        /// <param name="X">The x value.</param>
+        /// <param name="Y">The y value.</param>
+        /// <param name="Z">The z value.</param>
+        /// <param name="W">The w value.</param>
+        public Vector4(float X, float Y, float Z, float W) : this(1)
+        {
+            variable.LoadFrom(new float[] { X, Y, Z, W });
+        }
+
+        /// <summary>
+        /// Create a Unit Vector3 which is vector of size 1
+        /// </summary>
+        /// <param name="X">The x value.</param>
+        /// <param name="Y">The y value.</param>
+        /// <param name="Z">The z value.</param>
+        /// <param name="W">The w value.</param>
+        /// <returns></returns>
+        public static Vector4 Unit(float X, float Y, float Z, float W)
+        {
+            return new Vector4(X, Y, Z, W);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// </summary>
+        /// <param name="v">The v.</param>
         private Vector4(ArithArray v)
         {
             variable = v;
         }
 
-        public static Vector4 Ones(long length)
+        /// <summary>
+        /// Creates a Vector4 of specified size and all filled with 1
+        /// </summary>
+        /// <param name="size">The size.</param>
+        /// <returns></returns>
+        public static Vector4 Ones(long size)
         {
-            var x = new Vector4(length);
+            var x = new Vector4(size);
             x.Fill(1);
             return x;
         }
 
-        public static Vector4 Zeros(long length)
+        /// <summary>
+        /// Creates a Vector3 of specified size and all filled with 0
+        /// </summary>
+        /// <param name="size">The size.</param>
+        /// <returns></returns>
+        public static Vector4 Zeros(long size)
         {
-            var x = new Vector4(length);
+            var x = new Vector4(size);
             x.Fill(0);
             return x;
         }
 
-        public void LoadArray(params float[] data)
+        /// <summary>
+        /// Create a Vector4 from the array.
+        /// </summary>
+        /// <param name="data">The data array to be loaded.</param>
+        /// <returns></returns>
+        public static Vector4 FromArray(params float[] data)
         {
-            variable.LoadFrom(data);
+            var x = new Vector4(data.Length / 4);
+            x.variable.LoadFrom(data);
+            return x;
         }
 
+        /// <summary>
+        /// Ins the specified x.
+        /// </summary>
+        /// <param name="x">The x.</param>
+        /// <returns></returns>
         internal static ArithArray In(Vector4 x)
         {
             return x.variable;
         }
 
+        /// <summary>
+        /// Outs the specified x.
+        /// </summary>
+        /// <param name="x">The x.</param>
+        /// <returns></returns>
         internal static Vector4 Out(ArithArray x)
         {
             return new Vector4(x);
         }
 
+        /// <summary>
+        /// Gets the generalised arith array which is a multi dimensional array
+        /// </summary>
+        /// <value>
+        /// The arith array.
+        /// </value>
         public ArithArray ArithArray
         {
             get
@@ -75,6 +231,12 @@ namespace Arithmetica
             }
         }
 
+        /// <summary>
+        /// Gets the data in the .NET Array format.
+        /// </summary>
+        /// <value>
+        /// The data.
+        /// </value>
         public Array Data
         {
             get
@@ -83,6 +245,14 @@ namespace Arithmetica
             }
         }
 
+        /// <summary>
+        /// Gets or sets the vector value at the specified index.
+        /// </summary>
+        /// <value>
+        /// Get the (X, Y, Z, W) value at the index
+        /// </value>
+        /// <param name="index">The index.</param>
+        /// <returns></returns>
         public (float, float, float, float) this[long index]
         {
             get
@@ -101,54 +271,231 @@ namespace Arithmetica
             }
         }
 
+        /// <summary>
+        /// Gets the Vector4 value at the specified index.
+        /// </summary>
+        /// <param name="index">The index.</param>
+        /// <returns></returns>
+        public Vector4 Get(long index)
+        {
+            return new Vector4(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1), variable.GetElementAsFloat(index, 2), variable.GetElementAsFloat(index, 4));
+        }
+
+        /// <summary>
+        /// Fills all the values in the vector with specified value
+        /// </summary>
+        /// <param name="value">The value.</param>
         public void Fill(float value)
         {
             variable.Fill(value);
         }
 
+        /// <summary>
+        /// Prints this instance.
+        /// </summary>
         public void Print()
         {
             variable.Print();
         }
 
+        /// <summary>
+        /// Implements the operator +.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator +(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) + In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator +.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator +(Vector4 lhs, float rhs) { return Out(In(lhs) + rhs); }
 
+        /// <summary>
+        /// Implements the operator +.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator +(float lhs, Vector4 rhs) { return Out(lhs + In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator -.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator -(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) - In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator -.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator -(Vector4 lhs, float rhs) { return Out(In(lhs) - rhs); }
 
+        /// <summary>
+        /// Implements the operator -.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator -(float lhs, Vector4 rhs) { return Out(lhs - In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator *.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator *(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) * In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator *.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator *(Vector4 lhs, float rhs) { return Out(In(lhs) * rhs); }
 
+        /// <summary>
+        /// Implements the operator *.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator *(float lhs, Vector4 rhs) { return Out(lhs * In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator /.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator /(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) / In(rhs)); }
 
+        /// <summary>
+        /// Implements the operator /.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator /(Vector4 lhs, float rhs) { return lhs / rhs; }
 
+        /// <summary>
+        /// Implements the operator /.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator /(float lhs, Vector4 rhs) { return lhs / rhs; }
 
+        /// <summary>
+        /// Implements the operator &gt;.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator >(Vector4 lhs, Vector4 rhs) { return lhs > rhs; }
 
+        /// <summary>
+        /// Implements the operator &gt;.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator >(Vector4 lhs, float rhs) { return lhs > rhs; }
 
+        /// <summary>
+        /// Implements the operator &lt;.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator <(Vector4 lhs, Vector4 rhs) { return lhs < rhs; }
 
+        /// <summary>
+        /// Implements the operator &lt;.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator <(Vector4 lhs, float rhs) { return lhs < rhs; }
 
+        /// <summary>
+        /// Implements the operator &gt;=.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator >=(Vector4 lhs, Vector4 rhs) { return lhs >= rhs; }
 
+        /// <summary>
+        /// Implements the operator &gt;=.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator >=(Vector4 lhs, float rhs) { return lhs >= rhs; }
 
+        /// <summary>
+        /// Implements the operator &lt;=.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator <=(Vector4 lhs, Vector4 rhs) { return lhs <= rhs; }
 
+        /// <summary>
+        /// Implements the operator &lt;=.
+        /// </summary>
+        /// <param name="lhs">The LHS.</param>
+        /// <param name="rhs">The RHS.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
         public static Vector4 operator <=(Vector4 lhs, float rhs) { return lhs <= rhs; }
     }
 }
