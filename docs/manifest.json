@@ -19,6 +19,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Complex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Complex.html",
+          "hash": "2ayjvPZGkWP/rRGZb4jUDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.DType.yml",
       "output": {
@@ -66,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Geometry.Plane.html",
-          "hash": "3cooiZ8hnt3C6SUBN2RJ+g=="
+          "hash": "WOuxnbKx9rqJaPn2+feoGw=="
         }
       },
       "is_incremental": false,
@@ -110,6 +125,57 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Quantum.QCGate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Quantum.QCGate.html",
+          "hash": "gw4WcjoA69jgdk31FqGwXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Quantum.QCRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Quantum.QCRegister.html",
+          "hash": "UWzYV9d8vlesS6MKgpBhNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Quantum.Qubit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Quantum.Qubit.html",
+          "hash": "4UV2LzjSYR6gdh1d2tzKPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Quantum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Quantum.html",
+          "hash": "UGhJTD3/J5ZTTPT3nwhfTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Sampler.yml",
       "output": {
         ".html": {
@@ -129,7 +195,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector.html",
-          "hash": "2CL2hi1aiNNvNW54gI4Vlg=="
+          "hash": "74Ve1hG5ASxUXKa2p9v6qQ=="
         }
       },
       "is_incremental": false,
@@ -144,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector2.html",
-          "hash": "LlPnkx2LkfIGLT15m21Dlg=="
+          "hash": "U/4cP+47DN679ESM6vdYhg=="
         }
       },
       "is_incremental": false,
@@ -159,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector3.html",
-          "hash": "+lfIM3Zxmb7z+ALbETTQrQ=="
+          "hash": "EkoR1ymvnvY/R/I3txmxEw=="
         }
       },
       "is_incremental": false,
@@ -174,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector4.html",
-          "hash": "WOkVmyKuuKY2HBko3r5Ang=="
+          "hash": "aPrM8WCbThHUilCIYvl3fw=="
         }
       },
       "is_incremental": false,
@@ -186,7 +252,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.html",
-          "hash": "G+R9BqsipYE2Sils+VtJNQ=="
+          "hash": "78l6airCOo7h+I5Xk2Vk7w=="
         }
       },
       "is_incremental": false,
@@ -210,7 +276,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "YO2IyG+nrhpbxIv7xLA8ow=="
+          "hash": "6uCE2MnpAkkB9gxpAFOXDw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +291,7 @@
           "hash": "yelJB6l5i2ZkbC2Er0vWtw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,7 +315,7 @@
           "hash": "D/6Rro2ZY5LwCKGQLU5UXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -268,37 +334,39 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 14,
-          "skipped_file_count": 5
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 19,
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

@@ -1541,6 +1541,1158 @@ references:
   isSpec: "True"
   fullName: Arithmetica.ArithArray.Var
   nameWithType: ArithArray.Var
+- uid: Arithmetica.Complex
+  name: Complex
+  href: api/Arithmetica.Complex.html
+  commentId: T:Arithmetica.Complex
+  fullName: Arithmetica.Complex
+  nameWithType: Complex
+- uid: Arithmetica.Complex.#ctor(System.Int32,Arithmetica.DType)
+  name: Complex(Int32, DType)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex__ctor_System_Int32_Arithmetica_DType_
+  commentId: M:Arithmetica.Complex.#ctor(System.Int32,Arithmetica.DType)
+  fullName: Arithmetica.Complex.Complex(System.Int32, Arithmetica.DType)
+  nameWithType: Complex.Complex(Int32, DType)
+- uid: Arithmetica.Complex.#ctor(System.Int64)
+  name: Complex(Int64)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex__ctor_System_Int64_
+  commentId: M:Arithmetica.Complex.#ctor(System.Int64)
+  fullName: Arithmetica.Complex.Complex(System.Int64)
+  nameWithType: Complex.Complex(Int64)
+- uid: Arithmetica.Complex.#ctor(System.Single,System.Single)
+  name: Complex(Single, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex__ctor_System_Single_System_Single_
+  commentId: M:Arithmetica.Complex.#ctor(System.Single,System.Single)
+  fullName: Arithmetica.Complex.Complex(System.Single, System.Single)
+  nameWithType: Complex.Complex(Single, Single)
+- uid: Arithmetica.Complex.#ctor*
+  name: Complex
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex__ctor_
+  commentId: Overload:Arithmetica.Complex.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Complex
+  nameWithType: Complex.Complex
+- uid: Arithmetica.Complex.Abs(Arithmetica.Complex)
+  name: Abs(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Abs_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Abs(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Abs(Arithmetica.Complex)
+  nameWithType: Complex.Abs(Complex)
+- uid: Arithmetica.Complex.Abs*
+  name: Abs
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Abs_
+  commentId: Overload:Arithmetica.Complex.Abs
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Abs
+  nameWithType: Complex.Abs
+- uid: Arithmetica.Complex.Acos(Arithmetica.Complex)
+  name: Acos(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Acos_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Acos(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Acos(Arithmetica.Complex)
+  nameWithType: Complex.Acos(Complex)
+- uid: Arithmetica.Complex.Acos*
+  name: Acos
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Acos_
+  commentId: Overload:Arithmetica.Complex.Acos
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Acos
+  nameWithType: Complex.Acos
+- uid: Arithmetica.Complex.Add(Arithmetica.Complex,Arithmetica.Complex)
+  name: Add(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Add_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Add(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Add(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Add(Complex, Complex)
+- uid: Arithmetica.Complex.Add*
+  name: Add
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Add_
+  commentId: Overload:Arithmetica.Complex.Add
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Add
+  nameWithType: Complex.Add
+- uid: Arithmetica.Complex.ArithArray
+  name: ArithArray
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ArithArray
+  commentId: P:Arithmetica.Complex.ArithArray
+  fullName: Arithmetica.Complex.ArithArray
+  nameWithType: Complex.ArithArray
+- uid: Arithmetica.Complex.ArithArray*
+  name: ArithArray
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ArithArray_
+  commentId: Overload:Arithmetica.Complex.ArithArray
+  isSpec: "True"
+  fullName: Arithmetica.Complex.ArithArray
+  nameWithType: Complex.ArithArray
+- uid: Arithmetica.Complex.Asin(Arithmetica.Complex)
+  name: Asin(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Asin_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Asin(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Asin(Arithmetica.Complex)
+  nameWithType: Complex.Asin(Complex)
+- uid: Arithmetica.Complex.Asin*
+  name: Asin
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Asin_
+  commentId: Overload:Arithmetica.Complex.Asin
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Asin
+  nameWithType: Complex.Asin
+- uid: Arithmetica.Complex.Atan(Arithmetica.Complex)
+  name: Atan(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Atan_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Atan(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Atan(Arithmetica.Complex)
+  nameWithType: Complex.Atan(Complex)
+- uid: Arithmetica.Complex.ATan(Arithmetica.Complex)
+  name: ATan(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ATan_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.ATan(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.ATan(Arithmetica.Complex)
+  nameWithType: Complex.ATan(Complex)
+- uid: Arithmetica.Complex.Atan*
+  name: Atan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Atan_
+  commentId: Overload:Arithmetica.Complex.Atan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Atan
+  nameWithType: Complex.Atan
+- uid: Arithmetica.Complex.ATan*
+  name: ATan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ATan_
+  commentId: Overload:Arithmetica.Complex.ATan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.ATan
+  nameWithType: Complex.ATan
+- uid: Arithmetica.Complex.Ceil(Arithmetica.Complex)
+  name: Ceil(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Ceil_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Ceil(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Ceil(Arithmetica.Complex)
+  nameWithType: Complex.Ceil(Complex)
+- uid: Arithmetica.Complex.Ceil*
+  name: Ceil
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Ceil_
+  commentId: Overload:Arithmetica.Complex.Ceil
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Ceil
+  nameWithType: Complex.Ceil
+- uid: Arithmetica.Complex.Clip(Arithmetica.Complex,System.Single,System.Single)
+  name: Clip(Complex, Single, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Clip_Arithmetica_Complex_System_Single_System_Single_
+  commentId: M:Arithmetica.Complex.Clip(Arithmetica.Complex,System.Single,System.Single)
+  fullName: Arithmetica.Complex.Clip(Arithmetica.Complex, System.Single, System.Single)
+  nameWithType: Complex.Clip(Complex, Single, Single)
+- uid: Arithmetica.Complex.Clip*
+  name: Clip
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Clip_
+  commentId: Overload:Arithmetica.Complex.Clip
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Clip
+  nameWithType: Complex.Clip
+- uid: Arithmetica.Complex.Conjugate(Arithmetica.Complex)
+  name: Conjugate(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Conjugate_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Conjugate(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Conjugate(Arithmetica.Complex)
+  nameWithType: Complex.Conjugate(Complex)
+- uid: Arithmetica.Complex.Conjugate*
+  name: Conjugate
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Conjugate_
+  commentId: Overload:Arithmetica.Complex.Conjugate
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Conjugate
+  nameWithType: Complex.Conjugate
+- uid: Arithmetica.Complex.Cos(Arithmetica.Complex)
+  name: Cos(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Cos_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Cos(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Cos(Arithmetica.Complex)
+  nameWithType: Complex.Cos(Complex)
+- uid: Arithmetica.Complex.Cos*
+  name: Cos
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Cos_
+  commentId: Overload:Arithmetica.Complex.Cos
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Cos
+  nameWithType: Complex.Cos
+- uid: Arithmetica.Complex.Cosh(Arithmetica.Complex)
+  name: Cosh(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Cosh_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Cosh(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Cosh(Arithmetica.Complex)
+  nameWithType: Complex.Cosh(Complex)
+- uid: Arithmetica.Complex.Cosh*
+  name: Cosh
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Cosh_
+  commentId: Overload:Arithmetica.Complex.Cosh
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Cosh
+  nameWithType: Complex.Cosh
+- uid: Arithmetica.Complex.Data
+  name: Data
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Data
+  commentId: P:Arithmetica.Complex.Data
+  fullName: Arithmetica.Complex.Data
+  nameWithType: Complex.Data
+- uid: Arithmetica.Complex.Data*
+  name: Data
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Data_
+  commentId: Overload:Arithmetica.Complex.Data
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Data
+  nameWithType: Complex.Data
+- uid: Arithmetica.Complex.Div(Arithmetica.Complex,Arithmetica.Complex)
+  name: Div(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Div_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Div(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Div(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Div(Complex, Complex)
+- uid: Arithmetica.Complex.Div*
+  name: Div
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Div_
+  commentId: Overload:Arithmetica.Complex.Div
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Div
+  nameWithType: Complex.Div
+- uid: Arithmetica.Complex.Dot(Arithmetica.Complex,Arithmetica.Complex)
+  name: Dot(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Dot_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Dot(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Dot(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Dot(Complex, Complex)
+- uid: Arithmetica.Complex.Dot*
+  name: Dot
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Dot_
+  commentId: Overload:Arithmetica.Complex.Dot
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Dot
+  nameWithType: Complex.Dot
+- uid: Arithmetica.Complex.EqualTo(Arithmetica.Complex,Arithmetica.Complex)
+  name: EqualTo(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_EqualTo_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.EqualTo(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.EqualTo(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.EqualTo(Complex, Complex)
+- uid: Arithmetica.Complex.EqualTo(Arithmetica.Complex,System.Single)
+  name: EqualTo(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_EqualTo_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.EqualTo(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.EqualTo(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.EqualTo(Complex, Single)
+- uid: Arithmetica.Complex.EqualTo*
+  name: EqualTo
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_EqualTo_
+  commentId: Overload:Arithmetica.Complex.EqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Complex.EqualTo
+  nameWithType: Complex.EqualTo
+- uid: Arithmetica.Complex.Exp(Arithmetica.Complex)
+  name: Exp(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Exp_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Exp(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Exp(Arithmetica.Complex)
+  nameWithType: Complex.Exp(Complex)
+- uid: Arithmetica.Complex.Exp*
+  name: Exp
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Exp_
+  commentId: Overload:Arithmetica.Complex.Exp
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Exp
+  nameWithType: Complex.Exp
+- uid: Arithmetica.Complex.Fill(System.Single)
+  name: Fill(Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Fill_System_Single_
+  commentId: M:Arithmetica.Complex.Fill(System.Single)
+  fullName: Arithmetica.Complex.Fill(System.Single)
+  nameWithType: Complex.Fill(Single)
+- uid: Arithmetica.Complex.Fill*
+  name: Fill
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Fill_
+  commentId: Overload:Arithmetica.Complex.Fill
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Fill
+  nameWithType: Complex.Fill
+- uid: Arithmetica.Complex.Floor(Arithmetica.Complex)
+  name: Floor(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Floor_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Floor(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Floor(Arithmetica.Complex)
+  nameWithType: Complex.Floor(Complex)
+- uid: Arithmetica.Complex.Floor*
+  name: Floor
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Floor_
+  commentId: Overload:Arithmetica.Complex.Floor
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Floor
+  nameWithType: Complex.Floor
+- uid: Arithmetica.Complex.Frac(Arithmetica.Complex)
+  name: Frac(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Frac_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Frac(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Frac(Arithmetica.Complex)
+  nameWithType: Complex.Frac(Complex)
+- uid: Arithmetica.Complex.Frac*
+  name: Frac
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Frac_
+  commentId: Overload:Arithmetica.Complex.Frac
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Frac
+  nameWithType: Complex.Frac
+- uid: Arithmetica.Complex.FromArray(System.Single[])
+  name: FromArray(Single[])
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_FromArray_System_Single___
+  commentId: M:Arithmetica.Complex.FromArray(System.Single[])
+  name.vb: FromArray(Single())
+  fullName: Arithmetica.Complex.FromArray(System.Single[])
+  fullName.vb: Arithmetica.Complex.FromArray(System.Single())
+  nameWithType: Complex.FromArray(Single[])
+  nameWithType.vb: Complex.FromArray(Single())
+- uid: Arithmetica.Complex.FromArray*
+  name: FromArray
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_FromArray_
+  commentId: Overload:Arithmetica.Complex.FromArray
+  isSpec: "True"
+  fullName: Arithmetica.Complex.FromArray
+  nameWithType: Complex.FromArray
+- uid: Arithmetica.Complex.FromPolarCoordinates(System.Single,System.Single)
+  name: FromPolarCoordinates(Single, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_FromPolarCoordinates_System_Single_System_Single_
+  commentId: M:Arithmetica.Complex.FromPolarCoordinates(System.Single,System.Single)
+  fullName: Arithmetica.Complex.FromPolarCoordinates(System.Single, System.Single)
+  nameWithType: Complex.FromPolarCoordinates(Single, Single)
+- uid: Arithmetica.Complex.FromPolarCoordinates*
+  name: FromPolarCoordinates
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_FromPolarCoordinates_
+  commentId: Overload:Arithmetica.Complex.FromPolarCoordinates
+  isSpec: "True"
+  fullName: Arithmetica.Complex.FromPolarCoordinates
+  nameWithType: Complex.FromPolarCoordinates
+- uid: Arithmetica.Complex.Get(System.Int64)
+  name: Get(Int64)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Get_System_Int64_
+  commentId: M:Arithmetica.Complex.Get(System.Int64)
+  fullName: Arithmetica.Complex.Get(System.Int64)
+  nameWithType: Complex.Get(Int64)
+- uid: Arithmetica.Complex.Get*
+  name: Get
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Get_
+  commentId: Overload:Arithmetica.Complex.Get
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Get
+  nameWithType: Complex.Get
+- uid: Arithmetica.Complex.GetMagnitude
+  name: GetMagnitude()
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GetMagnitude
+  commentId: M:Arithmetica.Complex.GetMagnitude
+  fullName: Arithmetica.Complex.GetMagnitude()
+  nameWithType: Complex.GetMagnitude()
+- uid: Arithmetica.Complex.GetMagnitude*
+  name: GetMagnitude
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GetMagnitude_
+  commentId: Overload:Arithmetica.Complex.GetMagnitude
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GetMagnitude
+  nameWithType: Complex.GetMagnitude
+- uid: Arithmetica.Complex.GetPhase
+  name: GetPhase()
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GetPhase
+  commentId: M:Arithmetica.Complex.GetPhase
+  fullName: Arithmetica.Complex.GetPhase()
+  nameWithType: Complex.GetPhase()
+- uid: Arithmetica.Complex.GetPhase*
+  name: GetPhase
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GetPhase_
+  commentId: Overload:Arithmetica.Complex.GetPhase
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GetPhase
+  nameWithType: Complex.GetPhase
+- uid: Arithmetica.Complex.GreaterEqual(Arithmetica.Complex,Arithmetica.Complex)
+  name: GreaterEqual(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterEqual_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.GreaterEqual(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.GreaterEqual(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.GreaterEqual(Complex, Complex)
+- uid: Arithmetica.Complex.GreaterEqual(Arithmetica.Complex,System.Single)
+  name: GreaterEqual(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterEqual_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.GreaterEqual(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.GreaterEqual(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.GreaterEqual(Complex, Single)
+- uid: Arithmetica.Complex.GreaterEqual*
+  name: GreaterEqual
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterEqual_
+  commentId: Overload:Arithmetica.Complex.GreaterEqual
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GreaterEqual
+  nameWithType: Complex.GreaterEqual
+- uid: Arithmetica.Complex.GreaterThan(Arithmetica.Complex,Arithmetica.Complex)
+  name: GreaterThan(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterThan_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.GreaterThan(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.GreaterThan(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.GreaterThan(Complex, Complex)
+- uid: Arithmetica.Complex.GreaterThan(Arithmetica.Complex,System.Single)
+  name: GreaterThan(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterThan_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.GreaterThan(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.GreaterThan(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.GreaterThan(Complex, Single)
+- uid: Arithmetica.Complex.GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_GreaterThan_
+  commentId: Overload:Arithmetica.Complex.GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GreaterThan
+  nameWithType: Complex.GreaterThan
+- uid: Arithmetica.Complex.Imag
+  name: Imag
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Imag
+  commentId: P:Arithmetica.Complex.Imag
+  fullName: Arithmetica.Complex.Imag
+  nameWithType: Complex.Imag
+- uid: Arithmetica.Complex.Imag*
+  name: Imag
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Imag_
+  commentId: Overload:Arithmetica.Complex.Imag
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Imag
+  nameWithType: Complex.Imag
+- uid: Arithmetica.Complex.ImaginaryOne
+  name: ImaginaryOne
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ImaginaryOne
+  commentId: P:Arithmetica.Complex.ImaginaryOne
+  fullName: Arithmetica.Complex.ImaginaryOne
+  nameWithType: Complex.ImaginaryOne
+- uid: Arithmetica.Complex.ImaginaryOne*
+  name: ImaginaryOne
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ImaginaryOne_
+  commentId: Overload:Arithmetica.Complex.ImaginaryOne
+  isSpec: "True"
+  fullName: Arithmetica.Complex.ImaginaryOne
+  nameWithType: Complex.ImaginaryOne
+- uid: Arithmetica.Complex.ImaginaryOnes(System.Int64)
+  name: ImaginaryOnes(Int64)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ImaginaryOnes_System_Int64_
+  commentId: M:Arithmetica.Complex.ImaginaryOnes(System.Int64)
+  fullName: Arithmetica.Complex.ImaginaryOnes(System.Int64)
+  nameWithType: Complex.ImaginaryOnes(Int64)
+- uid: Arithmetica.Complex.ImaginaryOnes*
+  name: ImaginaryOnes
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_ImaginaryOnes_
+  commentId: Overload:Arithmetica.Complex.ImaginaryOnes
+  isSpec: "True"
+  fullName: Arithmetica.Complex.ImaginaryOnes
+  nameWithType: Complex.ImaginaryOnes
+- uid: Arithmetica.Complex.Item(System.Int64)
+  name: Item[Int64]
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Item_System_Int64_
+  commentId: P:Arithmetica.Complex.Item(System.Int64)
+  name.vb: Item(Int64)
+  fullName: Arithmetica.Complex.Item[System.Int64]
+  fullName.vb: Arithmetica.Complex.Item(System.Int64)
+  nameWithType: Complex.Item[Int64]
+  nameWithType.vb: Complex.Item(Int64)
+- uid: Arithmetica.Complex.Item*
+  name: Item
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Item_
+  commentId: Overload:Arithmetica.Complex.Item
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Item
+  nameWithType: Complex.Item
+- uid: Arithmetica.Complex.Lerp(Arithmetica.Complex,Arithmetica.Complex,System.Single)
+  name: Lerp(Complex, Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Lerp_Arithmetica_Complex_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.Lerp(Arithmetica.Complex,Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Lerp(Arithmetica.Complex, Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Lerp(Complex, Complex, Single)
+- uid: Arithmetica.Complex.Lerp*
+  name: Lerp
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Lerp_
+  commentId: Overload:Arithmetica.Complex.Lerp
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Lerp
+  nameWithType: Complex.Lerp
+- uid: Arithmetica.Complex.LessEqual(Arithmetica.Complex,Arithmetica.Complex)
+  name: LessEqual(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessEqual_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.LessEqual(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.LessEqual(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.LessEqual(Complex, Complex)
+- uid: Arithmetica.Complex.LessEqual(Arithmetica.Complex,System.Single)
+  name: LessEqual(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessEqual_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.LessEqual(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.LessEqual(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.LessEqual(Complex, Single)
+- uid: Arithmetica.Complex.LessEqual*
+  name: LessEqual
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessEqual_
+  commentId: Overload:Arithmetica.Complex.LessEqual
+  isSpec: "True"
+  fullName: Arithmetica.Complex.LessEqual
+  nameWithType: Complex.LessEqual
+- uid: Arithmetica.Complex.LessThan(Arithmetica.Complex,Arithmetica.Complex)
+  name: LessThan(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessThan_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.LessThan(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.LessThan(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.LessThan(Complex, Complex)
+- uid: Arithmetica.Complex.LessThan(Arithmetica.Complex,System.Single)
+  name: LessThan(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessThan_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.LessThan(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.LessThan(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.LessThan(Complex, Single)
+- uid: Arithmetica.Complex.LessThan*
+  name: LessThan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_LessThan_
+  commentId: Overload:Arithmetica.Complex.LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.LessThan
+  nameWithType: Complex.LessThan
+- uid: Arithmetica.Complex.Log(Arithmetica.Complex)
+  name: Log(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Log_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Log(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Log(Arithmetica.Complex)
+  nameWithType: Complex.Log(Complex)
+- uid: Arithmetica.Complex.Log*
+  name: Log
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Log_
+  commentId: Overload:Arithmetica.Complex.Log
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Log
+  nameWithType: Complex.Log
+- uid: Arithmetica.Complex.Log10(Arithmetica.Complex)
+  name: Log10(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Log10_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Log10(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Log10(Arithmetica.Complex)
+  nameWithType: Complex.Log10(Complex)
+- uid: Arithmetica.Complex.Log10*
+  name: Log10
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Log10_
+  commentId: Overload:Arithmetica.Complex.Log10
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Log10
+  nameWithType: Complex.Log10
+- uid: Arithmetica.Complex.Magnitude
+  name: Magnitude
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Magnitude
+  commentId: P:Arithmetica.Complex.Magnitude
+  fullName: Arithmetica.Complex.Magnitude
+  nameWithType: Complex.Magnitude
+- uid: Arithmetica.Complex.Magnitude*
+  name: Magnitude
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Magnitude_
+  commentId: Overload:Arithmetica.Complex.Magnitude
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Magnitude
+  nameWithType: Complex.Magnitude
+- uid: Arithmetica.Complex.MagnitudeSquared
+  name: MagnitudeSquared
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_MagnitudeSquared
+  commentId: P:Arithmetica.Complex.MagnitudeSquared
+  fullName: Arithmetica.Complex.MagnitudeSquared
+  nameWithType: Complex.MagnitudeSquared
+- uid: Arithmetica.Complex.MagnitudeSquared*
+  name: MagnitudeSquared
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_MagnitudeSquared_
+  commentId: Overload:Arithmetica.Complex.MagnitudeSquared
+  isSpec: "True"
+  fullName: Arithmetica.Complex.MagnitudeSquared
+  nameWithType: Complex.MagnitudeSquared
+- uid: Arithmetica.Complex.Maximum(Arithmetica.Complex,Arithmetica.Complex)
+  name: Maximum(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Maximum_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Maximum(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Maximum(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Maximum(Complex, Complex)
+- uid: Arithmetica.Complex.Maximum(Arithmetica.Complex,System.Single)
+  name: Maximum(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Maximum_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.Maximum(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Maximum(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Maximum(Complex, Single)
+- uid: Arithmetica.Complex.Maximum*
+  name: Maximum
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Maximum_
+  commentId: Overload:Arithmetica.Complex.Maximum
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Maximum
+  nameWithType: Complex.Maximum
+- uid: Arithmetica.Complex.Mul(Arithmetica.Complex,Arithmetica.Complex)
+  name: Mul(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Mul_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Mul(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Mul(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Mul(Complex, Complex)
+- uid: Arithmetica.Complex.Mul*
+  name: Mul
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Mul_
+  commentId: Overload:Arithmetica.Complex.Mul
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Mul
+  nameWithType: Complex.Mul
+- uid: Arithmetica.Complex.Neg(Arithmetica.Complex)
+  name: Neg(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Neg_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Neg(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Neg(Arithmetica.Complex)
+  nameWithType: Complex.Neg(Complex)
+- uid: Arithmetica.Complex.Neg*
+  name: Neg
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Neg_
+  commentId: Overload:Arithmetica.Complex.Neg
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Neg
+  nameWithType: Complex.Neg
+- uid: Arithmetica.Complex.Normalize
+  name: Normalize()
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Normalize
+  commentId: M:Arithmetica.Complex.Normalize
+  fullName: Arithmetica.Complex.Normalize()
+  nameWithType: Complex.Normalize()
+- uid: Arithmetica.Complex.Normalize*
+  name: Normalize
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Normalize_
+  commentId: Overload:Arithmetica.Complex.Normalize
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Normalize
+  nameWithType: Complex.Normalize
+- uid: Arithmetica.Complex.NotEqualTo(Arithmetica.Complex,Arithmetica.Complex)
+  name: NotEqualTo(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_NotEqualTo_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.NotEqualTo(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.NotEqualTo(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.NotEqualTo(Complex, Complex)
+- uid: Arithmetica.Complex.NotEqualTo(Arithmetica.Complex,System.Single)
+  name: NotEqualTo(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_NotEqualTo_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.NotEqualTo(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.NotEqualTo(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.NotEqualTo(Complex, Single)
+- uid: Arithmetica.Complex.NotEqualTo*
+  name: NotEqualTo
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_NotEqualTo_
+  commentId: Overload:Arithmetica.Complex.NotEqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Complex.NotEqualTo
+  nameWithType: Complex.NotEqualTo
+- uid: Arithmetica.Complex.One
+  name: One
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_One
+  commentId: P:Arithmetica.Complex.One
+  fullName: Arithmetica.Complex.One
+  nameWithType: Complex.One
+- uid: Arithmetica.Complex.One*
+  name: One
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_One_
+  commentId: Overload:Arithmetica.Complex.One
+  isSpec: "True"
+  fullName: Arithmetica.Complex.One
+  nameWithType: Complex.One
+- uid: Arithmetica.Complex.Ones(System.Int64)
+  name: Ones(Int64)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Ones_System_Int64_
+  commentId: M:Arithmetica.Complex.Ones(System.Int64)
+  fullName: Arithmetica.Complex.Ones(System.Int64)
+  nameWithType: Complex.Ones(Int64)
+- uid: Arithmetica.Complex.Ones*
+  name: Ones
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Ones_
+  commentId: Overload:Arithmetica.Complex.Ones
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Ones
+  nameWithType: Complex.Ones
+- uid: Arithmetica.Complex.op_Addition(Arithmetica.Complex,Arithmetica.Complex)
+  name: Addition(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Addition_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_Addition(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Addition(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Addition(Complex, Complex)
+- uid: Arithmetica.Complex.op_Addition*
+  name: Addition
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Addition_
+  commentId: Overload:Arithmetica.Complex.op_Addition
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Addition
+  nameWithType: Complex.Addition
+- uid: Arithmetica.Complex.op_Division(Arithmetica.Complex,Arithmetica.Complex)
+  name: Division(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Division_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_Division(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Division(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Division(Complex, Complex)
+- uid: Arithmetica.Complex.op_Division(Arithmetica.Complex,System.Single)
+  name: Division(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Division_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_Division(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Division(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Division(Complex, Single)
+- uid: Arithmetica.Complex.op_Division*
+  name: Division
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Division_
+  commentId: Overload:Arithmetica.Complex.op_Division
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Division
+  nameWithType: Complex.Division
+- uid: Arithmetica.Complex.op_GreaterThan(Arithmetica.Complex,Arithmetica.Complex)
+  name: GreaterThan(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThan_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_GreaterThan(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.GreaterThan(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.GreaterThan(Complex, Complex)
+- uid: Arithmetica.Complex.op_GreaterThan(Arithmetica.Complex,System.Single)
+  name: GreaterThan(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThan_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_GreaterThan(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.GreaterThan(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.GreaterThan(Complex, Single)
+- uid: Arithmetica.Complex.op_GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThan_
+  commentId: Overload:Arithmetica.Complex.op_GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GreaterThan
+  nameWithType: Complex.GreaterThan
+- uid: Arithmetica.Complex.op_GreaterThanOrEqual(Arithmetica.Complex,Arithmetica.Complex)
+  name: GreaterThanOrEqual(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThanOrEqual_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_GreaterThanOrEqual(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.GreaterThanOrEqual(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.GreaterThanOrEqual(Complex, Complex)
+- uid: Arithmetica.Complex.op_GreaterThanOrEqual(Arithmetica.Complex,System.Single)
+  name: GreaterThanOrEqual(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThanOrEqual_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_GreaterThanOrEqual(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.GreaterThanOrEqual(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.GreaterThanOrEqual(Complex, Single)
+- uid: Arithmetica.Complex.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_GreaterThanOrEqual_
+  commentId: Overload:Arithmetica.Complex.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Complex.GreaterThanOrEqual
+  nameWithType: Complex.GreaterThanOrEqual
+- uid: Arithmetica.Complex.op_Implicit(System.Double)~Arithmetica.Complex
+  name: Implicit(Double to Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Implicit_System_Double__Arithmetica_Complex
+  commentId: M:Arithmetica.Complex.op_Implicit(System.Double)~Arithmetica.Complex
+  name.vb: Widening(Double to Complex)
+  fullName: Arithmetica.Complex.Implicit(System.Double to Arithmetica.Complex)
+  fullName.vb: Arithmetica.Complex.Widening(System.Double to Arithmetica.Complex)
+  nameWithType: Complex.Implicit(Double to Complex)
+  nameWithType.vb: Complex.Widening(Double to Complex)
+- uid: Arithmetica.Complex.op_Implicit(System.Int32)~Arithmetica.Complex
+  name: Implicit(Int32 to Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Implicit_System_Int32__Arithmetica_Complex
+  commentId: M:Arithmetica.Complex.op_Implicit(System.Int32)~Arithmetica.Complex
+  name.vb: Widening(Int32 to Complex)
+  fullName: Arithmetica.Complex.Implicit(System.Int32 to Arithmetica.Complex)
+  fullName.vb: Arithmetica.Complex.Widening(System.Int32 to Arithmetica.Complex)
+  nameWithType: Complex.Implicit(Int32 to Complex)
+  nameWithType.vb: Complex.Widening(Int32 to Complex)
+- uid: Arithmetica.Complex.op_Implicit(System.Single)~Arithmetica.Complex
+  name: Implicit(Single to Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Implicit_System_Single__Arithmetica_Complex
+  commentId: M:Arithmetica.Complex.op_Implicit(System.Single)~Arithmetica.Complex
+  name.vb: Widening(Single to Complex)
+  fullName: Arithmetica.Complex.Implicit(System.Single to Arithmetica.Complex)
+  fullName.vb: Arithmetica.Complex.Widening(System.Single to Arithmetica.Complex)
+  nameWithType: Complex.Implicit(Single to Complex)
+  nameWithType.vb: Complex.Widening(Single to Complex)
+- uid: Arithmetica.Complex.op_Implicit*
+  name: Implicit
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Implicit_
+  commentId: Overload:Arithmetica.Complex.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Arithmetica.Complex.Implicit
+  fullName.vb: Arithmetica.Complex.Widening
+  nameWithType: Complex.Implicit
+  nameWithType.vb: Complex.Widening
+- uid: Arithmetica.Complex.op_LessThan(Arithmetica.Complex,Arithmetica.Complex)
+  name: LessThan(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThan_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_LessThan(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.LessThan(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.LessThan(Complex, Complex)
+- uid: Arithmetica.Complex.op_LessThan(Arithmetica.Complex,System.Single)
+  name: LessThan(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThan_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_LessThan(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.LessThan(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.LessThan(Complex, Single)
+- uid: Arithmetica.Complex.op_LessThan*
+  name: LessThan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThan_
+  commentId: Overload:Arithmetica.Complex.op_LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.LessThan
+  nameWithType: Complex.LessThan
+- uid: Arithmetica.Complex.op_LessThanOrEqual(Arithmetica.Complex,Arithmetica.Complex)
+  name: LessThanOrEqual(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThanOrEqual_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_LessThanOrEqual(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.LessThanOrEqual(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.LessThanOrEqual(Complex, Complex)
+- uid: Arithmetica.Complex.op_LessThanOrEqual(Arithmetica.Complex,System.Single)
+  name: LessThanOrEqual(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThanOrEqual_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_LessThanOrEqual(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.LessThanOrEqual(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.LessThanOrEqual(Complex, Single)
+- uid: Arithmetica.Complex.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_LessThanOrEqual_
+  commentId: Overload:Arithmetica.Complex.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Complex.LessThanOrEqual
+  nameWithType: Complex.LessThanOrEqual
+- uid: Arithmetica.Complex.op_Multiply(Arithmetica.Complex,Arithmetica.Complex)
+  name: Multiply(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Multiply_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_Multiply(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Multiply(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Multiply(Complex, Complex)
+- uid: Arithmetica.Complex.op_Multiply(Arithmetica.Complex,System.Single)
+  name: Multiply(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Multiply_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.op_Multiply(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Multiply(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Multiply(Complex, Single)
+- uid: Arithmetica.Complex.op_Multiply*
+  name: Multiply
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Multiply_
+  commentId: Overload:Arithmetica.Complex.op_Multiply
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Multiply
+  nameWithType: Complex.Multiply
+- uid: Arithmetica.Complex.op_Subtraction(Arithmetica.Complex,Arithmetica.Complex)
+  name: Subtraction(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Subtraction_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_Subtraction(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Subtraction(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Subtraction(Complex, Complex)
+- uid: Arithmetica.Complex.op_Subtraction*
+  name: Subtraction
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_Subtraction_
+  commentId: Overload:Arithmetica.Complex.op_Subtraction
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Subtraction
+  nameWithType: Complex.Subtraction
+- uid: Arithmetica.Complex.op_UnaryNegation(Arithmetica.Complex)
+  name: UnaryNegation(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_UnaryNegation_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.op_UnaryNegation(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.UnaryNegation(Arithmetica.Complex)
+  nameWithType: Complex.UnaryNegation(Complex)
+- uid: Arithmetica.Complex.op_UnaryNegation*
+  name: UnaryNegation
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_op_UnaryNegation_
+  commentId: Overload:Arithmetica.Complex.op_UnaryNegation
+  isSpec: "True"
+  fullName: Arithmetica.Complex.UnaryNegation
+  nameWithType: Complex.UnaryNegation
+- uid: Arithmetica.Complex.Phase
+  name: Phase
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Phase
+  commentId: P:Arithmetica.Complex.Phase
+  fullName: Arithmetica.Complex.Phase
+  nameWithType: Complex.Phase
+- uid: Arithmetica.Complex.Phase*
+  name: Phase
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Phase_
+  commentId: Overload:Arithmetica.Complex.Phase
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Phase
+  nameWithType: Complex.Phase
+- uid: Arithmetica.Complex.Pow(Arithmetica.Complex,Arithmetica.Complex)
+  name: Pow(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Pow_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Pow(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Pow(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Pow(Complex, Complex)
+- uid: Arithmetica.Complex.Pow(Arithmetica.Complex,System.Single)
+  name: Pow(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Pow_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.Pow(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Pow(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Pow(Complex, Single)
+- uid: Arithmetica.Complex.Pow*
+  name: Pow
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Pow_
+  commentId: Overload:Arithmetica.Complex.Pow
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Pow
+  nameWithType: Complex.Pow
+- uid: Arithmetica.Complex.Print
+  name: Print()
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Print
+  commentId: M:Arithmetica.Complex.Print
+  fullName: Arithmetica.Complex.Print()
+  nameWithType: Complex.Print()
+- uid: Arithmetica.Complex.Print*
+  name: Print
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Print_
+  commentId: Overload:Arithmetica.Complex.Print
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Print
+  nameWithType: Complex.Print
+- uid: Arithmetica.Complex.Real
+  name: Real
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Real
+  commentId: P:Arithmetica.Complex.Real
+  fullName: Arithmetica.Complex.Real
+  nameWithType: Complex.Real
+- uid: Arithmetica.Complex.Real*
+  name: Real
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Real_
+  commentId: Overload:Arithmetica.Complex.Real
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Real
+  nameWithType: Complex.Real
+- uid: Arithmetica.Complex.Reciprocal(Arithmetica.Complex)
+  name: Reciprocal(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Reciprocal_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Reciprocal(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Reciprocal(Arithmetica.Complex)
+  nameWithType: Complex.Reciprocal(Complex)
+- uid: Arithmetica.Complex.Reciprocal*
+  name: Reciprocal
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Reciprocal_
+  commentId: Overload:Arithmetica.Complex.Reciprocal
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Reciprocal
+  nameWithType: Complex.Reciprocal
+- uid: Arithmetica.Complex.Round(Arithmetica.Complex)
+  name: Round(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Round_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Round(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Round(Arithmetica.Complex)
+  nameWithType: Complex.Round(Complex)
+- uid: Arithmetica.Complex.Round*
+  name: Round
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Round_
+  commentId: Overload:Arithmetica.Complex.Round
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Round
+  nameWithType: Complex.Round
+- uid: Arithmetica.Complex.Scale(Arithmetica.Complex,System.Single)
+  name: Scale(Complex, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Scale_Arithmetica_Complex_System_Single_
+  commentId: M:Arithmetica.Complex.Scale(Arithmetica.Complex,System.Single)
+  fullName: Arithmetica.Complex.Scale(Arithmetica.Complex, System.Single)
+  nameWithType: Complex.Scale(Complex, Single)
+- uid: Arithmetica.Complex.Scale*
+  name: Scale
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Scale_
+  commentId: Overload:Arithmetica.Complex.Scale
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Scale
+  nameWithType: Complex.Scale
+- uid: Arithmetica.Complex.Set(System.Int64,Arithmetica.Complex)
+  name: Set(Int64, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Set_System_Int64_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Set(System.Int64,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Set(System.Int64, Arithmetica.Complex)
+  nameWithType: Complex.Set(Int64, Complex)
+- uid: Arithmetica.Complex.Set*
+  name: Set
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Set_
+  commentId: Overload:Arithmetica.Complex.Set
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Set
+  nameWithType: Complex.Set
+- uid: Arithmetica.Complex.Sign(Arithmetica.Complex)
+  name: Sign(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sign_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Sign(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Sign(Arithmetica.Complex)
+  nameWithType: Complex.Sign(Complex)
+- uid: Arithmetica.Complex.Sign*
+  name: Sign
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sign_
+  commentId: Overload:Arithmetica.Complex.Sign
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Sign
+  nameWithType: Complex.Sign
+- uid: Arithmetica.Complex.Sin(Arithmetica.Complex)
+  name: Sin(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sin_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Sin(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Sin(Arithmetica.Complex)
+  nameWithType: Complex.Sin(Complex)
+- uid: Arithmetica.Complex.Sin*
+  name: Sin
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sin_
+  commentId: Overload:Arithmetica.Complex.Sin
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Sin
+  nameWithType: Complex.Sin
+- uid: Arithmetica.Complex.Sinh(Arithmetica.Complex)
+  name: Sinh(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sinh_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Sinh(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Sinh(Arithmetica.Complex)
+  nameWithType: Complex.Sinh(Complex)
+- uid: Arithmetica.Complex.Sinh*
+  name: Sinh
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sinh_
+  commentId: Overload:Arithmetica.Complex.Sinh
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Sinh
+  nameWithType: Complex.Sinh
+- uid: Arithmetica.Complex.Size
+  name: Size
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Size
+  commentId: P:Arithmetica.Complex.Size
+  fullName: Arithmetica.Complex.Size
+  nameWithType: Complex.Size
+- uid: Arithmetica.Complex.Size*
+  name: Size
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Size_
+  commentId: Overload:Arithmetica.Complex.Size
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Size
+  nameWithType: Complex.Size
+- uid: Arithmetica.Complex.Sqrt(Arithmetica.Complex)
+  name: Sqrt(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sqrt_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Sqrt(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Sqrt(Arithmetica.Complex)
+  nameWithType: Complex.Sqrt(Complex)
+- uid: Arithmetica.Complex.Sqrt*
+  name: Sqrt
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sqrt_
+  commentId: Overload:Arithmetica.Complex.Sqrt
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Sqrt
+  nameWithType: Complex.Sqrt
+- uid: Arithmetica.Complex.Square(Arithmetica.Complex)
+  name: Square(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Square_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Square(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Square(Arithmetica.Complex)
+  nameWithType: Complex.Square(Complex)
+- uid: Arithmetica.Complex.Square*
+  name: Square
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Square_
+  commentId: Overload:Arithmetica.Complex.Square
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Square
+  nameWithType: Complex.Square
+- uid: Arithmetica.Complex.Std(Arithmetica.Complex)
+  name: Std(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Std_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Std(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Std(Arithmetica.Complex)
+  nameWithType: Complex.Std(Complex)
+- uid: Arithmetica.Complex.Std(Arithmetica.Complex,System.Boolean,System.Int32)
+  name: Std(Complex, Boolean, Int32)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Std_Arithmetica_Complex_System_Boolean_System_Int32_
+  commentId: M:Arithmetica.Complex.Std(Arithmetica.Complex,System.Boolean,System.Int32)
+  fullName: Arithmetica.Complex.Std(Arithmetica.Complex, System.Boolean, System.Int32)
+  nameWithType: Complex.Std(Complex, Boolean, Int32)
+- uid: Arithmetica.Complex.Std*
+  name: Std
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Std_
+  commentId: Overload:Arithmetica.Complex.Std
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Std
+  nameWithType: Complex.Std
+- uid: Arithmetica.Complex.Sub(Arithmetica.Complex,Arithmetica.Complex)
+  name: Sub(Complex, Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sub_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Sub(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Sub(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Complex.Sub(Complex, Complex)
+- uid: Arithmetica.Complex.Sub*
+  name: Sub
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Sub_
+  commentId: Overload:Arithmetica.Complex.Sub
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Sub
+  nameWithType: Complex.Sub
+- uid: Arithmetica.Complex.Tan(Arithmetica.Complex)
+  name: Tan(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Tan_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Tan(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Tan(Arithmetica.Complex)
+  nameWithType: Complex.Tan(Complex)
+- uid: Arithmetica.Complex.Tan*
+  name: Tan
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Tan_
+  commentId: Overload:Arithmetica.Complex.Tan
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Tan
+  nameWithType: Complex.Tan
+- uid: Arithmetica.Complex.Tanh(Arithmetica.Complex)
+  name: Tanh(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Tanh_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Tanh(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Tanh(Arithmetica.Complex)
+  nameWithType: Complex.Tanh(Complex)
+- uid: Arithmetica.Complex.Tanh*
+  name: Tanh
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Tanh_
+  commentId: Overload:Arithmetica.Complex.Tanh
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Tanh
+  nameWithType: Complex.Tanh
+- uid: Arithmetica.Complex.Trunc(Arithmetica.Complex)
+  name: Trunc(Complex)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Trunc_Arithmetica_Complex_
+  commentId: M:Arithmetica.Complex.Trunc(Arithmetica.Complex)
+  fullName: Arithmetica.Complex.Trunc(Arithmetica.Complex)
+  nameWithType: Complex.Trunc(Complex)
+- uid: Arithmetica.Complex.Trunc*
+  name: Trunc
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Trunc_
+  commentId: Overload:Arithmetica.Complex.Trunc
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Trunc
+  nameWithType: Complex.Trunc
+- uid: Arithmetica.Complex.Unit(System.Single,System.Single)
+  name: Unit(Single, Single)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Unit_System_Single_System_Single_
+  commentId: M:Arithmetica.Complex.Unit(System.Single,System.Single)
+  fullName: Arithmetica.Complex.Unit(System.Single, System.Single)
+  nameWithType: Complex.Unit(Single, Single)
+- uid: Arithmetica.Complex.Unit*
+  name: Unit
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Unit_
+  commentId: Overload:Arithmetica.Complex.Unit
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Unit
+  nameWithType: Complex.Unit
+- uid: Arithmetica.Complex.Zero
+  name: Zero
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Zero
+  commentId: P:Arithmetica.Complex.Zero
+  fullName: Arithmetica.Complex.Zero
+  nameWithType: Complex.Zero
+- uid: Arithmetica.Complex.Zero*
+  name: Zero
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Zero_
+  commentId: Overload:Arithmetica.Complex.Zero
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Zero
+  nameWithType: Complex.Zero
+- uid: Arithmetica.Complex.Zeros(System.Int64)
+  name: Zeros(Int64)
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Zeros_System_Int64_
+  commentId: M:Arithmetica.Complex.Zeros(System.Int64)
+  fullName: Arithmetica.Complex.Zeros(System.Int64)
+  nameWithType: Complex.Zeros(Int64)
+- uid: Arithmetica.Complex.Zeros*
+  name: Zeros
+  href: api/Arithmetica.Complex.html#Arithmetica_Complex_Zeros_
+  commentId: Overload:Arithmetica.Complex.Zeros
+  isSpec: "True"
+  fullName: Arithmetica.Complex.Zeros
+  nameWithType: Complex.Zeros
 - uid: Arithmetica.DType
   name: DType
   href: api/Arithmetica.DType.html
@@ -1741,18 +2893,18 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Geometry.Plane.Div
   nameWithType: Plane.Div
+- uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Complex)
+  name: Dot(Plane, Complex)
+  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Complex_
+  commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Complex)
+  fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Complex)
+  nameWithType: Plane.Dot(Plane, Complex)
 - uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
   name: Dot(Plane, Plane)
   href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Geometry_Plane_
   commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Geometry.Plane)
   fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Geometry.Plane)
   nameWithType: Plane.Dot(Plane, Plane)
-- uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Matrix)
-  name: Dot(Plane, Matrix)
-  href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Matrix_
-  commentId: M:Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Matrix)
-  fullName: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane, Arithmetica.Matrix)
-  nameWithType: Plane.Dot(Plane, Matrix)
 - uid: Arithmetica.Geometry.Plane.Dot(Arithmetica.Geometry.Plane,Arithmetica.Vector4)
   name: Dot(Plane, Vector4)
   href: api/Arithmetica.Geometry.Plane.html#Arithmetica_Geometry_Plane_Dot_Arithmetica_Geometry_Plane_Arithmetica_Vector4_
@@ -4131,6 +5283,274 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Matrix.Zeros
   nameWithType: Matrix.Zeros
+- uid: Arithmetica.Quantum
+  name: Arithmetica.Quantum
+  href: api/Arithmetica.Quantum.html
+  commentId: N:Arithmetica.Quantum
+  fullName: Arithmetica.Quantum
+  nameWithType: Arithmetica.Quantum
+- uid: Arithmetica.Quantum.QCGate
+  name: QCGate
+  href: api/Arithmetica.Quantum.QCGate.html
+  commentId: T:Arithmetica.Quantum.QCGate
+  fullName: Arithmetica.Quantum.QCGate
+  nameWithType: QCGate
+- uid: Arithmetica.Quantum.QCRegister
+  name: QCRegister
+  href: api/Arithmetica.Quantum.QCRegister.html
+  commentId: T:Arithmetica.Quantum.QCRegister
+  fullName: Arithmetica.Quantum.QCRegister
+  nameWithType: QCRegister
+- uid: Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Complex)
+  name: QCRegister(Complex)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister__ctor_Arithmetica_Complex_
+  commentId: M:Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Complex)
+  fullName: Arithmetica.Quantum.QCRegister.QCRegister(Arithmetica.Complex)
+  nameWithType: QCRegister.QCRegister(Complex)
+- uid: Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Complex[])
+  name: QCRegister(Complex[])
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister__ctor_Arithmetica_Complex___
+  commentId: M:Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Complex[])
+  name.vb: QCRegister(Complex())
+  fullName: Arithmetica.Quantum.QCRegister.QCRegister(Arithmetica.Complex[])
+  fullName.vb: Arithmetica.Quantum.QCRegister.QCRegister(Arithmetica.Complex())
+  nameWithType: QCRegister.QCRegister(Complex[])
+  nameWithType.vb: QCRegister.QCRegister(Complex())
+- uid: Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Quantum.QCRegister[])
+  name: QCRegister(QCRegister[])
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister__ctor_Arithmetica_Quantum_QCRegister___
+  commentId: M:Arithmetica.Quantum.QCRegister.#ctor(Arithmetica.Quantum.QCRegister[])
+  name.vb: QCRegister(QCRegister())
+  fullName: Arithmetica.Quantum.QCRegister.QCRegister(Arithmetica.Quantum.QCRegister[])
+  fullName.vb: Arithmetica.Quantum.QCRegister.QCRegister(Arithmetica.Quantum.QCRegister())
+  nameWithType: QCRegister.QCRegister(QCRegister[])
+  nameWithType.vb: QCRegister.QCRegister(QCRegister())
+- uid: Arithmetica.Quantum.QCRegister.#ctor(System.Int32,System.Int32)
+  name: QCRegister(Int32, Int32)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister__ctor_System_Int32_System_Int32_
+  commentId: M:Arithmetica.Quantum.QCRegister.#ctor(System.Int32,System.Int32)
+  fullName: Arithmetica.Quantum.QCRegister.QCRegister(System.Int32, System.Int32)
+  nameWithType: QCRegister.QCRegister(Int32, Int32)
+- uid: Arithmetica.Quantum.QCRegister.#ctor*
+  name: QCRegister
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister__ctor_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.QCRegister
+  nameWithType: QCRegister.QCRegister
+- uid: Arithmetica.Quantum.QCRegister.Collapse(System.Random)
+  name: Collapse(Random)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_Collapse_System_Random_
+  commentId: M:Arithmetica.Quantum.QCRegister.Collapse(System.Random)
+  fullName: Arithmetica.Quantum.QCRegister.Collapse(System.Random)
+  nameWithType: QCRegister.Collapse(Random)
+- uid: Arithmetica.Quantum.QCRegister.Collapse*
+  name: Collapse
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_Collapse_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.Collapse
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.Collapse
+  nameWithType: QCRegister.Collapse
+- uid: Arithmetica.Quantum.QCRegister.EPRPair
+  name: EPRPair
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_EPRPair
+  commentId: P:Arithmetica.Quantum.QCRegister.EPRPair
+  fullName: Arithmetica.Quantum.QCRegister.EPRPair
+  nameWithType: QCRegister.EPRPair
+- uid: Arithmetica.Quantum.QCRegister.EPRPair*
+  name: EPRPair
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_EPRPair_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.EPRPair
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.EPRPair
+  nameWithType: QCRegister.EPRPair
+- uid: Arithmetica.Quantum.QCRegister.GetValue(System.Int32,System.Int32)
+  name: GetValue(Int32, Int32)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GetValue_System_Int32_System_Int32_
+  commentId: M:Arithmetica.Quantum.QCRegister.GetValue(System.Int32,System.Int32)
+  fullName: Arithmetica.Quantum.QCRegister.GetValue(System.Int32, System.Int32)
+  nameWithType: QCRegister.GetValue(Int32, Int32)
+- uid: Arithmetica.Quantum.QCRegister.GetValue*
+  name: GetValue
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GetValue_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.GetValue
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.GetValue
+  nameWithType: QCRegister.GetValue
+- uid: Arithmetica.Quantum.QCRegister.GHZState
+  name: GHZState
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GHZState
+  commentId: P:Arithmetica.Quantum.QCRegister.GHZState
+  fullName: Arithmetica.Quantum.QCRegister.GHZState
+  nameWithType: QCRegister.GHZState
+- uid: Arithmetica.Quantum.QCRegister.GHZState*
+  name: GHZState
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GHZState_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.GHZState
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.GHZState
+  nameWithType: QCRegister.GHZState
+- uid: Arithmetica.Quantum.QCRegister.GHZStateOfLength(System.Int32)
+  name: GHZStateOfLength(Int32)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GHZStateOfLength_System_Int32_
+  commentId: M:Arithmetica.Quantum.QCRegister.GHZStateOfLength(System.Int32)
+  fullName: Arithmetica.Quantum.QCRegister.GHZStateOfLength(System.Int32)
+  nameWithType: QCRegister.GHZStateOfLength(Int32)
+- uid: Arithmetica.Quantum.QCRegister.GHZStateOfLength*
+  name: GHZStateOfLength
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_GHZStateOfLength_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.GHZStateOfLength
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.GHZStateOfLength
+  nameWithType: QCRegister.GHZStateOfLength
+- uid: Arithmetica.Quantum.QCRegister.Register
+  name: Register
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_Register
+  commentId: P:Arithmetica.Quantum.QCRegister.Register
+  fullName: Arithmetica.Quantum.QCRegister.Register
+  nameWithType: QCRegister.Register
+- uid: Arithmetica.Quantum.QCRegister.Register*
+  name: Register
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_Register_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.Register
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.Register
+  nameWithType: QCRegister.Register
+- uid: Arithmetica.Quantum.QCRegister.ToString
+  name: ToString()
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_ToString
+  commentId: M:Arithmetica.Quantum.QCRegister.ToString
+  fullName: Arithmetica.Quantum.QCRegister.ToString()
+  nameWithType: QCRegister.ToString()
+- uid: Arithmetica.Quantum.QCRegister.ToString*
+  name: ToString
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_ToString_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.ToString
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.ToString
+  nameWithType: QCRegister.ToString
+- uid: Arithmetica.Quantum.QCRegister.WState
+  name: WState
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_WState
+  commentId: P:Arithmetica.Quantum.QCRegister.WState
+  fullName: Arithmetica.Quantum.QCRegister.WState
+  nameWithType: QCRegister.WState
+- uid: Arithmetica.Quantum.QCRegister.WState*
+  name: WState
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_WState_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.WState
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.WState
+  nameWithType: QCRegister.WState
+- uid: Arithmetica.Quantum.QCRegister.WStateOfLength(System.Int32)
+  name: WStateOfLength(Int32)
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_WStateOfLength_System_Int32_
+  commentId: M:Arithmetica.Quantum.QCRegister.WStateOfLength(System.Int32)
+  fullName: Arithmetica.Quantum.QCRegister.WStateOfLength(System.Int32)
+  nameWithType: QCRegister.WStateOfLength(Int32)
+- uid: Arithmetica.Quantum.QCRegister.WStateOfLength*
+  name: WStateOfLength
+  href: api/Arithmetica.Quantum.QCRegister.html#Arithmetica_Quantum_QCRegister_WStateOfLength_
+  commentId: Overload:Arithmetica.Quantum.QCRegister.WStateOfLength
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QCRegister.WStateOfLength
+  nameWithType: QCRegister.WStateOfLength
+- uid: Arithmetica.Quantum.Qubit
+  name: Qubit
+  href: api/Arithmetica.Quantum.Qubit.html
+  commentId: T:Arithmetica.Quantum.Qubit
+  fullName: Arithmetica.Quantum.Qubit
+  nameWithType: Qubit
+- uid: Arithmetica.Quantum.Qubit.#ctor(Arithmetica.Complex,Arithmetica.Complex)
+  name: Qubit(Complex, Complex)
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit__ctor_Arithmetica_Complex_Arithmetica_Complex_
+  commentId: M:Arithmetica.Quantum.Qubit.#ctor(Arithmetica.Complex,Arithmetica.Complex)
+  fullName: Arithmetica.Quantum.Qubit.Qubit(Arithmetica.Complex, Arithmetica.Complex)
+  nameWithType: Qubit.Qubit(Complex, Complex)
+- uid: Arithmetica.Quantum.Qubit.#ctor(System.Single,System.Single)
+  name: Qubit(Single, Single)
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit__ctor_System_Single_System_Single_
+  commentId: M:Arithmetica.Quantum.Qubit.#ctor(System.Single,System.Single)
+  fullName: Arithmetica.Quantum.Qubit.Qubit(System.Single, System.Single)
+  nameWithType: Qubit.Qubit(Single, Single)
+- uid: Arithmetica.Quantum.Qubit.#ctor(System.Single,System.Single,System.Single,System.Single)
+  name: Qubit(Single, Single, Single, Single)
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit__ctor_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Arithmetica.Quantum.Qubit.#ctor(System.Single,System.Single,System.Single,System.Single)
+  fullName: Arithmetica.Quantum.Qubit.Qubit(System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Qubit.Qubit(Single, Single, Single, Single)
+- uid: Arithmetica.Quantum.Qubit.#ctor*
+  name: Qubit
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit__ctor_
+  commentId: Overload:Arithmetica.Quantum.Qubit.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.Qubit
+  nameWithType: Qubit.Qubit
+- uid: Arithmetica.Quantum.Qubit.Normalize
+  name: Normalize()
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_Normalize
+  commentId: M:Arithmetica.Quantum.Qubit.Normalize
+  fullName: Arithmetica.Quantum.Qubit.Normalize()
+  nameWithType: Qubit.Normalize()
+- uid: Arithmetica.Quantum.Qubit.Normalize*
+  name: Normalize
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_Normalize_
+  commentId: Overload:Arithmetica.Quantum.Qubit.Normalize
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.Normalize
+  nameWithType: Qubit.Normalize
+- uid: Arithmetica.Quantum.Qubit.One
+  name: One
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_One
+  commentId: P:Arithmetica.Quantum.Qubit.One
+  fullName: Arithmetica.Quantum.Qubit.One
+  nameWithType: Qubit.One
+- uid: Arithmetica.Quantum.Qubit.One*
+  name: One
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_One_
+  commentId: Overload:Arithmetica.Quantum.Qubit.One
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.One
+  nameWithType: Qubit.One
+- uid: Arithmetica.Quantum.Qubit.OneAmplitude
+  name: OneAmplitude
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_OneAmplitude
+  commentId: P:Arithmetica.Quantum.Qubit.OneAmplitude
+  fullName: Arithmetica.Quantum.Qubit.OneAmplitude
+  nameWithType: Qubit.OneAmplitude
+- uid: Arithmetica.Quantum.Qubit.OneAmplitude*
+  name: OneAmplitude
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_OneAmplitude_
+  commentId: Overload:Arithmetica.Quantum.Qubit.OneAmplitude
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.OneAmplitude
+  nameWithType: Qubit.OneAmplitude
+- uid: Arithmetica.Quantum.Qubit.Zero
+  name: Zero
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_Zero
+  commentId: P:Arithmetica.Quantum.Qubit.Zero
+  fullName: Arithmetica.Quantum.Qubit.Zero
+  nameWithType: Qubit.Zero
+- uid: Arithmetica.Quantum.Qubit.Zero*
+  name: Zero
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_Zero_
+  commentId: Overload:Arithmetica.Quantum.Qubit.Zero
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.Zero
+  nameWithType: Qubit.Zero
+- uid: Arithmetica.Quantum.Qubit.ZeroAmplitude
+  name: ZeroAmplitude
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_ZeroAmplitude
+  commentId: P:Arithmetica.Quantum.Qubit.ZeroAmplitude
+  fullName: Arithmetica.Quantum.Qubit.ZeroAmplitude
+  nameWithType: Qubit.ZeroAmplitude
+- uid: Arithmetica.Quantum.Qubit.ZeroAmplitude*
+  name: ZeroAmplitude
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_ZeroAmplitude_
+  commentId: Overload:Arithmetica.Quantum.Qubit.ZeroAmplitude
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.ZeroAmplitude
+  nameWithType: Qubit.ZeroAmplitude
 - uid: Arithmetica.Sampler
   name: Sampler
   href: api/Arithmetica.Sampler.html
@@ -4640,19 +6060,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector.Add
   nameWithType: Vector.Add
-- uid: Arithmetica.Vector.Addmm(System.Single,Arithmetica.Vector,System.Single,Arithmetica.Vector,Arithmetica.Vector)
-  name: Addmm(Single, Vector, Single, Vector, Vector)
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Addmm_System_Single_Arithmetica_Vector_System_Single_Arithmetica_Vector_Arithmetica_Vector_
-  commentId: M:Arithmetica.Vector.Addmm(System.Single,Arithmetica.Vector,System.Single,Arithmetica.Vector,Arithmetica.Vector)
-  fullName: Arithmetica.Vector.Addmm(System.Single, Arithmetica.Vector, System.Single, Arithmetica.Vector, Arithmetica.Vector)
-  nameWithType: Vector.Addmm(Single, Vector, Single, Vector, Vector)
-- uid: Arithmetica.Vector.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Vector.html#Arithmetica_Vector_Addmm_
-  commentId: Overload:Arithmetica.Vector.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Vector.Addmm
-  nameWithType: Vector.Addmm
 - uid: Arithmetica.Vector.ArithArray
   name: ArithArray
   href: api/Arithmetica.Vector.html#Arithmetica_Vector_ArithArray
@@ -5638,19 +7045,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector2.Add
   nameWithType: Vector2.Add
-- uid: Arithmetica.Vector2.Addmm(System.Single,Arithmetica.Vector2,System.Single,Arithmetica.Vector2,Arithmetica.Vector2)
-  name: Addmm(Single, Vector2, Single, Vector2, Vector2)
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Addmm_System_Single_Arithmetica_Vector2_System_Single_Arithmetica_Vector2_Arithmetica_Vector2_
-  commentId: M:Arithmetica.Vector2.Addmm(System.Single,Arithmetica.Vector2,System.Single,Arithmetica.Vector2,Arithmetica.Vector2)
-  fullName: Arithmetica.Vector2.Addmm(System.Single, Arithmetica.Vector2, System.Single, Arithmetica.Vector2, Arithmetica.Vector2)
-  nameWithType: Vector2.Addmm(Single, Vector2, Single, Vector2, Vector2)
-- uid: Arithmetica.Vector2.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_Addmm_
-  commentId: Overload:Arithmetica.Vector2.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Vector2.Addmm
-  nameWithType: Vector2.Addmm
 - uid: Arithmetica.Vector2.ArithArray
   name: ArithArray
   href: api/Arithmetica.Vector2.html#Arithmetica_Vector2_ArithArray
@@ -6532,19 +7926,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector3.Add
   nameWithType: Vector3.Add
-- uid: Arithmetica.Vector3.Addmm(System.Single,Arithmetica.Vector3,System.Single,Arithmetica.Vector3,Arithmetica.Vector3)
-  name: Addmm(Single, Vector3, Single, Vector3, Vector3)
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Addmm_System_Single_Arithmetica_Vector3_System_Single_Arithmetica_Vector3_Arithmetica_Vector3_
-  commentId: M:Arithmetica.Vector3.Addmm(System.Single,Arithmetica.Vector3,System.Single,Arithmetica.Vector3,Arithmetica.Vector3)
-  fullName: Arithmetica.Vector3.Addmm(System.Single, Arithmetica.Vector3, System.Single, Arithmetica.Vector3, Arithmetica.Vector3)
-  nameWithType: Vector3.Addmm(Single, Vector3, Single, Vector3, Vector3)
-- uid: Arithmetica.Vector3.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_Addmm_
-  commentId: Overload:Arithmetica.Vector3.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Vector3.Addmm
-  nameWithType: Vector3.Addmm
 - uid: Arithmetica.Vector3.ArithArray
   name: ArithArray
   href: api/Arithmetica.Vector3.html#Arithmetica_Vector3_ArithArray
@@ -7445,19 +8826,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Add
   nameWithType: Vector4.Add
-- uid: Arithmetica.Vector4.Addmm(System.Single,Arithmetica.Vector4,System.Single,Arithmetica.Vector4,Arithmetica.Vector4)
-  name: Addmm(Single, Vector4, Single, Vector4, Vector4)
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Addmm_System_Single_Arithmetica_Vector4_System_Single_Arithmetica_Vector4_Arithmetica_Vector4_
-  commentId: M:Arithmetica.Vector4.Addmm(System.Single,Arithmetica.Vector4,System.Single,Arithmetica.Vector4,Arithmetica.Vector4)
-  fullName: Arithmetica.Vector4.Addmm(System.Single, Arithmetica.Vector4, System.Single, Arithmetica.Vector4, Arithmetica.Vector4)
-  nameWithType: Vector4.Addmm(Single, Vector4, Single, Vector4, Vector4)
-- uid: Arithmetica.Vector4.Addmm*
-  name: Addmm
-  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Addmm_
-  commentId: Overload:Arithmetica.Vector4.Addmm
-  isSpec: "True"
-  fullName: Arithmetica.Vector4.Addmm
-  nameWithType: Vector4.Addmm
 - uid: Arithmetica.Vector4.ArithArray
   name: ArithArray
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_ArithArray
@@ -7702,6 +9070,32 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Vector4.Item
   nameWithType: Vector4.Item
+- uid: Arithmetica.Vector4.Length
+  name: Length()
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Length
+  commentId: M:Arithmetica.Vector4.Length
+  fullName: Arithmetica.Vector4.Length()
+  nameWithType: Vector4.Length()
+- uid: Arithmetica.Vector4.Length*
+  name: Length
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Length_
+  commentId: Overload:Arithmetica.Vector4.Length
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.Length
+  nameWithType: Vector4.Length
+- uid: Arithmetica.Vector4.LengthSquared
+  name: LengthSquared()
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_LengthSquared
+  commentId: M:Arithmetica.Vector4.LengthSquared
+  fullName: Arithmetica.Vector4.LengthSquared()
+  nameWithType: Vector4.LengthSquared()
+- uid: Arithmetica.Vector4.LengthSquared*
+  name: LengthSquared
+  href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_LengthSquared_
+  commentId: Overload:Arithmetica.Vector4.LengthSquared
+  isSpec: "True"
+  fullName: Arithmetica.Vector4.LengthSquared
+  nameWithType: Vector4.LengthSquared
 - uid: Arithmetica.Vector4.Lerp(Arithmetica.Vector4,Arithmetica.Vector4,System.Single)
   name: Lerp(Vector4, Vector4, Single)
   href: api/Arithmetica.Vector4.html#Arithmetica_Vector4_Lerp_Arithmetica_Vector4_Arithmetica_Vector4_System_Single_
