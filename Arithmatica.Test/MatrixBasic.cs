@@ -15,8 +15,6 @@ namespace Arithmatica.Test
             Matrix b = new Matrix(4, 6);
             b.Fill(2);
 
-            var m = Matrix.Matrix4x4();
-
             Matrix c = Matrix.Sin(a + b);
             c.Print();
         }

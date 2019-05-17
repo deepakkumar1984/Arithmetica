@@ -6,10 +6,7 @@ namespace Arithmetica
 {
     public partial class Vector2
     {
-        public static Vector2 Dot(Vector2 lhs, Vector2 rhs) => Vector2.Out(ArrayOps.Dot(lhs.variable, rhs.variable.Transpose()));
-
-        public static Vector2 Addmm(float beta, Vector2 src, float alpha, Vector2 m1, Vector2 m2)
-            => Vector2.Out(ArrayOps.Addmm(beta, src.variable, alpha, m1.variable, m2.variable));
+        public static Vector Dot(Vector2 lhs, Vector2 rhs) => Vector.Out(ArrayOps.Sum(ArrayOps.Mul(lhs.variable, rhs.variable.Transpose()), 1));
 
         public static Vector2 Add(Vector2 lhs, Vector2 rhs) => Vector2.Out(ArrayOps.Add(lhs.variable, rhs.variable));
 

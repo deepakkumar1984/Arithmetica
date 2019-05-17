@@ -28,7 +28,7 @@ namespace Arithmetica.Geometry
         /// <param name="lhs">The plane.</param>
         /// <param name="rhs">The matrix (4 x n).</param>
         /// <returns></returns>
-        public static Plane Dot(Plane lhs, Matrix rhs) => Plane.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
+        public static Plane Dot(Plane lhs, Complex rhs) => Plane.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
 
         /// <summary>The addmm function is an optimized version of the equation beta*mat + alpha*(mat1 @ mat2)</summary>
         /// <param name="beta">The beta value.</param>

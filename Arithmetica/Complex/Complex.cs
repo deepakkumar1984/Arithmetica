@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Arithmetica
 {
     /// <summary>
-    /// Represents a Vector with X, Y, Z and W components and can hold multiple Vector4
+    /// Represents a Complex with X and Y components and can hold multiple Complex
     /// </summary>
-    public partial class Vector4
+    public partial class Complex
     {
-        /// <summary>
-        /// The variable
-        /// </summary>
         internal ArithArray variable;
 
         /// <summary>
-        /// Gets the number of the Vector4 in this instance.
+        /// Gets the number of the Complex in this instance.
         /// </summary>
         /// <value>
         /// The size.
@@ -30,13 +27,13 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Gets the X value for the Vector. Usually gets the first Vector value.
+        /// Gets the X value for the Complex. Usually gets the first Complex value.
         /// </summary>
         /// <value>
         /// The x.
         /// </value>
         /// <exception cref="Exception">Not initialized</exception>
-        public float X
+        public float Real
         {
             get
             {
@@ -50,13 +47,13 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Gets the Y value for the Vector. Usually gets the first Vector value.
+        /// Gets the Y value for the Complex. Usually gets the first Complex value.
         /// </summary>
         /// <value>
         /// The y.
         /// </value>
         /// <exception cref="Exception">Not initialized</exception>
-        public float Y
+        public float Imag
         {
             get
             {
@@ -70,140 +67,125 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Gets the Z value for the Vector. Usually gets the first Vector value.
+        /// Gets the magnitude.
         /// </summary>
         /// <value>
-        /// The z.
+        /// The magnitude.
         /// </value>
-        /// <exception cref="Exception">Not initialized</exception>
-        public float Z
+        public float Magnitude
         {
             get
             {
-                if (Size > 0)
-                {
-                    return this[0].Item3;
-                }
-
-                throw new Exception("Not initialized");
+                return GetMagnitude()[0];
             }
         }
 
         /// <summary>
-        /// Gets the W value for the Vector. Usually gets the first Vector value.
+        /// Gets the phase.
         /// </summary>
         /// <value>
-        /// The z.
+        /// The phase.
         /// </value>
-        /// <exception cref="Exception">Not initialized</exception>
-        public float W
+        public float Phase
         {
             get
             {
-                if (Size > 0)
-                {
-                    return this[0].Item4;
-                }
-
-                throw new Exception("Not initialized");
+                return GetPhase()[0];
             }
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// Initializes a new instance of the <see cref="Complex"/> class.
         /// </summary>
-        /// <param name="size">Defines number of vectors in the list.</param>
-        public Vector4(long size = 1)
+        /// <param name="size">Defines number of complex variable in the list.</param>
+        public Complex(long size = 1)
         {
-            variable = new ArithArray(size, 4);
+            variable = new ArithArray(size, 2);
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// Initializes a new instance of the <see cref="Complex" /> class.
         /// </summary>
-        /// <param name="size">Defines number of vectors in the list.</param>
-        /// <param name="dataType">the data type.</param>
-        public Vector4(int size, DType dataType)
+        /// <param name="real">The real value.</param>
+        /// <param name="imag">The imaginary value.</param>
+        public Complex(float real, float imag) : this(1)
         {
-            variable = new ArithArray(new long[] { size, 4 }, dataType);
+            variable.LoadFrom(new float[] { real, imag });
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Vector4" /> class.
+        /// Constructor to take polar inputs and create a Complex object
         /// </summary>
-        /// <param name="X">The x value.</param>
-        /// <param name="Y">The y value.</param>
-        /// <param name="Z">The z value.</param>
-        /// <param name="W">The w value.</param>
-        public Vector4(float X, float Y, float Z, float W) : this(1)
-        {
-            variable.LoadFrom(new float[] { X, Y, Z, W });
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Vector4"/> class.
-        /// </summary>
-        /// <param name="vector3">The Vector3 which will have X, Y, Z components.</param>
-        /// <param name="W">The w value.</param>
-        public Vector4(Vector3 vector3, float W) : this(vector3.X, vector3.Y, vector3.Z, W)
-        {
-
-        }
-
-        /// <summary>
-        /// Create a Unit Vector3 which is vector of size 1
-        /// </summary>
-        /// <param name="X">The x value.</param>
-        /// <param name="Y">The y value.</param>
-        /// <param name="Z">The z value.</param>
-        /// <param name="W">The w value.</param>
+        /// <param name="magnitude">The magnitude.</param>
+        /// <param name="phase">The phase.</param>
         /// <returns></returns>
-        public static Vector4 Unit(float X, float Y, float Z, float W)
+        public static Complex FromPolarCoordinates(float magnitude, float phase) 
         {
-            return new Vector4(X, Y, Z, W);
+            return new Complex((magnitude * (float)Math.Cos(phase)), (magnitude * (float)Math.Sin(phase)));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Vector4"/> class.
+        /// Initializes a new instance of the <see cref="Complex"/> class.
+        /// </summary>
+        /// <param name="size">Defines number of complex variable in the list.</param>
+        /// <param name="dataType">The data type.</param>
+        public Complex(int size, DType dataType)
+        {
+            variable = new ArithArray(new long[] { size, 2 }, dataType);
+        }
+
+        /// <summary>
+        /// Create a Unit Complex which is Complex of size 1
+        /// </summary>
+        /// <param name="X">The x value.</param>
+        /// <param name="Y">The y value.</param>
+        /// <returns></returns>
+        public static Complex Unit(float real, float imag)
+        {
+            return FromArray(real, imag);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Complex"/> class.
         /// </summary>
         /// <param name="v">The v.</param>
-        private Vector4(ArithArray v)
+        private Complex(ArithArray v)
         {
             variable = v;
         }
 
         /// <summary>
-        /// Creates a Vector4 of specified size and all filled with 1
+        /// Creates a Complex of specified size and all filled with 1
         /// </summary>
-        /// <param name="size">Defines number of vectors in the list.</param>
+        /// <param name="size">Defines number of complex variable in the list.</param>
         /// <returns></returns>
-        public static Vector4 Ones(long size)
+        public static Complex Ones(long size)
         {
-            var x = new Vector4(size);
+            var x = new Complex(size);
             x.Fill(1);
             return x;
         }
 
         /// <summary>
-        /// Creates a Vector3 of specified size and all filled with 0
+        /// Creates a Complex of specified size and all filled with 0
         /// </summary>
-        /// <param name="size">Defines number of vectors in the list.</param>
+        /// <param name="size">Defines number of complex variable in the list.</param>
         /// <returns></returns>
-        public static Vector4 Zeros(long size)
+        public static Complex Zeros(long size)
         {
-            var x = new Vector4(size);
+            var x = new Complex(size);
             x.Fill(0);
             return x;
         }
 
         /// <summary>
-        /// Create a Vector4 from the array.
+        /// Create a Complex from the array.
         /// </summary>
         /// <param name="data">The data array to be loaded.</param>
         /// <returns></returns>
-        public static Vector4 FromArray(params float[] data)
+        public static Complex FromArray(params float[] data)
         {
-            var x = new Vector4(data.Length / 4);
+            var x = new Complex(data.Length / 2);
             x.variable.LoadFrom(data);
             return x;
         }
@@ -213,7 +195,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static ArithArray In(Vector4 x)
+        internal static ArithArray In(Complex x)
         {
             return x.variable;
         }
@@ -223,9 +205,9 @@ namespace Arithmetica
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static Vector4 Out(ArithArray x)
+        internal static Complex Out(ArithArray x)
         {
-            return new Vector4(x);
+            return new Complex(x);
         }
 
         /// <summary>
@@ -257,43 +239,38 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Gets or sets the vector value at the specified index.
+        /// Gets or sets the complex value at the specified index.
         /// </summary>
         /// <value>
-        /// Get the (X, Y, Z, W) value at the index
+        /// Get the (X, Y) value at the index
         /// </value>
         /// <param name="index">The index.</param>
         /// <returns></returns>
-        public (float, float, float, float) this[long index]
+        public (float, float) this[long index]
         {
             get
             {
-                return (variable.GetElementAsFloat(index, 0)
-                    , variable.GetElementAsFloat(index, 1)
-                    , variable.GetElementAsFloat(index, 2)
-                    , variable.GetElementAsFloat(index, 3));
+                return (variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
             }
             set
             {
                 variable.SetElementAsFloat(value.Item1, index, 0);
                 variable.SetElementAsFloat(value.Item2, index, 1);
-                variable.SetElementAsFloat(value.Item3, index, 2);
-                variable.SetElementAsFloat(value.Item4, index, 3);
             }
         }
 
         /// <summary>
-        /// Gets the Vector4 value at the specified index.
+        /// Gets the Complex value at the specified index.
         /// </summary>
         /// <param name="index">The index.</param>
         /// <returns></returns>
-        public Vector4 Get(long index)
+        public Complex Get(long index)
         {
-            return new Vector4(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1), variable.GetElementAsFloat(index, 2), variable.GetElementAsFloat(index, 4));
+            return FromArray(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
         }
 
         /// <summary>
-        /// Fills all the values in the vector with specified value
+        /// Fills all the values in the Complex with specified value
         /// </summary>
         /// <param name="value">The value.</param>
         public void Fill(float value)
@@ -302,24 +279,52 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Prints this instance.
+        /// Prints this Complex.
         /// </summary>
         public void Print()
         {
             variable.Print();
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Vector Length()
+        /// <summary>
+        /// Gets the magnitude of the complex variables.
+        /// </summary>
+        /// <returns></returns>
+        public float[] GetMagnitude()
         {
-            var ls = Vector4.Dot(this, this);
-            return Vector.Sqrt(ls);
+            var comp_abs = Complex.Abs(this);
+            float[] result = new float[Size];
+            Parallel.For(0, Size, (i) => {
+                var (real, imag) = this[i];
+                if (real > imag)
+                {
+                    double r = imag / real;
+                    result[i] = real * (float)Math.Sqrt(1.0 + r * r);
+                }
+                else if (imag == 0.0)
+                {
+                    result[i] = real;
+                }
+                else
+                {
+                    double r = real / imag;
+                    result[i] = imag * (float)Math.Sqrt(1.0 + r * r);
+                }
+            });
+
+            return result;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Vector LengthSquared()
+        public float[] GetPhase()
         {
-            return Vector4.Dot(this, this);
+            float[] result = new float[Size];
+            Parallel.For(0, Size, (i) =>
+            {
+                var (real, imag) = this[i];
+                result[i] = (float)Math.Atan2(imag, real);
+            });
+
+            return result;
         }
 
         /// <summary>
@@ -330,7 +335,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator +(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) + In(rhs)); }
+        public static Complex operator +(Complex lhs, Complex rhs) { return Out(In(lhs) + In(rhs)); }
 
         /// <summary>
         /// Implements the operator +.
@@ -340,7 +345,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator +(Vector4 lhs, float rhs) { return Out(In(lhs) + rhs); }
+        public static Complex operator +(Complex lhs, float rhs) { return Out(In(lhs) + rhs); }
 
         /// <summary>
         /// Implements the operator +.
@@ -350,7 +355,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator +(float lhs, Vector4 rhs) { return Out(lhs + In(rhs)); }
+        public static Complex operator +(float lhs, Complex rhs) { return Out(lhs + In(rhs)); }
 
         /// <summary>
         /// Implements the operator -.
@@ -360,7 +365,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator -(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) - In(rhs)); }
+        public static Complex operator -(Complex lhs, Complex rhs) { return Out(In(lhs) - In(rhs)); }
 
         /// <summary>
         /// Implements the operator -.
@@ -370,7 +375,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator -(Vector4 lhs, float rhs) { return Out(In(lhs) - rhs); }
+        public static Complex operator -(Complex lhs, float rhs) { return Out(In(lhs) - rhs); }
 
         /// <summary>
         /// Implements the operator -.
@@ -380,7 +385,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator -(float lhs, Vector4 rhs) { return Out(lhs - In(rhs)); }
+        public static Complex operator -(float lhs, Complex rhs) { return Out(lhs - In(rhs)); }
 
         /// <summary>
         /// Implements the operator *.
@@ -390,7 +395,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator *(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) * In(rhs)); }
+        public static Complex operator *(Complex lhs, Complex rhs) { return Out(In(lhs) * In(rhs)); }
 
         /// <summary>
         /// Implements the operator *.
@@ -400,7 +405,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator *(Vector4 lhs, float rhs) { return Out(In(lhs) * rhs); }
+        public static Complex operator *(Complex lhs, float rhs) { return Out(In(lhs) * rhs); }
 
         /// <summary>
         /// Implements the operator *.
@@ -410,7 +415,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator *(float lhs, Vector4 rhs) { return Out(lhs * In(rhs)); }
+        public static Complex operator *(float lhs, Complex rhs) { return Out(lhs * In(rhs)); }
 
         /// <summary>
         /// Implements the operator /.
@@ -420,7 +425,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator /(Vector4 lhs, Vector4 rhs) { return Out(In(lhs) / In(rhs)); }
+        public static Complex operator /(Complex lhs, Complex rhs) { return Out(In(lhs) / In(rhs)); }
 
         /// <summary>
         /// Implements the operator /.
@@ -430,7 +435,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator /(Vector4 lhs, float rhs) { return lhs / rhs; }
+        public static Complex operator /(Complex lhs, float rhs) { return lhs / rhs; }
 
         /// <summary>
         /// Implements the operator /.
@@ -440,7 +445,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator /(float lhs, Vector4 rhs) { return lhs / rhs; }
+        public static Complex operator /(float lhs, Complex rhs) { return lhs / rhs; }
 
         /// <summary>
         /// Implements the operator &gt;.
@@ -450,7 +455,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator >(Vector4 lhs, Vector4 rhs) { return lhs > rhs; }
+        public static Complex operator >(Complex lhs, Complex rhs) { return lhs > rhs; }
 
         /// <summary>
         /// Implements the operator &gt;.
@@ -460,7 +465,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator >(Vector4 lhs, float rhs) { return lhs > rhs; }
+        public static Complex operator >(Complex lhs, float rhs) { return lhs > rhs; }
 
         /// <summary>
         /// Implements the operator &lt;.
@@ -470,7 +475,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator <(Vector4 lhs, Vector4 rhs) { return lhs < rhs; }
+        public static Complex operator <(Complex lhs, Complex rhs) { return lhs < rhs; }
 
         /// <summary>
         /// Implements the operator &lt;.
@@ -480,7 +485,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator <(Vector4 lhs, float rhs) { return lhs < rhs; }
+        public static Complex operator <(Complex lhs, float rhs) { return lhs < rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -490,7 +495,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator >=(Vector4 lhs, Vector4 rhs) { return lhs >= rhs; }
+        public static Complex operator >=(Complex lhs, Complex rhs) { return lhs >= rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -500,7 +505,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator >=(Vector4 lhs, float rhs) { return lhs >= rhs; }
+        public static Complex operator >=(Complex lhs, float rhs) { return lhs >= rhs; }
 
         /// <summary>
         /// Implements the operator &lt;=.
@@ -510,7 +515,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator <=(Vector4 lhs, Vector4 rhs) { return lhs <= rhs; }
+        public static Complex operator <=(Complex lhs, Complex rhs) { return lhs <= rhs; }
 
         /// <summary>
         /// Implements the operator &lt;=.
@@ -520,6 +525,6 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector4 operator <=(Vector4 lhs, float rhs) { return lhs <= rhs; }
+        public static Complex operator <=(Complex lhs, float rhs) { return lhs <= rhs; }
     }
 }

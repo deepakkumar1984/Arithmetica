@@ -12,17 +12,7 @@ namespace Arithmetica
         /// <param name="lhs">The first vector.</param>
         /// <param name="rhs">The second vector.</param>
         /// <returns></returns>
-        public static Vector Dot(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.Dot(lhs.variable, rhs.variable.Transpose()));
-
-        /// <summary>The addmm function is an optimized version of the equation beta*mat + alpha*(mat1 @ mat2)</summary>
-        /// <param name="beta">The beta value.</param>
-        /// <param name="src">The source vector.</param>
-        /// <param name="alpha">The alpha value.</param>
-        /// <param name="m1">The first 2D vector.</param>
-        /// <param name="m2">The second 2D vector.</param>
-        /// <returns></returns>
-        public static Vector Addmm(float beta, Vector src, float alpha, Vector m1, Vector m2)
-            => Vector.Out(ArrayOps.Addmm(beta, src.variable, alpha, m1.variable, m2.variable));
+        public static Vector Dot(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.Sum(ArrayOps.Mul(lhs.variable, rhs.variable.Transpose()), 1));
 
         /// <summary>
         /// Performs elementwise add operation between two vector
