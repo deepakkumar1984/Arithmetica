@@ -594,6 +594,22 @@ namespace Arithmetica
             return src;
         }
 
+        public static ArithArray Minus(ArithArray src, int dimension)
+        {
+            dimension = dimension < 0 ? src.DimensionCount + dimension : dimension;
+            return (ArithArray)OpRegistry.Invoke("minus", null, src, dimension);
+        }
+
+        public static ArithArray Minus(ArithArray src, params int[] dimension)
+        {
+            foreach (int dim in dimension)
+            {
+                src = Minus(src, dim);
+            }
+
+            return src;
+        }
+
         /// <summary>
         /// Products the specified result.
         /// </summary>

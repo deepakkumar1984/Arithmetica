@@ -848,6 +848,20 @@ namespace Arithmetica.Cpu
         public ArithArray Sum(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(sum_func, result, src, dimension); }
 
         /// <summary>
+        /// The sum function
+        /// </summary>
+        private MethodInfo minus_func = NativeWrapper.GetMethod("TS_Minus");
+        /// <summary>
+        /// Sums the specified result.
+        /// </summary>
+        /// <param name="result">The result.</param>
+        /// <param name="src">The source.</param>
+        /// <param name="dimension">The dimension.</param>
+        /// <returns>ArithArray.</returns>
+        [RegisterOpStorageType("minus", typeof(CpuStorage))]
+        public ArithArray Minus(ArithArray result, ArithArray src, int dimension) { return NativeWrapper.InvokeNullableResultDimensionwise(minus_func, result, src, dimension); }
+
+        /// <summary>
         /// The product function
         /// </summary>
         private MethodInfo prod_func = NativeWrapper.GetMethod("TS_Prod");

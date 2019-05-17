@@ -41,7 +41,6 @@ INLINE_FUNC void Apply3(TensorRef* tensor1, TensorRef* tensor2, TensorRef* tenso
 
 	do
 	{
-#pragma parallel omp for
 		for (; !tensor1Iter.ReachedBlockEnd() && !tensor2Iter.ReachedBlockEnd() && !tensor3Iter.ReachedBlockEnd();
 			tensor1Iter.BlockStep(), tensor2Iter.BlockStep(), tensor3Iter.BlockStep())
 		{

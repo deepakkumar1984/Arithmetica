@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Arithmetica
 {
@@ -9,74 +10,146 @@ namespace Arithmetica
         /// <summary>
         /// Performs Trigonometric sine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Sin(Complex src) => Complex.Out(ArrayOps.Sin(src.variable));
+        public static Complex Sin(Complex src)
+        {
+            Complex result = new Complex(src.Size);
+
+            Parallel.For(0, src.Size, (i) => {
+                var (real, imag) = src[i];
+                result[i] = ((float)Math.Sin(real) * (float)Math.Cosh(imag), (float)Math.Cos(real) * (float)Math.Sinh(imag));
+            });
+
+            return result;
+        }
 
         /// <summary>
         /// Performs Trigonometric cosine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Cos(Complex src) => Complex.Out(ArrayOps.Cos(src.variable));
+        public static Complex Cos(Complex src)
+        {
+            Complex result = new Complex(src.Size);
+
+            Parallel.For(0, src.Size, (i) => {
+                var (real, imag) = src[i];
+                result[i] = ((float)Math.Cos(real) * (float)Math.Cosh(imag), -(float)Math.Sin(real) * (float)Math.Sinh(imag));
+            });
+
+            return result;
+        }
 
         /// <summary>
         /// Performs Trigonometric tangent, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Tan(Complex src) => Complex.Out(ArrayOps.Tan(src.variable));
+        public static Complex Tan(Complex src)
+        {
+            return Sin(src) / Cos(src);
+        }
 
         /// <summary>
         /// Performs inverse sine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Asin(Complex src) => Complex.Out(ArrayOps.Asin(src.variable));
+        public static Complex Asin(Complex src)
+        {
+            var imagOnes = ImaginaryOnes(src.Size);
+            var ones = Ones(src.Size);
+
+            return -imagOnes * Log(imagOnes * src + Sqrt(ones - Square(src)));
+        }
 
         /// <summary>
         /// Performs inverse cosine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Acos(Complex src) => Complex.Out(ArrayOps.Acos(src.variable));
+        public static Complex Acos(Complex src)
+        {
+            var imagOnes = ImaginaryOnes(src.Size);
+            var ones = Ones(src.Size);
+
+            return -imagOnes * Log(src + imagOnes * src + Sqrt(ones - Square(src)));
+        }
 
         /// <summary>
         /// Performs inverse tangent, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Atan(Complex src) => Complex.Out(ArrayOps.Atan(src.variable));
+        public static Complex Atan(Complex src)
+        {
+            Complex twoes = new Complex(src.Size);
+            twoes.Fill(2);
+            var imagOnes = ImaginaryOnes(src.Size);
+            var ones = Ones(src.Size);
 
-        /// <summary>
-        /// Element-wise arc tangent of x1/x2 choosing the quadrant correctly.
-        /// <para>The quadrant(i.e., branch) is chosen so that arctan2(x1, x2) is the signed angle in radians between the ray ending at the origin and passing through the point(1,0), and the ray ending at the origin and passing through the point(x2, x1). (Note the role reversal: the “y-coordinate” is the first function parameter, the “x-coordinate” is the second.) By IEEE convention, this function is defined for x2 = +/-0 and for either or both of x1 and x2 = +/-inf(see Notes for specific values).</para>
-        /// </summary>
-        /// <param name="src">The source matrix.</param>
-        /// <returns></returns>
-        public static Complex Atan2(Complex srcY, Complex srcX) => Complex.Out(ArrayOps.Atan2(srcY.variable, srcX.variable));
+            return (imagOnes / twoes) * (Log(ones - imagOnes * src) - Log(ones + imagOnes * src));
+        }
+
 
         /// <summary>
         /// Performs hyperbolic sine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Sinh(Complex src) => Complex.Out(ArrayOps.Sinh(src.variable));
+        public static Complex Sinh(Complex src)
+        {
+            Complex result = new Complex(src.Size);
+
+            Parallel.For(0, src.Size, (i) => {
+                var (real, imag) = src[i];
+                result[i] = ((float)Math.Sinh(real) * (float)Math.Cos(imag), (float)Math.Cosh(real) * (float)Math.Sin(imag));
+            });
+
+            return result;
+        }
 
         /// <summary>
         /// Performs hyperbolic cosine, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Cosh(Complex src) => Complex.Out(ArrayOps.Cosh(src.variable));
+        public static Complex Cosh(Complex src)
+        {
+            Complex result = new Complex(src.Size);
+
+            Parallel.For(0, src.Size, (i) => {
+                var (real, imag) = src[i];
+                result[i] = ((float)Math.Cosh(real) * (float)Math.Cos(imag), (float)Math.Sinh(real) * (float)Math.Sin(imag));
+            });
+
+            return result;
+        }
 
         /// <summary>
         /// Performs hyperbolic tangent, element-wise.
         /// </summary>
-        /// <param name="src">The source matrix.</param>
+        /// <param name="src">The source complex.</param>
         /// <returns></returns>
-        public static Complex Tanh(Complex src) => Complex.Out(ArrayOps.Tanh(src.variable));
+        public static Complex Tanh(Complex src)
+        {
+            return Sinh(src) / Cosh(src);
+        }
 
+        /// <summary>
+        /// Performs arc tangent, element-wise.
+        /// </summary>
+        /// <param name="src">The source complex.</param>
+        /// <returns></returns>
+        public static Complex ATan(Complex src)
+        {
+            Complex twoes = new Complex(src.Size);
+            twoes.Fill(2);
+            var imagOnes = ImaginaryOnes(src.Size);
+            var ones = Ones(src.Size);
 
+            return (imagOnes / twoes) * (Log(ones - imagOnes * src) - Log(ones + imagOnes * src));
+        }
     }
 }

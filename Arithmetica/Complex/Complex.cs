@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -80,6 +81,15 @@ namespace Arithmetica
             }
         }
 
+        public float MagnitudeSquared
+        {
+            get
+            {
+                var mag = GetMagnitude()[0];
+                return mag * mag;
+            }
+        }
+
         /// <summary>
         /// Gets the phase.
         /// </summary>
@@ -91,6 +101,30 @@ namespace Arithmetica
             get
             {
                 return GetPhase()[0];
+            }
+        }
+
+        public static Complex One
+        {
+            get
+            {
+                return new Complex(1, 0);
+            }
+        }
+
+        public static Complex ImaginaryOne
+        {
+            get
+            {
+                return new Complex(0, 1);
+            }
+        }
+
+        public static Complex Zero
+        {
+            get
+            {
+                return new Complex(0, 0);
             }
         }
 
@@ -155,14 +189,34 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Creates a Complex of specified size and all filled with 1
+        /// Creates a Complex of specified size and all filled with 1 for the real component
         /// </summary>
         /// <param name="size">Defines number of complex variable in the list.</param>
         /// <returns></returns>
         public static Complex Ones(long size)
         {
             var x = new Complex(size);
-            x.Fill(1);
+            Parallel.For(0, size, (i) =>
+            {
+                x[i] = (1, 0);
+            });
+
+            return x;
+        }
+
+        /// <summary>
+        /// Creates a Complex of specified size and all filled with 1 for the imaginary component
+        /// </summary>
+        /// <param name="size"></param>
+        /// <returns></returns>
+        public static Complex ImaginaryOnes(long size)
+        {
+            var x = new Complex(size);
+            Parallel.For(0, size, (i) =>
+            {
+                x[i] = (0, 1);
+            });
+
             return x;
         }
 
@@ -174,7 +228,11 @@ namespace Arithmetica
         public static Complex Zeros(long size)
         {
             var x = new Complex(size);
-            x.Fill(0);
+            Parallel.For(0, size, (i) =>
+            {
+                x[i] = (0, 0);
+            });
+
             return x;
         }
 
@@ -269,13 +327,35 @@ namespace Arithmetica
             return FromArray(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
         }
 
+        public void Set(long index, Complex complex)
+        {
+            this[index] = (complex.Real, complex.Imag);
+        }
+
+
+        /// <summary>
+        /// Normalizes this instance.
+        /// </summary>
+        public void Normalize()
+        {
+            var magnitudes = GetMagnitude();
+            var max = magnitudes.Max();
+            Parallel.For(0, Size, (i) => {
+                var (real, imag) = this[i];
+                this[i] = (real / max, imag / max);
+            });
+        }
+
         /// <summary>
         /// Fills all the values in the Complex with specified value
         /// </summary>
         /// <param name="value">The value.</param>
         public void Fill(float value)
         {
-            variable.Fill(value);
+            Parallel.For(0, Size, (i) =>
+            {
+                this[i] = (value, 0);
+            });
         }
 
         /// <summary>
@@ -315,6 +395,10 @@ namespace Arithmetica
             return result;
         }
 
+        /// <summary>
+        /// Get the phase of the complex numbers
+        /// </summary>
+        /// <returns></returns>
         public float[] GetPhase()
         {
             float[] result = new float[Size];
@@ -338,26 +422,6 @@ namespace Arithmetica
         public static Complex operator +(Complex lhs, Complex rhs) { return Out(In(lhs) + In(rhs)); }
 
         /// <summary>
-        /// Implements the operator +.
-        /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator +(Complex lhs, float rhs) { return Out(In(lhs) + rhs); }
-
-        /// <summary>
-        /// Implements the operator +.
-        /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator +(float lhs, Complex rhs) { return Out(lhs + In(rhs)); }
-
-        /// <summary>
         /// Implements the operator -.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
@@ -368,26 +432,6 @@ namespace Arithmetica
         public static Complex operator -(Complex lhs, Complex rhs) { return Out(In(lhs) - In(rhs)); }
 
         /// <summary>
-        /// Implements the operator -.
-        /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator -(Complex lhs, float rhs) { return Out(In(lhs) - rhs); }
-
-        /// <summary>
-        /// Implements the operator -.
-        /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator -(float lhs, Complex rhs) { return Out(lhs - In(rhs)); }
-
-        /// <summary>
         /// Implements the operator *.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
@@ -395,27 +439,22 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator *(Complex lhs, Complex rhs) { return Out(In(lhs) * In(rhs)); }
+        public static Complex operator *(Complex lhs, Complex rhs) { return Mul(lhs, rhs); }
 
         /// <summary>
         /// Implements the operator *.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
+        /// <param name="scalar">The scalar.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator *(Complex lhs, float rhs) { return Out(In(lhs) * rhs); }
-
-        /// <summary>
-        /// Implements the operator *.
-        /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator *(float lhs, Complex rhs) { return Out(lhs * In(rhs)); }
+        public static Complex operator *(Complex lhs, float scalar)
+        {
+            Complex rhs = new Complex(lhs.Size);
+            rhs.Fill(scalar);
+            return Mul(lhs, rhs);
+        }
 
         /// <summary>
         /// Implements the operator /.
@@ -425,27 +464,29 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator /(Complex lhs, Complex rhs) { return Out(In(lhs) / In(rhs)); }
+        public static Complex operator /(Complex lhs, Complex rhs) { return Div(lhs, rhs); }
 
         /// <summary>
         /// Implements the operator /.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
+        /// <param name="scalar">The scalar.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator /(Complex lhs, float rhs) { return lhs / rhs; }
+        public static Complex operator /(Complex lhs, float scalar)
+        {
+            Complex rhs = new Complex(lhs.Size);
+            rhs.Fill(scalar);
+            return Div(lhs, rhs);
+        }
 
         /// <summary>
-        /// Implements the operator /.
+        /// Negates the complex numbers
         /// </summary>
-        /// <param name="lhs">The LHS.</param>
-        /// <param name="rhs">The RHS.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static Complex operator /(float lhs, Complex rhs) { return lhs / rhs; }
+        /// <param name="src">The source complex</param>
+        /// <returns></returns>
+        public static Complex operator -(Complex src) { return Neg(src); }
 
         /// <summary>
         /// Implements the operator &gt;.
@@ -526,5 +567,20 @@ namespace Arithmetica
         /// The result of the operator.
         /// </returns>
         public static Complex operator <=(Complex lhs, float rhs) { return lhs <= rhs; }
+
+        public static implicit operator Complex(int value)
+        {
+            return new Complex(value, 0);
+        }
+
+        public static implicit operator Complex(float value)
+        {
+            return new Complex(value, 0);
+        }
+
+        public static implicit operator Complex(double value)
+        {
+            return new Complex((float)value, 0);
+        }
     }
 }

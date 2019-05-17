@@ -8,3 +8,7 @@
 /ArithConsole/bin/Release/netcoreapp2.2
 /.vs/Arithmetica/v15
 /Arithmatica.Test/obj/Debug/netcoreapp2.1
+/ArithConsole/bin/Debug/netcoreapp2.1
+/Arithmatica.Test/bin/Debug/netcoreapp2.1
+/.vs/Arithmetica/config
+/Arithmatica.Test/obj/Release/netcoreapp2.1

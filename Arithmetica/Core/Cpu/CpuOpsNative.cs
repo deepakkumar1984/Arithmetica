@@ -516,6 +516,9 @@ namespace Arithmetica.Cpu
         /// <param name="dimension">The dimension.</param>
         /// <returns>System.Int32.</returns>
         [DllImport(dll, CallingConvention = cc)] public static extern int TS_Sum(IntPtr result, IntPtr src, int dimension);
+
+        [DllImport(dll, CallingConvention = cc)] public static extern int TS_Minus(IntPtr result, IntPtr src, int dimension);
+
         /// <summary>
         /// Tses the product.
         /// </summary>
