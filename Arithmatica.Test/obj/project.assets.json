@@ -656,6 +656,43 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "OpenCvSharp3-AnyCPU/3.4.4.20181118": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenCvSharp.Blob.dll": {},
+          "lib/netstandard2.0/OpenCvSharp.Extensions.dll": {},
+          "lib/netstandard2.0/OpenCvSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenCvSharp.Blob.dll": {},
+          "lib/netstandard2.0/OpenCvSharp.Extensions.dll": {},
+          "lib/netstandard2.0/OpenCvSharp.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/opencv_ffmpeg344_64.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/opencv_ffmpeg344.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1678,6 +1715,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "OpenCvSharp3-AnyCPU": "3.4.4.20181118",
           "System.Drawing.Common": "4.5.1",
           "System.Drawing.Primitives": "4.3.0"
         },
@@ -2793,6 +2831,61 @@
         "newtonsoft.json.9.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "OpenCvSharp3-AnyCPU/3.4.4.20181118": {
+      "sha512": "G75Dj/2K79n8G/BJbKLjwb6FPXCEi9N+1irIUaHEKYclgYRv22ziVrsuI9WYtrtCjD4d9M5wtne9F2/9Bt9Kiw==",
+      "type": "package",
+      "path": "opencvsharp3-anycpu/3.4.4.20181118",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/OpenCvSharp3-AnyCPU.props",
+        "lib/net20/OpenCvSharp.Blob.dll",
+        "lib/net20/OpenCvSharp.Blob.pdb",
+        "lib/net20/OpenCvSharp.Blob.xml",
+        "lib/net20/OpenCvSharp.dll",
+        "lib/net20/OpenCvSharp.pdb",
+        "lib/net20/OpenCvSharp.xml",
+        "lib/net40/OpenCvSharp.Blob.dll",
+        "lib/net40/OpenCvSharp.Blob.pdb",
+        "lib/net40/OpenCvSharp.Blob.xml",
+        "lib/net40/OpenCvSharp.Extensions.dll",
+        "lib/net40/OpenCvSharp.Extensions.pdb",
+        "lib/net40/OpenCvSharp.Extensions.xml",
+        "lib/net40/OpenCvSharp.UserInterface.dll",
+        "lib/net40/OpenCvSharp.UserInterface.pdb",
+        "lib/net40/OpenCvSharp.UserInterface.xml",
+        "lib/net40/OpenCvSharp.dll",
+        "lib/net40/OpenCvSharp.pdb",
+        "lib/net40/OpenCvSharp.xml",
+        "lib/net461/OpenCvSharp.Blob.dll",
+        "lib/net461/OpenCvSharp.Blob.pdb",
+        "lib/net461/OpenCvSharp.Blob.xml",
+        "lib/net461/OpenCvSharp.Extensions.dll",
+        "lib/net461/OpenCvSharp.Extensions.pdb",
+        "lib/net461/OpenCvSharp.Extensions.xml",
+        "lib/net461/OpenCvSharp.UserInterface.dll",
+        "lib/net461/OpenCvSharp.UserInterface.pdb",
+        "lib/net461/OpenCvSharp.UserInterface.xml",
+        "lib/net461/OpenCvSharp.dll",
+        "lib/net461/OpenCvSharp.pdb",
+        "lib/net461/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.Blob.dll",
+        "lib/netstandard2.0/OpenCvSharp.Blob.pdb",
+        "lib/netstandard2.0/OpenCvSharp.Blob.xml",
+        "lib/netstandard2.0/OpenCvSharp.Extensions.dll",
+        "lib/netstandard2.0/OpenCvSharp.Extensions.pdb",
+        "lib/netstandard2.0/OpenCvSharp.Extensions.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.pdb",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "opencvsharp3-anycpu.3.4.4.20181118.nupkg.sha512",
+        "opencvsharp3-anycpu.nuspec",
+        "runtimes/win10-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win10-x64/native/opencv_ffmpeg344_64.dll",
+        "runtimes/win10-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win10-x86/native/opencv_ffmpeg344.dll"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5963,23 +6056,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bdkadmin\\.nuget\\packages\\": {},
+    "C:\\Users\\deepa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
+      "projectUniqueName": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
       "projectName": "Arithmatica.Test",
-      "projectPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
-      "packagesPath": "C:\\Users\\bdkadmin\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\obj\\",
+      "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
+      "packagesPath": "C:\\Users\\deepa\\.nuget\\packages\\",
+      "outputPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bdkadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5987,19 +6080,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
-              "projectPath": "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj"
+            "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
+              "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj"
             }
           }
         }

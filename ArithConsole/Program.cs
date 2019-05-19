@@ -12,12 +12,10 @@ namespace ArithConsole
             //DotNetPerf();
             //ArithPerf();
 
-            Complex complex = Complex.FromArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-            v.Print();
+            //Image img = Image.FromFolder("img/", 200, 200, false);
+            Image img = Image.FromFile("img/cat01.jpg", 200, 200);
+            img.Save();
 
-            System.Numerics.Vector4 vector4 = new System.Numerics.Vector4(1, 2, 3, 4);
-            var l = vector4.Length();
-            
             Console.ReadLine();
         }
 
