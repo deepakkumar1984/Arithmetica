@@ -695,14 +695,11 @@ namespace Arithmetica
             var result = this.CopyRef();
             for (int i = 0; i < dimensionStarts.Length; ++i)
             {
-                var resultOld = result;
-                result.Narrow(i, dimensionStarts[i], dimensionSizes[i]);
-                resultOld.Dispose();
+                result = result.Narrow(i, dimensionStarts[i], dimensionSizes[i]);
             }
 
-            return result;
+            return ArrayOps.NewContiguous(result);
         }
-
 
         /// <summary>
         /// Copies from.
@@ -813,7 +810,7 @@ namespace Arithmetica
         /// Swapses for permutation.
         /// </summary>
         /// <param name="perm">The perm.</param>
-        /// <returns>IEnumerable&lt;Tuple&lt;System.Int32, System.Int32&gt;&gt;.</returns>
+        /// <returns>IEnumerable<Tuple<System.Int32, System.Int32&gt;&gt;.</returns>
         /// <exception cref="InvalidOperationException">Invalid permutation</exception>
         private static IEnumerable<Tuple<int, int>> SwapsForPermutation(int[] perm)
         {

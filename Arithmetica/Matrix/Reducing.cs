@@ -11,7 +11,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Sum(Matrix src) => Matrix.Out(ArrayOps.Sum(src.variable));
+        public static float Sum(Matrix src) => ArrayOps.SumF(src.variable);
 
         /// <summary>
         /// Reduced Sum of the matrix elements on a specific dimension.
@@ -26,7 +26,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Prod(Matrix src) => Matrix.Out(ArrayOps.Prod(src.variable));
+        public static float Prod(Matrix src) => ArrayOps.ProdF(src.variable);
 
         /// <summary>
         /// Reduced Prod of the matrix elements on a specific dimension.
@@ -41,7 +41,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Mean(Matrix src) => Matrix.Out(ArrayOps.Mean(src.variable));
+        public static float Mean(Matrix src) => ArrayOps.MeanF(src.variable);
 
         /// <summary>
         /// Reduced Mean of the matrix elements on a specific dimension.
@@ -56,7 +56,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Max(Matrix src) => Matrix.Out(ArrayOps.Max(src.variable));
+        public static float Max(Matrix src) => ArrayOps.MaxF(src.variable);
 
         /// <summary>
         /// Reduced Max of the matrix elements on a specific dimension.
@@ -71,7 +71,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Min(Matrix src) => Matrix.Out(ArrayOps.Min(src.variable));
+        public static float Min(Matrix src) => ArrayOps.MinF(src.variable);
 
         /// <summary>
         /// Reduced Min of the matrix elements on a specific dimension.
@@ -86,7 +86,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Norm(Matrix src, float value) => Matrix.Out(ArrayOps.Norm(src.variable, value));
+        public static float Norm(Matrix src, float value) => ArrayOps.Norm(src.variable, value).DataFloat[0];
 
         /// <summary>
         /// Reduced Norm w.r.t to a scalar value of the matrix elements on a specific dimension.
@@ -101,7 +101,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Var(Matrix src) => Matrix.Out(ArrayOps.Var(src.variable));
+        public static float Var(Matrix src) => ArrayOps.Var(src.variable).DataFloat[0];
 
         /// <summary>
         /// Reduced Variance of the matrix elements on a specific dimension.

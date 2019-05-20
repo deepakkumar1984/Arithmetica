@@ -165,7 +165,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <param name="instance">The instance.</param>
-        /// <returns>IEnumerable&lt;OpConstraint&gt;.</returns>
+        /// <returns>IEnumerable<OpConstraint&gt;.</returns>
         public abstract IEnumerable<OpConstraint> GetConstraints(ParameterInfo parameter, object instance);
     }
 
@@ -196,7 +196,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <param name="instance">The instance.</param>
-        /// <returns>IEnumerable&lt;OpConstraint&gt;.</returns>
+        /// <returns>IEnumerable<OpConstraint&gt;.</returns>
         public override IEnumerable<OpConstraint> GetConstraints(ParameterInfo parameter, object instance)
         {
             yield return new ArgStorageTypeConstraint(parameter.Position, storageType);

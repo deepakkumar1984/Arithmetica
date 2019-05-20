@@ -509,24 +509,24 @@ namespace Arithmetica
         public static Complex operator >(Complex lhs, float rhs) { return lhs > rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <(Complex lhs, Complex rhs) { return lhs &lt; rhs; }
+        public static Complex operator <(Complex lhs, Complex rhs) { return lhs < rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <(Complex lhs, float rhs) { return lhs &lt; rhs; }
+        public static Complex operator <(Complex lhs, float rhs) { return lhs < rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -549,24 +549,24 @@ namespace Arithmetica
         public static Complex operator >=(Complex lhs, float rhs) { return lhs >= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <=(Complex lhs, Complex rhs) { return lhs &lt;= rhs; }
+        public static Complex operator <=(Complex lhs, Complex rhs) { return lhs <= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <=(Complex lhs, float rhs) { return lhs &lt;= rhs; }
+        public static Complex operator <=(Complex lhs, float rhs) { return lhs <= rhs; }
 
         public static implicit operator Complex(int value)
         {

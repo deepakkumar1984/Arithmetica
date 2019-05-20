@@ -12,10 +12,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.ArithArray.html",
-          "hash": "dROeadSFCFb9Q4u61WCt5A=="
+          "hash": "F2/zjc+821XNZM0/gli9ig=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -27,10 +27,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Complex.html",
-          "hash": "fWaq8L2TDFTazj5bLmKzQQ=="
+          "hash": "4kYPxIM9nytfiETtYc1d1w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -42,7 +42,7 @@
           "hash": "fK/3gDHC/FYiZTVG/2LB4Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
           "hash": "2SBsTdGUZySJQqQPsB8BvA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,7 +69,7 @@
           "hash": "UW1BhbfMd+V5IhjvBOTljA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Geometry.Plane.html",
-          "hash": "4Y1vg8lnHhuHmAbiQCe9Ag=="
+          "hash": "WOuxnbKx9rqJaPn2+feoGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Geometry.Quaternion.html",
-          "hash": "W8nai1NBOywHBRPyA7kHaQ=="
+          "hash": "TPd95uCE2VRS0Nik9yz2pA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,19 +108,22 @@
           "hash": "fOBI2+daPIVbdHTqKrmZJQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Image.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Image.html",
-          "hash": "uBomSrNm+eUIBnZMFrd0Ig=="
+          "hash": "Y+5RhLuBCmGvhUHohYLD1w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +132,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Matrix.html",
-          "hash": "IC6vfOjeBJ5O+mNQd7wEGA=="
+          "hash": "CzNT99pWhfmjWo9JIGQljw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +147,7 @@
           "hash": "gw4WcjoA69jgdk31FqGwXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -159,7 +162,7 @@
           "hash": "UWzYV9d8vlesS6MKgpBhNQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -171,7 +174,7 @@
           "hash": "4UV2LzjSYR6gdh1d2tzKPw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -183,7 +186,7 @@
           "hash": "UGhJTD3/J5ZTTPT3nwhfTQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -195,7 +198,7 @@
           "hash": "Bga3XrSntnH3uixHw0jJ2A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -207,10 +210,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector.html",
-          "hash": "s4Nu+dk80ksKRIpTgaM2HQ=="
+          "hash": "tSEqPzDHppY4u42UPzKEUQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -222,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector2.html",
-          "hash": "U/4cP+47DN679ESM6vdYhg=="
+          "hash": "NHyNHgB9HoZZbmeOUnNv2g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +240,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector3.html",
-          "hash": "EkoR1ymvnvY/R/I3txmxEw=="
+          "hash": "8xeojsJBHpcwSqkaKOR6ZQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,10 +255,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector4.html",
-          "hash": "aPrM8WCbThHUilCIYvl3fw=="
+          "hash": "sI3jOiXSJ40qC99fgHINgQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -267,7 +270,7 @@
           "hash": "G/mVxiN3uIdybup44O6ZHQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -279,7 +282,7 @@
           "hash": "7a9lcYcnApB7+jHUjfm6cQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -352,13 +355,6 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
@@ -369,7 +365,14 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 20,
-          "skipped_file_count": 10
+          "skipped_file_count": 20
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },

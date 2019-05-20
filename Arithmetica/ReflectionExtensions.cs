@@ -30,7 +30,7 @@ namespace Arithmetica
         /// <typeparam name="T"></typeparam>
         /// <param name="assembly">The assembly.</param>
         /// <param name="inherit">if set to <c>true</c> [inherit].</param>
-        /// <returns>IEnumerable&lt;Tuple&lt;Type, IEnumerable&lt;T&gt;&gt;&gt;.</returns>
+        /// <returns>IEnumerable<Tuple<Type, IEnumerable<T&gt;&gt;&gt;.</returns>
         public static IEnumerable<Tuple<Type, IEnumerable<T>>> TypesWithAttribute<T>(this Assembly assembly, bool inherit)
         {
             foreach (var type in assembly.GetTypes())
@@ -55,7 +55,7 @@ namespace Arithmetica
         /// <typeparam name="T"></typeparam>
         /// <param name="type">The type.</param>
         /// <param name="inherit">if set to <c>true</c> [inherit].</param>
-        /// <returns>IEnumerable&lt;Tuple&lt;MethodInfo, IEnumerable&lt;T&gt;&gt;&gt;.</returns>
+        /// <returns>IEnumerable<Tuple<MethodInfo, IEnumerable<T&gt;&gt;&gt;.</returns>
         public static IEnumerable<Tuple<MethodInfo, IEnumerable<T>>> MethodsWithAttribute<T>(this Type type, bool inherit)
         {
             foreach (var method in type.GetMethods())
@@ -80,7 +80,7 @@ namespace Arithmetica
         /// <typeparam name="T"></typeparam>
         /// <param name="method">The method.</param>
         /// <param name="inherit">if set to <c>true</c> [inherit].</param>
-        /// <returns>IEnumerable&lt;Tuple&lt;ParameterInfo, IEnumerable&lt;T&gt;&gt;&gt;.</returns>
+        /// <returns>IEnumerable<Tuple<ParameterInfo, IEnumerable<T&gt;&gt;&gt;.</returns>
         public static IEnumerable<Tuple<ParameterInfo, IEnumerable<T>>> ParametersWithAttribute<T>(this MethodInfo method, bool inherit)
         {
             foreach (var paramter in method.GetParameters())

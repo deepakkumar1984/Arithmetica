@@ -39,7 +39,7 @@ namespace Arithmetica.Geometry
         public static Quaternion GreaterEqual(Quaternion lhs, float rhs) => Quaternion.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs));
 
         /// <summary>
-        /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
+        /// <![CDATA[Performs lhs < rhs elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS quaternion.</param>
         /// <param name="rhs">The RHS quaternion.</param>
@@ -47,7 +47,7 @@ namespace Arithmetica.Geometry
         public static Quaternion LessThan(Quaternion lhs, Quaternion rhs) => Quaternion.Out(ArrayOps.LessThan(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
+        /// <![CDATA[Performs lhs < scalar elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS quaternion.</param>
         /// <param name="rhs">The RHS scalar float.</param>
@@ -55,7 +55,7 @@ namespace Arithmetica.Geometry
         public static Quaternion LessThan(Quaternion lhs, float rhs) => Quaternion.Out(ArrayOps.LessThan(lhs.variable, rhs));
 
         /// <summary>
-        /// Performs lhs &lt;= rhs elemenwise.
+        /// Performs lhs <= rhs elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS quaternion.</param>
         /// <param name="rhs">The RHS quaternion.</param>
@@ -63,7 +63,7 @@ namespace Arithmetica.Geometry
         public static Quaternion LessEqual(Quaternion lhs, Quaternion rhs) => Quaternion.Out(ArrayOps.LessOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// Performs lhs &lt;= scalar elemenwise.
+        /// Performs lhs <= scalar elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS quaternion.</param>
         /// <param name="rhs">The RHS scalar float.</param>

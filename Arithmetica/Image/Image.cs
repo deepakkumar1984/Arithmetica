@@ -518,24 +518,24 @@ namespace Arithmetica
         public static Image operator >(Image lhs, float rhs) { return lhs > rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <(Image lhs, Image rhs) { return lhs &lt; rhs; }
+        public static Image operator <(Image lhs, Image rhs) { return lhs < rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <(Image lhs, float rhs) { return lhs &lt; rhs; }
+        public static Image operator <(Image lhs, float rhs) { return lhs < rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -558,23 +558,135 @@ namespace Arithmetica
         public static Image operator >=(Image lhs, float rhs) { return lhs >= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <=(Image lhs, Image rhs) { return lhs &lt;= rhs; }
+        public static Image operator <=(Image lhs, Image rhs) { return lhs <= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <=(Image lhs, float rhs) { return lhs &lt;= rhs; }
+        public static Image operator <=(Image lhs, float rhs) { return lhs <= rhs; }
+
+        #region Image Functions
+        /// <summary>
+        /// Pad the image which will make border of specified length
+        /// </summary>
+        /// <param name="top">The top pad length.</param>
+        /// <param name="bottom">The bottom pad length.</param>
+        /// <param name="left">The lef pad lengtht.</param>
+        /// <param name="right">The right pad length.</param>
+        /// <param name="value">The pad value.</param>
+        /// <returns></returns>
+        public Image Pad(int top, int bottom, int left, int right,  float value = 0)
+        {
+            List<float> data = new List<float>();
+            int H = Height + top + bottom;
+            int W = Width + left + right;
+            
+            for (int i = 0; i < Size; i++)
+            {
+                var mat = ToOpenCVMat(i);
+                Cv2.CopyMakeBorder(mat, mat, top, bottom, left, right, BorderTypes.Constant, value);
+                data.AddRange(ImgToFloat(mat, mat.Width, mat.Height, mat.Channels()));
+            }
+
+            var result = new ArithArray(1, H, W, Channel);
+            result.LoadFrom(data.ToArray());
+            result = result.Transpose(0, 3, 1, 2);
+            return Out(result);
+        }
+
+        /// <summary>
+        /// Gets the region of the image.
+        /// </summary>
+        /// <param name="x">The x value.</param>
+        /// <param name="y">The y value.</param>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        /// <returns></returns>
+        public Image GetRegion(int x, int y, int width, int height)
+        {
+            List<float> data = new List<float>();
+            for (int i = 0; i < Size; i++)
+            {
+                data.AddRange(variable.GetRegion(new long[] { i, 0, y, x }, new long[] { 1, Channel, width, height }).DataFloat);
+            }
+
+            var result = new ArithArray(1, Channel, height, width);
+            result.LoadFrom(data.ToArray());
+            return Out(result);
+        }
+
+        /// <summary>
+        /// Converts the image to a list of matrix of RGB values
+        /// </summary>
+        /// <returns></returns>
+        public List<List<Matrix>> ToMatrix()
+        {
+            List<List<Matrix>> result = new List<List<Matrix>>();
+            List<Matrix> imageMats = new List<Matrix>();
+
+            for (int i = 0; i < Size; i++)
+            {
+                imageMats.Clear();
+                for (int j = 0; j < Channel; j++)
+                {
+                    imageMats.Add(Matrix.Out(ArrayOps.NewContiguous(variable.Select(0, i).Select(0, j))));
+                }
+
+                result.Add(imageMats);
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Get the matrix of RGB of specific image index
+        /// </summary>
+        /// <param name="index">The index.</param>
+        /// <returns></returns>
+        public List<Matrix> ToMatrix(int index)
+        {
+            List<Matrix> result = new List<Matrix>();
+
+            var img = this[index];
+            for (int i = 0; i < img.Channel; i++)
+            {
+                result.Add(Matrix.Out(ArrayOps.NewContiguous(img.variable.Select(0, 0).Select(0, i))));
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Sets the pixel value of the image at cordinate (x, y).
+        /// </summary>
+        /// <param name="x">The x.</param>
+        /// <param name="y">The y.</param>
+        /// <param name="values">The values.</param>
+        /// <exception cref="ArgumentException">Values length should be equal to channel size, if gray scale: pass one value, if color: pass B, G, R value</exception>
+        public void SetPixel(int x, int y, params float[] values)
+        {
+            if(Channel != values.Length)
+            {
+                throw new ArgumentException("Values length should be equal to channel size, if gray scale: pass one value, if color: pass B, G, R value");
+            }
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                variable.SetElementAsFloat(values[i], 0, i, y, x);
+            }
+        }
+        #endregion
     }
 }

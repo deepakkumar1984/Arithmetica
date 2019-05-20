@@ -106,7 +106,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="storage">The storage.</param>
         /// <param name="array">The array.</param>
-        /// <returns>Tuple&lt;System.Double, System.Double&gt;.</returns>
+        /// <returns>Tuple<System.Double, System.Double&gt;.</returns>
         private static Tuple<double, double> AbsMinMax(Storage storage, ArithArray array)
         {
             if (storage.ElementCount == 0)
@@ -156,7 +156,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="minMax">The minimum maximum.</param>
         /// <param name="intMode">if set to <c>true</c> [int mode].</param>
-        /// <returns>Tuple&lt;FormatType, System.Double, System.Int32&gt;.</returns>
+        /// <returns>Tuple<FormatType, System.Double, System.Int32&gt;.</returns>
         private static Tuple<FormatType, double, int> GetFormatSize(Tuple<double, double> minMax, bool intMode)
         {
             var expMin = minMax.Item1 != 0 ?
@@ -220,7 +220,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="storage">The storage.</param>
         /// <param name="array">The array.</param>
-        /// <returns>Tuple&lt;System.String, System.Double, System.Int32&gt;.</returns>
+        /// <returns>Tuple<System.String, System.Double, System.Int32&gt;.</returns>
         private static Tuple<string, double, int> GetStorageFormat(Storage storage, ArithArray array)
         {
             if (storage.ElementCount == 0)

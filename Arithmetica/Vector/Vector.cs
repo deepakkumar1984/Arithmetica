@@ -355,24 +355,24 @@ namespace Arithmetica
         public static Vector operator >(Vector lhs, float rhs) { return lhs > rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector operator <(Vector lhs, Vector rhs) { return lhs &lt; rhs; }
+        public static Vector operator <(Vector lhs, Vector rhs) { return lhs < rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;.
+        /// Implements the operator <.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector operator <(Vector lhs, float rhs) { return lhs &lt; rhs; }
+        public static Vector operator <(Vector lhs, float rhs) { return lhs < rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -395,23 +395,23 @@ namespace Arithmetica
         public static Vector operator >=(Vector lhs, float rhs) { return lhs >= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector operator <=(Vector lhs, Vector rhs) { return lhs &lt;= rhs; }
+        public static Vector operator <=(Vector lhs, Vector rhs) { return lhs <= rhs; }
 
         /// <summary>
-        /// Implements the operator &lt;=.
+        /// Implements the operator <=.
         /// </summary>
         /// <param name="lhs">The LHS.</param>
         /// <param name="rhs">The RHS.</param>
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector operator <=(Vector lhs, float rhs) { return lhs &lt;= rhs; }
+        public static Vector operator <=(Vector lhs, float rhs) { return lhs <= rhs; }
     }
 }

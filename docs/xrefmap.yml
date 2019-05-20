@@ -4451,6 +4451,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Image.FromOpenCVMat
   nameWithType: Image.FromOpenCVMat
+- uid: Arithmetica.Image.GetRegion(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: GetRegion(Int32, Int32, Int32, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GetRegion_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Arithmetica.Image.GetRegion(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Arithmetica.Image.GetRegion(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: Image.GetRegion(Int32, Int32, Int32, Int32)
+- uid: Arithmetica.Image.GetRegion*
+  name: GetRegion
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GetRegion_
+  commentId: Overload:Arithmetica.Image.GetRegion
+  isSpec: "True"
+  fullName: Arithmetica.Image.GetRegion
+  nameWithType: Image.GetRegion
 - uid: Arithmetica.Image.GreaterEqual(Arithmetica.Image,Arithmetica.Image)
   name: GreaterEqual(Image, Image)
   href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterEqual_Arithmetica_Image_Arithmetica_Image_
@@ -4949,6 +4962,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Image.Subtraction
   nameWithType: Image.Subtraction
+- uid: Arithmetica.Image.Pad(System.Int32,System.Int32,System.Int32,System.Int32,System.Single)
+  name: Pad(Int32, Int32, Int32, Int32, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Pad_System_Int32_System_Int32_System_Int32_System_Int32_System_Single_
+  commentId: M:Arithmetica.Image.Pad(System.Int32,System.Int32,System.Int32,System.Int32,System.Single)
+  fullName: Arithmetica.Image.Pad(System.Int32, System.Int32, System.Int32, System.Int32, System.Single)
+  nameWithType: Image.Pad(Int32, Int32, Int32, Int32, Single)
+- uid: Arithmetica.Image.Pad*
+  name: Pad
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Pad_
+  commentId: Overload:Arithmetica.Image.Pad
+  isSpec: "True"
+  fullName: Arithmetica.Image.Pad
+  nameWithType: Image.Pad
 - uid: Arithmetica.Image.Pow(Arithmetica.Image,System.Single)
   name: Pow(Image, Single)
   href: api/Arithmetica.Image.html#Arithmetica_Image_Pow_Arithmetica_Image_System_Single_
@@ -5007,6 +5033,22 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Image.Save
   nameWithType: Image.Save
+- uid: Arithmetica.Image.SetPixel(System.Int32,System.Int32,System.Single[])
+  name: SetPixel(Int32, Int32, Single[])
+  href: api/Arithmetica.Image.html#Arithmetica_Image_SetPixel_System_Int32_System_Int32_System_Single___
+  commentId: M:Arithmetica.Image.SetPixel(System.Int32,System.Int32,System.Single[])
+  name.vb: SetPixel(Int32, Int32, Single())
+  fullName: Arithmetica.Image.SetPixel(System.Int32, System.Int32, System.Single[])
+  fullName.vb: Arithmetica.Image.SetPixel(System.Int32, System.Int32, System.Single())
+  nameWithType: Image.SetPixel(Int32, Int32, Single[])
+  nameWithType.vb: Image.SetPixel(Int32, Int32, Single())
+- uid: Arithmetica.Image.SetPixel*
+  name: SetPixel
+  href: api/Arithmetica.Image.html#Arithmetica_Image_SetPixel_
+  commentId: Overload:Arithmetica.Image.SetPixel
+  isSpec: "True"
+  fullName: Arithmetica.Image.SetPixel
+  nameWithType: Image.SetPixel
 - uid: Arithmetica.Image.Show(System.String,System.Nullable{System.Int64})
   name: Show(String, Nullable<Int64>)
   href: api/Arithmetica.Image.html#Arithmetica_Image_Show_System_String_System_Nullable_System_Int64__
@@ -5190,6 +5232,25 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Image.Tanh
   nameWithType: Image.Tanh
+- uid: Arithmetica.Image.ToMatrix
+  name: ToMatrix()
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ToMatrix
+  commentId: M:Arithmetica.Image.ToMatrix
+  fullName: Arithmetica.Image.ToMatrix()
+  nameWithType: Image.ToMatrix()
+- uid: Arithmetica.Image.ToMatrix(System.Int32)
+  name: ToMatrix(Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ToMatrix_System_Int32_
+  commentId: M:Arithmetica.Image.ToMatrix(System.Int32)
+  fullName: Arithmetica.Image.ToMatrix(System.Int32)
+  nameWithType: Image.ToMatrix(Int32)
+- uid: Arithmetica.Image.ToMatrix*
+  name: ToMatrix
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ToMatrix_
+  commentId: Overload:Arithmetica.Image.ToMatrix
+  isSpec: "True"
+  fullName: Arithmetica.Image.ToMatrix
+  nameWithType: Image.ToMatrix
 - uid: Arithmetica.Image.ToOpenCVMat(System.Int64)
   name: ToOpenCVMat(Int64)
   href: api/Arithmetica.Image.html#Arithmetica_Image_ToOpenCVMat_System_Int64_

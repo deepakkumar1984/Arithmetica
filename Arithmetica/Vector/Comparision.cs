@@ -39,7 +39,7 @@ namespace Arithmetica
         public static Vector GreaterEqual(Vector lhs, float rhs) => Vector.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs));
 
         /// <summary>
-        /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
+        /// <![CDATA[Performs lhs < rhs elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS vector.</param>
         /// <param name="rhs">The RHS vector.</param>
@@ -47,7 +47,7 @@ namespace Arithmetica
         public static Vector LessThan(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.LessThan(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
+        /// <![CDATA[Performs lhs < scalar elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS vector.</param>
         /// <param name="rhs">The RHS scalar float.</param>
@@ -55,7 +55,7 @@ namespace Arithmetica
         public static Vector LessThan(Vector lhs, float rhs) => Vector.Out(ArrayOps.LessThan(lhs.variable, rhs));
 
         /// <summary>
-        /// Performs lhs &lt;= rhs elemenwise.
+        /// Performs lhs <= rhs elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS vector.</param>
         /// <param name="rhs">The RHS vector.</param>
@@ -63,7 +63,7 @@ namespace Arithmetica
         public static Vector LessEqual(Vector lhs, Vector rhs) => Vector.Out(ArrayOps.LessOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// Performs lhs &lt;= scalar elemenwise.
+        /// Performs lhs <= scalar elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS vector.</param>
         /// <param name="rhs">The RHS scalar float.</param>

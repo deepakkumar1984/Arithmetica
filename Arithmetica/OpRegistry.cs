@@ -155,7 +155,7 @@ namespace Arithmetica
         /// </summary>
         /// <param name="method">The method.</param>
         /// <param name="instance">The instance.</param>
-        /// <returns>IEnumerable&lt;OpConstraint&gt;.</returns>
+        /// <returns>IEnumerable<OpConstraint&gt;.</returns>
         private static IEnumerable<OpConstraint> GetParameterConstraints(MethodInfo method, object instance)
         {
             var result = Enumerable.Empty<OpConstraint>();

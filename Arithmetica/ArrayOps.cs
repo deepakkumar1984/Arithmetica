@@ -1005,7 +1005,7 @@ namespace Arithmetica
         /// Gets the seed.
         /// </summary>
         /// <param name="src">The source.</param>
-        /// <returns>System.Nullable&lt;System.Int32&gt;.</returns>
+        /// <returns>System.Nullable<System.Int32&gt;.</returns>
         private static int? GetSeed(SeedSource src)
         {
             return src == null ? (int?)null : src.NextSeed();

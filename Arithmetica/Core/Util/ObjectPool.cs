@@ -156,7 +156,7 @@ namespace Arithmetica.CUDA.Util
         /// <summary>
         /// Gets this instance.
         /// </summary>
-        /// <returns>PooledObject&lt;T&gt;.</returns>
+        /// <returns>PooledObject<T&gt;.</returns>
         internal PooledObject<T> Get()
         {
             T value = freeList.Count > 0 ? freeList.Pop() : constructor();
