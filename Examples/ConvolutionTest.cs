@@ -21,8 +21,6 @@ namespace Examples
 
         private static Image Convolve(Image image, Matrix filter)
         {
-            Image result;
-
             //Get the image height and width
             int iH = image.Height;
             int iW = image.Width;
@@ -39,8 +37,8 @@ namespace Examples
 
             //Create a empty image by allocating memory for the resulting image
             //taking care to the "pad" the borders of the image so that the spatial size are not reduced
-            result = new Image(1, iH, iW);
-            result.Fill(0);
+            Image output = new Image(1, iH, iW);
+            output.Fill(0);
 
             //Loop through the image to slide the kernel 
             //across each (x, y) coordinate from left to right and top to bottom
@@ -61,11 +59,11 @@ namespace Examples
                     var k = Matrix.Sum(roiMatrix * filter);
 
                     // store the convolved value in the output (x,y)- coordinate of the output image
-                    result.SetPixel(x, y, k);
+                    output.SetPixel(x, y, k);
                 });
             });
 
-            return result;
+            return output;
         }
     }
 }
