@@ -12,7 +12,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.ArithArray.html",
-          "hash": "o71WZpkoFxAUp8gGtWfzHQ=="
+          "hash": "dROeadSFCFb9Q4u61WCt5A=="
         }
       },
       "is_incremental": false,
@@ -27,7 +27,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Complex.html",
-          "hash": "2ayjvPZGkWP/rRGZb4jUDQ=="
+          "hash": "fWaq8L2TDFTazj5bLmKzQQ=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Extensions.ArrayImageExtensions.html",
-          "hash": "Ta0lqFXbyKpmusN1WX8lYQ=="
+          "hash": "2SBsTdGUZySJQqQPsB8BvA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Geometry.Plane.html",
-          "hash": "WOuxnbKx9rqJaPn2+feoGw=="
+          "hash": "4Y1vg8lnHhuHmAbiQCe9Ag=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Geometry.Quaternion.html",
-          "hash": "TPd95uCE2VRS0Nik9yz2pA=="
+          "hash": "W8nai1NBOywHBRPyA7kHaQ=="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Arithmetica.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Arithmetica.Image.html",
+          "hash": "uBomSrNm+eUIBnZMFrd0Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Arithmetica.Matrix.yml",
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Matrix.html",
-          "hash": "VwK5NnRf0Ibytv4h94ZZjQ=="
+          "hash": "IC6vfOjeBJ5O+mNQd7wEGA=="
         }
       },
       "is_incremental": false,
@@ -180,7 +192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Sampler.html",
-          "hash": "NsdIMbx8qHiA+zSPtLrwsA=="
+          "hash": "Bga3XrSntnH3uixHw0jJ2A=="
         }
       },
       "is_incremental": false,
@@ -195,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.Vector.html",
-          "hash": "74Ve1hG5ASxUXKa2p9v6qQ=="
+          "hash": "s4Nu+dk80ksKRIpTgaM2HQ=="
         }
       },
       "is_incremental": false,
@@ -252,7 +264,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Arithmetica.html",
-          "hash": "78l6airCOo7h+I5Xk2Vk7w=="
+          "hash": "G/mVxiN3uIdybup44O6ZHQ=="
         }
       },
       "is_incremental": false,
@@ -276,7 +288,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6uCE2MnpAkkB9gxpAFOXDw=="
+          "hash": "kRPFbVHzPi+3L/3AkhpknQ=="
         }
       },
       "is_incremental": false,
@@ -291,7 +303,7 @@
           "hash": "yelJB6l5i2ZkbC2Er0vWtw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -315,7 +327,7 @@
           "hash": "D/6Rro2ZY5LwCKGQLU5UXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -334,12 +346,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -350,23 +360,23 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 19,
-          "skipped_file_count": 0
+          "total_file_count": 20,
+          "skipped_file_count": 10
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

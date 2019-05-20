@@ -4074,6 +4074,1193 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Geometry.Quaternion.Zeros
   nameWithType: Quaternion.Zeros
+- uid: Arithmetica.Image
+  name: Image
+  href: api/Arithmetica.Image.html
+  commentId: T:Arithmetica.Image
+  fullName: Arithmetica.Image
+  nameWithType: Image
+- uid: Arithmetica.Image.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Image(Int32, Int32, Int32, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Arithmetica.Image.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Arithmetica.Image.Image(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: Image.Image(Int32, Int32, Int32, Int32)
+- uid: Arithmetica.Image.#ctor*
+  name: Image
+  href: api/Arithmetica.Image.html#Arithmetica_Image__ctor_
+  commentId: Overload:Arithmetica.Image.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Image.Image
+  nameWithType: Image.Image
+- uid: Arithmetica.Image.Abs(Arithmetica.Image)
+  name: Abs(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Abs_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Abs(Arithmetica.Image)
+  fullName: Arithmetica.Image.Abs(Arithmetica.Image)
+  nameWithType: Image.Abs(Image)
+- uid: Arithmetica.Image.Abs*
+  name: Abs
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Abs_
+  commentId: Overload:Arithmetica.Image.Abs
+  isSpec: "True"
+  fullName: Arithmetica.Image.Abs
+  nameWithType: Image.Abs
+- uid: Arithmetica.Image.Acos(Arithmetica.Image)
+  name: Acos(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Acos_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Acos(Arithmetica.Image)
+  fullName: Arithmetica.Image.Acos(Arithmetica.Image)
+  nameWithType: Image.Acos(Image)
+- uid: Arithmetica.Image.Acos*
+  name: Acos
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Acos_
+  commentId: Overload:Arithmetica.Image.Acos
+  isSpec: "True"
+  fullName: Arithmetica.Image.Acos
+  nameWithType: Image.Acos
+- uid: Arithmetica.Image.Add(Arithmetica.Image,Arithmetica.Image)
+  name: Add(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Add_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Add(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Add(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Add(Image, Image)
+- uid: Arithmetica.Image.Add(Arithmetica.Image,System.Single)
+  name: Add(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Add_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Add(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Add(Arithmetica.Image, System.Single)
+  nameWithType: Image.Add(Image, Single)
+- uid: Arithmetica.Image.Add(System.Single,Arithmetica.Image)
+  name: Add(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Add_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Add(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Add(System.Single, Arithmetica.Image)
+  nameWithType: Image.Add(Single, Image)
+- uid: Arithmetica.Image.Add*
+  name: Add
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Add_
+  commentId: Overload:Arithmetica.Image.Add
+  isSpec: "True"
+  fullName: Arithmetica.Image.Add
+  nameWithType: Image.Add
+- uid: Arithmetica.Image.Argmax(Arithmetica.Image,System.Int32)
+  name: Argmax(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Argmax_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Argmax(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Argmax(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Argmax(Image, Int32)
+- uid: Arithmetica.Image.Argmax*
+  name: Argmax
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Argmax_
+  commentId: Overload:Arithmetica.Image.Argmax
+  isSpec: "True"
+  fullName: Arithmetica.Image.Argmax
+  nameWithType: Image.Argmax
+- uid: Arithmetica.Image.Argmin(Arithmetica.Image,System.Int32)
+  name: Argmin(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Argmin_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Argmin(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Argmin(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Argmin(Image, Int32)
+- uid: Arithmetica.Image.Argmin*
+  name: Argmin
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Argmin_
+  commentId: Overload:Arithmetica.Image.Argmin
+  isSpec: "True"
+  fullName: Arithmetica.Image.Argmin
+  nameWithType: Image.Argmin
+- uid: Arithmetica.Image.ArithArray
+  name: ArithArray
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ArithArray
+  commentId: P:Arithmetica.Image.ArithArray
+  fullName: Arithmetica.Image.ArithArray
+  nameWithType: Image.ArithArray
+- uid: Arithmetica.Image.ArithArray*
+  name: ArithArray
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ArithArray_
+  commentId: Overload:Arithmetica.Image.ArithArray
+  isSpec: "True"
+  fullName: Arithmetica.Image.ArithArray
+  nameWithType: Image.ArithArray
+- uid: Arithmetica.Image.Asin(Arithmetica.Image)
+  name: Asin(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Asin_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Asin(Arithmetica.Image)
+  fullName: Arithmetica.Image.Asin(Arithmetica.Image)
+  nameWithType: Image.Asin(Image)
+- uid: Arithmetica.Image.Asin*
+  name: Asin
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Asin_
+  commentId: Overload:Arithmetica.Image.Asin
+  isSpec: "True"
+  fullName: Arithmetica.Image.Asin
+  nameWithType: Image.Asin
+- uid: Arithmetica.Image.Atan(Arithmetica.Image)
+  name: Atan(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Atan_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Atan(Arithmetica.Image)
+  fullName: Arithmetica.Image.Atan(Arithmetica.Image)
+  nameWithType: Image.Atan(Image)
+- uid: Arithmetica.Image.Atan*
+  name: Atan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Atan_
+  commentId: Overload:Arithmetica.Image.Atan
+  isSpec: "True"
+  fullName: Arithmetica.Image.Atan
+  nameWithType: Image.Atan
+- uid: Arithmetica.Image.Atan2(Arithmetica.Image,Arithmetica.Image)
+  name: Atan2(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Atan2_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Atan2(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Atan2(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Atan2(Image, Image)
+- uid: Arithmetica.Image.Atan2*
+  name: Atan2
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Atan2_
+  commentId: Overload:Arithmetica.Image.Atan2
+  isSpec: "True"
+  fullName: Arithmetica.Image.Atan2
+  nameWithType: Image.Atan2
+- uid: Arithmetica.Image.Ceil(Arithmetica.Image)
+  name: Ceil(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Ceil_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Ceil(Arithmetica.Image)
+  fullName: Arithmetica.Image.Ceil(Arithmetica.Image)
+  nameWithType: Image.Ceil(Image)
+- uid: Arithmetica.Image.Ceil*
+  name: Ceil
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Ceil_
+  commentId: Overload:Arithmetica.Image.Ceil
+  isSpec: "True"
+  fullName: Arithmetica.Image.Ceil
+  nameWithType: Image.Ceil
+- uid: Arithmetica.Image.Channel
+  name: Channel
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Channel
+  commentId: P:Arithmetica.Image.Channel
+  fullName: Arithmetica.Image.Channel
+  nameWithType: Image.Channel
+- uid: Arithmetica.Image.Channel*
+  name: Channel
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Channel_
+  commentId: Overload:Arithmetica.Image.Channel
+  isSpec: "True"
+  fullName: Arithmetica.Image.Channel
+  nameWithType: Image.Channel
+- uid: Arithmetica.Image.Clip(Arithmetica.Image,System.Single,System.Single)
+  name: Clip(Image, Single, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Clip_Arithmetica_Image_System_Single_System_Single_
+  commentId: M:Arithmetica.Image.Clip(Arithmetica.Image,System.Single,System.Single)
+  fullName: Arithmetica.Image.Clip(Arithmetica.Image, System.Single, System.Single)
+  nameWithType: Image.Clip(Image, Single, Single)
+- uid: Arithmetica.Image.Clip*
+  name: Clip
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Clip_
+  commentId: Overload:Arithmetica.Image.Clip
+  isSpec: "True"
+  fullName: Arithmetica.Image.Clip
+  nameWithType: Image.Clip
+- uid: Arithmetica.Image.Cos(Arithmetica.Image)
+  name: Cos(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Cos_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Cos(Arithmetica.Image)
+  fullName: Arithmetica.Image.Cos(Arithmetica.Image)
+  nameWithType: Image.Cos(Image)
+- uid: Arithmetica.Image.Cos*
+  name: Cos
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Cos_
+  commentId: Overload:Arithmetica.Image.Cos
+  isSpec: "True"
+  fullName: Arithmetica.Image.Cos
+  nameWithType: Image.Cos
+- uid: Arithmetica.Image.Cosh(Arithmetica.Image)
+  name: Cosh(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Cosh_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Cosh(Arithmetica.Image)
+  fullName: Arithmetica.Image.Cosh(Arithmetica.Image)
+  nameWithType: Image.Cosh(Image)
+- uid: Arithmetica.Image.Cosh*
+  name: Cosh
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Cosh_
+  commentId: Overload:Arithmetica.Image.Cosh
+  isSpec: "True"
+  fullName: Arithmetica.Image.Cosh
+  nameWithType: Image.Cosh
+- uid: Arithmetica.Image.Data
+  name: Data
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Data
+  commentId: P:Arithmetica.Image.Data
+  fullName: Arithmetica.Image.Data
+  nameWithType: Image.Data
+- uid: Arithmetica.Image.Data*
+  name: Data
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Data_
+  commentId: Overload:Arithmetica.Image.Data
+  isSpec: "True"
+  fullName: Arithmetica.Image.Data
+  nameWithType: Image.Data
+- uid: Arithmetica.Image.Div(Arithmetica.Image,Arithmetica.Image)
+  name: Div(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Div_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Div(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Div(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Div(Image, Image)
+- uid: Arithmetica.Image.Div(Arithmetica.Image,System.Single)
+  name: Div(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Div_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Div(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Div(Arithmetica.Image, System.Single)
+  nameWithType: Image.Div(Image, Single)
+- uid: Arithmetica.Image.Div(System.Single,Arithmetica.Image)
+  name: Div(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Div_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Div(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Div(System.Single, Arithmetica.Image)
+  nameWithType: Image.Div(Single, Image)
+- uid: Arithmetica.Image.Div*
+  name: Div
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Div_
+  commentId: Overload:Arithmetica.Image.Div
+  isSpec: "True"
+  fullName: Arithmetica.Image.Div
+  nameWithType: Image.Div
+- uid: Arithmetica.Image.Dot(Arithmetica.Image,Arithmetica.Image)
+  name: Dot(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Dot_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Dot(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Dot(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Dot(Image, Image)
+- uid: Arithmetica.Image.Dot*
+  name: Dot
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Dot_
+  commentId: Overload:Arithmetica.Image.Dot
+  isSpec: "True"
+  fullName: Arithmetica.Image.Dot
+  nameWithType: Image.Dot
+- uid: Arithmetica.Image.EqualTo(Arithmetica.Image,Arithmetica.Image)
+  name: EqualTo(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_EqualTo_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.EqualTo(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.EqualTo(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.EqualTo(Image, Image)
+- uid: Arithmetica.Image.EqualTo(Arithmetica.Image,System.Single)
+  name: EqualTo(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_EqualTo_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.EqualTo(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.EqualTo(Arithmetica.Image, System.Single)
+  nameWithType: Image.EqualTo(Image, Single)
+- uid: Arithmetica.Image.EqualTo*
+  name: EqualTo
+  href: api/Arithmetica.Image.html#Arithmetica_Image_EqualTo_
+  commentId: Overload:Arithmetica.Image.EqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Image.EqualTo
+  nameWithType: Image.EqualTo
+- uid: Arithmetica.Image.Exp(Arithmetica.Image)
+  name: Exp(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Exp_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Exp(Arithmetica.Image)
+  fullName: Arithmetica.Image.Exp(Arithmetica.Image)
+  nameWithType: Image.Exp(Image)
+- uid: Arithmetica.Image.Exp*
+  name: Exp
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Exp_
+  commentId: Overload:Arithmetica.Image.Exp
+  isSpec: "True"
+  fullName: Arithmetica.Image.Exp
+  nameWithType: Image.Exp
+- uid: Arithmetica.Image.Fill(System.Single)
+  name: Fill(Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Fill_System_Single_
+  commentId: M:Arithmetica.Image.Fill(System.Single)
+  fullName: Arithmetica.Image.Fill(System.Single)
+  nameWithType: Image.Fill(Single)
+- uid: Arithmetica.Image.Fill*
+  name: Fill
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Fill_
+  commentId: Overload:Arithmetica.Image.Fill
+  isSpec: "True"
+  fullName: Arithmetica.Image.Fill
+  nameWithType: Image.Fill
+- uid: Arithmetica.Image.Floor(Arithmetica.Image)
+  name: Floor(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Floor_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Floor(Arithmetica.Image)
+  fullName: Arithmetica.Image.Floor(Arithmetica.Image)
+  nameWithType: Image.Floor(Image)
+- uid: Arithmetica.Image.Floor*
+  name: Floor
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Floor_
+  commentId: Overload:Arithmetica.Image.Floor
+  isSpec: "True"
+  fullName: Arithmetica.Image.Floor
+  nameWithType: Image.Floor
+- uid: Arithmetica.Image.Frac(Arithmetica.Image)
+  name: Frac(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Frac_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Frac(Arithmetica.Image)
+  fullName: Arithmetica.Image.Frac(Arithmetica.Image)
+  nameWithType: Image.Frac(Image)
+- uid: Arithmetica.Image.Frac*
+  name: Frac
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Frac_
+  commentId: Overload:Arithmetica.Image.Frac
+  isSpec: "True"
+  fullName: Arithmetica.Image.Frac
+  nameWithType: Image.Frac
+- uid: Arithmetica.Image.FromFile(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean)
+  name: FromFile(String, Nullable<Int32>, Nullable<Int32>, Boolean)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromFile_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_
+  commentId: M:Arithmetica.Image.FromFile(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean)
+  name.vb: FromFile(String, Nullable(Of Int32), Nullable(Of Int32), Boolean)
+  fullName: Arithmetica.Image.FromFile(System.String, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Boolean)
+  fullName.vb: Arithmetica.Image.FromFile(System.String, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean)
+  nameWithType: Image.FromFile(String, Nullable<Int32>, Nullable<Int32>, Boolean)
+  nameWithType.vb: Image.FromFile(String, Nullable(Of Int32), Nullable(Of Int32), Boolean)
+- uid: Arithmetica.Image.FromFile*
+  name: FromFile
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromFile_
+  commentId: Overload:Arithmetica.Image.FromFile
+  isSpec: "True"
+  fullName: Arithmetica.Image.FromFile
+  nameWithType: Image.FromFile
+- uid: Arithmetica.Image.FromFolder(System.String,System.Int32,System.Int32,System.Boolean,System.String,System.Boolean)
+  name: FromFolder(String, Int32, Int32, Boolean, String, Boolean)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromFolder_System_String_System_Int32_System_Int32_System_Boolean_System_String_System_Boolean_
+  commentId: M:Arithmetica.Image.FromFolder(System.String,System.Int32,System.Int32,System.Boolean,System.String,System.Boolean)
+  fullName: Arithmetica.Image.FromFolder(System.String, System.Int32, System.Int32, System.Boolean, System.String, System.Boolean)
+  nameWithType: Image.FromFolder(String, Int32, Int32, Boolean, String, Boolean)
+- uid: Arithmetica.Image.FromFolder*
+  name: FromFolder
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromFolder_
+  commentId: Overload:Arithmetica.Image.FromFolder
+  isSpec: "True"
+  fullName: Arithmetica.Image.FromFolder
+  nameWithType: Image.FromFolder
+- uid: Arithmetica.Image.FromOpenCVMat(OpenCvSharp.Mat)
+  name: FromOpenCVMat(Mat)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromOpenCVMat_OpenCvSharp_Mat_
+  commentId: M:Arithmetica.Image.FromOpenCVMat(OpenCvSharp.Mat)
+  fullName: Arithmetica.Image.FromOpenCVMat(OpenCvSharp.Mat)
+  nameWithType: Image.FromOpenCVMat(Mat)
+- uid: Arithmetica.Image.FromOpenCVMat*
+  name: FromOpenCVMat
+  href: api/Arithmetica.Image.html#Arithmetica_Image_FromOpenCVMat_
+  commentId: Overload:Arithmetica.Image.FromOpenCVMat
+  isSpec: "True"
+  fullName: Arithmetica.Image.FromOpenCVMat
+  nameWithType: Image.FromOpenCVMat
+- uid: Arithmetica.Image.GreaterEqual(Arithmetica.Image,Arithmetica.Image)
+  name: GreaterEqual(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterEqual_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.GreaterEqual(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.GreaterEqual(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.GreaterEqual(Image, Image)
+- uid: Arithmetica.Image.GreaterEqual(Arithmetica.Image,System.Single)
+  name: GreaterEqual(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterEqual_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.GreaterEqual(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.GreaterEqual(Arithmetica.Image, System.Single)
+  nameWithType: Image.GreaterEqual(Image, Single)
+- uid: Arithmetica.Image.GreaterEqual*
+  name: GreaterEqual
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterEqual_
+  commentId: Overload:Arithmetica.Image.GreaterEqual
+  isSpec: "True"
+  fullName: Arithmetica.Image.GreaterEqual
+  nameWithType: Image.GreaterEqual
+- uid: Arithmetica.Image.GreaterThan(Arithmetica.Image,Arithmetica.Image)
+  name: GreaterThan(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterThan_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.GreaterThan(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.GreaterThan(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.GreaterThan(Image, Image)
+- uid: Arithmetica.Image.GreaterThan(Arithmetica.Image,System.Single)
+  name: GreaterThan(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterThan_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.GreaterThan(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.GreaterThan(Arithmetica.Image, System.Single)
+  nameWithType: Image.GreaterThan(Image, Single)
+- uid: Arithmetica.Image.GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_GreaterThan_
+  commentId: Overload:Arithmetica.Image.GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Image.GreaterThan
+  nameWithType: Image.GreaterThan
+- uid: Arithmetica.Image.Height
+  name: Height
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Height
+  commentId: P:Arithmetica.Image.Height
+  fullName: Arithmetica.Image.Height
+  nameWithType: Image.Height
+- uid: Arithmetica.Image.Height*
+  name: Height
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Height_
+  commentId: Overload:Arithmetica.Image.Height
+  isSpec: "True"
+  fullName: Arithmetica.Image.Height
+  nameWithType: Image.Height
+- uid: Arithmetica.Image.Item(System.Int64)
+  name: Item[Int64]
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Item_System_Int64_
+  commentId: P:Arithmetica.Image.Item(System.Int64)
+  name.vb: Item(Int64)
+  fullName: Arithmetica.Image.Item[System.Int64]
+  fullName.vb: Arithmetica.Image.Item(System.Int64)
+  nameWithType: Image.Item[Int64]
+  nameWithType.vb: Image.Item(Int64)
+- uid: Arithmetica.Image.Item*
+  name: Item
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Item_
+  commentId: Overload:Arithmetica.Image.Item
+  isSpec: "True"
+  fullName: Arithmetica.Image.Item
+  nameWithType: Image.Item
+- uid: Arithmetica.Image.Lerp(Arithmetica.Image,Arithmetica.Image,System.Single)
+  name: Lerp(Image, Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Lerp_Arithmetica_Image_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Lerp(Arithmetica.Image,Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Lerp(Arithmetica.Image, Arithmetica.Image, System.Single)
+  nameWithType: Image.Lerp(Image, Image, Single)
+- uid: Arithmetica.Image.Lerp*
+  name: Lerp
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Lerp_
+  commentId: Overload:Arithmetica.Image.Lerp
+  isSpec: "True"
+  fullName: Arithmetica.Image.Lerp
+  nameWithType: Image.Lerp
+- uid: Arithmetica.Image.LessEqual(Arithmetica.Image,Arithmetica.Image)
+  name: LessEqual(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessEqual_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.LessEqual(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.LessEqual(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.LessEqual(Image, Image)
+- uid: Arithmetica.Image.LessEqual(Arithmetica.Image,System.Single)
+  name: LessEqual(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessEqual_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.LessEqual(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.LessEqual(Arithmetica.Image, System.Single)
+  nameWithType: Image.LessEqual(Image, Single)
+- uid: Arithmetica.Image.LessEqual*
+  name: LessEqual
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessEqual_
+  commentId: Overload:Arithmetica.Image.LessEqual
+  isSpec: "True"
+  fullName: Arithmetica.Image.LessEqual
+  nameWithType: Image.LessEqual
+- uid: Arithmetica.Image.LessThan(Arithmetica.Image,Arithmetica.Image)
+  name: LessThan(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessThan_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.LessThan(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.LessThan(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.LessThan(Image, Image)
+- uid: Arithmetica.Image.LessThan(Arithmetica.Image,System.Single)
+  name: LessThan(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessThan_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.LessThan(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.LessThan(Arithmetica.Image, System.Single)
+  nameWithType: Image.LessThan(Image, Single)
+- uid: Arithmetica.Image.LessThan*
+  name: LessThan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LessThan_
+  commentId: Overload:Arithmetica.Image.LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Image.LessThan
+  nameWithType: Image.LessThan
+- uid: Arithmetica.Image.LoadData(System.Array)
+  name: LoadData(Array)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LoadData_System_Array_
+  commentId: M:Arithmetica.Image.LoadData(System.Array)
+  fullName: Arithmetica.Image.LoadData(System.Array)
+  nameWithType: Image.LoadData(Array)
+- uid: Arithmetica.Image.LoadData*
+  name: LoadData
+  href: api/Arithmetica.Image.html#Arithmetica_Image_LoadData_
+  commentId: Overload:Arithmetica.Image.LoadData
+  isSpec: "True"
+  fullName: Arithmetica.Image.LoadData
+  nameWithType: Image.LoadData
+- uid: Arithmetica.Image.Log(Arithmetica.Image)
+  name: Log(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Log_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Log(Arithmetica.Image)
+  fullName: Arithmetica.Image.Log(Arithmetica.Image)
+  nameWithType: Image.Log(Image)
+- uid: Arithmetica.Image.Log*
+  name: Log
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Log_
+  commentId: Overload:Arithmetica.Image.Log
+  isSpec: "True"
+  fullName: Arithmetica.Image.Log
+  nameWithType: Image.Log
+- uid: Arithmetica.Image.Log1p(Arithmetica.Image)
+  name: Log1p(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Log1p_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Log1p(Arithmetica.Image)
+  fullName: Arithmetica.Image.Log1p(Arithmetica.Image)
+  nameWithType: Image.Log1p(Image)
+- uid: Arithmetica.Image.Log1p*
+  name: Log1p
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Log1p_
+  commentId: Overload:Arithmetica.Image.Log1p
+  isSpec: "True"
+  fullName: Arithmetica.Image.Log1p
+  nameWithType: Image.Log1p
+- uid: Arithmetica.Image.Max(Arithmetica.Image)
+  name: Max(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Max_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Max(Arithmetica.Image)
+  fullName: Arithmetica.Image.Max(Arithmetica.Image)
+  nameWithType: Image.Max(Image)
+- uid: Arithmetica.Image.Max(Arithmetica.Image,System.Int32)
+  name: Max(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Max_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Max(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Max(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Max(Image, Int32)
+- uid: Arithmetica.Image.Max*
+  name: Max
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Max_
+  commentId: Overload:Arithmetica.Image.Max
+  isSpec: "True"
+  fullName: Arithmetica.Image.Max
+  nameWithType: Image.Max
+- uid: Arithmetica.Image.Maximum(Arithmetica.Image,Arithmetica.Image)
+  name: Maximum(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Maximum_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Maximum(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Maximum(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Maximum(Image, Image)
+- uid: Arithmetica.Image.Maximum(Arithmetica.Image,System.Single)
+  name: Maximum(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Maximum_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Maximum(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Maximum(Arithmetica.Image, System.Single)
+  nameWithType: Image.Maximum(Image, Single)
+- uid: Arithmetica.Image.Maximum*
+  name: Maximum
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Maximum_
+  commentId: Overload:Arithmetica.Image.Maximum
+  isSpec: "True"
+  fullName: Arithmetica.Image.Maximum
+  nameWithType: Image.Maximum
+- uid: Arithmetica.Image.Mean(Arithmetica.Image)
+  name: Mean(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mean_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Mean(Arithmetica.Image)
+  fullName: Arithmetica.Image.Mean(Arithmetica.Image)
+  nameWithType: Image.Mean(Image)
+- uid: Arithmetica.Image.Mean(Arithmetica.Image,System.Int32)
+  name: Mean(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mean_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Mean(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Mean(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Mean(Image, Int32)
+- uid: Arithmetica.Image.Mean*
+  name: Mean
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mean_
+  commentId: Overload:Arithmetica.Image.Mean
+  isSpec: "True"
+  fullName: Arithmetica.Image.Mean
+  nameWithType: Image.Mean
+- uid: Arithmetica.Image.Min(Arithmetica.Image)
+  name: Min(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Min_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Min(Arithmetica.Image)
+  fullName: Arithmetica.Image.Min(Arithmetica.Image)
+  nameWithType: Image.Min(Image)
+- uid: Arithmetica.Image.Min(Arithmetica.Image,System.Int32)
+  name: Min(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Min_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Min(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Min(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Min(Image, Int32)
+- uid: Arithmetica.Image.Min*
+  name: Min
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Min_
+  commentId: Overload:Arithmetica.Image.Min
+  isSpec: "True"
+  fullName: Arithmetica.Image.Min
+  nameWithType: Image.Min
+- uid: Arithmetica.Image.Mod(Arithmetica.Image,System.Single)
+  name: Mod(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mod_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Mod(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Mod(Arithmetica.Image, System.Single)
+  nameWithType: Image.Mod(Image, Single)
+- uid: Arithmetica.Image.Mod*
+  name: Mod
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mod_
+  commentId: Overload:Arithmetica.Image.Mod
+  isSpec: "True"
+  fullName: Arithmetica.Image.Mod
+  nameWithType: Image.Mod
+- uid: Arithmetica.Image.Mul(Arithmetica.Image,Arithmetica.Image)
+  name: Mul(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mul_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Mul(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Mul(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Mul(Image, Image)
+- uid: Arithmetica.Image.Mul(Arithmetica.Image,System.Single)
+  name: Mul(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mul_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Mul(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Mul(Arithmetica.Image, System.Single)
+  nameWithType: Image.Mul(Image, Single)
+- uid: Arithmetica.Image.Mul(System.Single,Arithmetica.Image)
+  name: Mul(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mul_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Mul(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Mul(System.Single, Arithmetica.Image)
+  nameWithType: Image.Mul(Single, Image)
+- uid: Arithmetica.Image.Mul*
+  name: Mul
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Mul_
+  commentId: Overload:Arithmetica.Image.Mul
+  isSpec: "True"
+  fullName: Arithmetica.Image.Mul
+  nameWithType: Image.Mul
+- uid: Arithmetica.Image.Neg(Arithmetica.Image)
+  name: Neg(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Neg_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Neg(Arithmetica.Image)
+  fullName: Arithmetica.Image.Neg(Arithmetica.Image)
+  nameWithType: Image.Neg(Image)
+- uid: Arithmetica.Image.Neg*
+  name: Neg
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Neg_
+  commentId: Overload:Arithmetica.Image.Neg
+  isSpec: "True"
+  fullName: Arithmetica.Image.Neg
+  nameWithType: Image.Neg
+- uid: Arithmetica.Image.Norm(Arithmetica.Image,System.Single)
+  name: Norm(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Norm_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Norm(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Norm(Arithmetica.Image, System.Single)
+  nameWithType: Image.Norm(Image, Single)
+- uid: Arithmetica.Image.Norm(Arithmetica.Image,System.Single,System.Int32)
+  name: Norm(Image, Single, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Norm_Arithmetica_Image_System_Single_System_Int32_
+  commentId: M:Arithmetica.Image.Norm(Arithmetica.Image,System.Single,System.Int32)
+  fullName: Arithmetica.Image.Norm(Arithmetica.Image, System.Single, System.Int32)
+  nameWithType: Image.Norm(Image, Single, Int32)
+- uid: Arithmetica.Image.Norm*
+  name: Norm
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Norm_
+  commentId: Overload:Arithmetica.Image.Norm
+  isSpec: "True"
+  fullName: Arithmetica.Image.Norm
+  nameWithType: Image.Norm
+- uid: Arithmetica.Image.NotEqualTo(Arithmetica.Image,Arithmetica.Image)
+  name: NotEqualTo(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_NotEqualTo_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.NotEqualTo(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.NotEqualTo(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.NotEqualTo(Image, Image)
+- uid: Arithmetica.Image.NotEqualTo(Arithmetica.Image,System.Single)
+  name: NotEqualTo(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_NotEqualTo_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.NotEqualTo(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.NotEqualTo(Arithmetica.Image, System.Single)
+  nameWithType: Image.NotEqualTo(Image, Single)
+- uid: Arithmetica.Image.NotEqualTo*
+  name: NotEqualTo
+  href: api/Arithmetica.Image.html#Arithmetica_Image_NotEqualTo_
+  commentId: Overload:Arithmetica.Image.NotEqualTo
+  isSpec: "True"
+  fullName: Arithmetica.Image.NotEqualTo
+  nameWithType: Image.NotEqualTo
+- uid: Arithmetica.Image.op_Addition(Arithmetica.Image,Arithmetica.Image)
+  name: Addition(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Addition_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Addition(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Addition(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Addition(Image, Image)
+- uid: Arithmetica.Image.op_Addition(Arithmetica.Image,System.Single)
+  name: Addition(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Addition_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_Addition(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Addition(Arithmetica.Image, System.Single)
+  nameWithType: Image.Addition(Image, Single)
+- uid: Arithmetica.Image.op_Addition(System.Single,Arithmetica.Image)
+  name: Addition(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Addition_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Addition(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Addition(System.Single, Arithmetica.Image)
+  nameWithType: Image.Addition(Single, Image)
+- uid: Arithmetica.Image.op_Addition*
+  name: Addition
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Addition_
+  commentId: Overload:Arithmetica.Image.op_Addition
+  isSpec: "True"
+  fullName: Arithmetica.Image.Addition
+  nameWithType: Image.Addition
+- uid: Arithmetica.Image.op_Division(Arithmetica.Image,Arithmetica.Image)
+  name: Division(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Division_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Division(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Division(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Division(Image, Image)
+- uid: Arithmetica.Image.op_Division(Arithmetica.Image,System.Single)
+  name: Division(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Division_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_Division(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Division(Arithmetica.Image, System.Single)
+  nameWithType: Image.Division(Image, Single)
+- uid: Arithmetica.Image.op_Division(System.Single,Arithmetica.Image)
+  name: Division(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Division_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Division(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Division(System.Single, Arithmetica.Image)
+  nameWithType: Image.Division(Single, Image)
+- uid: Arithmetica.Image.op_Division*
+  name: Division
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Division_
+  commentId: Overload:Arithmetica.Image.op_Division
+  isSpec: "True"
+  fullName: Arithmetica.Image.Division
+  nameWithType: Image.Division
+- uid: Arithmetica.Image.op_GreaterThan(Arithmetica.Image,Arithmetica.Image)
+  name: GreaterThan(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThan_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_GreaterThan(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.GreaterThan(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.GreaterThan(Image, Image)
+- uid: Arithmetica.Image.op_GreaterThan(Arithmetica.Image,System.Single)
+  name: GreaterThan(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThan_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_GreaterThan(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.GreaterThan(Arithmetica.Image, System.Single)
+  nameWithType: Image.GreaterThan(Image, Single)
+- uid: Arithmetica.Image.op_GreaterThan*
+  name: GreaterThan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThan_
+  commentId: Overload:Arithmetica.Image.op_GreaterThan
+  isSpec: "True"
+  fullName: Arithmetica.Image.GreaterThan
+  nameWithType: Image.GreaterThan
+- uid: Arithmetica.Image.op_GreaterThanOrEqual(Arithmetica.Image,Arithmetica.Image)
+  name: GreaterThanOrEqual(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThanOrEqual_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_GreaterThanOrEqual(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.GreaterThanOrEqual(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.GreaterThanOrEqual(Image, Image)
+- uid: Arithmetica.Image.op_GreaterThanOrEqual(Arithmetica.Image,System.Single)
+  name: GreaterThanOrEqual(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThanOrEqual_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_GreaterThanOrEqual(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.GreaterThanOrEqual(Arithmetica.Image, System.Single)
+  nameWithType: Image.GreaterThanOrEqual(Image, Single)
+- uid: Arithmetica.Image.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_GreaterThanOrEqual_
+  commentId: Overload:Arithmetica.Image.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Image.GreaterThanOrEqual
+  nameWithType: Image.GreaterThanOrEqual
+- uid: Arithmetica.Image.op_LessThan(Arithmetica.Image,Arithmetica.Image)
+  name: LessThan(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThan_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_LessThan(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.LessThan(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.LessThan(Image, Image)
+- uid: Arithmetica.Image.op_LessThan(Arithmetica.Image,System.Single)
+  name: LessThan(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThan_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_LessThan(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.LessThan(Arithmetica.Image, System.Single)
+  nameWithType: Image.LessThan(Image, Single)
+- uid: Arithmetica.Image.op_LessThan*
+  name: LessThan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThan_
+  commentId: Overload:Arithmetica.Image.op_LessThan
+  isSpec: "True"
+  fullName: Arithmetica.Image.LessThan
+  nameWithType: Image.LessThan
+- uid: Arithmetica.Image.op_LessThanOrEqual(Arithmetica.Image,Arithmetica.Image)
+  name: LessThanOrEqual(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThanOrEqual_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_LessThanOrEqual(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.LessThanOrEqual(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.LessThanOrEqual(Image, Image)
+- uid: Arithmetica.Image.op_LessThanOrEqual(Arithmetica.Image,System.Single)
+  name: LessThanOrEqual(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThanOrEqual_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_LessThanOrEqual(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.LessThanOrEqual(Arithmetica.Image, System.Single)
+  nameWithType: Image.LessThanOrEqual(Image, Single)
+- uid: Arithmetica.Image.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_LessThanOrEqual_
+  commentId: Overload:Arithmetica.Image.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: Arithmetica.Image.LessThanOrEqual
+  nameWithType: Image.LessThanOrEqual
+- uid: Arithmetica.Image.op_Multiply(Arithmetica.Image,Arithmetica.Image)
+  name: Multiply(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Multiply_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Multiply(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Multiply(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Multiply(Image, Image)
+- uid: Arithmetica.Image.op_Multiply(Arithmetica.Image,System.Single)
+  name: Multiply(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Multiply_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_Multiply(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Multiply(Arithmetica.Image, System.Single)
+  nameWithType: Image.Multiply(Image, Single)
+- uid: Arithmetica.Image.op_Multiply(System.Single,Arithmetica.Image)
+  name: Multiply(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Multiply_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Multiply(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Multiply(System.Single, Arithmetica.Image)
+  nameWithType: Image.Multiply(Single, Image)
+- uid: Arithmetica.Image.op_Multiply*
+  name: Multiply
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Multiply_
+  commentId: Overload:Arithmetica.Image.op_Multiply
+  isSpec: "True"
+  fullName: Arithmetica.Image.Multiply
+  nameWithType: Image.Multiply
+- uid: Arithmetica.Image.op_Subtraction(Arithmetica.Image,Arithmetica.Image)
+  name: Subtraction(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Subtraction_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Subtraction(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Subtraction(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Subtraction(Image, Image)
+- uid: Arithmetica.Image.op_Subtraction(Arithmetica.Image,System.Single)
+  name: Subtraction(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Subtraction_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.op_Subtraction(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Subtraction(Arithmetica.Image, System.Single)
+  nameWithType: Image.Subtraction(Image, Single)
+- uid: Arithmetica.Image.op_Subtraction(System.Single,Arithmetica.Image)
+  name: Subtraction(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Subtraction_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.op_Subtraction(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Subtraction(System.Single, Arithmetica.Image)
+  nameWithType: Image.Subtraction(Single, Image)
+- uid: Arithmetica.Image.op_Subtraction*
+  name: Subtraction
+  href: api/Arithmetica.Image.html#Arithmetica_Image_op_Subtraction_
+  commentId: Overload:Arithmetica.Image.op_Subtraction
+  isSpec: "True"
+  fullName: Arithmetica.Image.Subtraction
+  nameWithType: Image.Subtraction
+- uid: Arithmetica.Image.Pow(Arithmetica.Image,System.Single)
+  name: Pow(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Pow_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Pow(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Pow(Arithmetica.Image, System.Single)
+  nameWithType: Image.Pow(Image, Single)
+- uid: Arithmetica.Image.Pow*
+  name: Pow
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Pow_
+  commentId: Overload:Arithmetica.Image.Pow
+  isSpec: "True"
+  fullName: Arithmetica.Image.Pow
+  nameWithType: Image.Pow
+- uid: Arithmetica.Image.Prod(Arithmetica.Image)
+  name: Prod(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Prod_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Prod(Arithmetica.Image)
+  fullName: Arithmetica.Image.Prod(Arithmetica.Image)
+  nameWithType: Image.Prod(Image)
+- uid: Arithmetica.Image.Prod(Arithmetica.Image,System.Int32)
+  name: Prod(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Prod_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Prod(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Prod(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Prod(Image, Int32)
+- uid: Arithmetica.Image.Prod*
+  name: Prod
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Prod_
+  commentId: Overload:Arithmetica.Image.Prod
+  isSpec: "True"
+  fullName: Arithmetica.Image.Prod
+  nameWithType: Image.Prod
+- uid: Arithmetica.Image.Round(Arithmetica.Image)
+  name: Round(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Round_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Round(Arithmetica.Image)
+  fullName: Arithmetica.Image.Round(Arithmetica.Image)
+  nameWithType: Image.Round(Image)
+- uid: Arithmetica.Image.Round*
+  name: Round
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Round_
+  commentId: Overload:Arithmetica.Image.Round
+  isSpec: "True"
+  fullName: Arithmetica.Image.Round
+  nameWithType: Image.Round
+- uid: Arithmetica.Image.Save(System.String,System.Int64)
+  name: Save(String, Int64)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Save_System_String_System_Int64_
+  commentId: M:Arithmetica.Image.Save(System.String,System.Int64)
+  fullName: Arithmetica.Image.Save(System.String, System.Int64)
+  nameWithType: Image.Save(String, Int64)
+- uid: Arithmetica.Image.Save*
+  name: Save
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Save_
+  commentId: Overload:Arithmetica.Image.Save
+  isSpec: "True"
+  fullName: Arithmetica.Image.Save
+  nameWithType: Image.Save
+- uid: Arithmetica.Image.Show(System.String,System.Nullable{System.Int64})
+  name: Show(String, Nullable<Int64>)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Show_System_String_System_Nullable_System_Int64__
+  commentId: M:Arithmetica.Image.Show(System.String,System.Nullable{System.Int64})
+  name.vb: Show(String, Nullable(Of Int64))
+  fullName: Arithmetica.Image.Show(System.String, System.Nullable<System.Int64>)
+  fullName.vb: Arithmetica.Image.Show(System.String, System.Nullable(Of System.Int64))
+  nameWithType: Image.Show(String, Nullable<Int64>)
+  nameWithType.vb: Image.Show(String, Nullable(Of Int64))
+- uid: Arithmetica.Image.Show*
+  name: Show
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Show_
+  commentId: Overload:Arithmetica.Image.Show
+  isSpec: "True"
+  fullName: Arithmetica.Image.Show
+  nameWithType: Image.Show
+- uid: Arithmetica.Image.Sign(Arithmetica.Image)
+  name: Sign(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sign_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sign(Arithmetica.Image)
+  fullName: Arithmetica.Image.Sign(Arithmetica.Image)
+  nameWithType: Image.Sign(Image)
+- uid: Arithmetica.Image.Sign*
+  name: Sign
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sign_
+  commentId: Overload:Arithmetica.Image.Sign
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sign
+  nameWithType: Image.Sign
+- uid: Arithmetica.Image.Sin(Arithmetica.Image)
+  name: Sin(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sin_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sin(Arithmetica.Image)
+  fullName: Arithmetica.Image.Sin(Arithmetica.Image)
+  nameWithType: Image.Sin(Image)
+- uid: Arithmetica.Image.Sin*
+  name: Sin
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sin_
+  commentId: Overload:Arithmetica.Image.Sin
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sin
+  nameWithType: Image.Sin
+- uid: Arithmetica.Image.Sinh(Arithmetica.Image)
+  name: Sinh(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sinh_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sinh(Arithmetica.Image)
+  fullName: Arithmetica.Image.Sinh(Arithmetica.Image)
+  nameWithType: Image.Sinh(Image)
+- uid: Arithmetica.Image.Sinh*
+  name: Sinh
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sinh_
+  commentId: Overload:Arithmetica.Image.Sinh
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sinh
+  nameWithType: Image.Sinh
+- uid: Arithmetica.Image.Size
+  name: Size
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Size
+  commentId: P:Arithmetica.Image.Size
+  fullName: Arithmetica.Image.Size
+  nameWithType: Image.Size
+- uid: Arithmetica.Image.Size*
+  name: Size
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Size_
+  commentId: Overload:Arithmetica.Image.Size
+  isSpec: "True"
+  fullName: Arithmetica.Image.Size
+  nameWithType: Image.Size
+- uid: Arithmetica.Image.Sqrt(Arithmetica.Image)
+  name: Sqrt(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sqrt_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sqrt(Arithmetica.Image)
+  fullName: Arithmetica.Image.Sqrt(Arithmetica.Image)
+  nameWithType: Image.Sqrt(Image)
+- uid: Arithmetica.Image.Sqrt*
+  name: Sqrt
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sqrt_
+  commentId: Overload:Arithmetica.Image.Sqrt
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sqrt
+  nameWithType: Image.Sqrt
+- uid: Arithmetica.Image.Square(Arithmetica.Image)
+  name: Square(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Square_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Square(Arithmetica.Image)
+  fullName: Arithmetica.Image.Square(Arithmetica.Image)
+  nameWithType: Image.Square(Image)
+- uid: Arithmetica.Image.Square*
+  name: Square
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Square_
+  commentId: Overload:Arithmetica.Image.Square
+  isSpec: "True"
+  fullName: Arithmetica.Image.Square
+  nameWithType: Image.Square
+- uid: Arithmetica.Image.Std(Arithmetica.Image)
+  name: Std(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Std_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Std(Arithmetica.Image)
+  fullName: Arithmetica.Image.Std(Arithmetica.Image)
+  nameWithType: Image.Std(Image)
+- uid: Arithmetica.Image.Std(Arithmetica.Image,System.Boolean,System.Int32)
+  name: Std(Image, Boolean, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Std_Arithmetica_Image_System_Boolean_System_Int32_
+  commentId: M:Arithmetica.Image.Std(Arithmetica.Image,System.Boolean,System.Int32)
+  fullName: Arithmetica.Image.Std(Arithmetica.Image, System.Boolean, System.Int32)
+  nameWithType: Image.Std(Image, Boolean, Int32)
+- uid: Arithmetica.Image.Std*
+  name: Std
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Std_
+  commentId: Overload:Arithmetica.Image.Std
+  isSpec: "True"
+  fullName: Arithmetica.Image.Std
+  nameWithType: Image.Std
+- uid: Arithmetica.Image.Sub(Arithmetica.Image,Arithmetica.Image)
+  name: Sub(Image, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sub_Arithmetica_Image_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sub(Arithmetica.Image,Arithmetica.Image)
+  fullName: Arithmetica.Image.Sub(Arithmetica.Image, Arithmetica.Image)
+  nameWithType: Image.Sub(Image, Image)
+- uid: Arithmetica.Image.Sub(Arithmetica.Image,System.Single)
+  name: Sub(Image, Single)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sub_Arithmetica_Image_System_Single_
+  commentId: M:Arithmetica.Image.Sub(Arithmetica.Image,System.Single)
+  fullName: Arithmetica.Image.Sub(Arithmetica.Image, System.Single)
+  nameWithType: Image.Sub(Image, Single)
+- uid: Arithmetica.Image.Sub(System.Single,Arithmetica.Image)
+  name: Sub(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sub_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sub(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Sub(System.Single, Arithmetica.Image)
+  nameWithType: Image.Sub(Single, Image)
+- uid: Arithmetica.Image.Sub*
+  name: Sub
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sub_
+  commentId: Overload:Arithmetica.Image.Sub
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sub
+  nameWithType: Image.Sub
+- uid: Arithmetica.Image.Sum(Arithmetica.Image)
+  name: Sum(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sum_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Sum(Arithmetica.Image)
+  fullName: Arithmetica.Image.Sum(Arithmetica.Image)
+  nameWithType: Image.Sum(Image)
+- uid: Arithmetica.Image.Sum(Arithmetica.Image,System.Int32)
+  name: Sum(Image, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sum_Arithmetica_Image_System_Int32_
+  commentId: M:Arithmetica.Image.Sum(Arithmetica.Image,System.Int32)
+  fullName: Arithmetica.Image.Sum(Arithmetica.Image, System.Int32)
+  nameWithType: Image.Sum(Image, Int32)
+- uid: Arithmetica.Image.Sum*
+  name: Sum
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Sum_
+  commentId: Overload:Arithmetica.Image.Sum
+  isSpec: "True"
+  fullName: Arithmetica.Image.Sum
+  nameWithType: Image.Sum
+- uid: Arithmetica.Image.Tan(Arithmetica.Image)
+  name: Tan(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tan_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Tan(Arithmetica.Image)
+  fullName: Arithmetica.Image.Tan(Arithmetica.Image)
+  nameWithType: Image.Tan(Image)
+- uid: Arithmetica.Image.Tan*
+  name: Tan
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tan_
+  commentId: Overload:Arithmetica.Image.Tan
+  isSpec: "True"
+  fullName: Arithmetica.Image.Tan
+  nameWithType: Image.Tan
+- uid: Arithmetica.Image.Tanh(Arithmetica.Image)
+  name: Tanh(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tanh_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Tanh(Arithmetica.Image)
+  fullName: Arithmetica.Image.Tanh(Arithmetica.Image)
+  nameWithType: Image.Tanh(Image)
+- uid: Arithmetica.Image.Tanh*
+  name: Tanh
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tanh_
+  commentId: Overload:Arithmetica.Image.Tanh
+  isSpec: "True"
+  fullName: Arithmetica.Image.Tanh
+  nameWithType: Image.Tanh
+- uid: Arithmetica.Image.ToOpenCVMat(System.Int64)
+  name: ToOpenCVMat(Int64)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ToOpenCVMat_System_Int64_
+  commentId: M:Arithmetica.Image.ToOpenCVMat(System.Int64)
+  fullName: Arithmetica.Image.ToOpenCVMat(System.Int64)
+  nameWithType: Image.ToOpenCVMat(Int64)
+- uid: Arithmetica.Image.ToOpenCVMat*
+  name: ToOpenCVMat
+  href: api/Arithmetica.Image.html#Arithmetica_Image_ToOpenCVMat_
+  commentId: Overload:Arithmetica.Image.ToOpenCVMat
+  isSpec: "True"
+  fullName: Arithmetica.Image.ToOpenCVMat
+  nameWithType: Image.ToOpenCVMat
+- uid: Arithmetica.Image.Tpow(System.Single,Arithmetica.Image)
+  name: Tpow(Single, Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tpow_System_Single_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Tpow(System.Single,Arithmetica.Image)
+  fullName: Arithmetica.Image.Tpow(System.Single, Arithmetica.Image)
+  nameWithType: Image.Tpow(Single, Image)
+- uid: Arithmetica.Image.Tpow*
+  name: Tpow
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Tpow_
+  commentId: Overload:Arithmetica.Image.Tpow
+  isSpec: "True"
+  fullName: Arithmetica.Image.Tpow
+  nameWithType: Image.Tpow
+- uid: Arithmetica.Image.Trunc(Arithmetica.Image)
+  name: Trunc(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Trunc_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Trunc(Arithmetica.Image)
+  fullName: Arithmetica.Image.Trunc(Arithmetica.Image)
+  nameWithType: Image.Trunc(Image)
+- uid: Arithmetica.Image.Trunc*
+  name: Trunc
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Trunc_
+  commentId: Overload:Arithmetica.Image.Trunc
+  isSpec: "True"
+  fullName: Arithmetica.Image.Trunc
+  nameWithType: Image.Trunc
+- uid: Arithmetica.Image.Var(Arithmetica.Image)
+  name: Var(Image)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Var_Arithmetica_Image_
+  commentId: M:Arithmetica.Image.Var(Arithmetica.Image)
+  fullName: Arithmetica.Image.Var(Arithmetica.Image)
+  nameWithType: Image.Var(Image)
+- uid: Arithmetica.Image.Var(Arithmetica.Image,System.Boolean,System.Int32)
+  name: Var(Image, Boolean, Int32)
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Var_Arithmetica_Image_System_Boolean_System_Int32_
+  commentId: M:Arithmetica.Image.Var(Arithmetica.Image,System.Boolean,System.Int32)
+  fullName: Arithmetica.Image.Var(Arithmetica.Image, System.Boolean, System.Int32)
+  nameWithType: Image.Var(Image, Boolean, Int32)
+- uid: Arithmetica.Image.Var*
+  name: Var
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Var_
+  commentId: Overload:Arithmetica.Image.Var
+  isSpec: "True"
+  fullName: Arithmetica.Image.Var
+  nameWithType: Image.Var
+- uid: Arithmetica.Image.Width
+  name: Width
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Width
+  commentId: P:Arithmetica.Image.Width
+  fullName: Arithmetica.Image.Width
+  nameWithType: Image.Width
+- uid: Arithmetica.Image.Width*
+  name: Width
+  href: api/Arithmetica.Image.html#Arithmetica_Image_Width_
+  commentId: Overload:Arithmetica.Image.Width
+  isSpec: "True"
+  fullName: Arithmetica.Image.Width
+  nameWithType: Image.Width
 - uid: Arithmetica.Matrix
   name: Matrix
   href: api/Arithmetica.Matrix.html
@@ -5566,6 +6753,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Bernoulli(Arithmetica.ArithArray, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Bernoulli(ArithArray, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Bernoulli(ArithArray, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Bernoulli(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name: Bernoulli(Image, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Bernoulli_Arithmetica_Image_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Bernoulli(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name.vb: Bernoulli(Image, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Bernoulli(Arithmetica.Image, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Bernoulli(Arithmetica.Image, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Bernoulli(Image, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Bernoulli(Image, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Bernoulli(Arithmetica.Matrix,System.Single,System.Nullable{System.Int32})
   name: Bernoulli(Matrix, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Bernoulli_Arithmetica_Matrix_System_Single_System_Nullable_System_Int32__
@@ -5627,6 +6823,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Cauchy(Arithmetica.ArithArray, System.Single, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Cauchy(ArithArray, Single, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Cauchy(ArithArray, Single, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Cauchy(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name: Cauchy(Image, Single, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Cauchy_Arithmetica_Image_System_Single_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Cauchy(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name.vb: Cauchy(Image, Single, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Cauchy(Arithmetica.Image, System.Single, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Cauchy(Arithmetica.Image, System.Single, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Cauchy(Image, Single, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Cauchy(Image, Single, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Cauchy(Arithmetica.Matrix,System.Single,System.Single,System.Nullable{System.Int32})
   name: Cauchy(Matrix, Single, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Cauchy_Arithmetica_Matrix_System_Single_System_Single_System_Nullable_System_Int32__
@@ -5688,6 +6893,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Exponential(Arithmetica.ArithArray, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Exponential(ArithArray, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Exponential(ArithArray, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Exponential(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name: Exponential(Image, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Exponential_Arithmetica_Image_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Exponential(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name.vb: Exponential(Image, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Exponential(Arithmetica.Image, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Exponential(Arithmetica.Image, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Exponential(Image, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Exponential(Image, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Exponential(Arithmetica.Matrix,System.Single,System.Nullable{System.Int32})
   name: Exponential(Matrix, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Exponential_Arithmetica_Matrix_System_Single_System_Nullable_System_Int32__
@@ -5749,6 +6963,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Geometric(Arithmetica.ArithArray, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Geometric(ArithArray, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Geometric(ArithArray, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Geometric(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name: Geometric(Image, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Geometric_Arithmetica_Image_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Geometric(Arithmetica.Image,System.Single,System.Nullable{System.Int32})
+  name.vb: Geometric(Image, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Geometric(Arithmetica.Image, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Geometric(Arithmetica.Image, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Geometric(Image, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Geometric(Image, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Geometric(Arithmetica.Matrix,System.Single,System.Nullable{System.Int32})
   name: Geometric(Matrix, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Geometric_Arithmetica_Matrix_System_Single_System_Nullable_System_Int32__
@@ -5810,6 +7033,15 @@ references:
   fullName.vb: Arithmetica.Sampler.LogNormal(Arithmetica.ArithArray, System.Single, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.LogNormal(ArithArray, Single, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.LogNormal(ArithArray, Single, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.LogNormal(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name: LogNormal(Image, Single, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_LogNormal_Arithmetica_Image_System_Single_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.LogNormal(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name.vb: LogNormal(Image, Single, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.LogNormal(Arithmetica.Image, System.Single, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.LogNormal(Arithmetica.Image, System.Single, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.LogNormal(Image, Single, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.LogNormal(Image, Single, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.LogNormal(Arithmetica.Matrix,System.Single,System.Single,System.Nullable{System.Int32})
   name: LogNormal(Matrix, Single, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_LogNormal_Arithmetica_Matrix_System_Single_System_Single_System_Nullable_System_Int32__
@@ -5871,6 +7103,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Normal(Arithmetica.ArithArray, System.Single, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Normal(ArithArray, Single, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Normal(ArithArray, Single, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Normal(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name: Normal(Image, Single, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Normal_Arithmetica_Image_System_Single_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Normal(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name.vb: Normal(Image, Single, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Normal(Arithmetica.Image, System.Single, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Normal(Arithmetica.Image, System.Single, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Normal(Image, Single, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Normal(Image, Single, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Normal(Arithmetica.Matrix,System.Single,System.Single,System.Nullable{System.Int32})
   name: Normal(Matrix, Single, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Normal_Arithmetica_Matrix_System_Single_System_Single_System_Nullable_System_Int32__
@@ -5932,6 +7173,15 @@ references:
   fullName.vb: Arithmetica.Sampler.Uniform(Arithmetica.ArithArray, System.Single, System.Single, System.Nullable(Of System.Int32))
   nameWithType: Sampler.Uniform(ArithArray, Single, Single, Nullable<Int32>)
   nameWithType.vb: Sampler.Uniform(ArithArray, Single, Single, Nullable(Of Int32))
+- uid: Arithmetica.Sampler.Uniform(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name: Uniform(Image, Single, Single, Nullable<Int32>)
+  href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Uniform_Arithmetica_Image_System_Single_System_Single_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Sampler.Uniform(Arithmetica.Image,System.Single,System.Single,System.Nullable{System.Int32})
+  name.vb: Uniform(Image, Single, Single, Nullable(Of Int32))
+  fullName: Arithmetica.Sampler.Uniform(Arithmetica.Image, System.Single, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Sampler.Uniform(Arithmetica.Image, System.Single, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: Sampler.Uniform(Image, Single, Single, Nullable<Int32>)
+  nameWithType.vb: Sampler.Uniform(Image, Single, Single, Nullable(Of Int32))
 - uid: Arithmetica.Sampler.Uniform(Arithmetica.Matrix,System.Single,System.Single,System.Nullable{System.Int32})
   name: Uniform(Matrix, Single, Single, Nullable<Int32>)
   href: api/Arithmetica.Sampler.html#Arithmetica_Sampler_Uniform_Arithmetica_Matrix_System_Single_System_Single_System_Nullable_System_Int32__
