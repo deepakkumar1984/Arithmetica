@@ -394,7 +394,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector2 operator <(Vector2 lhs, Vector2 rhs) { return lhs < rhs; }
+        public static Vector2 operator <(Vector2 lhs, Vector2 rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &lt;.
@@ -404,7 +404,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector2 operator <(Vector2 lhs, float rhs) { return lhs < rhs; }
+        public static Vector2 operator <(Vector2 lhs, float rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -434,7 +434,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector2 operator <=(Vector2 lhs, Vector2 rhs) { return lhs <= rhs; }
+        public static Vector2 operator <=(Vector2 lhs, Vector2 rhs) { return lhs &lt;= rhs; }
 
         /// <summary>
         /// Implements the operator &lt;=.
@@ -444,6 +444,6 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Vector2 operator <=(Vector2 lhs, float rhs) { return lhs <= rhs; }
+        public static Vector2 operator <=(Vector2 lhs, float rhs) { return lhs &lt;= rhs; }
     }
 }

@@ -888,13 +888,7 @@ namespace Arithmetica
 
         public Array ToArray()
         {
-            long arraySize = 1;
-            foreach (var item in Shape)
-            {
-                arraySize *= item;
-            }
-
-            Array result = Array.CreateInstance(ElementType.ToCLRType(), arraySize);
+            Array result = Array.CreateInstance(ElementType.ToCLRType(), Shape);
 
             var datagch = GCHandle.Alloc(result, GCHandleType.Pinned);
             Storage.CopyFromStorage(datagch.AddrOfPinnedObject(), 0, Storage.ByteLength);

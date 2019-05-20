@@ -272,16 +272,16 @@ namespace Arithmetica.Geometry
 
         public static Plane operator >(Plane lhs, float rhs) { return lhs > rhs; }
 
-        public static Plane operator <(Plane lhs, Plane rhs) { return lhs < rhs; }
+        public static Plane operator <(Plane lhs, Plane rhs) { return lhs &lt; rhs; }
 
-        public static Plane operator <(Plane lhs, float rhs) { return lhs < rhs; }
+        public static Plane operator <(Plane lhs, float rhs) { return lhs &lt; rhs; }
 
         public static Plane operator >=(Plane lhs, Plane rhs) { return lhs >= rhs; }
 
         public static Plane operator >=(Plane lhs, float rhs) { return lhs >= rhs; }
 
-        public static Plane operator <=(Plane lhs, Plane rhs) { return lhs <= rhs; }
+        public static Plane operator <=(Plane lhs, Plane rhs) { return lhs &lt;= rhs; }
 
-        public static Plane operator <=(Plane lhs, float rhs) { return lhs <= rhs; }
+        public static Plane operator <=(Plane lhs, float rhs) { return lhs &lt;= rhs; }
     }
 }

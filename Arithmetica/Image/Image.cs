@@ -5,6 +5,7 @@ using System.Text;
 using System.Linq;
 using System.IO;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Arithmetica
 {
@@ -53,7 +54,7 @@ namespace Arithmetica
         {
             get
             {
-                return (int)variable.Shape[2];
+                return (int)variable.Shape[3];
             }
         }
 
@@ -67,7 +68,7 @@ namespace Arithmetica
         {
             get
             {
-                return (int)variable.Shape[3];
+                return (int)variable.Shape[2];
             }
         }
 
@@ -156,25 +157,81 @@ namespace Arithmetica
         /// <returns></returns>
         public static Image FromFile(string filePath, int? height = null, int? width = null, bool grayScale = false)
         {
-            Bitmap bmp = new Bitmap(filePath);
-            if (height.HasValue && width.HasValue)
-                bmp = bmp.Resize(width.Value, height.Value, false);
-
-            float[] data = null;
-            int W = bmp.Width;
-            int H = bmp.Height;
-            int C = 3;
+            int W, H, C;
+            Mat mat = null;
             if (grayScale)
+                mat = Cv2.ImRead(filePath, ImreadModes.GrayScale);
+            else
+                mat = Cv2.ImRead(filePath, ImreadModes.Color);
+
+            W = width.HasValue ? width.Value : mat.Width;
+            H = height.HasValue ? height.Value : mat.Height;
+            C = mat.Channels();
+            if(mat.Height != H && mat.Width != W)
+                mat = mat.Resize(new OpenCvSharp.Size(W, H));
+
+            var imgdata = ImgToFloat(mat, W, H, C);
+
+            ArithArray result = new ArithArray(1, H, W, C);
+            result.LoadFrom(imgdata);
+            result = result.Transpose(0, 3, 1, 2);
+            return Out(result);
+        }
+
+        /// <summary>
+        /// Convert Open CV Mat object to Arithmetica image object
+        /// </summary>
+        /// <param name="mat">The open cv mat.</param>
+        /// <returns></returns>
+        public static Image FromOpenCVMat(Mat mat)
+        {
+            int W = mat.Width;
+            int H = mat.Height;
+            int C = mat.Channels();
+            if(mat.Height != H && mat.Width != W)
+                mat = mat.Resize(new OpenCvSharp.Size(W, H));
+
+            var imgdata = ImgToFloat(mat, W, H, C);
+
+            ArithArray result = new ArithArray(1, H, W, C);
+            result.LoadFrom(imgdata);
+            result = result.Transpose(0, 3, 1, 2);
+            return Out(result);
+        }
+
+        /// <summary>
+        /// Imgs to float.
+        /// </summary>
+        /// <param name="mat">The mat.</param>
+        /// <param name="W">The w.</param>
+        /// <param name="H">The h.</param>
+        /// <param name="C">The c.</param>
+        /// <returns></returns>
+        private static float[] ImgToFloat(Mat mat, int W, int H, int C)
+        {
+            float[] imgdata;
+            imgdata = new float[C * H * W];
+            float[] red = new float[H * W];
+            float[] blue = new float[H * W];
+            float[] green = new float[H * W];
+            if (C == 1)
             {
-                data = bmp.ParallelExtractGrayScale().ToArray();
-                C = 1;
+                var floatData = mat.Cast<MatOfByte>().ToArray();
+                imgdata = floatData.Select(x => (float)x).ToArray();
             }
             else
-                data = bmp.ParallelExtractCHW().ToArray();
+            {
+                var vecData = mat.Cast<MatOfByte3>().ToArray();
+                int i = -1;
+                foreach (var item in vecData)
+                {
+                    imgdata[++i] = item.Item0;
+                    imgdata[++i] = item.Item1;
+                    imgdata[++i] = item.Item2;
+                }
+            }
 
-            ArithArray result = new ArithArray(1, C, H, W);
-            result.LoadFrom(data);
-            return Out(result);
+            return imgdata;
         }
 
         /// <summary>
@@ -207,32 +264,17 @@ namespace Arithmetica
                 if (grayScale)
                     mat = Cv2.ImRead(filePath, ImreadModes.GrayScale);
                 else
-                    mat = Cv2.ImRead(filePath);
+                    mat = Cv2.ImRead(filePath, ImreadModes.Color);
                 
                 mat = mat.Resize(new OpenCvSharp.Size(width, height));
-                
-                float[] imgdata = new float[C * height * width];
-                if (C == 1)
-                {
-                    imgdata = mat.Cast<MatOfFloat>().ToArray();
-                }
-                else
-                {
-                    var vecData = mat.Cast<MatOfByte3>().ToArray();
-                    int i = -1;
-                    foreach (var item in vecData)
-                    {
-                        imgdata[++i] = item.Item0;
-                        imgdata[++i] = item.Item1;
-                        imgdata[++i] = item.Item2;
-                    }
-                }
 
+                float[] imgdata = ImgToFloat(mat, width, height, C);
                 data.AddRange(imgdata);
             }
 
-            ArithArray result = new ArithArray(files.Count(), C, height, width);
+            ArithArray result = new ArithArray(files.Count(), height, width, C);
             result.LoadFrom(data.ToArray());
+            result = result.Transpose(0, 3, 1, 2);
             return Out(result);
         }
 
@@ -250,7 +292,7 @@ namespace Arithmetica
             {
                 
                 var data = ArrayOps.NewContiguous(variable.Select(0, index));
-                Image img = new Image(Channel, Width, Height);
+                Image img = new Image(Channel, Height, Width);
                 img.LoadData(data.ToArray());
                 return img;
             }
@@ -265,16 +307,36 @@ namespace Arithmetica
             variable.Fill(value);
         }
 
-
         /// <summary>
         /// Shows the image at the specified index.
         /// </summary>
         /// <param name="index">The index of the image from the list.</param>
         /// <param name="title">The title for the window.</param>
-        public void Save(long index = 0, string title = "Img")
+        public void Show(string title = "Img", long? index = null)
         {
-            //Cv2.ImShow(title, ToOpenCVMat(index));
-            //Cv2.ImWrite("test.jpg", ToOpenCVMat(index));
+            if (index.HasValue)
+            {
+                Cv2.ImShow(title, ToOpenCVMat(index.Value));
+                Cv2.WaitKey();
+            }
+            else
+            {
+                for (int i = 0; i < Size; i++)
+                {
+                    Cv2.ImShow(title, ToOpenCVMat(i));
+                    Cv2.WaitKey();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Save the image of specified index to the specified file path.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
+        /// <param name="index">The index.</param>
+        public void Save(string filePath, long index = 0)
+        {
+            Cv2.ImWrite(filePath, ToOpenCVMat(index));
         }
 
         /// <summary>
@@ -286,13 +348,32 @@ namespace Arithmetica
         {
             Image img = this[index];
             img.variable = img.variable.Transpose(0, 2, 3, 1);
-            MatType matType = MatType.CV_8U;
-            //if (Channel == 1)
-            //    matType = MatType.CV_32FC1;
 
-            MatOfByte3 mat = new MatOfByte3(Height, Width);
+            Mat mat;
+
+            if (Channel == 3)
+            {
+                mat = new MatOfByte3(Height, Width);
+                var arr = img.variable.DataFloat.ToArray();
+                Vec3b[] imgData = new Vec3b[Height * Width];
+
+                int i = 0;
+                while (i < imgData.Length)
+                {
+                    imgData[i].Item0 = (byte)arr[i * Channel];
+                    imgData[i].Item1 = (byte)arr[i * Channel + 1];
+                    imgData[i].Item2 = (byte)arr[i * Channel + 2];
+                    i++;
+                }
+                mat.SetArray(0, 0, imgData);
+            }
+            else
+            {
+                mat = new MatOfByte(Height, Width);
+                var bytes = img.variable.DataFloat.Select(x => (byte)x).ToArray();
+                mat.SetArray(0, 0, bytes);
+            }
             
-            var bytes = img.variable.DataFloat.Select(x => (byte)x).ToArray();
             return mat;
         }
 
@@ -444,7 +525,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <(Image lhs, Image rhs) { return lhs < rhs; }
+        public static Image operator <(Image lhs, Image rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &lt;.
@@ -454,7 +535,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <(Image lhs, float rhs) { return lhs < rhs; }
+        public static Image operator <(Image lhs, float rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -484,7 +565,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <=(Image lhs, Image rhs) { return lhs <= rhs; }
+        public static Image operator <=(Image lhs, Image rhs) { return lhs &lt;= rhs; }
 
         /// <summary>
         /// Implements the operator &lt;=.
@@ -494,6 +575,6 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Image operator <=(Image lhs, float rhs) { return lhs <= rhs; }
+        public static Image operator <=(Image lhs, float rhs) { return lhs &lt;= rhs; }
     }
 }

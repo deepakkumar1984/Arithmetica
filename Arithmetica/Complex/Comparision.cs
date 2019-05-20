@@ -39,7 +39,7 @@ namespace Arithmetica
         public static Complex GreaterEqual(Complex lhs, float rhs) => Complex.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs));
 
         /// <summary>
-        /// <![CDATA[Performs lhs < rhs elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS complex.</param>
         /// <param name="rhs">The RHS complex.</param>
@@ -47,7 +47,7 @@ namespace Arithmetica
         public static Complex LessThan(Complex lhs, Complex rhs) => Complex.Out(ArrayOps.LessThan(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// <![CDATA[Performs lhs < scalar elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS complex.</param>
         /// <param name="rhs">The RHS scalar float.</param>
@@ -55,7 +55,7 @@ namespace Arithmetica
         public static Complex LessThan(Complex lhs, float rhs) => Complex.Out(ArrayOps.LessThan(lhs.variable, rhs));
 
         /// <summary>
-        /// Performs lhs <= rhs elemenwise.
+        /// Performs lhs &lt;= rhs elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS complex.</param>
         /// <param name="rhs">The RHS complex.</param>
@@ -63,7 +63,7 @@ namespace Arithmetica
         public static Complex LessEqual(Complex lhs, Complex rhs) => Complex.Out(ArrayOps.LessOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// Performs lhs <= scalar elemenwise.
+        /// Performs lhs &lt;= scalar elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS complex.</param>
         /// <param name="rhs">The RHS scalar float.</param>

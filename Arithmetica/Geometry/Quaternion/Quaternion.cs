@@ -139,16 +139,16 @@ namespace Arithmetica.Geometry
 
         public static Quaternion operator >(Quaternion lhs, float rhs) { return lhs > rhs; }
 
-        public static Quaternion operator <(Quaternion lhs, Quaternion rhs) { return lhs < rhs; }
+        public static Quaternion operator <(Quaternion lhs, Quaternion rhs) { return lhs &lt; rhs; }
 
-        public static Quaternion operator <(Quaternion lhs, float rhs) { return lhs < rhs; }
+        public static Quaternion operator <(Quaternion lhs, float rhs) { return lhs &lt; rhs; }
 
         public static Quaternion operator >=(Quaternion lhs, Quaternion rhs) { return lhs >= rhs; }
 
         public static Quaternion operator >=(Quaternion lhs, float rhs) { return lhs >= rhs; }
 
-        public static Quaternion operator <=(Quaternion lhs, Quaternion rhs) { return lhs <= rhs; }
+        public static Quaternion operator <=(Quaternion lhs, Quaternion rhs) { return lhs &lt;= rhs; }
 
-        public static Quaternion operator <=(Quaternion lhs, float rhs) { return lhs <= rhs; }
+        public static Quaternion operator <=(Quaternion lhs, float rhs) { return lhs &lt;= rhs; }
     }
 }

@@ -12,9 +12,10 @@ namespace ArithConsole
             //DotNetPerf();
             //ArithPerf();
 
-            //Image img = Image.FromFolder("img/", 200, 200, false);
-            Image img = Image.FromFile("img/cat01.jpg", 200, 200);
-            img.Save();
+            Image img = Image.FromFolder("img/", 200, 200, false);
+
+            //Image img = Image.FromFile("img/cat01.jpg", 200, 300, false);
+            img.Show();
 
             Console.ReadLine();
         }

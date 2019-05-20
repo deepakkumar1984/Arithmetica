@@ -516,7 +516,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <(Complex lhs, Complex rhs) { return lhs < rhs; }
+        public static Complex operator <(Complex lhs, Complex rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &lt;.
@@ -526,7 +526,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <(Complex lhs, float rhs) { return lhs < rhs; }
+        public static Complex operator <(Complex lhs, float rhs) { return lhs &lt; rhs; }
 
         /// <summary>
         /// Implements the operator &gt;=.
@@ -556,7 +556,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <=(Complex lhs, Complex rhs) { return lhs <= rhs; }
+        public static Complex operator <=(Complex lhs, Complex rhs) { return lhs &lt;= rhs; }
 
         /// <summary>
         /// Implements the operator &lt;=.
@@ -566,7 +566,7 @@ namespace Arithmetica
         /// <returns>
         /// The result of the operator.
         /// </returns>
-        public static Complex operator <=(Complex lhs, float rhs) { return lhs <= rhs; }
+        public static Complex operator <=(Complex lhs, float rhs) { return lhs &lt;= rhs; }
 
         public static implicit operator Complex(int value)
         {

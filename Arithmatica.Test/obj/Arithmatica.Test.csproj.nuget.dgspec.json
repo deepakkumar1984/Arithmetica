@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj": {}
+    "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj": {}
   },
   "projects": {
-    "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj": {
+    "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
+        "projectUniqueName": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
         "projectName": "Arithmatica.Test",
-        "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
-        "packagesPath": "C:\\Users\\deepa\\.nuget\\packages\\",
-        "outputPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmatica.Test\\obj\\",
+        "projectPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
+        "packagesPath": "C:\\Users\\bdkadmin\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\deepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bdkadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,13 +25,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
-                "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj"
+              "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
+                "projectPath": "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj"
               }
             }
           }
@@ -72,20 +78,20 @@
         }
       }
     },
-    "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
+    "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj": {
       "version": "0.4.1",
       "restore": {
-        "projectUniqueName": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj",
+        "projectUniqueName": "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj",
         "projectName": "Arithmetica",
-        "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj",
-        "packagesPath": "C:\\Users\\deepa\\.nuget\\packages\\",
-        "outputPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica\\obj\\",
+        "projectPath": "C:\\git\\Arithmetica\\Arithmetica\\Arithmetica.csproj",
+        "packagesPath": "C:\\Users\\bdkadmin\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Arithmetica\\Arithmetica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\deepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bdkadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +99,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

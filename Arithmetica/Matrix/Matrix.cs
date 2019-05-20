@@ -268,16 +268,16 @@ namespace Arithmetica
 
         public static Matrix operator >(Matrix lhs, float rhs) { return lhs > rhs; }
 
-        public static Matrix operator <(Matrix lhs, Matrix rhs) { return lhs < rhs; }
+        public static Matrix operator <(Matrix lhs, Matrix rhs) { return lhs &lt; rhs; }
 
-        public static Matrix operator <(Matrix lhs, float rhs) { return lhs < rhs; }
+        public static Matrix operator <(Matrix lhs, float rhs) { return lhs &lt; rhs; }
 
         public static Matrix operator >=(Matrix lhs, Matrix rhs) { return lhs >= rhs; }
 
         public static Matrix operator >=(Matrix lhs, float rhs) { return lhs >= rhs; }
 
-        public static Matrix operator <=(Matrix lhs, Matrix rhs) { return lhs <= rhs; }
+        public static Matrix operator <=(Matrix lhs, Matrix rhs) { return lhs &lt;= rhs; }
 
-        public static Matrix operator <=(Matrix lhs, float rhs) { return lhs <= rhs; }
+        public static Matrix operator <=(Matrix lhs, float rhs) { return lhs &lt;= rhs; }
     }
 }
