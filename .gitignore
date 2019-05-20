@@ -12,3 +12,9 @@
 /Arithmatica.Test/bin/Debug/netcoreapp2.1
 /.vs/Arithmetica/config
 /Arithmatica.Test/obj/Release/netcoreapp2.1
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+/**/doc-gen/obj
