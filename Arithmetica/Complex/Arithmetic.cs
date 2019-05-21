@@ -31,7 +31,6 @@ namespace Arithmetica
         /// <returns></returns>
         public static Complex Sub(Complex lhs, Complex rhs) => Complex.Out(ArrayOps.Sub(lhs.variable, rhs.variable));
 
-
         /// <summary>
         /// Performs elementwise multiplication operation between complex and scalar
         /// </summary>

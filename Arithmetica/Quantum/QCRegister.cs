@@ -151,8 +151,9 @@ namespace Arithmetica.Quantum
         /// Collapses a quantum register into a pure state
         /// </summary>
         /// <param name="random">The random.</param>
-        public void Collapse(Random random)
+        public void Collapse()
         {
+            Random random = new Random();
             Complex collapsed = new Complex(Register.Size);
 
             double probabilitySum = 0d;

@@ -128,6 +128,25 @@ namespace Arithmetica
             }
         }
 
+        public bool IsReal
+        {
+            get
+            {
+                return Imag == 0;
+            }
+        }
+
+        /// <summary>
+        /// Gets a value that indicates whether the real part is equal to zero.
+        /// </summary>
+        public bool IsImaginary
+        {
+            get
+            {
+                return Real == 0;
+            }
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Complex"/> class.
         /// </summary>
@@ -159,13 +178,19 @@ namespace Arithmetica
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Complex"/> class.
+        /// Build a single complex variable from the list.
         /// </summary>
-        /// <param name="size">Defines number of complex variable in the list.</param>
-        /// <param name="dataType">The data type.</param>
-        public Complex(int size, DType dataType)
+        /// <param name="parameters">The parameters.</param>
+        /// <returns></returns>
+        public static Complex FromArray(params Complex[] parameters)
         {
-            variable = new ArithArray(new long[] { size, 2 }, dataType);
+            Complex result = new Complex(parameters.Length);
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                result.Set(i, parameters[i]);
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -176,7 +201,7 @@ namespace Arithmetica
         /// <returns></returns>
         public static Complex Unit(float real, float imag)
         {
-            return FromArray(real, imag);
+            return new Complex(real, imag);
         }
 
         /// <summary>
@@ -233,18 +258,6 @@ namespace Arithmetica
                 x[i] = (0, 0);
             });
 
-            return x;
-        }
-
-        /// <summary>
-        /// Create a Complex from the array.
-        /// </summary>
-        /// <param name="data">The data array to be loaded.</param>
-        /// <returns></returns>
-        public static Complex FromArray(params float[] data)
-        {
-            var x = new Complex(data.Length / 2);
-            x.variable.LoadFrom(data);
             return x;
         }
 
@@ -324,9 +337,14 @@ namespace Arithmetica
         /// <returns></returns>
         public Complex Get(long index)
         {
-            return FromArray(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
+            return new Complex(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
         }
 
+        /// <summary>
+        /// Sets the complex number at specified index.
+        /// </summary>
+        /// <param name="index">The index.</param>
+        /// <param name="complex">The complex.</param>
         public void Set(long index, Complex complex)
         {
             this[index] = (complex.Real, complex.Imag);
