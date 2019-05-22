@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -80,35 +80,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Sampler</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.LinearAlgebra.Double.html">Arithmetica.LinearAlgebra.Double</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
   <h5 id="Arithmetica_LinearAlgebra_Double_Sampler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Sampler</code></pre>
+    <pre><code class="lang-csharp hljs">public class Sampler : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -126,7 +102,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Bernoulli(Matrix src, float p, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Bernoulli(Matrix src, float p, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,7 +149,7 @@ When studying hypothesis tests that assume normality, seeing how the tests perfo
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Cauchy(Matrix src, float median, float sigma, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Cauchy(Matrix src, float median, float sigma, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -224,7 +200,7 @@ When studying hypothesis tests that assume normality, seeing how the tests perfo
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Exponential(Matrix src, float lambda, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Exponential(Matrix src, float lambda, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,7 +247,7 @@ The geometric distribution models the number of trials that must be run in order
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Geometric(Matrix src, float p, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Geometric(Matrix src, float p, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,7 +293,7 @@ The geometric distribution models the number of trials that must be run in order
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogNormal(Matrix src, float mean, float std, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LogNormal(Matrix src, float mean, float std, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -370,7 +346,7 @@ The geometric distribution models the number of trials that must be run in order
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Normal(Matrix src, float mean, float std, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Normal(Matrix src, float mean, float std, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -422,7 +398,7 @@ In other words, any value within the given interval is equally likely to be draw
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Uniform(Matrix src, float min, float max, int? seed = default(int? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Uniform(Matrix src, float min, float max, int? seed = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

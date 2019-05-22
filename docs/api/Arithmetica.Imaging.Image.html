@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -81,35 +81,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Image</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Imaging.html">Arithmetica.Imaging</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
   <h5 id="Arithmetica_Imaging_Image_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Image</code></pre>
+    <pre><code class="lang-csharp hljs">public class Image : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -254,7 +230,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Array</span></td>
+        <td><span class="xref">Array</span></td>
         <td><p>The data.</p>
 </td>
       </tr>
@@ -1660,7 +1636,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Image FromFile(string filePath, int? height = default(int? ), int? width = default(int? ), bool grayScale = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Image FromFile(string filePath, int? height = null, int? width = null, bool grayScale = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1794,13 +1770,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Imaging_Image_FromOpenCVMat_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20Arithmetica.Imaging.Image.FromOpenCVMat(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Imaging_Image_FromOpenCVMat_Mat_.md&amp;value=---%0Auid%3A%20Arithmetica.Imaging.Image.FromOpenCVMat(Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Image/Image.cs/#L187">View Source</a>
   </span>
   <a id="Arithmetica_Imaging_Image_FromOpenCVMat_" data-uid="Arithmetica.Imaging.Image.FromOpenCVMat*"></a>
-  <h4 id="Arithmetica_Imaging_Image_FromOpenCVMat_OpenCvSharp_Mat_" data-uid="Arithmetica.Imaging.Image.FromOpenCVMat(OpenCvSharp.Mat)">FromOpenCVMat(Mat)</h4>
+  <h4 id="Arithmetica_Imaging_Image_FromOpenCVMat_Mat_" data-uid="Arithmetica.Imaging.Image.FromOpenCVMat(Mat)">FromOpenCVMat(Mat)</h4>
   <div class="markdown level1 summary"><p>Convert Open CV Mat object to Arithmetica image object</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1819,7 +1795,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">OpenCvSharp.Mat</span></td>
+        <td><span class="xref">Mat</span></td>
         <td><span class="parametername">mat</span></td>
         <td><p>The open cv mat.</p>
 </td>
@@ -2405,13 +2381,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Imaging_Image_LoadData_System_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.Imaging.Image.LoadData(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Imaging_Image_LoadData_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.Imaging.Image.LoadData(Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Image/Image.cs/#L146">View Source</a>
   </span>
   <a id="Arithmetica_Imaging_Image_LoadData_" data-uid="Arithmetica.Imaging.Image.LoadData*"></a>
-  <h4 id="Arithmetica_Imaging_Image_LoadData_System_Array_" data-uid="Arithmetica.Imaging.Image.LoadData(System.Array)">LoadData(Array)</h4>
+  <h4 id="Arithmetica_Imaging_Image_LoadData_Array_" data-uid="Arithmetica.Imaging.Image.LoadData(Array)">LoadData(Array)</h4>
   <div class="markdown level1 summary"><p>Loads the data to the image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2430,7 +2406,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Array</span></td>
+        <td><span class="xref">Array</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>The data.</p>
 </td>
@@ -3444,7 +3420,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Image Pad(int top, int bottom, int left, int right, float value = 0F)</code></pre>
+    <pre><code class="lang-csharp hljs">public Image Pad(int top, int bottom, int left, int right, float value = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3722,7 +3698,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(string filePath, long index = 0L)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Save(string filePath, long index = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3794,22 +3770,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Values length should be equal to channel size, if gray scale: pass one value, if color: pass B, G, R value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Imaging_Image_Show_System_String_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20Arithmetica.Imaging.Image.Show(System.String%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -3824,7 +3784,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Show(string title = &quot;Img&quot;, long? index = default(long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public void Show(string title = &quot;Img&quot;, long? index = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4596,7 +4556,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Arithmetica.LinearAlgebra.Single.Matrix.html">Matrix</a>&gt;&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Arithmetica.LinearAlgebra.Single.Matrix.html">Matrix</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -4645,7 +4605,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Arithmetica.LinearAlgebra.Single.Matrix.html">Matrix</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Arithmetica.LinearAlgebra.Single.Matrix.html">Matrix</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -4664,7 +4624,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mat ToOpenCVMat(long index = 0L)</code></pre>
+    <pre><code class="lang-csharp hljs">public Mat ToOpenCVMat(long index = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4694,7 +4654,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">OpenCvSharp.Mat</span></td>
+        <td><span class="xref">Mat</span></td>
         <td></td>
       </tr>
     </tbody>

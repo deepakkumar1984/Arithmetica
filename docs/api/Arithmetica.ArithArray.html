@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -75,32 +75,13 @@
   </h1>
   <div class="markdown level0 summary"><p>Arith Array is a base tensor for the Arithmetica.
 It's a multi dimensional array with implementation with basic arithmetics, trignometric, hyperbolic, rounding,
-Implements the <span class="xref">System.IDisposable</span></p>
+Implements the <see cref="!:System.IDisposable"></see></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ArithArray</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.html">Arithmetica</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
@@ -254,7 +235,7 @@ will be contiguous in memory. The array's elements will not be initialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Single</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1382,13 +1363,13 @@ incrementing the refcount of the storage object.</p>
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Base/ArithArray.cs/#L857">View Source</a>
   </span>
   <a id="Arithmetica_ArithArray_Deserialize_" data-uid="Arithmetica.ArithArray.Deserialize*"></a>
-  <h4 id="Arithmetica_ArithArray_Deserialize_System_IO_Stream_" data-uid="Arithmetica.ArithArray.Deserialize(System.IO.Stream)">Deserialize(Stream)</h4>
+  <h4 id="Arithmetica_ArithArray_Deserialize_System_IO_Stream_" data-uid="Arithmetica.ArithArray.Deserialize(System.IO.Stream)">Deserialize(System.IO.Stream)</h4>
   <div class="markdown level1 summary"><p>Deserializes the specified allocator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ArithArray Deserialize(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ArithArray Deserialize(System.IO.Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1440,22 +1421,6 @@ incrementing the refcount of the storage object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
-        <td><p>ArithArray</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Div_Arithmetica_ArithArray_Arithmetica_ArithArray_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Div(Arithmetica.ArithArray%2CArithmetica.ArithArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1717,7 +1682,7 @@ incrementing the refcount of the storage object.</p>
   </span>
   <a id="Arithmetica_ArithArray_Equals_" data-uid="Arithmetica.ArithArray.Equals*"></a>
   <h4 id="Arithmetica_ArithArray_Equals_System_Object_" data-uid="Arithmetica.ArithArray.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1753,13 +1718,11 @@ incrementing the refcount of the storage object.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_EqualTo_Arithmetica_ArithArray_Arithmetica_ArithArray_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.EqualTo(Arithmetica.ArithArray%2CArithmetica.ArithArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1969,24 +1932,6 @@ incrementing the refcount of the storage object.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>number of elements of newSizes must match the dimension count of array
-or
-Can only expand singleton dimensions (dimensions of size 1)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Fill_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Fill(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2151,13 +2096,13 @@ Can only expand singleton dimensions (dimensions of size 1)</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_FromArray_System_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.FromArray(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_FromArray_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.FromArray(Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Base/ArithArray.cs/#L742">View Source</a>
   </span>
   <a id="Arithmetica_ArithArray_FromArray_" data-uid="Arithmetica.ArithArray.FromArray*"></a>
-  <h4 id="Arithmetica_ArithArray_FromArray_System_Array_" data-uid="Arithmetica.ArithArray.FromArray(System.Array)">FromArray(Array)</h4>
+  <h4 id="Arithmetica_ArithArray_FromArray_Array_" data-uid="Arithmetica.ArithArray.FromArray(Array)">FromArray(Array)</h4>
   <div class="markdown level1 summary"><p>Froms the array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2176,7 +2121,7 @@ Can only expand singleton dimensions (dimensions of size 1)</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Array</span></td>
+        <td><span class="xref">Array</span></td>
         <td><span class="parametername">array</span></td>
         <td><p>The array.</p>
 </td>
@@ -2249,24 +2194,6 @@ Can only expand singleton dimensions (dimensions of size 1)</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Number of indices must equal number of array dimensions
-or
-Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of range</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2299,8 +2226,6 @@ Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of rang
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_GetRegion_System_Int64___System_Int64___.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.GetRegion(System.Int64%5B%5D%2CSystem.Int64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -2932,13 +2857,13 @@ Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of rang
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_LoadFrom_System_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.LoadFrom(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_LoadFrom_Array_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.LoadFrom(Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Base/ArithArray.cs/#L715">View Source</a>
   </span>
   <a id="Arithmetica_ArithArray_LoadFrom_" data-uid="Arithmetica.ArithArray.LoadFrom*"></a>
-  <h4 id="Arithmetica_ArithArray_LoadFrom_System_Array_" data-uid="Arithmetica.ArithArray.LoadFrom(System.Array)">LoadFrom(Array)</h4>
+  <h4 id="Arithmetica_ArithArray_LoadFrom_Array_" data-uid="Arithmetica.ArithArray.LoadFrom(Array)">LoadFrom(Array)</h4>
   <div class="markdown level1 summary"><p>Copies from.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2957,29 +2882,9 @@ Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of rang
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Array</span></td>
+        <td><span class="xref">Array</span></td>
         <td><span class="parametername">array</span></td>
         <td><p>The array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>ArithArray must be contiguous to copy from CLR array
-or
-ArithArray and array must have the same number of elements
-or
-ArithArray and array must have the same element types</p>
 </td>
       </tr>
     </tbody>
@@ -3786,26 +3691,6 @@ ArithArray and array must have the same element types</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
-        <td><p>dimension
-or
-startIndex
-or
-size</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Neg_Arithmetica_ArithArray_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Neg(Arithmetica.ArithArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -4147,7 +4032,7 @@ size</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Print(uint count = 0U, string title = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Print(uint count = null, string title = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4355,24 +4240,6 @@ size</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>repetitions must be at least the same length as the number of array dimensions
-or
-All dimensions must be repeated at least once</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Reshape_System_Int64___.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Reshape(System.Int64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -4525,29 +4392,6 @@ All dimensions must be repeated at least once</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>Select requires 2 or more dimensions</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
-        <td><p>dimension
-or
-index</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Serialize_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Serialize(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -4556,13 +4400,13 @@ index</p>
     <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Base/ArithArray.cs/#L846">View Source</a>
   </span>
   <a id="Arithmetica_ArithArray_Serialize_" data-uid="Arithmetica.ArithArray.Serialize*"></a>
-  <h4 id="Arithmetica_ArithArray_Serialize_System_IO_Stream_" data-uid="Arithmetica.ArithArray.Serialize(System.IO.Stream)">Serialize(Stream)</h4>
+  <h4 id="Arithmetica_ArithArray_Serialize_System_IO_Stream_" data-uid="Arithmetica.ArithArray.Serialize(System.IO.Stream)">Serialize(System.IO.Stream)</h4>
   <div class="markdown level1 summary"><p>Serializes the specified stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Serialize(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Serialize(System.IO.Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4618,24 +4462,6 @@ index</p>
         <td><span class="xref">System.Int64</span>[]</td>
         <td><span class="parametername">indices</span></td>
         <td><p>The indices.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Number of indices must equal number of array dimensions
-or
-Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of range</p>
 </td>
       </tr>
     </tbody>
@@ -4961,27 +4787,6 @@ Index &quot; + i + &quot; with value &quot; + indices[i] + &quot; is out of rang
       <tr>
         <td><a class="xref" href="Arithmetica.ArithArray.html">ArithArray</a></td>
         <td><p>ArithArray.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>Squeeze requires 2 or more dimensions</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
-        <td><p>dimension</p>
 </td>
       </tr>
     </tbody>
@@ -5535,7 +5340,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Array</span></td>
+        <td><span class="xref">Array</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -5549,7 +5354,7 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
   </span>
   <a id="Arithmetica_ArithArray_ToString_" data-uid="Arithmetica.ArithArray.ToString*"></a>
   <h4 id="Arithmetica_ArithArray_ToString" data-uid="Arithmetica.ArithArray.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance.</p>
+  <div class="markdown level1 summary"><p>Returns a <see cref="!:System.String"></see> that represents this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -5567,13 +5372,11 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <span class="xref">System.String</span> that represents this instance.</p>
+        <td><p>A <see cref="!:System.String"></see> that represents this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Tpow_System_Single_Arithmetica_ArithArray_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Tpow(System.Single%2CArithmetica.ArithArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -5709,22 +5512,6 @@ Returns the standard deviation, a measure of the spread of a distribution, of th
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>The number of permutation indices must equal the number of array dimensions</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_ArithArray_Trunc_Arithmetica_ArithArray_.md&amp;value=---%0Auid%3A%20Arithmetica.ArithArray.Trunc(Arithmetica.ArithArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -5833,31 +5620,6 @@ The result array has an additional dimension of size size.</p>
       <tr>
         <td><a class="xref" href="Arithmetica.ArithArray.html">ArithArray</a></td>
         <td><p>ArithArray.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>Cannot unfold an empty array</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
-        <td><p>dimension is out of range - dimension
-or
-size cannot be larger than the size of dimension - size
-or
-step must be at least 1 - step</p>
 </td>
       </tr>
     </tbody>
@@ -7013,14 +6775,6 @@ step must be at least 1 - step</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-  <h3 id="seealso">See Also</h3>
-  <div class="seealso">
-      <div><span class="xref">System.IDisposable</span></div>
-  </div>
 </article>
           </div>
           
