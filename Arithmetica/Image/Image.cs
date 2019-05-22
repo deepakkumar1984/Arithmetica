@@ -6,8 +6,9 @@ using System.Linq;
 using System.IO;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using Arithmetica.LinearAlgebra.Single;
 
-namespace Arithmetica
+namespace Arithmetica.Imaging
 {
     /// <summary>
     /// Provides a collection of static convenience methods for creating, manipulating, combining, and converting generic images.
@@ -160,7 +161,7 @@ namespace Arithmetica
             int W, H, C;
             Mat mat = null;
             if (grayScale)
-                mat = Cv2.ImRead(filePath, ImreadModes.GrayScale);
+                mat = Cv2.ImRead(filePath, ImreadModes.Grayscale);
             else
                 mat = Cv2.ImRead(filePath, ImreadModes.Color);
 
@@ -262,7 +263,7 @@ namespace Arithmetica
                 Mat mat = null;
 
                 if (grayScale)
-                    mat = Cv2.ImRead(filePath, ImreadModes.GrayScale);
+                    mat = Cv2.ImRead(filePath, ImreadModes.Grayscale);
                 else
                     mat = Cv2.ImRead(filePath, ImreadModes.Color);
                 

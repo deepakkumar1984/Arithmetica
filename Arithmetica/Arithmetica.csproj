@@ -1,55 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.6.1</Version>
-    <Authors>Deepak Battini</Authors>
-    <PackageProjectUrl>https://github.com/deepakkumar1984/Arithmetica</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/deepakkumar1984/Arithmetica</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>maths, algebra, trignometry, vector, matrix</PackageTags>
-    <Description>A simple math library for performing matrix, vector (1D, 2D, 3D, 4D), image, plane, quertnion and multi-dimensional array math calculation.</Description>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/deepakkumar1984/Arithmetica/master/LICENSE</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/deepakkumar1984/Arithmetica/master/icon128.png</PackageIconUrl>
-    
+    <Version>0.6.5</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Geometry\Plane\LogExp.cs" />
-    <Compile Remove="Geometry\Plane\Powers.cs" />
-    <Compile Remove="Geometry\Plane\Random.cs" />
-    <Compile Remove="Geometry\Plane\Reducing.cs" />
-    <Compile Remove="Geometry\Plane\Rounding.cs" />
-    <Compile Remove="Geometry\Plane\Trignometric.cs" />
-    <Compile Remove="Geometry\Quaternion\LogExp.cs" />
-    <Compile Remove="Geometry\Quaternion\Powers.cs" />
-    <Compile Remove="Geometry\Quaternion\Random.cs" />
-    <Compile Remove="Geometry\Quaternion\Reducing.cs" />
-    <Compile Remove="Geometry\Quaternion\Rounding.cs" />
-    <Compile Remove="Geometry\Quaternion\Trignometric.cs" />
-    <Compile Remove="Vector2\Reducing.cs" />
-    <Compile Remove="Vector2\Trignometric.cs" />
-    <Compile Remove="Vector3\Reducing.cs" />
-    <Compile Remove="Vector3\Trignometric.cs" />
-    <Compile Remove="Vector4\Reducing.cs" />
-    <Compile Remove="Vector4\Trignometric.cs" />
-    <Compile Remove="Vector\Reducing.cs" />
+    <Compile Remove="Quantum\**" />
+    <EmbeddedResource Remove="Quantum\**" />
+    <None Remove="Quantum\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenCvSharp3-AnyCPU" Version="3.4.4.20181118" />
-    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
-    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+    <PackageReference Include="OpenCvSharp3-AnyCPU" Version="4.0.0.20181129" />
   </ItemGroup>
 
   <ItemGroup>

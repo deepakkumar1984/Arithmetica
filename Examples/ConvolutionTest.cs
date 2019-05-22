@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Arithmetica;
+using Arithmetica.Imaging;
 using System.Linq;
 using System.Threading.Tasks;
+using Arithmetica.LinearAlgebra.Single;
 
 namespace Examples
 {

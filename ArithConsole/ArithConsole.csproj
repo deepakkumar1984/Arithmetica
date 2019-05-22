@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Arithmetica2\Arithmetica2.csproj" />
+    <ProjectReference Include="..\Arithmetica\Arithmetica.csproj" />
   </ItemGroup>
 
   <ItemGroup>

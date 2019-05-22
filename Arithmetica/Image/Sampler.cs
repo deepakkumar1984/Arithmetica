@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Arithmetica
+namespace Arithmetica.Imaging
 {
     public partial class Sampler
     {

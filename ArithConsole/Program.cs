@@ -1,5 +1,4 @@
 ﻿using Arithmetica;
-using Arithmetica2.LinearAlgebra.Single;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -12,12 +11,12 @@ namespace ArithConsole
         {
             //DotNetPerf();
             //ArithPerf();
-            Vector vec = new Vector();
-            vec.Add(3);
-            vec.Add(3);
-            vec.Add(3);
+            //Vector vec = new Vector();
+            //vec.Add(3);
+            //vec.Add(3);
+            //vec.Add(3);
 
-            var ar =vec.V;
+            //var ar =vec.V;
 
             Console.ReadLine();
         }

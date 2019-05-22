@@ -1,4 +1,5 @@
 using Arithmetica;
+using Arithmetica.LinearAlgebra.Single;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Arithmatica.Test

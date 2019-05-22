@@ -656,7 +656,7 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
-      "OpenCvSharp3-AnyCPU/3.4.4.20181118": {
+      "OpenCvSharp3-AnyCPU/4.0.0.20181129": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "4.5.0"
@@ -679,7 +679,7 @@
             "assetType": "native",
             "rid": "win10-x64"
           },
-          "runtimes/win10-x64/native/opencv_ffmpeg344_64.dll": {
+          "runtimes/win10-x64/native/opencv_ffmpeg400_64.dll": {
             "assetType": "native",
             "rid": "win10-x64"
           },
@@ -687,7 +687,7 @@
             "assetType": "native",
             "rid": "win10-x86"
           },
-          "runtimes/win10-x86/native/opencv_ffmpeg344.dll": {
+          "runtimes/win10-x86/native/opencv_ffmpeg400.dll": {
             "assetType": "native",
             "rid": "win10-x86"
           }
@@ -991,7 +991,7 @@
           "ref/netstandard1.5/_._": {}
         }
       },
-      "System.Drawing.Common/4.5.1": {
+      "System.Drawing.Common/4.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -1012,19 +1012,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "System.Drawing.Primitives/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.1/System.Drawing.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/System.Drawing.Primitives.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.11": {
@@ -1711,13 +1698,11 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Arithmetica/0.6.1": {
+      "Arithmetica/0.6.5": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "OpenCvSharp3-AnyCPU": "3.4.4.20181118",
-          "System.Drawing.Common": "4.5.1",
-          "System.Drawing.Primitives": "4.3.0"
+          "OpenCvSharp3-AnyCPU": "4.0.0.20181129"
         },
         "compile": {
           "bin/placeholder/Arithmetica.dll": {}
@@ -2833,10 +2818,10 @@
         "tools/install.ps1"
       ]
     },
-    "OpenCvSharp3-AnyCPU/3.4.4.20181118": {
-      "sha512": "G75Dj/2K79n8G/BJbKLjwb6FPXCEi9N+1irIUaHEKYclgYRv22ziVrsuI9WYtrtCjD4d9M5wtne9F2/9Bt9Kiw==",
+    "OpenCvSharp3-AnyCPU/4.0.0.20181129": {
+      "sha512": "fAXJW98FU3ZAlS3LDrRAXeg7h5ufA9Z1mAQNsXIPSTQHS+Ql2+KdzdYXs+p+lZhyH9baJWPDB42E+EN1KJ0Y3w==",
       "type": "package",
-      "path": "opencvsharp3-anycpu/3.4.4.20181118",
+      "path": "opencvsharp3-anycpu/4.0.0.20181129",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2880,12 +2865,12 @@
         "lib/netstandard2.0/OpenCvSharp.dll",
         "lib/netstandard2.0/OpenCvSharp.pdb",
         "lib/netstandard2.0/OpenCvSharp.xml",
-        "opencvsharp3-anycpu.3.4.4.20181118.nupkg.sha512",
+        "opencvsharp3-anycpu.4.0.0.20181129.nupkg.sha512",
         "opencvsharp3-anycpu.nuspec",
         "runtimes/win10-x64/native/OpenCvSharpExtern.dll",
-        "runtimes/win10-x64/native/opencv_ffmpeg344_64.dll",
+        "runtimes/win10-x64/native/opencv_ffmpeg400_64.dll",
         "runtimes/win10-x86/native/OpenCvSharpExtern.dll",
-        "runtimes/win10-x86/native/opencv_ffmpeg344.dll"
+        "runtimes/win10-x86/native/opencv_ffmpeg400.dll"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -3744,10 +3729,10 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/4.5.1": {
-      "sha512": "GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+    "System.Drawing.Common/4.5.0": {
+      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
       "type": "package",
-      "path": "system.drawing.common/4.5.1",
+      "path": "system.drawing.common/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3771,39 +3756,10 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "system.drawing.common.4.5.1.nupkg.sha512",
+        "system.drawing.common.4.5.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Drawing.Primitives/4.3.0": {
-      "sha512": "1QU/c35gwdhvj77fkScXQQbjiVAqIL3fEYn/19NE0CV/ic5TN5PyWAft8HsrbRd4SBLEoErNCkWSzMDc0MmbRw==",
-      "type": "package",
-      "path": "system.drawing.primitives/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/System.Drawing.Primitives.dll",
-        "lib/netstandard1.1/System.Drawing.Primitives.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Drawing.Primitives.dll",
-        "ref/netstandard1.1/System.Drawing.Primitives.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.drawing.primitives.4.3.0.nupkg.sha512",
-        "system.drawing.primitives.nuspec"
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
@@ -6040,7 +5996,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Arithmetica/0.6.1": {
+    "Arithmetica/0.6.5": {
       "type": "project",
       "path": "../Arithmetica/Arithmetica.csproj",
       "msbuildProject": "../Arithmetica/Arithmetica.csproj"
@@ -6048,7 +6004,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Arithmetica >= 0.6.1",
+      "Arithmetica >= 0.6.5",
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",

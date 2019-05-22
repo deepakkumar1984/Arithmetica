@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Arithmetica.LinearAlgebra.Single;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Arithmetica.Quantum
         /// <value>
         /// The register.
         /// </value>
-        public Complex Register { get; set; }
+        public Complex[] Register { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QCRegister"/> class.
@@ -25,7 +26,7 @@ namespace Arithmetica.Quantum
         /// <param name="complex">The complex.</param>
         public QCRegister(Complex complex)
         {
-            Register = complex;
+            Register = new Complex[] { complex };
             Register.Normalize();
         }
 
@@ -76,11 +77,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                Complex complex = new Complex(4);
-                complex[0] = (1, 0);
-                complex[1] = (0, 0);
-                complex[2] = (0, 0);
-                complex[3] = (1, 0);
+                Complex[] complex = new Complex[4];
+                complex[0] = Complex.One;
+                complex[1] = Complex.;
+                complex[2] = Complex.Zero;
+                complex[3] = Complex.One;
 
                 complex = complex / (float)Math.Sqrt(2);
                 return new QCRegister(complex);
