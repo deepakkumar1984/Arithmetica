@@ -19,9 +19,8 @@ namespace Arithmetica.LinearAlgebra.Double
 	/// Represents 2-Dimentional vector of double-precision floating point numbers.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
 	[TypeConverter(typeof(Vector2DConverter))]
-	public struct Vector2 : ICloneable
+	public class Vector2 : ICloneable
 	{
 		#region Private fields
 		private double _x;

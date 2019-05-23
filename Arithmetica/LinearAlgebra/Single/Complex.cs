@@ -15,8 +15,7 @@ namespace Arithmetica.LinearAlgebra.Single
 	/// Represents a complex single-precision floating point number.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
-	public struct Complex : ICloneable
+	public class Complex : ICloneable
 	{
 		#region Private Fields
 		private float _real;
@@ -43,14 +42,25 @@ namespace Arithmetica.LinearAlgebra.Single
 			_real = c.Real;
 			_image = c.Imaginary;
 		}
-		#endregion
 
-		#region Public Properties
-		/// <summary>
-		/// Gets or sets the real value of the complex number.
-		/// </summary>
-		/// <value>The real value of this complex number.</value>
-		public float Real
+        /// <summary>
+        /// Constructor to take polar inputs and create a Complex object
+        /// </summary>
+        /// <param name="magnitude">The magnitude.</param>
+        /// <param name="phase">The phase.</param>
+        /// <returns></returns>
+        public static Complex FromPolarCoordinates(float magnitude, float phase)
+        {
+            return new Complex((magnitude * (float)Math.Cos(phase)), (magnitude * (float)Math.Sin(phase)));
+        }
+        #endregion
+
+        #region Public Properties
+        /// <summary>
+        /// Gets or sets the real value of the complex number.
+        /// </summary>
+        /// <value>The real value of this complex number.</value>
+        public float Real
 		{
 			get { return _real; }
 			set { _real = value; }
@@ -148,18 +158,58 @@ namespace Arithmetica.LinearAlgebra.Single
 			{
 				return new Complex(_real, -_image);
 			}
-			set
-			{
-				this = value.Conjugate;
-			}
 		}
-		#endregion
 
-		#region Constants
-		/// <summary>
-		///  A single-precision complex number that represents zero.
-		/// </summary>
-		public static readonly Complex Zero = new Complex(0, 0);
+        /// <summary>
+        /// Gets the magnitude of the complex number.
+        /// </summary>
+        /// <value>
+        /// The magnitude.
+        /// </value>
+        public float Magnitude
+        {
+            get
+            {
+                float result = 0;
+                if (Real > Imaginary)
+                {
+                    double r = Imaginary / Real;
+                    result = Real * (float)Math.Sqrt(1.0 + r * r);
+                }
+                else if (Imaginary == 0.0)
+                {
+                    result = Imaginary;
+                }
+                else
+                {
+                    double r = Real / Imaginary;
+                    result = Imaginary * (float)Math.Sqrt(1.0 + r * r);
+                }
+
+                return result;
+            }
+        }
+
+        /// <summary>
+        /// Gets the phase of the complex number.
+        /// </summary>
+        /// <value>
+        /// The phase.
+        /// </value>
+        public float Phase
+        {
+            get
+            {
+                return (float)Math.Atan2(Imaginary, Real);
+            }
+        }
+        #endregion
+
+        #region Constants
+        /// <summary>
+        ///  A single-precision complex number that represents zero.
+        /// </summary>
+        public static readonly Complex Zero = new Complex(0, 0);
 		/// <summary>
 		///  A single-precision complex number that represents one.
 		/// </summary>
@@ -844,10 +894,15 @@ namespace Arithmetica.LinearAlgebra.Single
 
 			return result;
 		}
-		#endregion
+        #endregion
 
-		#region Public Static Trigonometric Arcus Functions
-		public static Complex Asin(Complex complex)
+        #region Public Static Trigonometric Arcus Functions
+        /// <summary>
+        /// Compute the Arc sin of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Asin(Complex complex)
 		{
 			Complex result = 1 - Complex.Square(complex);
 			result = Complex.Sqrt(result);
@@ -857,7 +912,13 @@ namespace Arithmetica.LinearAlgebra.Single
 
 			return result;
 		}
-		public static Complex Acos(Complex complex)
+
+        /// <summary>
+        /// Compute the Arc cos of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Acos(Complex complex)
 		{
 			Complex result = 1 - Complex.Square(complex);
 			result = Complex.Sqrt(result);
@@ -867,22 +928,46 @@ namespace Arithmetica.LinearAlgebra.Single
 			result = -Complex.ImaginaryOne * result;
 			return result;
 		}
-		public static Complex Atan(Complex complex)
+
+        /// <summary>
+        /// Compute the Arc tan of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Atan(Complex complex)
 		{
 			Complex tmp = new Complex(-complex.Imaginary, complex.Real);
 			return (new Complex(0.0f, 0.5f)) * (Complex.Log(1.0f - tmp) - Complex.Log(1.0f + tmp));
 		}
-		public static Complex Acot(Complex complex)
+
+        /// <summary>
+        /// Compute the Arc cot of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Acot(Complex complex)
 		{
 			Complex tmp = new Complex(-complex.Imaginary, complex.Real);
 			return (new Complex(0.0f, 0.5f)) * (Complex.Log(1.0f + tmp) - Complex.Log(1.0f - tmp)) + (float)ArithMath.HalfPI;
 		}
-		public static Complex Asec(Complex complex)
+
+        /// <summary>
+        /// Compute the Arc sec of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Asec(Complex complex)
 		{
 			Complex inverse = 1 / complex;
 			return (-Complex.ImaginaryOne) * Complex.Log(inverse + Complex.ImaginaryOne * Complex.Sqrt(1 - Complex.Square(inverse)));
 		}
-		public static Complex Acsc(Complex complex)
+
+        /// <summary>
+        /// Compute the Arc cosec of the complex number.
+        /// </summary>
+        /// <param name="complex">The complex.</param>
+        /// <returns></returns>
+        public static Complex Acsc(Complex complex)
 		{
 			Complex inverse = 1 / complex;
 			return (-Complex.ImaginaryOne) * Complex.Log(Complex.ImaginaryOne * inverse + Complex.Sqrt(1 - Complex.Square(inverse)));
@@ -1044,7 +1129,7 @@ namespace Arithmetica.LinearAlgebra.Single
 			float modulus = this.Modulus;
 			if (modulus == 0)
 			{
-				throw new DivideByZeroException("Can not normalize a complex number that is zero.");
+                return;
 			}
 			_real = (float)(_real / modulus);
 			_image = (float)(_image / modulus);

@@ -15,8 +15,7 @@ namespace Arithmetica.LinearAlgebra.Double
 	/// Represents a complex double-precision doubleing point number.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
-	public struct Complex : ICloneable
+	public class Complex : ICloneable
 	{
 		#region Private Fields
 		private double _real;
@@ -147,10 +146,6 @@ namespace Arithmetica.LinearAlgebra.Double
 			get
 			{
 				return new Complex(_real, -_image);
-			}
-			set
-			{
-				this = value.Conjugate;
 			}
 		}
 		#endregion

@@ -19,9 +19,8 @@ namespace Arithmetica.LinearAlgebra.Single
 	/// Represents 4-Dimentional vector of single-precision floating point numbers.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
 	[TypeConverter(typeof(Vector4FConverter))]
-	public struct Vector4 : ICloneable
+	public class Vector4 : ICloneable
 	{
 		#region Private fields
 		private float _x;

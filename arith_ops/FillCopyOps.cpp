@@ -20,8 +20,6 @@ int TS_Fill(TensorRef* result, float value)
 	API_END()
 }
 
-
-
 template<typename TResult, typename TSrc>
 INLINE_FUNC void Copy_Apply(TensorRef* result, TensorRef* src)
 {

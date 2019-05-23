@@ -126,7 +126,7 @@ namespace Arithmetica.Quantum
         {
             return new QCGate(new Complex[,] {
                 { 1, 0 },
-                { 0, Complex.ImaginaryOne * phase},
+                { 0, QCUtil.ComplexExp(Complex.ImaginaryOne * phase)},
             });
         }
 
@@ -235,7 +235,7 @@ namespace Arithmetica.Quantum
             Complex[] coefficients = new Complex[order];
             for (int i = 0; i < order; i++)
             {
-                coefficients[i] = (Complex.ImaginaryOne * 2 * Math.PI * i / order) / Math.Sqrt(order);
+                coefficients[i] = QCUtil.ComplexExp(Complex.ImaginaryOne * 2 * Math.PI * i / order) / Math.Sqrt(order);
             }
 
             // Populate matrix
@@ -255,7 +255,7 @@ namespace Arithmetica.Quantum
 		 */
         public static QCRegister operator *(QCGate quantumGate, QCRegister quantumRegister)
         {
-            return new QCRegister((quantumGate.Matrix * quantumRegister.Register).To1DimArray());
+            return new QCRegister(quantumGate.Matrix.Vector * quantumRegister.Register);
         }
 
         /*

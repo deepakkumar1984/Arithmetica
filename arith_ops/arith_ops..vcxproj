@@ -347,6 +347,7 @@
     <ClCompile Include="MaxPoolingFrame.cpp" />
     <ClCompile Include="RandomGenerator.cpp" />
     <ClCompile Include="TensorRandom.cpp" />
+    <ClCompile Include="VectorOps.cpp" />
     <ClCompile Include="Vector_Comp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -365,6 +366,7 @@
     <ClInclude Include="TensorRef.h" />
     <ClInclude Include="ElementwiseOps.h" />
     <ClInclude Include="Vector-inl.h" />
+    <ClInclude Include="VectorOps.h" />
     <ClInclude Include="Vector_Comp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

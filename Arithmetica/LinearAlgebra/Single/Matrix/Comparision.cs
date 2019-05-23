@@ -39,7 +39,7 @@ namespace Arithmetica.LinearAlgebra.Single
         public static Matrix GreaterEqual(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs));
 
         /// <summary>
-        /// <![CDATA[Performs lhs < rhs elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
@@ -47,7 +47,7 @@ namespace Arithmetica.LinearAlgebra.Single
         public static Matrix LessThan(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.LessThan(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// <![CDATA[Performs lhs < scalar elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
@@ -55,7 +55,7 @@ namespace Arithmetica.LinearAlgebra.Single
         public static Matrix LessThan(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.LessThan(lhs.variable, rhs));
 
         /// <summary>
-        /// Performs lhs <= rhs elemenwise.
+        /// Performs lhs &lt;= rhs elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
@@ -63,7 +63,7 @@ namespace Arithmetica.LinearAlgebra.Single
         public static Matrix LessEqual(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.LessOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
-        /// Performs lhs <= scalar elemenwise.
+        /// Performs lhs &lt;= scalar elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>

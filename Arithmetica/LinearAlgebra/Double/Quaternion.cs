@@ -30,17 +30,24 @@ namespace Arithmetica.LinearAlgebra.Double
 	/// </para>
 	/// </remarks>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
-	public struct Quaternion : ICloneable
+	public class Quaternion : ICloneable
 	{
 		#region Private Fields
 		private double _w;
 		private double _x;
 		private double _y;
 		private double _z;
-		#endregion
+        #endregion
 
-		#region Constructors
+        #region Constructors
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Quaternion"/> class.
+        /// </summary>
+        public Quaternion()
+        {
+
+        }
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Quaternion"/> class with the specified coordinates.
 		/// </summary>
@@ -178,10 +185,6 @@ namespace Arithmetica.LinearAlgebra.Double
 			get
 			{
 				return new Quaternion(_w, -_x, -_y, -_z);
-			}
-			set
-			{
-				this = value.Conjugate;
 			}
 		}
 		#endregion

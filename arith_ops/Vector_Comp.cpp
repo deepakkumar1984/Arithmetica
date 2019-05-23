@@ -8,6 +8,8 @@ OPS_API int COMP_Add(_complex *result, _complex *lhs, _complex *rhs)
 		result[i].x = lhs[i].x + rhs[i].x;
 		result[i].y = lhs[i].y + rhs[i].y;
 	}
+
+	return 0;
 }
 
 OPS_API int COMP_Sub(_complex *result, _complex *lhs, _complex *rhs)
@@ -18,4 +20,6 @@ OPS_API int COMP_Sub(_complex *result, _complex *lhs, _complex *rhs)
 		result[i].x = lhs[i].x - rhs[i].x;
 		result[i].y = lhs[i].y - rhs[i].y;
 	}
+
+	return 0;
 }

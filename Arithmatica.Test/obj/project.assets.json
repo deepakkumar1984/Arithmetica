@@ -6012,7 +6012,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\batt0153\\.nuget\\packages\\": {},
+    "C:\\Users\\bdkadmin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6021,14 +6021,14 @@
       "projectUniqueName": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
       "projectName": "Arithmatica.Test",
       "projectPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\Arithmatica.Test.csproj",
-      "packagesPath": "C:\\Users\\batt0153\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\bdkadmin\\.nuget\\packages\\",
       "outputPath": "C:\\git\\Arithmetica\\Arithmatica.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\batt0153\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bdkadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6037,7 +6037,12 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/sianet/api/v3/index.json": {}
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
@@ -6070,6 +6075,7 @@
             "version": "[16.0.1, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

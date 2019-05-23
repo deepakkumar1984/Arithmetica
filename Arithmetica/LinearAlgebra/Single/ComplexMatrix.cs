@@ -2538,6 +2538,20 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         #endregion
+
+        /// <summary>
+        /// Gets the vector form of the matrix.
+        /// </summary>
+        /// <value>
+        /// The vector.
+        /// </value>
+        public ComplexVector Vector
+        {
+            get
+            {
+                return new ComplexVector(this.To1DimArray());
+            }
+        }
     }
 
     internal class CMatrixEnumerator : IEnumerator<Complex>

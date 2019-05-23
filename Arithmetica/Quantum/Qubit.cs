@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Arithmetica.LinearAlgebra.Single;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,11 +21,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return this.Register.Get(0);
+                return Register[0];
             }
             private set
             {
-                this.Register.Set(0, value);
+                this.Register[0] = value;
             }
         }
 
@@ -38,11 +39,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return this.Register.Get(1);
+                return this.Register[1];
             }
             private set
             {
-                this.Register.Set(1, value);
+                this.Register[1] = value;
             }
         }
 

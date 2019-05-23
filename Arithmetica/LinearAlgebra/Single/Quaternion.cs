@@ -30,25 +30,32 @@ namespace Arithmetica.LinearAlgebra.Single
 	/// </para>
 	/// </remarks>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
-	public struct Quaternion : ICloneable
+	public class Quaternion : ICloneable
 	{
 		#region Private Fields
 		private float _w;
 		private float _x;
 		private float _y;
 		private float _z;
-		#endregion
+        #endregion
 
-		#region Constructors
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Quaternion"/> class with the specified coordinates.
-		/// </summary>
-		/// <param name="w">The quaternions's W coordinate.</param>
-		/// <param name="x">The quaternions's X coordinate.</param>
-		/// <param name="y">The quaternions's Y coordinate.</param>
-		/// <param name="z">The quaternions's Z coordinate.</param>
-		public Quaternion(float w, float x, float y, float z)
+        #region Constructors
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Quaternion"/> class.
+        /// </summary>
+        public Quaternion()
+        {
+
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Quaternion"/> class with the specified coordinates.
+        /// </summary>
+        /// <param name="w">The quaternions's W coordinate.</param>
+        /// <param name="x">The quaternions's X coordinate.</param>
+        /// <param name="y">The quaternions's Y coordinate.</param>
+        /// <param name="z">The quaternions's Z coordinate.</param>
+        public Quaternion(float w, float x, float y, float z)
 		{
 			_w = w;
 			_x = x;
@@ -178,10 +185,6 @@ namespace Arithmetica.LinearAlgebra.Single
 			get
 			{
 				return new Quaternion(_w, -_x, -_y, -_z);
-			}
-			set
-			{
-				this = value.Conjugate;
 			}
 		}
 		#endregion

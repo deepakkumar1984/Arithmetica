@@ -19,9 +19,8 @@ namespace Arithmetica.LinearAlgebra.Single
 	/// Represents 2-Dimentional vector of single-precision floating point numbers.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
 	[TypeConverter(typeof(Vector2Converter))]
-	public struct Vector2 : ICloneable
+	public class Vector2 : ICloneable
 	{
 		#region Private fields
 		private float _x;

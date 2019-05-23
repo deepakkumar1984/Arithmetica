@@ -19,3 +19,6 @@
 /**/obj/
 /**/doc-gen/obj
 /arith_ops/x64/Release
+/arith_ops/build
+/arith_ops/Debug
+/arith_ops/x64/Debug

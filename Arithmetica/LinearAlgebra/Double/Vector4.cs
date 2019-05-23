@@ -19,9 +19,8 @@ namespace Arithmetica.LinearAlgebra.Double
 	/// Represents 4-Dimentional vector of double-precision floating point numbers.
 	/// </summary>
 	[Serializable]
-	[StructLayout(LayoutKind.Sequential)]
 	[TypeConverter(typeof(Vector4DConverter))]
-	public struct Vector4 : ICloneable
+	public class Vector4 : ICloneable
 	{
 		#region Private fields
 		private double _x;

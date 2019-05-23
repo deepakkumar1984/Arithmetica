@@ -18,15 +18,15 @@ namespace Arithmetica.Quantum
         /// <value>
         /// The register.
         /// </value>
-        public Complex[] Register { get; set; }
+        public ComplexVector Register { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QCRegister"/> class.
         /// </summary>
         /// <param name="complex">The complex.</param>
-        public QCRegister(Complex complex)
+        public QCRegister(ComplexVector complex)
         {
-            Register = new Complex[] { complex };
+            Register = complex;
             Register.Normalize();
         }
 
@@ -49,7 +49,7 @@ namespace Arithmetica.Quantum
             List<Complex> complexArray = new List<Complex>();
             foreach (var item in registers)
             {
-                complexArray.Add(item.Register);
+                complexArray.AddRange(item.Register.variable);
             }
 
             BuildRegister(complexArray.ToArray());
@@ -63,7 +63,7 @@ namespace Arithmetica.Quantum
         /// <param name="bitCount">The bit count.</param>
         public QCRegister(int value, int bitCount = 1)
         {
-            Register = new Complex(bitCount);
+            Register = new ComplexVector(bitCount);
             Register.Fill(value);
         }
 
@@ -77,9 +77,9 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                Complex[] complex = new Complex[4];
+                ComplexVector complex = new ComplexVector(4);
                 complex[0] = Complex.One;
-                complex[1] = Complex.;
+                complex[1] = Complex.Zero;
                 complex[2] = Complex.Zero;
                 complex[3] = Complex.One;
 
@@ -123,11 +123,11 @@ namespace Arithmetica.Quantum
         /// <returns></returns>
         public static QCRegister WStateOfLength(int length)
         {
-            Complex vector = new Complex(1 << length);
+            ComplexVector vector = new ComplexVector(1 << length);
 
             for (int i = 0; i < length; i++)
             {
-                vector.Set(1 << i, Complex.One);
+                vector[1 << i] = Complex.One;
             }
 
             return new QCRegister(vector / (float)Math.Sqrt(3));
@@ -140,10 +140,10 @@ namespace Arithmetica.Quantum
         /// <returns></returns>
         public static QCRegister GHZStateOfLength(int length)
         {
-            Complex vector = new Complex(1 << length);
+            ComplexVector vector = new ComplexVector(1 << length);
 
-            vector.Set(0, Complex.One);
-            vector.Set((1 << length) - 1, Complex.One);
+            vector[0] = Complex.One;
+            vector[(1 << length) - 1] = Complex.One;
 
             return new QCRegister(vector / (float)Math.Sqrt(2));
         }
@@ -155,18 +155,18 @@ namespace Arithmetica.Quantum
         public void Collapse()
         {
             Random random = new Random();
-            Complex collapsed = new Complex(Register.Size);
+            ComplexVector collapsed = new ComplexVector(Register.Size);
 
             double probabilitySum = 0d;
             double probabilityThreshold = random.NextDouble();
 
             for (int i = 0; i < this.Register.Size; i++)
             {
-                probabilitySum += this.Register.Get(i).MagnitudeSquared;
+                probabilitySum += this.Register[i].ModulusSquared;
 
                 if (probabilitySum > probabilityThreshold)
                 {
-                    collapsed[i] = (1, 0);
+                    collapsed[i] = new Complex(1, 0);
                     break;
                 }
             }
@@ -199,7 +199,7 @@ namespace Arithmetica.Quantum
             int index = -1;
             for (int i = 0; i < this.Register.Size; i++)
             {
-                if (this.Register.Get(i).Real == 1)
+                if (this.Register[i].Real == 1)
                 {
                     index = i;
                     break;
@@ -232,23 +232,8 @@ namespace Arithmetica.Quantum
         /// <param name="complexArray">The complex array.</param>
         private void BuildRegister(Complex[] complexArray)
         {
-            long size = 0;
-            foreach (var item in complexArray)
-            {
-                size += item.Size;
-            }
-
-            Register = new Complex(size);
-
-            int counter = 0;
-            foreach (var item in complexArray)
-            {
-                for (int i = 0; i < item.Size; i++)
-                {
-                    Register[counter] = item[i];
-                    counter++;
-                }
-            }
+            Register = new ComplexVector(complexArray.Length);
+            Register.variable = complexArray;
         }
 
         /// <summary>
@@ -263,13 +248,13 @@ namespace Arithmetica.Quantum
 
             for (int i = 0; i < this.Register.Size; i++)
             {
-                Complex amplitude = this.Register.Get(i);
+                Complex amplitude = this.Register[i];
 
                 if (amplitude.Real != 0)
                 {
                     string complexString = "";
 
-                    if (amplitude.Real < 0 || amplitude.Real == 0 && amplitude.Imag < 0)
+                    if (amplitude.Real < 0 || amplitude.Real == 0 && amplitude.Imaginary < 0)
                     {
                         complexString += " - ";
                         amplitude = -amplitude;
@@ -281,7 +266,7 @@ namespace Arithmetica.Quantum
 
                     if (amplitude.Real != 1)
                     {
-                        if (amplitude.Real != 0 && amplitude.Imag != 0)
+                        if (amplitude.Real != 0 && amplitude.Imaginary != 0)
                         {
                             complexString += "(";
                         }
@@ -291,17 +276,17 @@ namespace Arithmetica.Quantum
                             complexString += amplitude.Real;
                         }
 
-                        if (amplitude.Real != 0 && amplitude.Imag > 0)
+                        if (amplitude.Real != 0 && amplitude.Imaginary > 0)
                         {
                             complexString += " + ";
                         }
 
-                        if (amplitude.Imag != 0)
+                        if (amplitude.Imaginary != 0)
                         {
-                            complexString += amplitude.Imag + " i";
+                            complexString += amplitude.Imaginary + " i";
                         }
 
-                        if (amplitude.Real != 0 && amplitude.Imag != 0)
+                        if (amplitude.Real != 0 && amplitude.Imaginary != 0)
                         {
                             complexString += ")";
                         }

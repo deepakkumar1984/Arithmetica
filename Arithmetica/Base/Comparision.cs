@@ -39,7 +39,7 @@ namespace Arithmetica
         public static ArithArray GreaterEqual(ArithArray lhs, float rhs) => ArrayOps.GreaterOrEqual(lhs, rhs);
 
         /// <summary>
-        /// <![CDATA[Performs lhs < rhs elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS array.</param>
         /// <param name="rhs">The RHS array.</param>
@@ -47,7 +47,7 @@ namespace Arithmetica
         public static ArithArray LessThan(ArithArray lhs, ArithArray rhs) => ArrayOps.LessThan(lhs, rhs);
 
         /// <summary>
-        /// <![CDATA[Performs lhs < scalar elemenwise.]]>
+        /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
         /// </summary>
         /// <param name="lhs">The LHS array.</param>
         /// <param name="rhs">The RHS scalar float.</param>
@@ -55,7 +55,7 @@ namespace Arithmetica
         public static ArithArray LessThan(ArithArray lhs, float rhs) => ArrayOps.LessThan(lhs, rhs);
 
         /// <summary>
-        /// Performs lhs <= rhs elemenwise.
+        /// Performs lhs &lt;= rhs elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS array.</param>
         /// <param name="rhs">The RHS array.</param>
@@ -63,7 +63,7 @@ namespace Arithmetica
         public static ArithArray LessEqual(ArithArray lhs, ArithArray rhs) => ArrayOps.LessOrEqual(lhs, rhs);
 
         /// <summary>
-        /// Performs lhs <= scalar elemenwise.
+        /// Performs lhs &lt;= scalar elemenwise.
         /// </summary>
         /// <param name="lhs">The LHS array.</param>
         /// <param name="rhs">The RHS scalar float.</param>
