@@ -1,0 +1,2306 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Quaternion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Quaternion
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion">
+  
+  
+  <h1 id="Arithmetica_LinearAlgebra_Double_Quaternion" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion" class="text-break">Class Quaternion
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a double-precision floating-point quaternion.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Quaternion</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.LinearAlgebra.Double.html">Arithmetica.LinearAlgebra.Double</a></h6>
+  <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
+  <h5 id="Arithmetica_LinearAlgebra_Double_Quaternion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Quaternion : ICloneable</code></pre>
+  </div>
+  <h5 id="Arithmetica_LinearAlgebra_Double_Quaternion_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+A quaternion can be thought of as a 4-Dimentional vector of form:
+q = [w, x, y, z] = w + xi + yj +zk.
+</p>
+<p>
+A Quaternion is often written as q = s + V where S represents
+the scalar part (w component) and V is a 3D vector representing
+the imaginery coefficients (x,y,z components).
+</p>
+<p>
+Check out http://mathworld.wolfram.com/Quaternion.html for further details.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion__ctor.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L46">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor">Quaternion()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion__ctor_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.%23ctor(Arithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L83">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor(Arithmetica.LinearAlgebra.Double.Quaternion)">Quaternion(Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> class using coordinates from a given <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion(Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to copy the coordinates from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion__ctor_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L58">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor(System.Double,System.Double,System.Double,System.Double)">Quaternion(Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> class with the specified coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion(double w, double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The quaternions's W coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The quaternions's X coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The quaternions's Y coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The quaternions's Z coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion__ctor_System_Double___.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.%23ctor(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L69">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion__ctor_System_Double___" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.#ctor(System.Double[])">Quaternion(Double[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> class with the specified coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion(double[] coordinates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">coordinates</span></td>
+        <td><p>An array containing the coordinate parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Identity.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Identity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L100">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Identity" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Identity">Identity</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point identity quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion Identity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_WAxis.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.WAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L116">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_WAxis" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.WAxis">WAxis</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point W-Axis quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion WAxis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_XAxis.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.XAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_XAxis" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.XAxis">XAxis</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point X-Axis quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion XAxis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_YAxis.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.YAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L108">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_YAxis" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.YAxis">YAxis</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point Y-Axis quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion YAxis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_ZAxis.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.ZAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L112">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_ZAxis" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ZAxis">ZAxis</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point Z-Axis quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion ZAxis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Zero.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Zero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L96">View Source</a>
+  </span>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Zero" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Double-precision floating point zero quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Conjugate.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Conjugate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L183">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Conjugate_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Conjugate*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Conjugate" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Conjugate">Conjugate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the conjugate of the quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion Conjugate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Item_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L689">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Item_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Item*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Item_System_Int32_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Indexer ( [w, x, y, z] ).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Modulus.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Modulus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L161">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Modulus_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Modulus*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Modulus" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Modulus">Modulus</h4>
+  <div class="markdown level1 summary"><p>Gets the the modulus of the quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Modulus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>A double-precision floating-point number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_ModulusSquared.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.ModulusSquared%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L172">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_ModulusSquared_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ModulusSquared*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_ModulusSquared" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ModulusSquared">ModulusSquared</h4>
+  <div class="markdown level1 summary"><p>Gets the the squared modulus of the quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ModulusSquared { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>A double-precision floating-point number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_W.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.W%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L124">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_W_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.W*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_W" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.W">W</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double W { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The w-coordinate of this quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_X.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.X%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L133">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_X_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.X*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_X" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.X">X</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double X { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The x-coordinate of this quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Y.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Y%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L142">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Y_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Y*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Y" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Y">Y</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Y { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The y-coordinate of this quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Z.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Z%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L151">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Z_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Z*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Z" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Z">Z</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Z { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The z-coordinate of this quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Add_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Add(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L273">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Add_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Add*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Add_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Add(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Add(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Adds two quaternions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Add(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance containing the sum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Add_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Add(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L283">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Add_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Add*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Add_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Add(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion@)">Add(Quaternion, Quaternion, ref Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Adds two quaternions and put the result in the third quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Quaternion left, Quaternion right, ref Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L546">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero">ClampZero()</h4>
+  <div class="markdown level1 summary"><p>Clamps quaternion values to zero using the default tolerance value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClampZero()</code></pre>
+  </div>
+  <h5 id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The quaternion values that are close to zero within the given tolerance are set to zero.
+The tolerance value used is <a class="xref" href="Arithmetica.ArithMath.html#Arithmetica_ArithMath_EpsilonD">EpsilonD</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L532">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ClampZero(System.Double)">ClampZero(Double)</h4>
+  <div class="markdown level1 summary"><p>Clamps quaternion values to zero using a given tolerance value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClampZero(double tolerance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Arithmetica_LinearAlgebra_Double_Quaternion_ClampZero_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The quaternion values that are close to zero within the given tolerance are set to zero.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L205">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Clone_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Clone*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Clone" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates an exact copy of this <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>The <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> object this method creates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Divide_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Divide(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L380">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Divide_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Divide*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Divide_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Divide(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double)">Divide(Quaternion, Double)</h4>
+  <div class="markdown level1 summary"><p>Divides a quaternion by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Divide(Quaternion quaternion, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Divide_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Divide(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L402">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Divide_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Divide*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Divide_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Divide(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double,Arithmetica.LinearAlgebra.Double.Quaternion@)">Divide(Quaternion, Double, ref Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Divides a quaternion by a scalar and put the result in a third quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Divide(Quaternion quaternion, double scalar, ref Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_DotProduct_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.DotProduct(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L421">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_DotProduct_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.DotProduct*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_DotProduct_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.DotProduct(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">DotProduct(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Calculates the dot product of two quaternions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DotProduct(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The dot product value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L570">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Equals_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Equals*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Equals_System_Object_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this instance is equal to
+the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>An object to compare to this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is a <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> and has the same values as this instance; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Exp_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Exp(Arithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L464">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Exp_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Exp*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Exp_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Exp(Arithmetica.LinearAlgebra.Double.Quaternion)">Exp(Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Calculates the exponent of a quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion Exp(Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>The quaternion's exponent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L560">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_GetHashCode_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.GetHashCode*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_GetHashCode" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hashcode for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A 32-bit signed integer hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Inverse.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Inverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L493">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Inverse_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Inverse*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Inverse" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Inverse">Inverse()</h4>
+  <div class="markdown level1 summary"><p>Inverts the quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Inverse()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Log_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Log(Arithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L433">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Log_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Log*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Log_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Log(Arithmetica.LinearAlgebra.Double.Quaternion)">Log(Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Calculates the logarithm of a given quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Log(Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>The quaternion's logarithm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L321">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Multiply(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Multiplies quaternion <code data-dev-comment-type="paramref" class="paramref">a</code> by quaternion <code data-dev-comment-type="paramref" class="paramref">b</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Multiply(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> containing the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L337">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion@)">Multiply(Quaternion, Quaternion, ref Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Multiplies quaternion <code data-dev-comment-type="paramref" class="paramref">a</code> by quaternion <code data-dev-comment-type="paramref" class="paramref">b</code> and put the result in a third quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Multiply(Quaternion left, Quaternion right, ref Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L350">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double)">Multiply(Quaternion, Double)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a quaternion by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Multiply(Quaternion quaternion, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L366">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double,Arithmetica.LinearAlgebra.Double.Quaternion@)">Multiply(Quaternion, Double, ref Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a quaternion by a scalar and put the result in a third quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Multiply(Quaternion quaternion, double scalar, ref Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Normalize.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Normalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L512">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Normalize_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Normalize*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Normalize" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Normalize">Normalize()</h4>
+  <div class="markdown level1 summary"><p>Normelizes the quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L217">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Parse_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Parse*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Parse_System_String_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified string to its <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> equivalent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Parse(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string representation of a <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> that represents the vector specified by the <code data-dev-comment-type="paramref" class="paramref">s</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Subtract(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L297">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Subtract*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Subtract(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Subtract(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a quaternion from a quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Subtract(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance containing the difference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.Subtract(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L307">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Subtract*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_Subtract_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.Subtract(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion@)">Subtract(Quaternion, Quaternion, ref Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a quaternion from a quaternion and puts the result into a third quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Subtract(Quaternion left, Quaternion right, ref Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L583">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_ToString_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ToString*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_ToString" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string representation of this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_TryParse_System_String_Arithmetica_LinearAlgebra_Double_Quaternion__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.TryParse(System.String%2CArithmetica.LinearAlgebra.Double.Quaternion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L245">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_TryParse_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.TryParse*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_TryParse_System_String_Arithmetica_LinearAlgebra_Double_Quaternion__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.TryParse(System.String,Arithmetica.LinearAlgebra.Double.Quaternion@)">TryParse(String, out Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified string to its <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> equivalent.
+A return value indicates whether the conversion succeeded or failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string value, out Quaternion result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string representation of a <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>When this method returns, if the conversion succeeded,
+contains a <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> representing the vector specified by <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if value was converted successfully; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Addition_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Addition(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L619">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Addition_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Addition*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Addition_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Addition(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Addition(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Adds two quaternions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator +(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance containing the sum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Division(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L669">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Division*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Division(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double)">Division(Quaternion, Double)</h4>
+  <div class="markdown level1 summary"><p>Divides a quaternion by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator /(Quaternion quaternion, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Division(System.Double%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L679">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Division*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Division_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Division(System.Double,Arithmetica.LinearAlgebra.Double.Quaternion)">Division(Double, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Divides a scalar by a quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator /(double scalar, Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Equality_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Equality(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L596">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Equality_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Equality*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Equality_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Equality(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Equality(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Tests whether two specified quaternions are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left-hand quaternion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right-hand quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the two quaternions are equal; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Explicit_Arithmetica_LinearAlgebra_Double_Quaternion__System_Double__.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Explicit(Arithmetica.LinearAlgebra.Double.Quaternion)~System.Double%5B%5D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L738">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Explicit_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Explicit*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Explicit_Arithmetica_LinearAlgebra_Double_Quaternion__System_Double__" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Explicit(Arithmetica.LinearAlgebra.Double.Quaternion)~System.Double[]">Explicit(Quaternion to Double[])</h4>
+  <div class="markdown level1 summary"><p>Converts the quaternion to an array of double-precision floating point numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator double[](Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>An array of double-precision floating point numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Explicit_Arithmetica_LinearAlgebra_Double_Quaternion__System_Double___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The array is [w, x, y, z].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Inequality_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Inequality(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L606">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Inequality_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Inequality*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Inequality_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Inequality(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Inequality(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Tests whether two specified quaternions are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left-hand quaternion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right-hand quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the two quaternions are not equal; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L639">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Multiply(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Multiplies quaternion <code data-dev-comment-type="paramref" class="paramref">a</code> by quaternion <code data-dev-comment-type="paramref" class="paramref">b</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator *(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> containing the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(Arithmetica.LinearAlgebra.Double.Quaternion%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L649">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_Arithmetica_LinearAlgebra_Double_Quaternion_System_Double_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(Arithmetica.LinearAlgebra.Double.Quaternion,System.Double)">Multiply(Quaternion, Double)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a quaternion by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator *(Quaternion quaternion, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(System.Double%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L659">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Multiply_System_Double_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Multiply(System.Double,Arithmetica.LinearAlgebra.Double.Quaternion)">Multiply(Double, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a quaternion by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator *(double scalar, Quaternion quaternion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>A scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance to hold the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion_op_Subtraction_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion.op_Subtraction(Arithmetica.LinearAlgebra.Double.Quaternion%2CArithmetica.LinearAlgebra.Double.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L629">View Source</a>
+  </span>
+  <a id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Subtraction_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Subtraction*"></a>
+  <h4 id="Arithmetica_LinearAlgebra_Double_Quaternion_op_Subtraction_Arithmetica_LinearAlgebra_Double_Quaternion_Arithmetica_LinearAlgebra_Double_Quaternion_" data-uid="Arithmetica.LinearAlgebra.Double.Quaternion.op_Subtraction(Arithmetica.LinearAlgebra.Double.Quaternion,Arithmetica.LinearAlgebra.Double.Quaternion)">Subtraction(Quaternion, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a quaternion from a quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator -(Quaternion left, Quaternion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>A <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a></td>
+        <td><p>A new <a class="xref" href="Arithmetica.LinearAlgebra.Double.Quaternion.html">Quaternion</a> instance containing the difference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_LinearAlgebra_Double_Quaternion.md&amp;value=---%0Auid%3A%20Arithmetica.LinearAlgebra.Double.Quaternion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/LinearAlgebra/Double/Quaternion.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
