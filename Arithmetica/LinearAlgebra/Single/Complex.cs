@@ -191,6 +191,20 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
+        /// Gets the magnitude squared.
+        /// </summary>
+        /// <value>
+        /// The magnitude squared.
+        /// </value>
+        public float MagnitudeSquared
+        {
+            get
+            {
+                return (float)Math.Pow(Magnitude, 2);
+            }
+        }
+
+        /// <summary>
         /// Gets the phase of the complex number.
         /// </summary>
         /// <value>

@@ -6,7 +6,7 @@ namespace Examples
     {
         static void Main(string[] args)
         {
-            ConvolutionTest.Run();
+            QuantumBellTest.Run();
             Console.ReadLine();
         }
     }

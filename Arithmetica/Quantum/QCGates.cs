@@ -72,6 +72,12 @@ namespace Arithmetica.Quantum
             }
         }
 
+        /// <summary>
+        /// Pauli X Gate also called Not gate
+        /// </summary>
+        /// <value>
+        /// The not gate.
+        /// </value>
         public static QCGate NotGate
         {
             get
@@ -83,9 +89,12 @@ namespace Arithmetica.Quantum
             }
         }
 
-        /*
-		 * Pauli-Y gate
-		 */
+        /// <summary>
+        /// Gets the pauli y gate.
+        /// </summary>
+        /// <value>
+        /// The pauli y gate.
+        /// </value>
         public static QCGate PauliYGate
         {
             get
@@ -97,6 +106,12 @@ namespace Arithmetica.Quantum
             }
         }
 
+        /// <summary>
+        /// Gets the pauli z gate.
+        /// </summary>
+        /// <value>
+        /// The pauli z gate.
+        /// </value>
         public static QCGate PauliZGate
         {
             get
@@ -108,9 +123,12 @@ namespace Arithmetica.Quantum
             }
         }
 
-        /*
-		 * Square root of NOT gate
-		 */
+        /// <summary>
+        /// Gets the square root of not gate.
+        /// </summary>
+        /// <value>
+        /// The square root not gate.
+        /// </value>
         public static QCGate SquareRootNotGate
         {
             get
@@ -122,6 +140,11 @@ namespace Arithmetica.Quantum
             }
         }
 
+        /// <summary>
+        /// Phases the shift gate.
+        /// </summary>
+        /// <param name="phase">The phase.</param>
+        /// <returns></returns>
         public static QCGate PhaseShiftGate(double phase)
         {
             return new QCGate(new Complex[,] {

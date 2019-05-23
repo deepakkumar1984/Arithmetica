@@ -162,7 +162,7 @@ namespace Arithmetica.Quantum
 
             for (int i = 0; i < this.Register.Size; i++)
             {
-                probabilitySum += this.Register[i].ModulusSquared;
+                probabilitySum += this.Register[i].MagnitudeSquared;
 
                 if (probabilitySum > probabilityThreshold)
                 {
