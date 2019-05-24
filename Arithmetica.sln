@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arithmatica.Test", "Arithma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArithConsole", "ArithConsole\ArithConsole.csproj", "{F59E87AC-320E-4164-8A3E-28F270859F01}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arith_ops", "arith_ops\arith_ops..vcxproj", "{920E488B-9DDE-4AC0-863D-448645F9A15D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arith_ops.", "arith_ops\arith_ops..vcxproj", "{920E488B-9DDE-4AC0-863D-448645F9A15D}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "docs", "docs\", "{F06A9D3A-183A-458E-9443-1A7A49E14CE6}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "", "docs", "{F06A9D3A-183A-458E-9443-1A7A49E14CE6}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49516"
@@ -33,6 +33,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "docs", "docs\", "{F06A9D3A-
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{174FFFF9-9F9A-4C77-86E2-EAADF954A3F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arithmetica.Quantum", "Arithmetica.Quantum\Arithmetica.Quantum.csproj", "{088515D1-C7C1-4829-B998-77AEF34C380C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -188,6 +190,30 @@ Global
 		{174FFFF9-9F9A-4C77-86E2-EAADF954A3F4}.ReleaseCpuOnly|x64.Build.0 = Release|Any CPU
 		{174FFFF9-9F9A-4C77-86E2-EAADF954A3F4}.ReleaseCpuOnly|x86.ActiveCfg = Release|Any CPU
 		{174FFFF9-9F9A-4C77-86E2-EAADF954A3F4}.ReleaseCpuOnly|x86.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|Any CPU.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|Any CPU.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|x64.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|x64.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|x86.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Azure|x86.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|x64.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Debug|x86.Build.0 = Debug|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|x64.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|x64.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|x86.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.Release|x86.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|Any CPU.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|Any CPU.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|x64.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|x64.Build.0 = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|x86.ActiveCfg = Release|Any CPU
+		{088515D1-C7C1-4829-B998-77AEF34C380C}.ReleaseCpuOnly|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

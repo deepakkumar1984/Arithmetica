@@ -6,21 +6,21 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    internal partial class QuantumGate
+    internal partial class QGate
     {
         public ComplexMatrix Matrix { get; private set; }
 
-        public QuantumGate(params QuantumGate[] quantumGates) : this((IEnumerable<QuantumGate>)quantumGates) { }
+        public QGate(params QGate[] quantumGates) : this((IEnumerable<QGate>)quantumGates) { }
 
-        public QuantumGate(IEnumerable<QuantumGate> quantumGates)
+        public QGate(IEnumerable<QGate> quantumGates)
         {
             this.Matrix = quantumGates.Aggregate(new ComplexMatrix(new Complex[] { Complex.One }), (matrix, quantumGate) => ComplexMatrix.CrossProduct(matrix, quantumGate.Matrix));
         }
 
-        public QuantumGate(Complex[,] coefficients) : this(new ComplexMatrix(coefficients)) { }
+        public QGate(Complex[,] coefficients) : this(new ComplexMatrix(coefficients)) { }
 
 
-        public QuantumGate(ComplexMatrix matrix)
+        public QGate(ComplexMatrix matrix)
         {
             if ((matrix.ColumnCount & (matrix.ColumnCount - 1)) != 0 || matrix.ColumnCount != matrix.RowCount)
             {
@@ -30,27 +30,27 @@ namespace Arithmetica.Quantum.Gate
             this.Matrix = matrix;
         }
 
-        public static QuantumGate IdentityGate
+        public static QGate IdentityGate
         {
             get
             {
-                return QuantumGate.IdentityGateOfLength(1);
+                return QGate.IdentityGateOfLength(1);
             }
         }
 
         /*
 		 * Stacked identity gates
 		 */
-        public static QuantumGate IdentityGateOfLength(int registerLength)
+        public static QGate IdentityGateOfLength(int registerLength)
         {
-            return new QuantumGate(new ComplexMatrix(1 << registerLength));
+            return new QGate(new ComplexMatrix(1 << registerLength));
         }
 
-        public static QuantumGate HadamardGate
+        public static QGate HadamardGate
         {
             get
             {
-                return new QuantumGate(new ComplexMatrix(new Complex[,] {
+                return new QGate(new ComplexMatrix(new Complex[,] {
                     { 1, 1 },
                     { 1, -1 },
                 }) / Math.Sqrt(2));
@@ -60,15 +60,15 @@ namespace Arithmetica.Quantum.Gate
         /*
 		 * Generalized Hadamard gate
 		 */
-        public static QuantumGate HadamardGateOfLength(int registerLength)
+        public static QGate HadamardGateOfLength(int registerLength)
         {
             if (registerLength == 1)
             {
-                return QuantumGate.HadamardGate;
+                return QGate.HadamardGate;
             }
             else
             {
-                return new QuantumGate(QuantumGate.HadamardGate, QuantumGate.HadamardGateOfLength(registerLength - 1));
+                return new QGate(QGate.HadamardGate, QGate.HadamardGateOfLength(registerLength - 1));
             }
         }
 
@@ -78,11 +78,11 @@ namespace Arithmetica.Quantum.Gate
         /// <value>
         /// The not gate.
         /// </value>
-        public static QuantumGate NotGate
+        public static QGate NotGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 0, 1 },
                     { 1, 0 },
                 });
@@ -95,11 +95,11 @@ namespace Arithmetica.Quantum.Gate
         /// <value>
         /// The pauli y gate.
         /// </value>
-        public static QuantumGate PauliYGate
+        public static QGate PauliYGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 0, -Complex.ImaginaryOne },
                     { Complex.ImaginaryOne, 0 },
                 });
@@ -112,11 +112,11 @@ namespace Arithmetica.Quantum.Gate
         /// <value>
         /// The pauli z gate.
         /// </value>
-        public static QuantumGate PauliZGate
+        public static QGate PauliZGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 1, 0 },
                     { 0, -1 },
                 });
@@ -129,11 +129,11 @@ namespace Arithmetica.Quantum.Gate
         /// <value>
         /// The square root not gate.
         /// </value>
-        public static QuantumGate SquareRootNotGate
+        public static QGate SquareRootNotGate
         {
             get
             {
-                return new QuantumGate(new ComplexMatrix(new Complex[,] {
+                return new QGate(new ComplexMatrix(new Complex[,] {
                     { 1 + Complex.ImaginaryOne, 1 - Complex.ImaginaryOne },
                     { 1 - Complex.ImaginaryOne, 1 + Complex.ImaginaryOne },
                 }) / 2);
@@ -145,9 +145,9 @@ namespace Arithmetica.Quantum.Gate
         /// </summary>
         /// <param name="phase">The phase.</param>
         /// <returns></returns>
-        public static QuantumGate PhaseShiftGate(double phase)
+        public static QGate PhaseShiftGate(double phase)
         {
-            return new QuantumGate(new Complex[,] {
+            return new QGate(new Complex[,] {
                 { 1, 0 },
                 { 0, QCUtil.ComplexExp(Complex.ImaginaryOne * phase)},
             });
@@ -156,11 +156,11 @@ namespace Arithmetica.Quantum.Gate
         /*
 		 * Swap gate
 		 */
-        public static QuantumGate SwapGate
+        public static QGate SwapGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 1, 0, 0, 0 },
                     { 0, 0, 1, 0 },
                     { 0, 1, 0, 0 },
@@ -169,11 +169,11 @@ namespace Arithmetica.Quantum.Gate
             }
         }
 
-        public static QuantumGate SquareRootSwapGate
+        public static QGate SquareRootSwapGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 1, 0, 0, 0 },
                     { 0, (1 + Complex.ImaginaryOne) / 2, (1 - Complex.ImaginaryOne) / 2, 0 },
                     { 0, (1 - Complex.ImaginaryOne) / 2, (1 + Complex.ImaginaryOne) / 2, 0 },
@@ -185,22 +185,22 @@ namespace Arithmetica.Quantum.Gate
         /*
 		 * Controlled NOT gate
 		 */
-        public static QuantumGate ControlledNotGate
+        public static QGate ControlledNotGate
         {
             get
             {
-                return QuantumGate.ControlledGate(QuantumGate.NotGate);
+                return QGate.ControlledGate(QGate.NotGate);
             }
         }
 
-        public static QuantumGate ControlledGate(QuantumGate gate)
+        public static QGate ControlledGate(QGate gate)
         {
             if (gate.Matrix.ColumnCount != 2 || gate.Matrix.RowCount != 2)
             {
                 throw new ArgumentException("A controlled gate can only be created from a unary gate.");
             }
 
-            return new QuantumGate(new Complex[,] {
+            return new QGate(new Complex[,] {
                 { 1, 0, 0, 0 },
                 { 0, 1, 0, 0 },
                 { 0, 0, gate.Matrix[0, 0], gate.Matrix[0, 1] },
@@ -211,11 +211,11 @@ namespace Arithmetica.Quantum.Gate
         /*
 		 * Toffoli gate
 		 */
-        public static QuantumGate ToffoliGate
+        public static QGate ToffoliGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 1, 0, 0, 0, 0, 0, 0, 0 },
                     { 0, 1, 0, 0, 0, 0, 0, 0 },
                     { 0, 0, 1, 0, 0, 0, 0, 0 },
@@ -228,11 +228,11 @@ namespace Arithmetica.Quantum.Gate
             }
         }
 
-        public static QuantumGate FredkinGate
+        public static QGate FredkinGate
         {
             get
             {
-                return new QuantumGate(new Complex[,] {
+                return new QGate(new Complex[,] {
                     { 1, 0, 0, 0, 0, 0, 0, 0 },
                     { 0, 1, 0, 0, 0, 0, 0, 0 },
                     { 0, 0, 1, 0, 0, 0, 0, 0 },
@@ -248,7 +248,7 @@ namespace Arithmetica.Quantum.Gate
         /*
 		 * Quantum Fourier transform
 		 */
-        public static QuantumGate QuantumFourierTransform(int registerLength)
+        public static QGate QuantumFourierTransform(int registerLength)
         {
             int order = 1 << registerLength;
 
@@ -270,15 +270,15 @@ namespace Arithmetica.Quantum.Gate
                 }
             }
 
-            return new QuantumGate(matrix);
+            return new QGate(matrix);
         }
 
         /*
 		 * Operator to apply a quantum gate to a quantum register
 		 */
-        public static QuantumRegister operator *(QuantumGate quantumGate, QuantumRegister quantumRegister)
+        public static QuantumRegister operator *(QGate quantumGate, QuantumRegister quantumRegister)
         {
-            return new QuantumRegister(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.Register));
+            return new QuantumRegister(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.BitRegister));
         }
 
         /*
@@ -294,7 +294,7 @@ namespace Arithmetica.Quantum.Gate
 		 */
         public override bool Equals(object obj)
         {
-            QuantumGate quantumGate = obj as QuantumGate;
+            QGate quantumGate = obj as QGate;
 
             if (quantumGate == null || this.Matrix.ColumnCount != quantumGate.Matrix.ColumnCount || this.Matrix.RowCount != quantumGate.Matrix.RowCount)
             {

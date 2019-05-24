@@ -18,7 +18,7 @@ namespace Arithmetica.Quantum
 
         public virtual void Apply(QuantumRegister register)
         {
-            register.Variable = ComplexMatrix.Multiply(Matrix, register.Variable);
+            register.BitRegister = ComplexMatrix.Multiply(Matrix, register.BitRegister);
         }
     }
 }

@@ -35,4 +35,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Quantum\Circuit.cs" />
+    <Compile Remove="Quantum\Gate\ControlledNot.cs" />
+  </ItemGroup>
 </Project>

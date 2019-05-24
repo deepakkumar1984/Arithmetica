@@ -8,7 +8,10 @@ namespace Arithmetica.LinearAlgebra.Single
     /// <typeparam name="Complex">The type of the omplex.</typeparam>
     public class ComplexVector
     {
-        internal Complex[] variable;
+        /// <summary>
+        /// Variable to store the complex numbers for this vector
+        /// </summary>
+        public Complex[] Variable { get; set; }
 
         /// <summary>
         /// Gets the size.
@@ -16,7 +19,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <value>
         /// The size.
         /// </value>
-        public int Size => variable.Length;
+        public int Size => Variable.Length;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector{Complex}"/> class.
@@ -24,7 +27,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="size">The size.</param>
         public ComplexVector(int size)
         {
-            variable = new Complex[size];
+            Variable = new Complex[size];
         }
 
         /// <summary>
@@ -33,7 +36,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="values">The values.</param>
         public ComplexVector(params Complex[] values)
         {
-            variable = values;
+            Variable = values;
         }
 
         /// <summary>
@@ -48,11 +51,11 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return variable[index];
+                return Variable[index];
             }
             set
             {
-                variable[index] = value;
+                Variable[index] = value;
             }
         }
 
@@ -129,11 +132,11 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Fills the complex number vector with specified value.
         /// </summary>
         /// <param name="value">The value.</param>
-        public void Fill(float value)
+        public void Init(Complex value)
         {
             ComplexVector result = new ComplexVector(Size);
             Parallel.For(0, Size, (i) => {
-                result[i] = new Complex(value, 0);
+                result[i] = value;
             });
         }
 

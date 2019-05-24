@@ -18,7 +18,7 @@ namespace Arithmetica.Quantum
         /// <value>
         /// The register.
         /// </value>
-        public ComplexVector Variable { get; set; }
+        public ComplexVector BitRegister { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QuantumRegister"/> class.
@@ -26,8 +26,8 @@ namespace Arithmetica.Quantum
         /// <param name="complex">The complex.</param>
         public QuantumRegister(ComplexVector complex)
         {
-            Variable = complex;
-            Variable.Normalize();
+            BitRegister = complex;
+            BitRegister.Normalize();
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Arithmetica.Quantum
         public QuantumRegister(params Complex[] complexArray)
         {
             BuildRegister(complexArray);
-            Variable.Normalize();
+            BitRegister.Normalize();
         }
 
         /// <summary>
@@ -49,18 +49,17 @@ namespace Arithmetica.Quantum
             List<Complex> complexArray = new List<Complex>();
             foreach (var item in registers)
             {
-                complexArray.AddRange(item.Variable.variable);
+                complexArray.AddRange(item.BitRegister.Variable);
             }
 
             BuildRegister(complexArray.ToArray());
-            Variable.Normalize();
+            BitRegister.Normalize();
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QuantumRegister"/> class.
         /// </summary>
-        /// <param name="value">The value.</param>
-        /// <param name="bitCount">The bit count.</param>
+        /// <param name="num">The number of qubits in the register.</param>
         public QuantumRegister(int num = 1)
         {
             var registers = new QuantumRegister[num];
@@ -72,13 +71,14 @@ namespace Arithmetica.Quantum
             List<Complex> complexArray = new List<Complex>();
             foreach (var item in registers)
             {
-                complexArray.AddRange(item.Variable.variable);
+                complexArray.AddRange(item.BitRegister.Variable);
             }
 
             BuildRegister(complexArray.ToArray());
-            Variable.Normalize();
+            BitRegister.Normalize();
         }
 
+       
         /// <summary>
         /// Einstein–Podolsky–Rosen pair
         /// </summary>
@@ -135,8 +135,8 @@ namespace Arithmetica.Quantum
         /// <returns></returns>
         public static QuantumRegister WStateOfLength(int length)
         {
-            ComplexVector vector = new ComplexVector(1 << length);
-
+            ComplexVector vector = ComplexVector.Zero(1 << length);
+            
             for (int i = 0; i < length; i++)
             {
                 vector[1 << i] = Complex.One;
@@ -152,7 +152,7 @@ namespace Arithmetica.Quantum
         /// <returns></returns>
         public static QuantumRegister GHZStateOfLength(int length)
         {
-            ComplexVector vector = new ComplexVector(1 << length);
+            ComplexVector vector = ComplexVector.Zero(1 << length);
 
             vector[0] = Complex.One;
             vector[(1 << length) - 1] = Complex.One;
@@ -163,11 +163,10 @@ namespace Arithmetica.Quantum
         /// <summary>
         /// Collapses a quantum register into a pure state
         /// </summary>
-        /// <param name="random">The random.</param>
         internal void Collapse()
         {
             Random random = new Random();
-            ComplexVector collapsed = new ComplexVector(Variable.Size);
+            ComplexVector collapsed = new ComplexVector(BitRegister.Size);
             double probabilityThreshold = random.NextDouble();
             if(probabilityThreshold <= 0.5)
             {
@@ -180,7 +179,7 @@ namespace Arithmetica.Quantum
                 collapsed[1] = new Complex(1, 0);
             }
 
-            Variable = collapsed;
+            BitRegister = collapsed;
         }
 
         /// <summary>
@@ -193,7 +192,7 @@ namespace Arithmetica.Quantum
         /// <exception cref="SystemException">A value can only be extracted from a pure state quantum register.</exception>
         public int GetValue(int portionStart = 0, int portionLength = 0)
         {
-            int registerLength = QCUtil.Log2((int)this.Variable.Size - 1);
+            int registerLength = QCUtil.Log2((int)this.BitRegister.Size - 1);
             if (portionLength == 0)
             {
                 portionLength = registerLength - portionStart;
@@ -206,9 +205,9 @@ namespace Arithmetica.Quantum
             }
 
             int index = -1;
-            for (int i = 0; i < this.Variable.Size; i++)
+            for (int i = 0; i < this.BitRegister.Size; i++)
             {
-                if (this.Variable[i].Real == 1)
+                if (this.BitRegister[i].Real == 1)
                 {
                     index = i;
                     break;
@@ -241,37 +240,55 @@ namespace Arithmetica.Quantum
         /// <param name="complexArray">The complex array.</param>
         private void BuildRegister(Complex[] complexArray)
         {
-            Variable = new ComplexVector(complexArray.Length);
-            Variable.variable = complexArray;
+            BitRegister = new ComplexVector(complexArray.Length);
+            BitRegister.Variable = complexArray;
         }
 
         /// <summary>
-        /// Gets the qubit from the register.
-        /// </summary>
-        /// <value>
-        /// The qubit.
-        /// </value>
-        public Qubit Qubit
-        {
-            get
-            {
-                return new Qubit(Variable[0], Variable[1]);
-            }
-        }
-
-        /// <summary>
-        /// Converts to string.
+        /// Gets the qubits from the register.
         /// </summary>
         /// <returns>
-        /// A <see cref="System.String" /> that represents this instance.
+        /// The qubit.
         /// </returns>
+        public Qubit[] GetQubits()
+        {
+            int num = BitRegister.Size / 2;
+            Qubit[] qubits = new Qubit[num];
+
+            for (int i = 0; i < num; i++)
+            {
+                qubits[i] = new Qubit(BitRegister[i * 2], BitRegister[i * 2 + 1]);
+            }
+
+            return qubits;
+        }
+
         public override string ToString()
         {
             string representation = "";
 
-            for (int i = 0; i < this.Variable.Size; i++)
+            var qubits = GetQubits();
+            int i = 0;
+            foreach (var item in qubits)
             {
-                Complex amplitude = this.Variable[i];
+                if (item == null)
+                    continue;
+
+                representation += string.Format("Q{0}: {1}", i, QubitString(item));
+                representation += "   ";
+                i++;
+            }
+
+            return representation;
+        }
+
+        private string QubitString(Qubit qubit)
+        {
+            string representation = "";
+
+            for (int i = 0; i < qubit.BitRegister.Size; i++)
+            {
+                Complex amplitude = qubit.BitRegister[i];
 
                 if (amplitude.Real != 0)
                 {
@@ -317,7 +334,7 @@ namespace Arithmetica.Quantum
                         complexString += " ";
                     }
 
-                    representation += complexString + "|" + Convert.ToString(0, 2) + ">";
+                    representation += complexString + "|" + Convert.ToString(i, 2) + ">";
                 }
             }
 

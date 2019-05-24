@@ -21,11 +21,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return Variable[0];
+                return BitRegister[0];
             }
             private set
             {
-                this.Variable[0] = value;
+                this.BitRegister[0] = value;
             }
         }
 
@@ -39,11 +39,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return this.Variable[1];
+                return this.BitRegister[1];
             }
             private set
             {
-                this.Variable[1] = value;
+                this.BitRegister[1] = value;
             }
         }
 
@@ -77,7 +77,7 @@ namespace Arithmetica.Quantum
         /// </summary>
         protected void Normalize()
         {
-            Variable.Normalize();
+            BitRegister.Normalize();
             if (this.ZeroAmplitude.Phase != 0)
             {
                 this.ZeroAmplitude = this.ZeroAmplitude * Complex.FromPolarCoordinates(1, -this.ZeroAmplitude.Phase);
@@ -112,5 +112,6 @@ namespace Arithmetica.Quantum
                 return new Qubit(Complex.Zero, Complex.One);
             }
         }
+        
     }
 }

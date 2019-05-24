@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Arithmetica\Arithmetica.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="img\cat01.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -21,4 +17,7 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Arithmetica.Quantum\Arithmetica.Quantum.csproj" />
+  </ItemGroup>
 </Project>

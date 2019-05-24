@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Arithmetica.Quantum
 {
-    public class Circuit
+    public class QuantumCircuit
     {
         public Qubit[] Bits = null;
 
-        public Circuit(params Qubit[] qubits)
+        public QuantumCircuit(params Qubit[] qubits)
         {
             Bits = qubits;
         }

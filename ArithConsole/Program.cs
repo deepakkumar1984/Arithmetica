@@ -1,6 +1,6 @@
 ﻿using Arithmetica;
 using Arithmetica.LinearAlgebra.Single;
-using Arithmetica.Quantum;
+
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;

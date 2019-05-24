@@ -7,7 +7,7 @@ namespace Arithmetica.Quantum
 {
     public class HardmadGate : QuantumGate
     {
-        public HardmadGate(string name) : base(name)
+        public HardmadGate() : base("H")
         {
             Matrix = new ComplexMatrix(new Complex[,] {
                     { 1, 1 },
