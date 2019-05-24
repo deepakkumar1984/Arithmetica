@@ -16,16 +16,7 @@ namespace ArithConsole
 
             ComplexVector samples = new ComplexVector(Complex.One, Complex.One + Complex.ImaginaryOne, Complex.ImaginaryOne, Complex.One - Complex.ImaginaryOne, Complex.One, Complex.Zero, Complex.ImaginaryOne, Complex.ImaginaryOne);
 
-            var c = QCGate.ControlledGate(QCGate.NotGate);
-            var d = c.Matrix.ToString();
-            // Create a quantum register from samples
-            QCRegister quantumRegister = new QCRegister(samples);
-
-            // Get normalized samples
-            samples = quantumRegister.Register;
-
-            // Transform quantum register
-            quantumRegister = QCGate.QuantumFourierTransform(3) * quantumRegister;
+            var c = new ComplexMatrix(2);
 
             Console.ReadLine();
         }

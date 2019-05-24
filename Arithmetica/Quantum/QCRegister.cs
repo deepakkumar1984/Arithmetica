@@ -152,23 +152,20 @@ namespace Arithmetica.Quantum
         /// Collapses a quantum register into a pure state
         /// </summary>
         /// <param name="random">The random.</param>
-        public void Collapse()
+        internal void Collapse()
         {
             Random random = new Random();
             ComplexVector collapsed = new ComplexVector(Register.Size);
-
-            double probabilitySum = 0d;
             double probabilityThreshold = random.NextDouble();
-
-            for (int i = 0; i < this.Register.Size; i++)
+            if(probabilityThreshold <= 0.5)
             {
-                probabilitySum += this.Register[i].MagnitudeSquared;
-
-                if (probabilitySum > probabilityThreshold)
-                {
-                    collapsed[i] = new Complex(1, 0);
-                    break;
-                }
+                collapsed[0] = new Complex(1, 0);
+                collapsed[1] = new Complex(0, 0);
+            }
+            else
+            {
+                collapsed[0] = new Complex(0, 0);
+                collapsed[1] = new Complex(1, 0);
             }
 
             Register = collapsed;
@@ -234,6 +231,20 @@ namespace Arithmetica.Quantum
         {
             Register = new ComplexVector(complexArray.Length);
             Register.variable = complexArray;
+        }
+
+        /// <summary>
+        /// Gets the qubit from the register.
+        /// </summary>
+        /// <value>
+        /// The qubit.
+        /// </value>
+        public Qubit Qubit
+        {
+            get
+            {
+                return new Qubit(Register[0], Register[1]);
+            }
         }
 
         /// <summary>

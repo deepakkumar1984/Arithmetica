@@ -723,6 +723,29 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
+        /// Multiply the complex number matrix with Vector
+        /// </summary>
+        /// <param name="matrix">The matrix.</param>
+        /// <param name="vector">The vector.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException">The number of columns of the first matrix must equal the number of rows of the vector.</exception>
+        public static ComplexVector Multiply(ComplexMatrix matrix, ComplexVector vector)
+        {
+            if (matrix.ColumnCount != vector.Size)
+                throw new ArgumentException("The number of columns of the first matrix must equal the number of rows of the vector.");
+
+            ComplexVector m3 = ComplexVector.Zero(matrix.RowCount);
+
+            for (int i = 0; i < matrix.RowCount; i++)
+            {
+                for (int j = 0; j < vector.Size; j++)
+                    m3[i] += matrix[i, j] * vector[j];
+            }
+
+            return m3;
+        }
+
+        /// <summary>
         /// Multiplies a complex matrix by a scalar.
         /// </summary>
         /// <param name="m">A complex matrix (the multiplicand).</param>
