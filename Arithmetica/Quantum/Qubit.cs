@@ -8,8 +8,8 @@ namespace Arithmetica.Quantum
     /// <summary>
     /// Qubit is a quantum bit which can hold value |0> and |1>
     /// </summary>
-    /// <seealso cref="Arithmetica.Quantum.QCRegister" />
-    public class Qubit : QCRegister
+    /// <seealso cref="Arithmetica.Quantum.QuantumRegister" />
+    public class Qubit : QuantumRegister
     {
         /// <summary>
         /// Probability amplitude for state |0>
@@ -21,11 +21,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return Register[0];
+                return Variable[0];
             }
             private set
             {
-                this.Register[0] = value;
+                this.Variable[0] = value;
             }
         }
 
@@ -39,11 +39,11 @@ namespace Arithmetica.Quantum
         {
             get
             {
-                return this.Register[1];
+                return this.Variable[1];
             }
             private set
             {
-                this.Register[1] = value;
+                this.Variable[1] = value;
             }
         }
 
@@ -77,7 +77,7 @@ namespace Arithmetica.Quantum
         /// </summary>
         protected void Normalize()
         {
-            Register.Normalize();
+            Variable.Normalize();
             if (this.ZeroAmplitude.Phase != 0)
             {
                 this.ZeroAmplitude = this.ZeroAmplitude * Complex.FromPolarCoordinates(1, -this.ZeroAmplitude.Phase);

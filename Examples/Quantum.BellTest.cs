@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Examples
 {
-    public class QuantumBellTest : Transform
+    public class QuantumBellTest : Operators
     {
         public static void Run()
         {
@@ -19,7 +19,7 @@ namespace Examples
             {
                 qubit = Qubit.One;
                 var state = State(qubit);
-                H(ref qubit);
+                H(qubit);
                 state = State(qubit);
                 qubit = M(qubit);
                 state = State(qubit);
@@ -39,17 +39,19 @@ namespace Examples
             //Set initial qubit
             Qubit q0 = null;
             Qubit q1 = null;
-            
+            QuantumRegister register = new QuantumRegister(2);
+            var r = register.ToString();
             int count = 1000;
             int numOnes = 0;
             for (int i = 0; i < count; i++)
             {
                 q0 = Qubit.Zero;
                 q1 = Qubit.One;
-                H(ref q0);
-
+                var circuit = new Circuit(q0, q1);
+                H(circuit);
+                H(q0);
                 var state = State(q0);
-                q1 = CNOT(q0, q1);
+                M(q0);
 
                 if (state == QuantumState.One)
                 {

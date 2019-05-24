@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Arithmetica.Quantum
+namespace Arithmetica.Quantum.Gate
 {
-    internal class QuantumGate
+    internal partial class QuantumGate
     {
         public ComplexMatrix Matrix { get; private set; }
 
@@ -276,9 +276,9 @@ namespace Arithmetica.Quantum
         /*
 		 * Operator to apply a quantum gate to a quantum register
 		 */
-        public static QCRegister operator *(QuantumGate quantumGate, QCRegister quantumRegister)
+        public static QuantumRegister operator *(QuantumGate quantumGate, QuantumRegister quantumRegister)
         {
-            return new QCRegister(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.Register));
+            return new QuantumRegister(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.Register));
         }
 
         /*

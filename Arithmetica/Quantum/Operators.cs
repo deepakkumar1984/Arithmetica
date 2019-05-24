@@ -4,66 +4,70 @@ using System.Text;
 
 namespace Arithmetica.Quantum
 {
-    public class Transform
+    public class Operators
     {
         /// <summary>
         /// The Hardmad gate
         /// </summary>
         /// <param name="qubit">The qubit.</param>
         /// <returns></returns>
-        public static void H(ref Qubit qubit)
+        public static void H(QuantumRegister qubit)
         {
-            qubit = (QuantumGate.HadamardGate * qubit).Qubit;
+            qubit.Variable = (QGate.HadamardGate * qubit).Variable;
         }
 
-        public static Qubit X(Qubit qubit)
+        public static void H(Circuit c)
         {
-            return (QuantumGate.NotGate * qubit).Qubit;
+            foreach (var item in c.Bits)
+            {
+                H(item);
+            }
         }
 
-        public static void CNOT(Qubit q0, Qubit q1)
+        public static void X(Qubit qubit)
         {
-            q1 = (QuantumGate.ControlledNotGate * new QCRegister(q0, q1)).Qubit;
+            qubit.Variable = (QGate.NotGate * qubit).Variable;
         }
 
+        
         public static Qubit Y(Qubit qubit)
         {
-            return (QuantumGate.PauliYGate * qubit).Qubit;
+            return (QGate.PauliYGate * qubit).Qubit;
         }
 
         public static Qubit Z(Qubit qubit)
         {
-            return (QuantumGate.PauliZGate * qubit).Qubit;
+            return (QGate.PauliZGate * qubit).Qubit;
         }
 
         public static Qubit FG(Qubit qubit)
         {
-            return (QuantumGate.FredkinGate * qubit).Qubit;
+            return (QGate.FredkinGate * qubit).Qubit;
         }
 
         public static Qubit SWAP(Qubit qubit)
         {
-            return (QuantumGate.SwapGate * qubit).Qubit;
+            return (QGate.SwapGate * qubit).Qubit;
         }
 
         public static Qubit SqrtX(Qubit qubit)
         {
-            return (QuantumGate.SquareRootNotGate * qubit).Qubit;
+            return (QGate.SquareRootNotGate * qubit).Qubit;
         }
 
         public static Qubit SqrtSWAP(Qubit qubit)
         {
-            return (QuantumGate.SquareRootSwapGate * qubit).Qubit;
+            return (QGate.SquareRootSwapGate * qubit).Qubit;
         }
 
         public static Qubit S(Qubit qubit, double phase)
         {
-            return (QuantumGate.PhaseShiftGate(phase) * qubit).Qubit;
+            return (QGate.PhaseShiftGate(phase) * qubit).Qubit;
         }
 
         public static Qubit T(Qubit qubit)
         {
-            return (QuantumGate.ToffoliGate * qubit).Qubit;
+            return (QGate.ToffoliGate * qubit).Qubit;
         }
 
         public static Qubit M(Qubit qubit)
@@ -76,12 +80,12 @@ namespace Arithmetica.Quantum
         {
             QuantumState state = QuantumState.Zero;
 
-            if(qubit.Register[0].Real == 1)
+            if(qubit.Variable[0].Real == 1)
                 state = QuantumState.Zero;
-            else if (qubit.Register[1].Real == 1)
+            else if (qubit.Variable[1].Real == 1)
                 state = QuantumState.One;
 
-            if (qubit.Register[0].Real == 1 && qubit.Register[1].Real == 1)
+            if (qubit.Variable[0].Real == 1 && qubit.Variable[1].Real == 1)
                 state = QuantumState.Superposition;
 
             return state;
