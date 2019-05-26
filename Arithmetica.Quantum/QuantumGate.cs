@@ -278,7 +278,13 @@ namespace Arithmetica.Quantum.Gate
 		 */
         public static QuantumRegister operator *(QGate quantumGate, QuantumRegister quantumRegister)
         {
-            return new QuantumRegister(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.BitRegister));
+            return new QuantumRegister(QuantumRegister.GetQubits(ComplexMatrix.Multiply(quantumGate.Matrix, quantumRegister.BitRegister)));
+        }
+
+        public static Qubit operator *(QGate quantumGate, Qubit qubit)
+        {
+            var vector = ComplexMatrix.Multiply(quantumGate.Matrix, qubit.BitRegister);
+            return new Qubit(vector[0], vector[1]);
         }
 
         /*

@@ -7,6 +7,8 @@ namespace Arithmetica.Quantum
 {
     internal class QCUtil
     {
+        public static Random Random = new Random();
+
         public static int NextStrictlyLargerPowerOfTwo(int value)
         {
             value |= (value >> 1);

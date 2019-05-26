@@ -105,8 +105,8 @@ namespace Arithmetica.LinearAlgebra.Single
 		{
 			get
 			{
-				return (float)System.Math.Sqrt(_real * _real + _image * _image);
-			}
+                return Abs(this);
+            }
 		}
 		/// <summary>
 		/// Gets the squared modulus of the complex number.
@@ -117,7 +117,7 @@ namespace Arithmetica.LinearAlgebra.Single
 		{
 			get
 			{
-				return ((_real * _real) + (_image * _image));
+                return (float)Math.Pow(Modulus, 2);
 			}
 		}
 		/// <summary>
@@ -159,50 +159,6 @@ namespace Arithmetica.LinearAlgebra.Single
 				return new Complex(_real, -_image);
 			}
 		}
-
-        /// <summary>
-        /// Gets the magnitude of the complex number.
-        /// </summary>
-        /// <value>
-        /// The magnitude.
-        /// </value>
-        public float Magnitude
-        {
-            get
-            {
-                float result = 0;
-                if (Real > Imaginary)
-                {
-                    double r = Imaginary / Real;
-                    result = Real * (float)Math.Sqrt(1.0 + r * r);
-                }
-                else if (Imaginary == 0.0)
-                {
-                    result = Imaginary;
-                }
-                else
-                {
-                    double r = Real / Imaginary;
-                    result = Imaginary * (float)Math.Sqrt(1.0 + r * r);
-                }
-
-                return result;
-            }
-        }
-
-        /// <summary>
-        /// Gets the magnitude squared.
-        /// </summary>
-        /// <value>
-        /// The magnitude squared.
-        /// </value>
-        public float MagnitudeSquared
-        {
-            get
-            {
-                return (float)Math.Pow(Magnitude, 2);
-            }
-        }
 
         /// <summary>
         /// Gets the phase of the complex number.

@@ -162,6 +162,27 @@ namespace Arithmetica.LinearAlgebra.Single
             variable.LoadFrom(data);
         }
 
+        /// <summary>
+        /// Gets or sets the <see cref="System.Single"/> with the specified row.
+        /// </summary>
+        /// <value>
+        /// The <see cref="System.Single"/>.
+        /// </value>
+        /// <param name="row">The row.</param>
+        /// <param name="col">The col.</param>
+        /// <returns></returns>
+        public float this[int row, int col]
+        {
+            get
+            {
+                return variable.GetElementAsFloat(row, col);
+            }
+            set
+            {
+                variable.SetElementAsFloat(value, row, col);
+            }
+        }
+
         internal static ArithArray In(Matrix x)
         {
             return x.variable;

@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace Examples
+namespace QuantumExamples
 {
     class Program
     {
         static void Main(string[] args)
         {
+            QuantumBellTest.Run();
             Console.ReadLine();
         }
     }

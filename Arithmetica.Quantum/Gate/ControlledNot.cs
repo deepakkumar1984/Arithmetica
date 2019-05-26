@@ -9,19 +9,16 @@ namespace Arithmetica.Quantum
     {
         public ControlledNot() : base("CNOT")
         {
-            Matrix = new Complex[,] {
-                { 1, 0, 0, 0 },
-                { 0, 1, 0, 0 },
-                { 0, 0, Matrix[0, 0], Matrix[0, 1] },
-                { 0, 0, Matrix[1, 0], Matrix[1, 1] },
-            };
+            PauliX notGate = new PauliX();
+            Matrix = ControlledGateMatrix(notGate.Matrix);
         }
 
-        public override void Apply(QuantumRegister register)
+        public override void Apply(params Qubit[] qubits)
         {
-            PauliX notGate = new PauliX();
-            notGate.Apply(register);
-            base.Apply(register);
+            var reg = new QuantumRegister(qubits);
+            var result = QuantumRegister.GetQubits(ComplexMatrix.Multiply(Matrix, reg.BitRegister));
+            for (int i = 0; i < qubits.Length; i++)
+                qubits[i].BitRegister = result[i].BitRegister;
         }
     }
 }
