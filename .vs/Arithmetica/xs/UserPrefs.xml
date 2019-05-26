@@ -1,0 +1,43 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{174FFFF9-9F9A-4C77-86E2-EAADF954A3F4}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Arithmetica.Quantum/Qubit.cs" Line="118" Column="1" />
+      <File FileName="Arithmetica.Quantum/QuantumRegister.cs" Line="260" Column="75" />
+      <File FileName="Examples/Quantum.BellTest.cs" Line="36" Column="1" />
+      <File FileName="Arithmetica.Quantum/Operators.cs" Line="81" Column="10" />
+      <File FileName="Arithmetica/LinearAlgebra/Single/ComplexVector.cs" Line="49" Column="32" />
+      <File FileName="Arithmetica/LinearAlgebra/Single/ComplexVector.cs" Line="470" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Arithmetica" expanded="True" selected="True">
+            <Node name="ArithConsole" expanded="True" />
+            <Node name="Arithmetica" expanded="True">
+              <Node name="LinearAlgebra" expanded="True">
+                <Node name="Single" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Arithmetica.Quantum" expanded="True" />
+            <Node name="Examples" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Examples PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ArithConsole PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/deepakbattini/work/git/Arithmetica/Examples/Quantum.BellTest.cs" relfile="Examples/Quantum.BellTest.cs" line="41" column="24" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
