@@ -275,4 +275,11 @@ namespace Arithmetica.Quantum
             return representation;
         }
     }
+
+    public enum QubitState
+    {
+        Zero = 0,
+        One = 1,
+        Superposition = -1
+    }
 }

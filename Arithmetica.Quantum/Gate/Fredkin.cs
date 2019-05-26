@@ -5,12 +5,20 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    public class ControlledNot : QuantumGate
+    public class Fredkin : QuantumGate
     {
-        public ControlledNot() : base("CNOT")
+        public Fredkin() : base("F")
         {
-            PauliX notGate = new PauliX();
-            Matrix = ControlledGateMatrix(notGate.Matrix);
+            Matrix = new Complex[,]{
+                    { 1, 0, 0, 0, 0, 0, 0, 0 },
+                    { 0, 1, 0, 0, 0, 0, 0, 0 },
+                    { 0, 0, 1, 0, 0, 0, 0, 0 },
+                    { 0, 0, 0, 1, 0, 0, 0, 0 },
+                    { 0, 0, 0, 0, 1, 0, 0, 0 },
+                    { 0, 0, 0, 0, 0, 0, 1, 0 },
+                    { 0, 0, 0, 0, 0, 1, 0, 0 },
+                    { 0, 0, 0, 0, 0, 0, 0, 1 },
+                };
         }
 
         public override void Apply(params Qubit[] qubits)

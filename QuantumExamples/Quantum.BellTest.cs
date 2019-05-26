@@ -6,7 +6,7 @@ using System.Text;
 
 namespace QuantumExamples
 {
-    public class QuantumBellTest : Operators
+    public class QuantumBellTest
     {
         public static void Run()
         {

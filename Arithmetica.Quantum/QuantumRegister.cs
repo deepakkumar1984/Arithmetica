@@ -283,13 +283,14 @@ namespace Arithmetica.Quantum
                 states.Fill(-1);
                 //GetStates(0, 0, ref states);
 
-                for (int i = 0; i < Qubits.Length; i++)
+                for (int k = 0; k < totalStates; k++)
                 {
-                    for (int j = 0; j < Qubits[j].Values.Length; j++)
+                    for (int i = 0; i < Qubits.Length; i++)
                     {
-                        for (int k = 0; k < Qubits[j].Values.Length; k++)
+                        for (int j = 0; j < 2; j++)
                         {
-                            states[j, k] = Qubits[j].Values[k];
+                            if(j <  Qubits[i].Values.Length)
+                                states[k, i] = Qubits[i].Values[j];
                         }
                     }
                 }

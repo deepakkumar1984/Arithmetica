@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    public class ControlledNot : QuantumGate
+    public class CxY : QuantumGate
     {
-        public ControlledNot() : base("CNOT")
+        public CxY() : base("CXY")
         {
-            PauliX notGate = new PauliX();
-            Matrix = ControlledGateMatrix(notGate.Matrix);
+            PauliY gate = new PauliY();
+            Matrix = ControlledGateMatrix(gate.Matrix);
         }
 
         public override void Apply(params Qubit[] qubits)

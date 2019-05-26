@@ -5,12 +5,15 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    public class ControlledNot : QuantumGate
+    public class SqrtSwap : QuantumGate
     {
-        public ControlledNot() : base("CNOT")
+        public SqrtSwap() : base("SQRT_SWAP")
         {
-            PauliX notGate = new PauliX();
-            Matrix = ControlledGateMatrix(notGate.Matrix);
+            Matrix = new Complex[,] {
+                    { 1, 0, 0, 0 },
+                    { 0, (1 + Complex.ImaginaryOne) / 2, (1 - Complex.ImaginaryOne) / 2, 0 },
+                    { 0, (1 - Complex.ImaginaryOne) / 2, (1 + Complex.ImaginaryOne) / 2, 0 },
+                    { 0, 0, 0, 1 } };
         }
 
         public override void Apply(params Qubit[] qubits)

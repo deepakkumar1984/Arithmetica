@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Arithmetica.Quantum
+namespace Arithmetica.Quantum.Gate
 {
     public class PauliY : QuantumGate
     {

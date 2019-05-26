@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Arithmetica.Quantum
+namespace Arithmetica.Quantum.Gate
 {
     public abstract class QuantumGate
     {

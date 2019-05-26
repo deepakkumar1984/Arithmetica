@@ -5,14 +5,14 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    public class PauliZ : QuantumGate
+    public class PhaseShift : QuantumGate
     {
-        public PauliZ() : base("Z")
+        public PhaseShift(double phase) : base("S")
         {
             Matrix = new Complex[,] {
-                    { 1, 0 },
-                    { 0, -1 },
-                };
+                { 1, 0 },
+                { 0, QCUtil.ComplexExp(Complex.ImaginaryOne * phase)},
+            };
         }
     }
 }
