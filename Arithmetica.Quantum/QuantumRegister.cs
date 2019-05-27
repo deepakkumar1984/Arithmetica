@@ -364,7 +364,7 @@ namespace Arithmetica.Quantum
             foreach (var item in p)
             {
                 if (!string.IsNullOrWhiteSpace(representation))
-                    representation += " + ";
+                    representation += " ~ ";
                 representation += string.Format("|{0}>", item);
             }
 

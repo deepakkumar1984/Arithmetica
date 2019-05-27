@@ -32,12 +32,12 @@ namespace Arithmetica.Quantum
         public QuantumRegister Register { get; private set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="QuantumCircuit"/> is debug.
+        /// Gets or sets a value indicating to run the circuit with a job.
         /// </summary>
         /// <value>
-        ///   <c>true</c> if debug; otherwise, <c>false</c>.
+        ///   <c>true</c> if ExecuteWithJob; otherwise, <c>false</c>.
         /// </value>
-        public bool Debug { get; set; }
+        public bool ExecuteWithJob { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QuantumCircuit"/> class.
@@ -54,7 +54,7 @@ namespace Arithmetica.Quantum
             }
 
             Register = new QuantumRegister(qubits.ToArray());
-            Debug = false;
+            ExecuteWithJob = false;
         }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Arithmetica.Quantum
         /// <param name="index">The index.</param>
         public void H(int index)
         {
-            if(Debug)
+            if(!ExecuteWithJob)
             {
                 new Hadamard().Apply(Register[index]);
                 return;
@@ -89,7 +89,7 @@ namespace Arithmetica.Quantum
         /// <param name="index">The index.</param>
         public void X(int index)
         {
-            if (Debug)
+            if (!ExecuteWithJob)
             {
                 new PauliX().Apply(Register[index]);
                 return;
@@ -99,13 +99,88 @@ namespace Arithmetica.Quantum
         }
 
         /// <summary>
+        /// Apply Pauli Y Gate
+        /// </summary>
+        /// <param name="index"></param>
+        public void Y(int index)
+        {
+            if (!ExecuteWithJob)
+            {
+                new PauliY().Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new PauliX(), index);
+        }
+
+        /// <summary>
+        /// Apply Pauli Z Gate
+        /// </summary>
+        /// <param name="index"></param>
+        public void Z(int index)
+        {
+            if (!ExecuteWithJob)
+            {
+                new PauliY().Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new PauliX(), index);
+        }
+
+        /// <summary>
+        /// Apply Rotation X Gate
+        /// </summary>
+        /// <param name="index"></param>
+        public void Rx(int index, double theta)
+        {
+            if (!ExecuteWithJob)
+            {
+                new RotationX(theta).Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new RotationX(theta), index);
+        }
+
+        // <summary>
+        /// Apply Rotation Y Gate
+        /// </summary>
+        /// <param name="index"></param>
+        public void Ry(int index, double theta)
+        {
+            if (!ExecuteWithJob)
+            {
+                new RotationY(theta).Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new RotationY(theta), index);
+        }
+
+        // <summary>
+        /// Apply Rotation Z Gate
+        /// </summary>
+        /// <param name="index"></param>
+        public void Rz(int index, double theta)
+        {
+            if (!ExecuteWithJob)
+            {
+                new RotationZ(theta).Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new RotationZ(theta), index);
+        }
+
+        /// <summary>
         /// Apply the Controlled Not gate
         /// </summary>
         /// <param name="firstBit">The first bit.</param>
         /// <param name="secondBit">The second bit.</param>
         public void CNOT(int firstBit, int secondBit)
         {
-            if (Debug)
+            if (!ExecuteWithJob)
             {
                 new ControlledNot().Apply(Register[firstBit], Register[secondBit]);
                 return;
@@ -129,7 +204,7 @@ namespace Arithmetica.Quantum
                     bitIndex.Add(i);
             }
 
-            if (Debug)
+            if (!ExecuteWithJob)
             {
                 new Collapse().Apply(Register[bitIndex.ToArray()]);
                 return;
@@ -147,10 +222,10 @@ namespace Arithmetica.Quantum
         {
             CircuitResult result = new CircuitResult();
 
-            if (Debug)
+            if (!ExecuteWithJob)
             {
                 result.Success = false;
-                result.Message = "Cannot execute in debug mode";
+                result.Message = "Enable the circuit with ExecuteWithJob flag to true";
                 return result;
             }
 

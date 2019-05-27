@@ -6,7 +6,20 @@ namespace QuantumExamples
     {
         static void Main(string[] args)
         {
-            QuantumBellTest.Run();
+            string runEx = "0";
+            IExample example = null;
+            switch (runEx)
+            {
+                case "0":
+                example = new Superposition();
+                    break;
+
+                default:
+                    break;
+            }
+
+            example.Run();
+            
             Console.ReadLine();
         }
     }
