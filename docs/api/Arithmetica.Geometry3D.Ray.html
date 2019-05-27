@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Ray
    ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,13 +78,27 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">ICloneable</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Geometry3D.html">Arithmetica.Geometry3D</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
   <h5 id="Arithmetica_Geometry3D_Ray_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Ray : ICloneable</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TypeConverter(typeof(RayConverter))]
+public struct Ray : ICloneable</code></pre>
   </div>
   <h5 id="Arithmetica_Geometry3D_Ray_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>A ray is R(t) = Origin + t * Direction where t&gt;=0. The Direction isnt necessarily of unit length.</p>
@@ -93,10 +107,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray__ctor_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.%23ctor(Arithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray__ctor_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.%23ctor(Arithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L49">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L49">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray__ctor_" data-uid="Arithmetica.Geometry3D.Ray.#ctor*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray__ctor_Arithmetica_Geometry3D_Ray_" data-uid="Arithmetica.Geometry3D.Ray.#ctor(Arithmetica.Geometry3D.Ray)">Ray(Ray)</h4>
@@ -127,10 +141,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray__ctor_Arithmetica_LinearAlgebra_Single_Vector3_Arithmetica_LinearAlgebra_Single_Vector3_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.%23ctor(Arithmetica.LinearAlgebra.Single.Vector3%2CArithmetica.LinearAlgebra.Single.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray__ctor_Arithmetica_LinearAlgebra_Single_Vector3_Arithmetica_LinearAlgebra_Single_Vector3_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.%23ctor(Arithmetica.LinearAlgebra.Single.Vector3%2CArithmetica.LinearAlgebra.Single.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L40">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L40">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray__ctor_" data-uid="Arithmetica.Geometry3D.Ray.#ctor*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray__ctor_Arithmetica_LinearAlgebra_Single_Vector3_Arithmetica_LinearAlgebra_Single_Vector3_" data-uid="Arithmetica.Geometry3D.Ray.#ctor(Arithmetica.LinearAlgebra.Single.Vector3,Arithmetica.LinearAlgebra.Single.Vector3)">Ray(Vector3, Vector3)</h4>
@@ -169,10 +183,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Direction.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Direction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Direction.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Direction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L68">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L68">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_Direction_" data-uid="Arithmetica.Geometry3D.Ray.Direction*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_Direction" data-uid="Arithmetica.Geometry3D.Ray.Direction">Direction</h4>
@@ -200,10 +214,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Origin.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Origin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Origin.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Origin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L60">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L60">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_Origin_" data-uid="Arithmetica.Geometry3D.Ray.Origin*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_Origin" data-uid="Arithmetica.Geometry3D.Ray.Origin">Origin</h4>
@@ -233,10 +247,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L88">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L88">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_Clone_" data-uid="Arithmetica.Geometry3D.Ray.Clone*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_Clone" data-uid="Arithmetica.Geometry3D.Ray.Clone">Clone()</h4>
@@ -265,10 +279,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L146">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L146">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_Equals_" data-uid="Arithmetica.Geometry3D.Ray.Equals*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_Equals_System_Object_" data-uid="Arithmetica.Geometry3D.Ray.Equals(System.Object)">Equals(Object)</h4>
@@ -314,12 +328,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L136">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L136">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_GetHashCode_" data-uid="Arithmetica.Geometry3D.Ray.GetHashCode*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_GetHashCode" data-uid="Arithmetica.Geometry3D.Ray.GetHashCode">GetHashCode()</h4>
@@ -346,12 +362,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_GetPointOnRay_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.GetPointOnRay(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_GetPointOnRay_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.GetPointOnRay(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L124">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L124">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_GetPointOnRay_" data-uid="Arithmetica.Geometry3D.Ray.GetPointOnRay*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_GetPointOnRay_System_Single_" data-uid="Arithmetica.Geometry3D.Ray.GetPointOnRay(System.Single)">GetPointOnRay(Single)</h4>
@@ -396,10 +414,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L100">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L100">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_Parse_" data-uid="Arithmetica.Geometry3D.Ray.Parse*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_Parse_System_String_" data-uid="Arithmetica.Geometry3D.Ray.Parse(System.String)">Parse(String)</h4>
@@ -446,10 +464,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L159">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L159">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_ToString_" data-uid="Arithmetica.Geometry3D.Ray.ToString*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_ToString" data-uid="Arithmetica.Geometry3D.Ray.ToString">ToString()</h4>
@@ -476,14 +494,16 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_op_Equality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.op_Equality(Arithmetica.Geometry3D.Ray%2CArithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_op_Equality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.op_Equality(Arithmetica.Geometry3D.Ray%2CArithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L172">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L172">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_op_Equality_" data-uid="Arithmetica.Geometry3D.Ray.op_Equality*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_op_Equality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_" data-uid="Arithmetica.Geometry3D.Ray.op_Equality(Arithmetica.Geometry3D.Ray,Arithmetica.Geometry3D.Ray)">Equality(Ray, Ray)</h4>
@@ -536,10 +556,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_op_Inequality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.op_Inequality(Arithmetica.Geometry3D.Ray%2CArithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_op_Inequality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.op_Inequality(Arithmetica.Geometry3D.Ray%2CArithmetica.Geometry3D.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L182">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L182">View Source</a>
   </span>
   <a id="Arithmetica_Geometry3D_Ray_op_Inequality_" data-uid="Arithmetica.Geometry3D.Ray.op_Inequality*"></a>
   <h4 id="Arithmetica_Geometry3D_Ray_op_Inequality_Arithmetica_Geometry3D_Ray_Arithmetica_Geometry3D_Ray_" data-uid="Arithmetica.Geometry3D.Ray.op_Inequality(Arithmetica.Geometry3D.Ray,Arithmetica.Geometry3D.Ray)">Inequality(Ray, Ray)</h4>
@@ -590,9 +610,43 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L80">View Source</a>
+  </span>
+  <a id="Arithmetica_Geometry3D_Ray_System_ICloneable_Clone_" data-uid="Arithmetica.Geometry3D.Ray.System#ICloneable#Clone*"></a>
+  <h4 id="Arithmetica_Geometry3D_Ray_System_ICloneable_Clone" data-uid="Arithmetica.Geometry3D.Ray.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates an exact copy of this <a class="xref" href="Arithmetica.Geometry3D.Ray.html">Ray</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The <a class="xref" href="Arithmetica.Geometry3D.Ray.html">Ray</a> object this method creates, cast as an object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">ICloneable</span>
+      <span class="xref">System.ICloneable</span>
   </div>
 </article>
           </div>
@@ -602,10 +656,10 @@ the specified object.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry3D_Ray.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry3D.Ray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry3D/Ray.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry3D/Ray.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

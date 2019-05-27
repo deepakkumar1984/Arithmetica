@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Segment
    ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,22 +78,36 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">ICloneable</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Geometry2D.html">Arithmetica.Geometry2D</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
   <h5 id="Arithmetica_Geometry2D_Segment_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Segment : ICloneable</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TypeConverter(typeof(SegmentConverter))]
+public struct Segment : ICloneable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment__ctor_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.%23ctor(Arithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment__ctor_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.%23ctor(Arithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L42">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L42">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment__ctor_" data-uid="Arithmetica.Geometry2D.Segment.#ctor*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment__ctor_Arithmetica_Geometry2D_Segment_" data-uid="Arithmetica.Geometry2D.Segment.#ctor(Arithmetica.Geometry2D.Segment)">Segment(Segment)</h4>
@@ -124,10 +138,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L33">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L33">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment__ctor_" data-uid="Arithmetica.Geometry2D.Segment.#ctor*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_" data-uid="Arithmetica.Geometry2D.Segment.#ctor(Arithmetica.LinearAlgebra.Single.Vector2,Arithmetica.LinearAlgebra.Single.Vector2)">Segment(Vector2, Vector2)</h4>
@@ -166,10 +180,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_P0.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.P0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_P0.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.P0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L53">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L53">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_P0_" data-uid="Arithmetica.Geometry2D.Segment.P0*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_P0" data-uid="Arithmetica.Geometry2D.Segment.P0">P0</h4>
@@ -197,10 +211,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_P1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.P1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_P1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.P1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L61">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L61">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_P1_" data-uid="Arithmetica.Geometry2D.Segment.P1*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_P1" data-uid="Arithmetica.Geometry2D.Segment.P1">P1</h4>
@@ -230,10 +244,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L81">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L81">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_Clone_" data-uid="Arithmetica.Geometry2D.Segment.Clone*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_Clone" data-uid="Arithmetica.Geometry2D.Segment.Clone">Clone()</h4>
@@ -262,10 +276,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L126">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L126">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_Equals_" data-uid="Arithmetica.Geometry2D.Segment.Equals*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_Equals_System_Object_" data-uid="Arithmetica.Geometry2D.Segment.Equals(System.Object)">Equals(Object)</h4>
@@ -311,12 +325,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L116">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L116">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_GetHashCode_" data-uid="Arithmetica.Geometry2D.Segment.GetHashCode*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_GetHashCode" data-uid="Arithmetica.Geometry2D.Segment.GetHashCode">GetHashCode()</h4>
@@ -343,12 +359,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L93">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L93">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_Parse_" data-uid="Arithmetica.Geometry2D.Segment.Parse*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_Parse_System_String_" data-uid="Arithmetica.Geometry2D.Segment.Parse(System.String)">Parse(String)</h4>
@@ -395,10 +413,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L139">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L139">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_ToString_" data-uid="Arithmetica.Geometry2D.Segment.ToString*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_ToString" data-uid="Arithmetica.Geometry2D.Segment.ToString">ToString()</h4>
@@ -425,14 +443,16 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_op_Equality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.op_Equality(Arithmetica.Geometry2D.Segment%2CArithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_op_Equality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.op_Equality(Arithmetica.Geometry2D.Segment%2CArithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L152">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L152">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_op_Equality_" data-uid="Arithmetica.Geometry2D.Segment.op_Equality*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_op_Equality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_" data-uid="Arithmetica.Geometry2D.Segment.op_Equality(Arithmetica.Geometry2D.Segment,Arithmetica.Geometry2D.Segment)">Equality(Segment, Segment)</h4>
@@ -485,10 +505,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_op_Inequality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.op_Inequality(Arithmetica.Geometry2D.Segment%2CArithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_op_Inequality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.op_Inequality(Arithmetica.Geometry2D.Segment%2CArithmetica.Geometry2D.Segment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L162">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L162">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_Segment_op_Inequality_" data-uid="Arithmetica.Geometry2D.Segment.op_Inequality*"></a>
   <h4 id="Arithmetica_Geometry2D_Segment_op_Inequality_Arithmetica_Geometry2D_Segment_Arithmetica_Geometry2D_Segment_" data-uid="Arithmetica.Geometry2D.Segment.op_Inequality(Arithmetica.Geometry2D.Segment,Arithmetica.Geometry2D.Segment)">Inequality(Segment, Segment)</h4>
@@ -539,9 +559,43 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L73">View Source</a>
+  </span>
+  <a id="Arithmetica_Geometry2D_Segment_System_ICloneable_Clone_" data-uid="Arithmetica.Geometry2D.Segment.System#ICloneable#Clone*"></a>
+  <h4 id="Arithmetica_Geometry2D_Segment_System_ICloneable_Clone" data-uid="Arithmetica.Geometry2D.Segment.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates an exact copy of this <a class="xref" href="Arithmetica.Geometry2D.Segment.html">Segment</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The <a class="xref" href="Arithmetica.Geometry2D.Segment.html">Segment</a> object this method creates, cast as an object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">ICloneable</span>
+      <span class="xref">System.ICloneable</span>
   </div>
 </article>
           </div>
@@ -551,10 +605,10 @@ the specified object.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_Segment.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.Segment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/Segment.cs/#L18" class="contribution-link">View Source</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/Segment.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

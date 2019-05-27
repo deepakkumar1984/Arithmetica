@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct OrientedBox
    ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,13 +78,27 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">ICloneable</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Geometry2D.html">Arithmetica.Geometry2D</a></h6>
   <h6><strong>Assembly</strong>: Arithmetica.dll</h6>
   <h5 id="Arithmetica_Geometry2D_OrientedBox_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct OrientedBox : ICloneable</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TypeConverter(typeof(OrientedBoxConverter))]
+public struct OrientedBox : ICloneable</code></pre>
   </div>
   <h5 id="Arithmetica_Geometry2D_OrientedBox_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>An oriented box is a box whose faces have normals that are all pairwise orthogonal-i.e., it is an axis aligned box arbitrarily rotated.
@@ -95,10 +109,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L76">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L76">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox__ctor_" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_Geometry2D_OrientedBox_" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor(Arithmetica.Geometry2D.OrientedBox)">OrientedBox(OrientedBox)</h4>
@@ -129,10 +143,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L45">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L45">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox__ctor_" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2_System_Single_System_Single_" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor(Arithmetica.LinearAlgebra.Single.Vector2,Arithmetica.LinearAlgebra.Single.Vector2,Arithmetica.LinearAlgebra.Single.Vector2,System.Single,System.Single)">OrientedBox(Vector2, Vector2, Vector2, Single, Single)</h4>
@@ -187,10 +201,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2___System_Single___.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%5B%5D%2CSystem.Single%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2___System_Single___.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.%23ctor(Arithmetica.LinearAlgebra.Single.Vector2%2CArithmetica.LinearAlgebra.Single.Vector2%5B%5D%2CSystem.Single%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L59">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L59">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox__ctor_" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox__ctor_Arithmetica_LinearAlgebra_Single_Vector2_Arithmetica_LinearAlgebra_Single_Vector2___System_Single___" data-uid="Arithmetica.Geometry2D.OrientedBox.#ctor(Arithmetica.LinearAlgebra.Single.Vector2,Arithmetica.LinearAlgebra.Single.Vector2[],System.Single[])">OrientedBox(Vector2, Vector2[], Single[])</h4>
@@ -235,10 +249,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Axis1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Axis1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Axis1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Axis1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L100">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L100">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Axis1_" data-uid="Arithmetica.Geometry2D.OrientedBox.Axis1*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Axis1" data-uid="Arithmetica.Geometry2D.OrientedBox.Axis1">Axis1</h4>
@@ -266,10 +280,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Axis2.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Axis2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Axis2.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Axis2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L109">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L109">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Axis2_" data-uid="Arithmetica.Geometry2D.OrientedBox.Axis2*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Axis2" data-uid="Arithmetica.Geometry2D.OrientedBox.Axis2">Axis2</h4>
@@ -297,10 +311,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Center.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Center%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Center.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Center%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L92">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L92">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Center_" data-uid="Arithmetica.Geometry2D.OrientedBox.Center*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Center" data-uid="Arithmetica.Geometry2D.OrientedBox.Center">Center</h4>
@@ -328,10 +342,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Extent1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Extent1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Extent1.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Extent1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L117">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L117">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Extent1_" data-uid="Arithmetica.Geometry2D.OrientedBox.Extent1*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Extent1" data-uid="Arithmetica.Geometry2D.OrientedBox.Extent1">Extent1</h4>
@@ -359,10 +373,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Extent2.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Extent2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Extent2.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Extent2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L125">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L125">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Extent2_" data-uid="Arithmetica.Geometry2D.OrientedBox.Extent2*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Extent2" data-uid="Arithmetica.Geometry2D.OrientedBox.Extent2">Extent2</h4>
@@ -392,10 +406,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L145">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L145">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Clone_" data-uid="Arithmetica.Geometry2D.OrientedBox.Clone*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Clone" data-uid="Arithmetica.Geometry2D.OrientedBox.Clone">Clone()</h4>
@@ -424,10 +438,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_ComputeVertices.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.ComputeVertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_ComputeVertices.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.ComputeVertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L183">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L183">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_ComputeVertices_" data-uid="Arithmetica.Geometry2D.OrientedBox.ComputeVertices*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_ComputeVertices" data-uid="Arithmetica.Geometry2D.OrientedBox.ComputeVertices">ComputeVertices()</h4>
@@ -456,10 +470,10 @@ directions of the box, and their respective positive half-lengths extents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L216">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L216">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Equals_" data-uid="Arithmetica.Geometry2D.OrientedBox.Equals*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Equals_System_Object_" data-uid="Arithmetica.Geometry2D.OrientedBox.Equals(System.Object)">Equals(Object)</h4>
@@ -505,12 +519,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_GetHashCode.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L206">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L206">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_GetHashCode_" data-uid="Arithmetica.Geometry2D.OrientedBox.GetHashCode*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_GetHashCode" data-uid="Arithmetica.Geometry2D.OrientedBox.GetHashCode">GetHashCode()</h4>
@@ -537,12 +553,14 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_Parse_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L157">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L157">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_Parse_" data-uid="Arithmetica.Geometry2D.OrientedBox.Parse*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_Parse_System_String_" data-uid="Arithmetica.Geometry2D.OrientedBox.Parse(System.String)">Parse(String)</h4>
@@ -589,10 +607,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_ToString.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L233">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L233">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_ToString_" data-uid="Arithmetica.Geometry2D.OrientedBox.ToString*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_ToString" data-uid="Arithmetica.Geometry2D.OrientedBox.ToString">ToString()</h4>
@@ -619,14 +637,16 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_op_Equality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.op_Equality(Arithmetica.Geometry2D.OrientedBox%2CArithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_op_Equality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.op_Equality(Arithmetica.Geometry2D.OrientedBox%2CArithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L247">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L247">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_op_Equality_" data-uid="Arithmetica.Geometry2D.OrientedBox.op_Equality*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_op_Equality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_" data-uid="Arithmetica.Geometry2D.OrientedBox.op_Equality(Arithmetica.Geometry2D.OrientedBox,Arithmetica.Geometry2D.OrientedBox)">Equality(OrientedBox, OrientedBox)</h4>
@@ -679,10 +699,10 @@ the specified object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_op_Inequality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.op_Inequality(Arithmetica.Geometry2D.OrientedBox%2CArithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_op_Inequality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.op_Inequality(Arithmetica.Geometry2D.OrientedBox%2CArithmetica.Geometry2D.OrientedBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L257">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L257">View Source</a>
   </span>
   <a id="Arithmetica_Geometry2D_OrientedBox_op_Inequality_" data-uid="Arithmetica.Geometry2D.OrientedBox.op_Inequality*"></a>
   <h4 id="Arithmetica_Geometry2D_OrientedBox_op_Inequality_Arithmetica_Geometry2D_OrientedBox_Arithmetica_Geometry2D_OrientedBox_" data-uid="Arithmetica.Geometry2D.OrientedBox.op_Inequality(Arithmetica.Geometry2D.OrientedBox,Arithmetica.Geometry2D.OrientedBox)">Inequality(OrientedBox, OrientedBox)</h4>
@@ -733,9 +753,43 @@ the specified object.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L137">View Source</a>
+  </span>
+  <a id="Arithmetica_Geometry2D_OrientedBox_System_ICloneable_Clone_" data-uid="Arithmetica.Geometry2D.OrientedBox.System#ICloneable#Clone*"></a>
+  <h4 id="Arithmetica_Geometry2D_OrientedBox_System_ICloneable_Clone" data-uid="Arithmetica.Geometry2D.OrientedBox.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Creates an exact copy of this <a class="xref" href="Arithmetica.Geometry2D.OrientedBox.html">OrientedBox</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The <a class="xref" href="Arithmetica.Geometry2D.OrientedBox.html">OrientedBox</a> object this method creates, cast as an object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">ICloneable</span>
+      <span class="xref">System.ICloneable</span>
   </div>
 </article>
           </div>
@@ -745,10 +799,10 @@ the specified object.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Geometry2D_OrientedBox.md&amp;value=---%0Auid%3A%20Arithmetica.Geometry2D.OrientedBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica//blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica/Geometry2D/OrientedBox.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

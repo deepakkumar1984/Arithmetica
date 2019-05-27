@@ -226,6 +226,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "OpenCvSharp3-AnyCPU/4.0.0.20181129": {
         "type": "package",
         "dependencies": {
@@ -303,7 +312,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Arithmetica": "0.7.0"
+          "Arithmetica": "0.7.0",
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "bin/placeholder/Arithmetica.Quantum.dll": {}
@@ -658,7 +668,7 @@
       ]
     },
     "Microsoft.Win32.SystemEvents/4.5.0": {
-      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "sha512": "K2TAr07pgl/m/J9ed3cmAzx0SD55kYuVfBG6SPRIH/ELTh/D2qGrjOWDQJo7r+LZl1nO2Nkl0UAQBUt6S2ewqQ==",
       "type": "package",
       "path": "microsoft.win32.systemevents/4.5.0",
       "files": [
@@ -678,7 +688,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "612wiqx455/7vpRhJDnVeZC7HmLP3QNwXdQyzP8HjeTIBVQ3bLfLnqmBHKTk+L5smHR55lXw4yKJJSHjF6HZSw==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -805,8 +815,38 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "OpenCvSharp3-AnyCPU/4.0.0.20181129": {
-      "sha512": "fAXJW98FU3ZAlS3LDrRAXeg7h5ufA9Z1mAQNsXIPSTQHS+Ql2+KdzdYXs+p+lZhyH9baJWPDB42E+EN1KJ0Y3w==",
+      "sha512": "VLiJS+WTYYwWThERAMy9JnaMICo8bC5zyFyA2zaKll1A713PdhAzPOe4FrXN32Vh0mnJvc5fZank8KQQPnYhfQ==",
       "type": "package",
       "path": "opencvsharp3-anycpu/4.0.0.20181129",
       "files": [
@@ -861,7 +901,7 @@
       ]
     },
     "System.Drawing.Common/4.5.0": {
-      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "sha512": "uYixYbB0vzxSbc9B7jzwwUA8Upodaj3g2ZNnREWW6zoBw9DltzltcEa1g0I4u6ARqVJ0t4E3yJAWw5h2gvJlhQ==",
       "type": "package",
       "path": "system.drawing.common/4.5.0",
       "files": [
@@ -911,23 +951,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deepa\\.nuget\\packages\\": {},
+    "C:\\Users\\blitz\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DeepakProj\\git\\Arithmetica\\Examples\\Examples.csproj",
+      "projectUniqueName": "C:\\Work\\git\\Arithmetica\\Examples\\Examples.csproj",
       "projectName": "Examples",
-      "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Examples\\Examples.csproj",
-      "packagesPath": "C:\\Users\\deepa\\.nuget\\packages\\",
-      "outputPath": "E:\\DeepakProj\\git\\Arithmetica\\Examples\\obj\\",
+      "projectPath": "C:\\Work\\git\\Arithmetica\\Examples\\Examples.csproj",
+      "packagesPath": "C:\\Users\\blitz\\.nuget\\packages\\",
+      "outputPath": "C:\\Work\\git\\Arithmetica\\Examples\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\deepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\blitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -935,14 +975,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packages.xenko.com/nuget": {}
+        "D:\\RPA\\General\\Flinders.Foundation": {},
+        "D:\\RPA\\General\\RPA Packages": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj": {
-              "projectPath": "E:\\DeepakProj\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj"
+            "C:\\Work\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj": {
+              "projectPath": "C:\\Work\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj"
             }
           }
         }

@@ -4,9 +4,10 @@
       "src": [
         {
           "files": [
-            "**.csproj"
+            "Arithmetica/**.csproj",
+            "Arithmetica.Quantum/**.csproj"
           ],
-          "src": "../Arithmetica/"
+          "src": "../"
         }
       ],
       "dest": "api",

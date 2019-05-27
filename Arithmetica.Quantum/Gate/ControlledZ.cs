@@ -5,14 +5,25 @@ using System.Text;
 
 namespace Arithmetica.Quantum.Gate
 {
-    public class CxZ : QuantumGate
+    /// <summary>
+    /// Controlled Pauli Z gate
+    /// </summary>
+    /// <seealso cref="Arithmetica.Quantum.Gate.QuantumGate" />
+    public class ControlledZ : QuantumGate
     {
-        public CxZ() : base("CXZ")
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ControlledZ"/> class.
+        /// </summary>
+        public ControlledZ() : base("CZ")
         {
             PauliZ gate = new PauliZ();
             Matrix = ControlledGateMatrix(gate.Matrix);
         }
 
+        /// <summary>
+        /// Appliy the gate to the one or more qubit
+        /// </summary>
+        /// <param name="qubits">The qubits.</param>
         public override void Apply(params Qubit[] qubits)
         {
             var reg = new QuantumRegister(qubits);

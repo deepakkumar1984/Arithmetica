@@ -7,6 +7,9 @@
     <Compile Remove="Class1.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Arithmetica\Arithmetica.csproj" />
   </ItemGroup>
 </Project>

@@ -103,6 +103,7 @@ namespace Arithmetica.Quantum
         /// </summary>
         internal void Collapse()
         {
+            Random rand = new Random();
             ComplexVector collapsed = new ComplexVector(BitRegister.Size);
             double probabilityThreshold = QCUtil.Random.NextDouble();
 
@@ -120,23 +121,6 @@ namespace Arithmetica.Quantum
                 }
 
                 BitRegister = collapsed;
-
-                //ComplexVector collapsedVector = ComplexVector.Zero(this.BitRegister.Size);
-                //double probabilitySum = 0d;
-                //double probabilityThreshold = QCUtil.Random.NextDouble();
-
-                //for (int i = 0; i < this.BitRegister.Size; i++)
-                //{
-                //    probabilitySum += BitRegister[i].ModulusSquared;
-
-                //    if (probabilitySum > probabilityThreshold)
-                //    {
-                //        collapsedVector[i] = Complex.One;
-                //        break;
-                //    }
-                //}
-
-                //this.BitRegister = collapsedVector;
             }
         }
 
@@ -179,11 +163,11 @@ namespace Arithmetica.Quantum
             get
             {
                 QubitState state = QubitState.Zero;
-                if (Math.Round(ZeroAmplitude.ModulusSquared, 1) == 0.5)
+                if (Math.Round(ZeroAmplitude.ModulusSquared, 1) == 1)
                 {
                     state = QubitState.Zero;
                 }
-                else if (Math.Round(OneAmplitude.ModulusSquared, 1) == 0.5)
+                else if (Math.Round(OneAmplitude.ModulusSquared, 1) == 1)
                 {
                     state = QubitState.One;
                 }
@@ -197,7 +181,13 @@ namespace Arithmetica.Quantum
             }
         }
 
-        public int[] Values
+        /// <summary>
+        /// Gets the values.
+        /// </summary>
+        /// <value>
+        /// The values.
+        /// </value>
+        internal int[] Values
         {
             get
             {
@@ -276,6 +266,9 @@ namespace Arithmetica.Quantum
         }
     }
 
+    /// <summary>
+    /// State of the qubit: Zero, One, Superposition
+    /// </summary>
     public enum QubitState
     {
         Zero = 0,

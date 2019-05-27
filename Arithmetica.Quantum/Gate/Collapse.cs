@@ -15,7 +15,8 @@ namespace Arithmetica.Quantum.Gate
 
         public override void Apply(params Qubit[] qubits)
         {
-            Parallel.For(0, qubits.Length, (i) => {
+            Parallel.For(0, qubits.Length, (i) =>
+            {
                 qubits[i].Collapse();
             });
         }

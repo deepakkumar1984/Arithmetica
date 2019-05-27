@@ -263,12 +263,13 @@ namespace Arithmetica.Quantum
         }
 
         /// <summary>
-        /// Gets the possible states.
+        /// Gets the all the possible states for the qubits in the register. 
+        /// Possibilites are created when the qubit are in superposition state.
         /// </summary>
         /// <value>
         /// The possible states.
         /// </value>
-        public Matrix PossibleStates
+        public Matrix Possiblities
         {
             get
             {
@@ -281,47 +282,73 @@ namespace Arithmetica.Quantum
 
                 Matrix states = new Matrix(totalStates, Qubits.Length);
                 states.Fill(-1);
-                //GetStates(0, 0, ref states);
 
-                for (int k = 0; k < totalStates; k++)
+                int divider = 1;
+                for (int i = 0; i < Qubits.Length; i++)
                 {
-                    for (int i = 0; i < Qubits.Length; i++)
+                    int k_times;
+                    if (Qubits[i].Values.Length > 1)
                     {
-                        for (int j = 0; j < 2; j++)
+                        divider += divider;
+                        k_times = totalStates / divider;
+                    }
+                    else
+                        k_times = totalStates;
+
+                    int j_times = totalStates / k_times;
+
+                    int counter = 0;
+                    int valueIndex = 0;
+                    for (int j = 0; j < j_times; j++)
+                    {
+                        for (int k = 0; k < k_times; k++)
                         {
-                            if(j <  Qubits[i].Values.Length)
-                                states[k, i] = Qubits[i].Values[j];
+                            if(Qubits[i].Values.Length == 1)
+                                states[counter, i] = Qubits[i].Values[0];
+                            else
+                                states[counter, i] = Qubits[i].Values[valueIndex];
+
+                            counter++;
                         }
+
+                        if (valueIndex < 1)
+                            valueIndex++;
+                        else
+                            valueIndex = 0;
                     }
                 }
 
-                //for (int i = 0; i < Qubits.Length; i++)
-                //{
-                //    states[i, 0] = Qubits[i].Values[0];
-                //    states[i, 0] = Qubits[i].Values[0];
-                //    for (int j = 0; j < Qubits.Length; j++)
-                //    {
-
-                //    }
-                //}
-
-                return null;
+                return states;
             }
         }
 
-        private void GetStates(int j, int k, ref Matrix matrix)
+        /// <summary>
+        /// Gets the possible values.
+        /// </summary>
+        /// <value>
+        /// The possible values.
+        /// </value>
+        internal List<string> PossibleValues
         {
-            List<List<int>> result = new List<List<int>>();
-            for (int i = j; i < Qubits.Length; i++)
+            get
             {
-                if(k < Qubits[i].Values.Length)
-                    matrix[i, k] = Qubits[i].Values[k];
+                var p = Possiblities;
+                List<string> result = new List<string>();
+                for (int i = 0; i < p.Rows; i++)
+                {
+                    string representation = "";
+                    for (int j = 0; j < p.Cols; j++)
+                    {
+                        representation += p[i, j].ToString();
+                    }
 
-                GetStates(i + 1, k, ref matrix);
+                    result.Add(representation);
+                }
+
+                return result;
             }
         }
-        
-        
+      
         /// <summary>
         /// Converts to string.
         /// </summary>
@@ -331,22 +358,20 @@ namespace Arithmetica.Quantum
         public override string ToString()
         {
             string representation = "";
+            var p = Possiblities;
+            for (int i = 0; i < p.Rows; i++)
+            {
+                if (i > 0)
+                    representation += " + ";
 
-            int i = 0;
-            //foreach (var item in Qubits)
-            //{
-            //    if (item == null)
-            //        continue;
+                representation += "|";
+                for (int j = 0; j < p.Cols; j++)
+                {
+                    representation += p[i, j].ToString();
+                } 
 
-            //    representation += string.Format("Q{0}: {1}", i, item.ToString());
-            //    representation += "   ";
-            //    i++;
-            //}
-
-            //foreach (var item in PossibleStates)
-            //{
-            //    representation += string.Format("|{0}> ", item);
-            //}
+                representation += ">";
+            }
 
             return representation;
         }
