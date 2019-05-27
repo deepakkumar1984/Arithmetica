@@ -52,10 +52,14 @@ namespace Arithmetica.Quantum.Gate
         /// <param name="qubits">The qubits.</param>
         public virtual void Apply(params Qubit[] qubits)
         {
-            
             Parallel.For(0, qubits.Length, (i) => {
-                if (ApplyState.HasValue && qubits[i].QState == ApplyState.Value)
-                    qubits[i].BitRegister = ComplexMatrix.Multiply(Matrix, qubits[i].BitRegister);
+                bool run = true;
+                if (ApplyState.HasValue)
+                {
+                    run = qubits[i].QState == ApplyState.Value;
+                }
+
+                qubits[i].BitRegister = ComplexMatrix.Multiply(Matrix, qubits[i].BitRegister);
             });
         }
 

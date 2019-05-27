@@ -269,20 +269,20 @@ namespace Arithmetica.Quantum
         /// <value>
         /// The possible states.
         /// </value>
-        public Matrix Possiblities
+        internal int[,] PossibleValues
         {
             get
             {
                 int totalStates = 1;
-
+                
                 for (int i = 0; i < Qubits.Length; i++)
                 {
                     totalStates *= Qubits[i].Values.Length;
                 }
 
-                Matrix states = new Matrix(totalStates, Qubits.Length);
-                states.Fill(-1);
-
+                //Matrix states = new Matrix(totalStates, Qubits.Length);
+                //states.Fill(-1);
+                int[,] states = new int[totalStates, Qubits.Length];
                 int divider = 1;
                 for (int i = 0; i < Qubits.Length; i++)
                 {
@@ -323,21 +323,22 @@ namespace Arithmetica.Quantum
         }
 
         /// <summary>
-        /// Gets the possible values.
+        /// Gets the all the possible states for the qubits in the register. 
+        /// Possibilites are created when the qubit are in superposition state.
         /// </summary>
         /// <value>
         /// The possible values.
         /// </value>
-        internal List<string> PossibleValues
+        public List<string> Possiblities
         {
             get
             {
-                var p = Possiblities;
+                var p = PossibleValues;
                 List<string> result = new List<string>();
-                for (int i = 0; i < p.Rows; i++)
+                for (int i = 0; i < p.GetLength(0); i++)
                 {
                     string representation = "";
-                    for (int j = 0; j < p.Cols; j++)
+                    for (int j = 0; j < p.GetLength(1); j++)
                     {
                         representation += p[i, j].ToString();
                     }
@@ -359,18 +360,12 @@ namespace Arithmetica.Quantum
         {
             string representation = "";
             var p = Possiblities;
-            for (int i = 0; i < p.Rows; i++)
+
+            foreach (var item in p)
             {
-                if (i > 0)
+                if (!string.IsNullOrWhiteSpace(representation))
                     representation += " + ";
-
-                representation += "|";
-                for (int j = 0; j < p.Cols; j++)
-                {
-                    representation += p[i, j].ToString();
-                } 
-
-                representation += ">";
+                representation += string.Format("|{0}>", item);
             }
 
             return representation;

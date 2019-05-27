@@ -145,9 +145,14 @@ namespace Arithmetica.Quantum
         /// <exception cref="QuantumException">Cannot execute job in debug mode</exception>
         public CircuitResult Execute(int shots = 1024)
         {
-            if (Debug)
-                throw new QuantumException("Cannot execute job in debug mode");
             CircuitResult result = new CircuitResult();
+
+            if (Debug)
+            {
+                result.Success = false;
+                result.Message = "Cannot execute in debug mode";
+                return result;
+            }
 
             for (int i = 0; i < shots; i++)
             {
@@ -157,7 +162,7 @@ namespace Arithmetica.Quantum
                     code.Gate.Apply(reg[code.BitIndex]);
                 }
 
-                foreach (var item in reg.PossibleValues)
+                foreach (var item in reg.Possiblities)
                 {
                     result[item] += 1;
                 }
@@ -168,6 +173,8 @@ namespace Arithmetica.Quantum
             {
                 item.Percentage = (float)item.Count * 100 / (float)shots;
             }
+
+            result.Success = true;
 
             return result;
         }
