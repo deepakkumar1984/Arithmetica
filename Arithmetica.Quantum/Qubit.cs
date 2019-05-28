@@ -1,4 +1,5 @@
 ﻿using Arithmetica.LinearAlgebra.Single;
+using Arithmetica.Quantum.Gate;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,6 +18,14 @@ namespace Arithmetica.Quantum
         /// The register.
         /// </value>
         public ComplexVector BitRegister { get; set; }
+
+        /// <summary>
+        /// Gets or sets the entangled.
+        /// </summary>
+        /// <value>
+        /// The entangled.
+        /// </value>
+        internal Qubit Entangled { get; set; }
 
         /// <summary>
         /// Probability amplitude for state |0>
@@ -122,6 +131,12 @@ namespace Arithmetica.Quantum
 
                 BitRegister = collapsed;
             }
+
+            if (Entangled != null)
+            {
+                if(QState == QubitState.One)
+                    new ControlledNot().Apply(this, Entangled);
+            }
         }
 
         /// <summary>
@@ -172,7 +187,7 @@ namespace Arithmetica.Quantum
                     state = QubitState.One;
                 }
 
-                if (ZeroAmplitude.ModulusSquared != 1 && OneAmplitude.ModulusSquared != 1)
+                if (ZeroAmplitude.ModulusSquared != 0 && OneAmplitude.ModulusSquared != 0)
                 {
                     state = QubitState.Superposition;
                 }

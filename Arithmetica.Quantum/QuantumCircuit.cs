@@ -68,6 +68,17 @@ namespace Arithmetica.Quantum
             Program = program;
         }
 
+        public void INIT(int index, Qubit initState)
+        {
+            if (!ExecuteWithJob)
+            {
+                new Initalize(initState).Apply(Register[index]);
+                return;
+            }
+
+            Program.Add(new Initalize(initState), index);
+        }
+
         /// <summary>
         /// Apply the Hadamard gate
         /// </summary>
@@ -180,20 +191,21 @@ namespace Arithmetica.Quantum
         /// <param name="secondBit">The second bit.</param>
         public void CNOT(int firstBit, int secondBit)
         {
-            if (!ExecuteWithJob)
-            {
-                new ControlledNot().Apply(Register[firstBit], Register[secondBit]);
-                return;
-            }
+            Register[firstBit].Entangled = Register[secondBit];
+            //if (!ExecuteWithJob)
+            //{
+            //    new ControlledNot().Apply(Register[firstBit], Register[secondBit]);
+            //    return;
+            //}
 
-            Program.Add(new ControlledNot(), firstBit, secondBit);
+            //Program.Add(new ControlledNot(), firstBit, secondBit);
         }
 
         /// <summary>
         /// Apply the collapse gate to measure the quantum register
         /// </summary>
         /// <param name="index">The index.</param>
-        public void Collapse(int? index = null)
+        public void Measure(int? index = null)
         {
             List<int> bitIndex = new List<int>();
             if (index.HasValue)
@@ -231,16 +243,17 @@ namespace Arithmetica.Quantum
 
             for (int i = 0; i < shots; i++)
             {
-                var reg = new QuantumRegister(Register.BitRegister);
                 foreach (var code in Program.Codes)
                 {
-                    code.Gate.Apply(reg[code.BitIndex]);
+                    code.Gate.Apply(Register[code.BitIndex]);
                 }
 
-                foreach (var item in reg.Possiblities)
+                foreach (var item in Register.Possiblities)
                 {
                     result[item] += 1;
                 }
+
+                Register.Reset();
             }
 
             result.Result = result.Result.OrderBy(x => (x.ClassicalValue)).ToList();

@@ -11,15 +11,15 @@ namespace QuantumExamples
         public static void Run()
         {
             //Set initial qubit
-            QuantumRegister reg = new QuantumRegister(5);
+            QuantumRegister reg = new QuantumRegister(2);
             QuantumCircuit circuit = new QuantumCircuit(reg);
-            
             circuit.H(0);
+            circuit.X(1);
+            //circuit.Y(1);
             circuit.H(1);
-            
-            circuit.Collapse();
-                       
-            
+            circuit.Measure();
+            var result = circuit.Execute(1000);
+            Console.WriteLine(result.ToJson());
         }
     }
 }
