@@ -465,5 +465,18 @@ namespace Arithmetica.LinearAlgebra.Single
         }
         #endregion
 
+        public override string ToString()
+        {
+            string result = "";
+            for (int i = 0; i < Size; i++)
+            {
+                result += this[i].ToString();
+
+                result += "\n\n";
+            }
+
+            return result;
+        }
+
     }
 }

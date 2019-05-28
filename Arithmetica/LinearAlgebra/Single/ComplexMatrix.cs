@@ -2445,6 +2445,19 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
+        /// Implements the operator *.
+        /// </summary>
+        /// <param name="m">The m.</param>
+        /// <param name="v">The v.</param>
+        /// <returns>
+        /// The result of the operator.
+        /// </returns>
+        public static ComplexVector operator *(ComplexMatrix m, ComplexVector v)
+        {
+            return Multiply(m, v);
+        }
+
+        /// <summary>
         /// Divides a complex matrix by a scalar.
         /// </summary>
         /// <param name="m">A complex matrix (the dividend).</param>
@@ -2574,6 +2587,23 @@ namespace Arithmetica.LinearAlgebra.Single
             {
                 return new ComplexVector(this.To1DimArray());
             }
+        }
+
+        public override string ToString()
+        {
+            string result = "";
+            for (int i = 0; i < RowCount; i++)
+            {
+                for (int j = 0; j < ColumnCount; j++)
+                {
+                    result += this[i, j].ToString();
+                    result += "   ";
+                }
+
+                result += "\n\n";
+            }
+
+            return result;
         }
     }
 

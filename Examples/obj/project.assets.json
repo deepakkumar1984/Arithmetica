@@ -308,7 +308,7 @@
           "bin/placeholder/Arithmetica.dll": {}
         }
       },
-      "Arithmetica.Quantum/1.0.0": {
+      "Arithmetica.Quantum/0.2.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -938,7 +938,7 @@
       "path": "../Arithmetica/Arithmetica.csproj",
       "msbuildProject": "../Arithmetica/Arithmetica.csproj"
     },
-    "Arithmetica.Quantum/1.0.0": {
+    "Arithmetica.Quantum/0.2.1": {
       "type": "project",
       "path": "../Arithmetica.Quantum/Arithmetica.Quantum.csproj",
       "msbuildProject": "../Arithmetica.Quantum/Arithmetica.Quantum.csproj"
@@ -946,7 +946,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Arithmetica.Quantum >= 1.0.0",
+      "Arithmetica.Quantum >= 0.2.1",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
