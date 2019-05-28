@@ -6,11 +6,12 @@ namespace QuantumExamples
     public class Superposition : IExample
     {
         private Random rand = new Random();
+        
         public void Run()
         {
-            //PlusState();
-            //MinusState();
-            //UnequalSuperposition();
+            PlusState();
+            MinusState();
+            UnequalSuperposition();
             Teleportation();
         }
 
