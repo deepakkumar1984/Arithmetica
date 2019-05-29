@@ -381,7 +381,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Vector<float> Abs(ComplexVector vector)
         {
-            Vector result = new Vector(vector.Size);
+            SingleVector result = new SingleVector(vector.Size);
             Parallel.For(0, vector.Size, (i) => {
                 result[i] = Complex.Abs(vector[i]);
             });

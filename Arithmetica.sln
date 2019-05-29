@@ -13,7 +13,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{17
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{864FD287-285A-43F5-A72F-E211A38EEB99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumExamples", "QuantumExamples\QuantumExamples.csproj", "{CB389CA5-D7F5-4816-9220-4BD87E2F2304}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumExamples", "QuantumExamples\QuantumExamples.csproj", "{CB389CA5-D7F5-4816-9220-4BD87E2F2304}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "doc-gen", "doc-gen\", "{6508E348-81AF-4C58-85E3-13FAE78C3329}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51723"
+		Debug.AspNetCompiler.PhysicalPath = "doc-gen\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51723\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51723"
+		Release.AspNetCompiler.PhysicalPath = "doc-gen\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51723\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51723"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +167,30 @@ Global
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x64.Build.0 = Release|Any CPU
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x86.ActiveCfg = Release|Any CPU
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x86.Build.0 = Release|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|Any CPU.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|x64.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|x64.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|x86.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Azure|x86.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|x64.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Debug|x86.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|x64.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|x64.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|x86.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.Release|x86.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|Any CPU.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|x64.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|x64.Build.0 = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|x86.ActiveCfg = Debug|Any CPU
+		{6508E348-81AF-4C58-85E3-13FAE78C3329}.ReleaseCpuOnly|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,13 +11,13 @@ namespace Arithmetica.LinearAlgebra.Single
     /// </summary>
     /// <seealso cref="Arithmetica.LinearAlgebra.Vector{System.Single}" />
     /// <seealso cref="System.IFormattable" />
-    public class Vector : LinearAlgebra.Vector<float>, IFormattable
+    public class SingleVector : LinearAlgebra.Vector<float>, IFormattable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector(int size) : base(size, 1, DType.Float32)
+        public SingleVector(int size) : base(size, 1, DType.Float32)
         {
 
         }
@@ -26,7 +26,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector(ArithArray arithArray): base(arithArray)
+        internal SingleVector(ArithArray arithArray): base(arithArray)
         {
 
         }
@@ -58,9 +58,9 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector(ArithArray variable)
+        public static implicit operator SingleVector(ArithArray variable)
         {
-            return new Vector(variable);
+            return new SingleVector(variable);
         }
 
         /// <summary>

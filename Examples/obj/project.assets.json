@@ -668,7 +668,7 @@
       ]
     },
     "Microsoft.Win32.SystemEvents/4.5.0": {
-      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "sha512": "K2TAr07pgl/m/J9ed3cmAzx0SD55kYuVfBG6SPRIH/ELTh/D2qGrjOWDQJo7r+LZl1nO2Nkl0UAQBUt6S2ewqQ==",
       "type": "package",
       "path": "microsoft.win32.systemevents/4.5.0",
       "files": [
@@ -688,7 +688,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "612wiqx455/7vpRhJDnVeZC7HmLP3QNwXdQyzP8HjeTIBVQ3bLfLnqmBHKTk+L5smHR55lXw4yKJJSHjF6HZSw==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -846,7 +846,7 @@
       ]
     },
     "OpenCvSharp3-AnyCPU/4.0.0.20181129": {
-      "sha512": "fAXJW98FU3ZAlS3LDrRAXeg7h5ufA9Z1mAQNsXIPSTQHS+Ql2+KdzdYXs+p+lZhyH9baJWPDB42E+EN1KJ0Y3w==",
+      "sha512": "VLiJS+WTYYwWThERAMy9JnaMICo8bC5zyFyA2zaKll1A713PdhAzPOe4FrXN32Vh0mnJvc5fZank8KQQPnYhfQ==",
       "type": "package",
       "path": "opencvsharp3-anycpu/4.0.0.20181129",
       "files": [
@@ -901,7 +901,7 @@
       ]
     },
     "System.Drawing.Common/4.5.0": {
-      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "sha512": "uYixYbB0vzxSbc9B7jzwwUA8Upodaj3g2ZNnREWW6zoBw9DltzltcEa1g0I4u6ARqVJ0t4E3yJAWw5h2gvJlhQ==",
       "type": "package",
       "path": "system.drawing.common/4.5.0",
       "files": [
@@ -951,23 +951,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\batt0153\\.nuget\\packages\\": {},
+    "C:\\Users\\blitz\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\Arithmetica\\Examples\\Examples.csproj",
+      "projectUniqueName": "C:\\Work\\git\\Arithmetica\\Examples\\Examples.csproj",
       "projectName": "Examples",
-      "projectPath": "C:\\git\\Arithmetica\\Examples\\Examples.csproj",
-      "packagesPath": "C:\\Users\\batt0153\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\Arithmetica\\Examples\\obj\\",
+      "projectPath": "C:\\Work\\git\\Arithmetica\\Examples\\Examples.csproj",
+      "packagesPath": "C:\\Users\\blitz\\.nuget\\packages\\",
+      "outputPath": "C:\\Work\\git\\Arithmetica\\Examples\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\batt0153\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\blitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -975,14 +975,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/sianet/api/v3/index.json": {}
+        "D:\\RPA\\General\\Flinders.Foundation": {},
+        "D:\\RPA\\General\\RPA Packages": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj": {
-              "projectPath": "C:\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj"
+            "C:\\Work\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj": {
+              "projectPath": "C:\\Work\\git\\Arithmetica\\Arithmetica.Quantum\\Arithmetica.Quantum.csproj"
             }
           }
         }
@@ -997,6 +998,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

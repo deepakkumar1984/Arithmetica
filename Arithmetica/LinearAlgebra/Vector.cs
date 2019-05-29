@@ -32,11 +32,11 @@ namespace Arithmetica.LinearAlgebra
             ArrayOps.Copy(vector.variable, variable);
         }
 
-        public static Vector<T> LoadArray(params T[] data)
+        public static ArithArray LoadArray(params T[] data)
         {
-            Vector<T> vector = new Vector<T>(data.Length, 1, DTypeBuilder.FromCLRType(typeof(T)));
-            vector.variable.LoadFrom(data);
-            return vector;
+            ArithArray arithArray = new ArithArray(data.Length, 1);
+            arithArray.LoadFrom(data);
+            return arithArray;
         }
 
         public void Fill(float value)

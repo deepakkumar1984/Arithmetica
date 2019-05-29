@@ -11,13 +11,13 @@ namespace Arithmetica.LinearAlgebra.Double
     /// </summary>
     /// <seealso cref="Arithmetica.LinearAlgebra.Vector{System.Double}" />
     /// <seealso cref="System.IFormattable" />
-    public class Vector : LinearAlgebra.Vector<double>, IFormattable
+    public class DoubleVector : LinearAlgebra.Vector<double>, IFormattable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector(int size) : base(size, 1, DType.Float64)
+        public DoubleVector(int size) : base(size, 1, DType.Float64)
         {
 
         }
@@ -26,7 +26,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector(ArithArray arithArray): base(arithArray)
+        internal DoubleVector(ArithArray arithArray): base(arithArray)
         {
 
         }
@@ -58,9 +58,9 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector(ArithArray variable)
+        public static implicit operator DoubleVector(ArithArray variable)
         {
-            return new Vector(variable);
+            return new DoubleVector(variable);
         }
 
         /// <summary>
