@@ -1,4 +1,4 @@
-# Arithmetic
+# Welcome to the world of Arithmetica
 To summarise, arithmetica is developed to help students, professional or scientists to learn or prototype work related to applied mathematics and quantum physics.
 
 Following are the features:
