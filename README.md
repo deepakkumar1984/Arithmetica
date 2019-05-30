@@ -108,5 +108,5 @@ Console.WriteLine("Teleported count: " + transported);
 
 Nuget package available, search with name Arithmetica
 
-API Documentation: https://deepakkumar1984.github.io/Arithmetica/api/Arithmetica.html
+API Documentation: https://tech-quantum.github.io/Arithmetica/api/Arithmetica.html
 
