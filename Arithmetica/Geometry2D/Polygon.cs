@@ -6,7 +6,6 @@ using System.Text;
 using System.Xml.Serialization;
 using System.ComponentModel;
 
-using Arithmetica.Core;
 using Arithmetica.LinearAlgebra.Single;
 
 #endregion

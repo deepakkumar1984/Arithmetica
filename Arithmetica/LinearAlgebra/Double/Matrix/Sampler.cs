@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="p">The p.</param>
         /// <param name="seed">The seed.</param>
         public static void Bernoulli(Matrix src, float p, int? seed = null)
-            => ArrayOps.RandomBernoulli(src.variable, new SeedSource(seed), p);
+            => Global.OP.RandomBernoulli(src.variable, p, seed);
 
         /// <summary>
         /// Draw samples from a standard Cauchy distribution.
@@ -25,7 +26,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="sigma">The sigma.</param>
         /// <param name="seed">The seed.</param>
         public static void Cauchy(Matrix src, float median, float sigma, int? seed = null)
-            => ArrayOps.RandomCauchy(src.variable, new SeedSource(seed), median, sigma);
+            => Global.OP.RandomCauchy(src.variable, median, sigma, seed);
 
         /// <summary>
         /// Draw samples from an exponential distribution. The exponential distribution is a continuous analogue of the geometric distribution. 
@@ -34,7 +35,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lambda">The lambda value.</param>
         /// <param name="seed">The seed.</param>
         public static void Exponential(Matrix src, float lambda, int? seed = null)
-            => ArrayOps.RandomExponential(src.variable, new SeedSource(seed), lambda);
+            => Global.OP.RandomExponential(src.variable, lambda, seed);
 
         /// <summary>
         /// Draw samples from the geometric distribution.
@@ -45,7 +46,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="p">The probability value.</param>
         /// <param name="seed">The seed.</param>
         public static void Geometric(Matrix src, float p, int? seed = null)
-            => ArrayOps.RandomGeometric(src.variable, new SeedSource(seed), p);
+            => Global.OP.RandomGeometric(src.variable, p, seed);
 
         /// <summary>
         /// Draw samples from a log-normal distribution with specified mean, standard deviation, and matrix shape. 
@@ -56,7 +57,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="std">The standard deviation value.</param>
         /// <param name="seed">The seed.</param>
         public static void LogNormal(Matrix src, float mean, float std, int? seed = null)
-            => ArrayOps.RandomLogNormal(src.variable, new SeedSource(seed), mean, std);
+            => Global.OP.RandomLogNormal(src.variable, mean, std, seed);
 
         /// <summary>
         /// Draw random samples from a normal (Gaussian) distribution.
@@ -68,7 +69,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="std">The standard deviation value.</param>
         /// <param name="seed">The seed.</param>
         public static void Normal(Matrix src, float mean, float std, int? seed = null)
-            => ArrayOps.RandomNormal(src.variable, new SeedSource(seed), mean, std);
+            => Global.OP.RandomNormal(src.variable, mean, std, seed);
 
         /// <summary>
         /// Samples are uniformly distributed over the half-open interval [min, max) (includes min, but excludes max). 
@@ -79,6 +80,6 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="max">The maximum value.</param>
         /// <param name="seed">The seed.</param>
         public static void Uniform(Matrix src, float min, float max, int? seed = null)
-            => ArrayOps.RandomUniform(src.variable, new SeedSource(seed), min, max);
+            => Global.OP.RandomUniform(src.variable, min, max, seed);
     }
 }

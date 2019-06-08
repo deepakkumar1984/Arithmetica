@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+using SuperchargedArray;
 
 namespace Arithmetica.LinearAlgebra.Single
 {
@@ -17,7 +18,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector(int size) : base(size, 1, DType.Float32)
+        public Vector(int size) : base(size, 1, DType.Single)
         {
 
         }
@@ -26,7 +27,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector(ArithArray arithArray): base(arithArray)
+        internal Vector(SuperArray arithArray): base(arithArray)
         {
 
         }
@@ -52,13 +53,13 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="ArithArray"/> to <see cref="Vector"/>.
+        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector(ArithArray variable)
+        public static implicit operator Vector(SuperArray variable)
         {
             return new Vector(variable);
         }
@@ -85,7 +86,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector2Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector2Vector(int size) : base(size, 2, DType.Float32)
+        public Vector2Vector(int size) : base(size, 2, DType.Single)
         {
 
         }
@@ -94,7 +95,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector2Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector2Vector(ArithArray arithArray) : base(arithArray)
+        internal Vector2Vector(SuperArray arithArray) : base(arithArray)
         {
 
         }
@@ -136,13 +137,13 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="ArithArray"/> to <see cref="Vector2Vector"/>.
+        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector2Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector2Vector(ArithArray variable)
+        public static implicit operator Vector2Vector(SuperArray variable)
         {
             return new Vector2Vector(variable);
         }
@@ -169,7 +170,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector3Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector3Vector(int size) : base(size, 3, DType.Float32)
+        public Vector3Vector(int size) : base(size, 3, DType.Single)
         {
 
         }
@@ -178,7 +179,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector3Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector3Vector(ArithArray arithArray) : base(arithArray)
+        internal Vector3Vector(SuperArray arithArray) : base(arithArray)
         {
 
         }
@@ -221,13 +222,13 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="ArithArray"/> to <see cref="Vector3Vector"/>.
+        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector3Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector3Vector(ArithArray variable)
+        public static implicit operator Vector3Vector(SuperArray variable)
         {
             return new Vector3Vector(variable);
         }
@@ -254,7 +255,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector4Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector4Vector(int size) : base(size, 4, DType.Float32)
+        public Vector4Vector(int size) : base(size, 4, DType.Single)
         {
 
         }
@@ -262,7 +263,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector4Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector4Vector(ArithArray arithArray) : base(arithArray)
+        internal Vector4Vector(SuperArray arithArray) : base(arithArray)
         {
 
         }
@@ -309,13 +310,13 @@ namespace Arithmetica.LinearAlgebra.Single
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="ArithArray"/> to <see cref="Vector4Vector"/>.
+        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector4Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector4Vector(ArithArray variable)
+        public static implicit operator Vector4Vector(SuperArray variable)
         {
             return new Vector4Vector(variable);
         }

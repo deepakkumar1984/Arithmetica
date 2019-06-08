@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +13,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray GreaterThan(Vector<T> lhs, Vector<T> rhs) => ArrayOps.GreaterThan(lhs.variable, rhs.variable);
+        public static SuperArray GreaterThan(Vector<T> lhs, Vector<T> rhs) => Global.OP.GreaterThan(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs lhs > scalar elemenwise.
@@ -20,7 +21,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray GreaterThan(Vector<T> lhs, float rhs) => ArrayOps.GreaterThan(lhs.variable, rhs);
+        public static SuperArray GreaterThan(Vector<T> lhs, float rhs) => Global.OP.GreaterThan(lhs.variable, rhs);
 
         /// <summary>
         /// Performs lhs >= rhs elemenwise.
@@ -28,7 +29,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray GreaterEqual(Vector<T> lhs, Vector<T> rhs) => ArrayOps.GreaterOrEqual(lhs.variable, rhs.variable);
+        public static SuperArray GreaterEqual(Vector<T> lhs, Vector<T> rhs) => Global.OP.GreaterOrEqual(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs lhs >= float elemenwise.
@@ -36,7 +37,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray GreaterEqual(Vector<T> lhs, float rhs) => ArrayOps.GreaterOrEqual(lhs.variable, rhs);
+        public static SuperArray GreaterEqual(Vector<T> lhs, float rhs) => Global.OP.GreaterOrEqual(lhs.variable, rhs);
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
@@ -44,7 +45,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray LessThan(Vector<T> lhs, Vector<T> rhs) => ArrayOps.LessThan(lhs.variable, rhs.variable);
+        public static SuperArray LessThan(Vector<T> lhs, Vector<T> rhs) => Global.OP.LessThan(lhs.variable, rhs.variable);
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
@@ -52,7 +53,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray LessThan(Vector<T> lhs, float rhs) => ArrayOps.LessThan(lhs.variable, rhs);
+        public static SuperArray LessThan(Vector<T> lhs, float rhs) => Global.OP.LessThan(lhs.variable, rhs);
 
         /// <summary>
         /// Performs lhs &lt;= rhs elemenwise.
@@ -60,7 +61,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray LessEqual(Vector<T> lhs, Vector<T> rhs) => ArrayOps.LessOrEqual(lhs.variable, rhs.variable);
+        public static SuperArray LessEqual(Vector<T> lhs, Vector<T> rhs) => Global.OP.LessOrEqual(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs lhs &lt;= scalar elemenwise.
@@ -68,7 +69,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray LessEqual(Vector<T> lhs, float rhs) => ArrayOps.LessOrEqual(lhs.variable, rhs);
+        public static SuperArray LessEqual(Vector<T> lhs, float rhs) => Global.OP.LessOrEqual(lhs.variable, rhs);
 
         /// <summary>
         /// Performs lhs == rhs elemenwise.
@@ -76,7 +77,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray EqualTo(Vector<T> lhs, Vector<T> rhs) => ArrayOps.EqualTo(lhs.variable, rhs.variable);
+        public static SuperArray EqualTo(Vector<T> lhs, Vector<T> rhs) => Global.OP.EqualTo(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs lhs == scalar elemenwise.
@@ -84,7 +85,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray EqualTo(Vector<T> lhs, float rhs) => ArrayOps.LessOrEqual(lhs.variable, rhs);
+        public static SuperArray EqualTo(Vector<T> lhs, float rhs) => Global.OP.LessOrEqual(lhs.variable, rhs);
 
         /// <summary>
         /// Performs lhs != rhs elemenwise.
@@ -92,7 +93,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray NotEqualTo(Vector<T> lhs, Vector<T> rhs) => ArrayOps.NotEqual(lhs.variable, rhs.variable);
+        public static SuperArray NotEqualTo(Vector<T> lhs, Vector<T> rhs) => Global.OP.NotEqual(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs lhs != scalar elemenwise.
@@ -100,7 +101,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static ArithArray NotEqualTo(Vector<T> lhs, float rhs) => ArrayOps.NotEqual(lhs.variable, rhs);
+        public static SuperArray NotEqualTo(Vector<T> lhs, float rhs) => Global.OP.NotEqual(lhs.variable, rhs);
 
         /// <summary>
         /// Find the maximum between two Vector<T> elemenwise
@@ -108,7 +109,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Maximum(Vector<T> lhs, Vector<T> rhs) => ArrayOps.Maximum(lhs.variable, rhs.variable);
+        public static SuperArray Maximum(Vector<T> lhs, Vector<T> rhs) => Global.OP.Maximum(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Find the maximum between Vector<T> and scalar value
@@ -116,7 +117,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The LHS Vector<T>.</param>
         /// <param name="rhs">The RHS Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Maximum(Vector<T> lhs, float rhs) => ArrayOps.Maximum(lhs.variable, rhs);
+        public static SuperArray Maximum(Vector<T> lhs, float rhs) => Global.OP.Maximum(lhs.variable, rhs);
 
     }
 }

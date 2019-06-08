@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +13,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix GreaterThan(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.GreaterThan(lhs.variable, rhs.variable));
+        public static Matrix GreaterThan(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.GreaterThan(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs > scalar elemenwise.
@@ -20,7 +21,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix GreaterThan(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.GreaterThan(lhs.variable, rhs));
+        public static Matrix GreaterThan(Matrix lhs, float rhs) => Matrix.Out(Global.OP.GreaterThan(lhs.variable, rhs));
 
         /// <summary>
         /// Performs lhs >= rhs elemenwise.
@@ -28,7 +29,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix GreaterEqual(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs.variable));
+        public static Matrix GreaterEqual(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.GreaterOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs >= float elemenwise.
@@ -36,7 +37,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix GreaterEqual(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.GreaterOrEqual(lhs.variable, rhs));
+        public static Matrix GreaterEqual(Matrix lhs, float rhs) => Matrix.Out(Global.OP.GreaterOrEqual(lhs.variable, rhs));
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
@@ -44,7 +45,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix LessThan(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.LessThan(lhs.variable, rhs.variable));
+        public static Matrix LessThan(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.LessThan(lhs.variable, rhs.variable));
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
@@ -52,7 +53,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix LessThan(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.LessThan(lhs.variable, rhs));
+        public static Matrix LessThan(Matrix lhs, float rhs) => Matrix.Out(Global.OP.LessThan(lhs.variable, rhs));
 
         /// <summary>
         /// Performs lhs &lt;= rhs elemenwise.
@@ -60,7 +61,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix LessEqual(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.LessOrEqual(lhs.variable, rhs.variable));
+        public static Matrix LessEqual(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.LessOrEqual(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs &lt;= scalar elemenwise.
@@ -68,7 +69,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix LessEqual(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.LessOrEqual(lhs.variable, rhs));
+        public static Matrix LessEqual(Matrix lhs, float rhs) => Matrix.Out(Global.OP.LessOrEqual(lhs.variable, rhs));
 
         /// <summary>
         /// Performs lhs == rhs elemenwise.
@@ -76,7 +77,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix EqualTo(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.EqualTo(lhs.variable, rhs.variable));
+        public static Matrix EqualTo(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.EqualTo(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs == scalar elemenwise.
@@ -84,7 +85,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix EqualTo(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.LessOrEqual(lhs.variable, rhs));
+        public static Matrix EqualTo(Matrix lhs, float rhs) => Matrix.Out(Global.OP.LessOrEqual(lhs.variable, rhs));
 
         /// <summary>
         /// Performs lhs != rhs elemenwise.
@@ -92,7 +93,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix NotEqualTo(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.NotEqual(lhs.variable, rhs.variable));
+        public static Matrix NotEqualTo(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.NotEqual(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs != scalar elemenwise.
@@ -100,7 +101,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Matrix NotEqualTo(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.NotEqual(lhs.variable, rhs));
+        public static Matrix NotEqualTo(Matrix lhs, float rhs) => Matrix.Out(Global.OP.NotEqual(lhs.variable, rhs));
 
         /// <summary>
         /// Find the maximum between two matrix elemenwise
@@ -108,7 +109,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix Maximum(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Maximum(lhs.variable, rhs.variable));
+        public static Matrix Maximum(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Maximum(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Find the maximum between matrix and scalar value
@@ -116,7 +117,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="lhs">The LHS matrix.</param>
         /// <param name="rhs">The RHS matrix.</param>
         /// <returns></returns>
-        public static Matrix Maximum(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Maximum(lhs.variable, rhs));
+        public static Matrix Maximum(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Maximum(lhs.variable, rhs));
 
     }
 }

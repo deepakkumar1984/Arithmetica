@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,17 +13,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The second matrix.</param>
         /// <returns></returns>
-        public static Matrix Dot(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Dot(lhs.variable, rhs.variable));
-
-        /// <summary>The addmm function is an optimized version of the equation beta*mat + alpha*(mat1 @ mat2)</summary>
-        /// <param name="beta">The beta value.</param>
-        /// <param name="src">The source matrix.</param>
-        /// <param name="alpha">The alpha value.</param>
-        /// <param name="m1">The first 2D matrix.</param>
-        /// <param name="m2">The second 2D matrix.</param>
-        /// <returns></returns>
-        public static Matrix Addmm(float beta, Matrix src, float alpha, Matrix m1, Matrix m2)
-            => Matrix.Out(ArrayOps.Addmm(beta, src.variable, alpha, m1.variable, m2.variable));
+        public static Matrix Dot(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Dot(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs elementwise add operation between two matrix
@@ -30,7 +21,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The second matrix.</param>
         /// <returns></returns>
-        public static Matrix Add(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Add(lhs.variable, rhs.variable));
+        public static Matrix Add(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Add(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs elementwise add operation between matrix and scalar
@@ -38,7 +29,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Add(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Add(lhs.variable, rhs));
+        public static Matrix Add(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Add(lhs.variable, rhs));
 
         /// <summary>
         /// Performs elementwise add operation between scalar and matrix
@@ -46,7 +37,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Add(float lhs, Matrix rhs) => Matrix.Out(ArrayOps.Add(rhs.variable, lhs));
+        public static Matrix Add(float lhs, Matrix rhs) => Matrix.Out(Global.OP.Add(rhs.variable, lhs));
 
         /// <summary>
         /// Performs elementwise subtract operation between two matrix
@@ -54,7 +45,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The second matrix.</param>
         /// <returns></returns>
-        public static Matrix Sub(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Sub(lhs.variable, rhs.variable));
+        public static Matrix Sub(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Sub(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs elementwise subtract operation between scalar and matrix
@@ -62,7 +53,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Sub(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Sub(lhs.variable, rhs));
+        public static Matrix Sub(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Sub(lhs.variable, rhs));
 
         /// <summary>
         /// Performs elementwise multiplication operation between two matrix
@@ -70,7 +61,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The second matrix.</param>
         /// <returns></returns>
-        public static Matrix Sub(float lhs, Matrix rhs) => Matrix.Out(ArrayOps.Sub(lhs, rhs.variable));
+        public static Matrix Sub(float lhs, Matrix rhs) => Matrix.Out(Global.OP.Sub(lhs, rhs.variable));
 
         /// <summary>
         /// Performs elementwise multiplication operation between matrix and scalar
@@ -78,7 +69,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Mul(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Mul(lhs.variable, rhs.variable));
+        public static Matrix Mul(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Mul(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs elementwise multiplication operation between matrix and scalar
@@ -86,7 +77,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Mul(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Mul(lhs.variable, rhs));
+        public static Matrix Mul(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Mul(lhs.variable, rhs));
 
         /// <summary>
         /// Performs elementwise multiplication operation between scalar and matrix
@@ -94,7 +85,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Mul(float lhs, Matrix rhs) => Matrix.Out(ArrayOps.Mul(rhs.variable, lhs));
+        public static Matrix Mul(float lhs, Matrix rhs) => Matrix.Out(Global.OP.Mul(rhs.variable, lhs));
 
         /// <summary>
         /// Performs elementwise divide operation between two matrix
@@ -102,7 +93,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The second matrix.</param>
         /// <returns></returns>
-        public static Matrix Div(Matrix lhs, Matrix rhs) => Matrix.Out(ArrayOps.Div(lhs.variable, rhs.variable));
+        public static Matrix Div(Matrix lhs, Matrix rhs) => Matrix.Out(Global.OP.Div(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs elementwise divide operation between matrix and scalar
@@ -110,7 +101,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Div(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Div(lhs.variable, rhs));
+        public static Matrix Div(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Div(lhs.variable, rhs));
 
         /// <summary>
         /// Performs elementwise divide operation between scalar and matrix
@@ -118,7 +109,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Div(float lhs, Matrix rhs) => Matrix.Out(ArrayOps.Div(lhs, rhs.variable));
+        public static Matrix Div(float lhs, Matrix rhs) => Matrix.Out(Global.OP.Div(lhs, rhs.variable));
 
         /// <summary>
         /// Performs elementwise divide modulus for the first matrix against a scalar value
@@ -126,21 +117,21 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="lhs">The first matrix.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Mod(Matrix lhs, float rhs) => Matrix.Out(ArrayOps.Mod(lhs.variable, rhs));
+        public static Matrix Mod(Matrix lhs, float rhs) => Matrix.Out(Global.OP.Mod(lhs.variable, rhs));
 
         /// <summary>
         /// Negates the specified matrix.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Neg(Matrix src) => Matrix.Out(ArrayOps.Neg(src.variable));
+        public static Matrix Neg(Matrix src) => Matrix.Out(Global.OP.Neg(src.variable));
 
         /// <summary>
         /// Finds the elementwise absolute value of the matrix
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Abs(Matrix src) => Matrix.Out(ArrayOps.Abs(src.variable));
+        public static Matrix Abs(Matrix src) => Matrix.Out(Global.OP.Abs(src.variable));
 
         /// <summary>
         /// Returns an element-wise indication of the sign of a number. The sign function returns -1 if x< 0, 0 if x==0, 1 if x> 0. nan is returned for nan inputs.
@@ -148,7 +139,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Sign(Matrix src) => Matrix.Out(ArrayOps.Sign(src.variable));
+        public static Matrix Sign(Matrix src) => Matrix.Out(Global.OP.Sign(src.variable));
 
         /// <summary>
         /// Finds the linear interpolation is a method of curve fitting using linear polynomials to construct new data points within the range of a discrete set of known data points.
@@ -157,6 +148,6 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="b">The second matrix.</param>
         /// <param name="weight">The weight.</param>
         /// <returns></returns>
-        public static Matrix Lerp(Matrix a, Matrix b, float weight) => Matrix.Out(ArrayOps.Lerp(a.variable, b.variable, weight));
+        public static Matrix Lerp(Matrix a, Matrix b, float weight) => Matrix.Out(Global.OP.Lerp(a.variable, b.variable, weight));
     }
 }

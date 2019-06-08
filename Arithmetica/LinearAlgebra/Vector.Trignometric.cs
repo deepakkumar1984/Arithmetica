@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,42 +12,42 @@ namespace Arithmetica.LinearAlgebra
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Sin(Vector<T> src) => ArrayOps.Sin(src.variable);
+        public static SuperArray Sin(Vector<T> src) => Global.OP.Sin(src.variable);
 
         /// <summary>
         /// Performs Trigonometric cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Cos(Vector<T> src) => ArrayOps.Cos(src.variable);
+        public static SuperArray Cos(Vector<T> src) => Global.OP.Cos(src.variable);
 
         /// <summary>
         /// Performs Trigonometric tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Tan(Vector<T> src) => ArrayOps.Tan(src.variable);
+        public static SuperArray Tan(Vector<T> src) => Global.OP.Tan(src.variable);
 
         /// <summary>
         /// Performs inverse sine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Asin(Vector<T> src) => ArrayOps.Asin(src.variable);
+        public static SuperArray Asin(Vector<T> src) => Global.OP.Asin(src.variable);
 
         /// <summary>
         /// Performs inverse cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Acos(Vector<T> src) => ArrayOps.Acos(src.variable);
+        public static SuperArray Acos(Vector<T> src) => Global.OP.Acos(src.variable);
 
         /// <summary>
         /// Performs inverse tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Atan(Vector<T> src) => ArrayOps.Atan(src.variable);
+        public static SuperArray Atan(Vector<T> src) => Global.OP.Atan(src.variable);
 
         /// <summary>
         /// Element-wise arc tangent of x1/x2 choosing the quadrant correctly.
@@ -54,28 +55,28 @@ namespace Arithmetica.LinearAlgebra
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Atan2(Vector<T> srcY, Vector<T> srcX) => ArrayOps.Atan2(srcY.variable, srcX.variable);
+        public static SuperArray Atan2(Vector<T> srcY, Vector<T> srcX) => Global.OP.Atan2(srcY.variable, srcX.variable);
 
         /// <summary>
         /// Performs hyperbolic sine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Sinh(Vector<T> src) => ArrayOps.Sinh(src.variable);
+        public static SuperArray Sinh(Vector<T> src) => Global.OP.Sinh(src.variable);
 
         /// <summary>
         /// Performs hyperbolic cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Cosh(Vector<T> src) => ArrayOps.Cosh(src.variable);
+        public static SuperArray Cosh(Vector<T> src) => Global.OP.Cosh(src.variable);
 
         /// <summary>
         /// Performs hyperbolic tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static ArithArray Tanh(Vector<T> src) => ArrayOps.Tanh(src.variable);
+        public static SuperArray Tanh(Vector<T> src) => Global.OP.Tanh(src.variable);
 
 
     }

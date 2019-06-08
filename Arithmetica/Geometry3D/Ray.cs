@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using System.ComponentModel;
 
-using Arithmetica.Core;
 using Arithmetica.LinearAlgebra.Single;
 using Arithmetica.Exceptions;
 

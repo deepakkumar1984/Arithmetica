@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-using Arithmetica.Core;
 using System.Xml.Serialization;
 using System.ComponentModel;
 using Arithmetica.LinearAlgebra.Single;

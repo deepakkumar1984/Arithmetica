@@ -7,6 +7,7 @@ using System.IO;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using Arithmetica.LinearAlgebra.Single;
+using SuperchargedArray;
 
 namespace Arithmetica.Imaging
 {
@@ -15,7 +16,7 @@ namespace Arithmetica.Imaging
     /// </summary>
     public partial class Image
     {
-        internal ArithArray variable;
+        internal SuperArray variable;
 
         /// <summary>
         /// Gets the size of the image.
@@ -79,14 +80,14 @@ namespace Arithmetica.Imaging
         /// <param name="size">The size of the image.</param>
         public Image(int channel, int height, int width, int size = 1)
         {
-            variable = new ArithArray(size, channel, height, width);
+            variable = new SuperArray(size, channel, height, width);
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Image"/> class.
         /// </summary>
         /// <param name="v">The arith array which is a generalised array.</param>
-        private Image(ArithArray v)
+        private Image(SuperArray v)
         {
             variable = v;
         }
@@ -96,7 +97,7 @@ namespace Arithmetica.Imaging
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static ArithArray In(Image x)
+        internal static SuperArray In(Image x)
         {
             return x.variable;
         }
@@ -106,7 +107,7 @@ namespace Arithmetica.Imaging
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static Image Out(ArithArray x)
+        internal static Image Out(SuperArray x)
         {
             return new Image(x);
         }
@@ -117,7 +118,7 @@ namespace Arithmetica.Imaging
         /// <value>
         /// The arith array.
         /// </value>
-        public ArithArray ArithArray
+        public SuperArray SuperArray
         {
             get
             {
@@ -173,7 +174,7 @@ namespace Arithmetica.Imaging
 
             var imgdata = ImgToFloat(mat, W, H, C);
 
-            ArithArray result = new ArithArray(1, H, W, C);
+            SuperArray result = new SuperArray(1, H, W, C);
             result.LoadFrom(imgdata);
             result = result.Transpose(0, 3, 1, 2);
             return Out(result);
@@ -194,7 +195,7 @@ namespace Arithmetica.Imaging
 
             var imgdata = ImgToFloat(mat, W, H, C);
 
-            ArithArray result = new ArithArray(1, H, W, C);
+            SuperArray result = new SuperArray(1, H, W, C);
             result.LoadFrom(imgdata);
             result = result.Transpose(0, 3, 1, 2);
             return Out(result);
@@ -273,7 +274,7 @@ namespace Arithmetica.Imaging
                 data.AddRange(imgdata);
             }
 
-            ArithArray result = new ArithArray(files.Count(), height, width, C);
+            SuperArray result = new SuperArray(files.Count(), height, width, C);
             result.LoadFrom(data.ToArray());
             result = result.Transpose(0, 3, 1, 2);
             return Out(result);
@@ -292,7 +293,7 @@ namespace Arithmetica.Imaging
             get
             {
                 
-                var data = ArrayOps.NewContiguous(variable.Select(0, index));
+                var data = Helper.NewContiguous(variable.Select(0, index));
                 Image img = new Image(Channel, Height, Width);
                 img.LoadData(data.ToArray());
                 return img;
@@ -601,7 +602,7 @@ namespace Arithmetica.Imaging
                 data.AddRange(ImgToFloat(mat, mat.Width, mat.Height, mat.Channels()));
             }
 
-            var result = new ArithArray(1, H, W, Channel);
+            var result = new SuperArray(1, H, W, Channel);
             result.LoadFrom(data.ToArray());
             result = result.Transpose(0, 3, 1, 2);
             return Out(result);
@@ -623,7 +624,7 @@ namespace Arithmetica.Imaging
                 data.AddRange(variable.GetRegion(new long[] { i, 0, y, x }, new long[] { 1, Channel, width, height }).DataFloat);
             }
 
-            var result = new ArithArray(1, Channel, height, width);
+            var result = new SuperArray(1, Channel, height, width);
             result.LoadFrom(data.ToArray());
             return Out(result);
         }
@@ -642,7 +643,8 @@ namespace Arithmetica.Imaging
                 imageMats.Clear();
                 for (int j = 0; j < Channel; j++)
                 {
-                    imageMats.Add(Matrix.Out(ArrayOps.NewContiguous(variable.Select(0, i).Select(0, j))));
+                    
+                    imageMats.Add(Matrix.Out(Helper.NewContiguous(variable.Select(0, i).Select(0, j))));
                 }
 
                 result.Add(imageMats);
@@ -663,7 +665,7 @@ namespace Arithmetica.Imaging
             var img = this[index];
             for (int i = 0; i < img.Channel; i++)
             {
-                result.Add(Matrix.Out(ArrayOps.NewContiguous(img.variable.Select(0, 0).Select(0, i))));
+                result.Add(Matrix.Out(Helper.NewContiguous(img.variable.Select(0, 0).Select(0, i))));
             }
 
             return result;

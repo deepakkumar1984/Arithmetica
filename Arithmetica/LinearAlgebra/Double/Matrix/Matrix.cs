@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +10,7 @@ namespace Arithmetica.LinearAlgebra.Double
     /// </summary>
     public partial class Matrix
     {
-        internal ArithArray variable;
+        internal SuperArray variable;
 
         /// <summary>
         /// Gets the rows of the matrix
@@ -46,14 +47,14 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="cols">The cols.</param>
         public Matrix(long rows, long cols)
         {
-            variable = new ArithArray(new long[] { rows, cols }, DType.Float64);
+            variable = new SuperArray(new long[] { rows, cols }, DType.Double);
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Matrix"/> class.
         /// </summary>
         /// <param name="v">The arith array.</param>
-        private Matrix(ArithArray v)
+        private Matrix(SuperArray v)
         {
             variable = v;
         }
@@ -65,7 +66,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Matrix3x2(params double[] data)
         {
-            var x = new ArithArray(new long[] { 3, 2 });
+            var x = new SuperArray(new long[] { 3, 2 });
             if(data.Length == 6)
             {
                 x.LoadFrom(data);
@@ -81,7 +82,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Matrix4x4(params double[] data)
         {
-            var x = new ArithArray(new long[] { 4, 4 });
+            var x = new SuperArray(new long[] { 4, 4 });
             if (data.Length == 8)
             {
                 x.LoadFrom(data);
@@ -98,7 +99,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Ones(int rows, int cols)
         {
-            var x = new ArithArray(new long[] { rows, cols });
+            var x = new SuperArray(new long[] { rows, cols });
             x.Fill(1);
             return Out(x);
         }
@@ -111,7 +112,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Zeros(int rows, int cols)
         {
-            var x = new ArithArray(new long[] { rows, cols });
+            var x = new SuperArray(new long[] { rows, cols });
             x.Fill(0);
             return Out(x);
         }
@@ -123,9 +124,9 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Diagonal(params double[] data)
         {
-            var x = new ArithArray(new long[] { data.Length, 1 });
+            var x = new SuperArray(new long[] { data.Length, 1 });
             x.LoadFrom(data);
-            x = ArrayOps.Diag(x);
+            x = Global.OP.Diag(x);
             return Out(x);
         }
 
@@ -136,9 +137,9 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Matrix Identity(int diagElementCount)
         {
-            var x = new ArithArray(new long[] { diagElementCount });
+            var x = new SuperArray(new long[] { diagElementCount });
             x.Fill(1);
-            x = ArrayOps.Diag(x);
+            x = Global.OP.Diag(x);
             return Out(x);
         }
 
@@ -151,12 +152,12 @@ namespace Arithmetica.LinearAlgebra.Double
             variable.LoadFrom(data);
         }
 
-        internal static ArithArray In(Matrix x)
+        internal static SuperArray In(Matrix x)
         {
             return x.variable;
         }
 
-        internal static Matrix Out(ArithArray x)
+        internal static Matrix Out(SuperArray x)
         {
             return new Matrix(x);
         }
@@ -167,7 +168,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <value>
         /// The arith array.
         /// </value>
-        public ArithArray ArithArray
+        public SuperArray SuperArray
         {
             get
             {

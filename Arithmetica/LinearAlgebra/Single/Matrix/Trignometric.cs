@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperchargedArray;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,42 +12,42 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Sin(Matrix src) => Matrix.Out(ArrayOps.Sin(src.variable));
+        public static Matrix Sin(Matrix src) => Matrix.Out(Global.OP.Sin(src.variable));
 
         /// <summary>
         /// Performs Trigonometric cosine, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Cos(Matrix src) => Matrix.Out(ArrayOps.Cos(src.variable));
+        public static Matrix Cos(Matrix src) => Matrix.Out(Global.OP.Cos(src.variable));
 
         /// <summary>
         /// Performs Trigonometric tangent, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Tan(Matrix src) => Matrix.Out(ArrayOps.Tan(src.variable));
+        public static Matrix Tan(Matrix src) => Matrix.Out(Global.OP.Tan(src.variable));
 
         /// <summary>
         /// Performs inverse sine, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Asin(Matrix src) => Matrix.Out(ArrayOps.Asin(src.variable));
+        public static Matrix Asin(Matrix src) => Matrix.Out(Global.OP.Asin(src.variable));
 
         /// <summary>
         /// Performs inverse cosine, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Acos(Matrix src) => Matrix.Out(ArrayOps.Acos(src.variable));
+        public static Matrix Acos(Matrix src) => Matrix.Out(Global.OP.Acos(src.variable));
 
         /// <summary>
         /// Performs inverse tangent, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Atan(Matrix src) => Matrix.Out(ArrayOps.Atan(src.variable));
+        public static Matrix Atan(Matrix src) => Matrix.Out(Global.OP.Atan(src.variable));
 
         /// <summary>
         /// Element-wise arc tangent of x1/x2 choosing the quadrant correctly.
@@ -54,28 +55,28 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Atan2(Matrix srcY, Matrix srcX) => Matrix.Out(ArrayOps.Atan2(srcY.variable, srcX.variable));
+        public static Matrix Atan2(Matrix srcY, Matrix srcX) => Matrix.Out(Global.OP.Atan2(srcY.variable, srcX.variable));
 
         /// <summary>
         /// Performs hyperbolic sine, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Sinh(Matrix src) => Matrix.Out(ArrayOps.Sinh(src.variable));
+        public static Matrix Sinh(Matrix src) => Matrix.Out(Global.OP.Sinh(src.variable));
 
         /// <summary>
         /// Performs hyperbolic cosine, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Cosh(Matrix src) => Matrix.Out(ArrayOps.Cosh(src.variable));
+        public static Matrix Cosh(Matrix src) => Matrix.Out(Global.OP.Cosh(src.variable));
 
         /// <summary>
         /// Performs hyperbolic tangent, element-wise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Tanh(Matrix src) => Matrix.Out(ArrayOps.Tanh(src.variable));
+        public static Matrix Tanh(Matrix src) => Matrix.Out(Global.OP.Tanh(src.variable));
 
 
     }

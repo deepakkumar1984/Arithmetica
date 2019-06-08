@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using Arithmetica.Core;
 using Arithmetica.LinearAlgebra.Single;
 using Arithmetica.Exceptions;
 #endregion

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.7.0</Version>
+    <Version>0.8.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,25 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="lib\arith_ops.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="lib\libgcc_s_seh-1.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="lib\libgfortran-3.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="lib\libopenblas.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="lib\libquadmath-0.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Compile Remove="Quantum\Circuit.cs" />
+    <Compile Remove="Quantum\Gate\ControlledNot.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Quantum\Circuit.cs" />
-    <Compile Remove="Quantum\Gate\ControlledNot.cs" />
+    <ProjectReference Include="..\..\SuperchargedArray\SuperchargedArray\SuperchargedArray.csproj" />
   </ItemGroup>
 </Project>
