@@ -69,20 +69,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Arithmetica.Quantum.QuantumCircuit">
-  
-  
-  <h1 id="Arithmetica_Quantum_QuantumCircuit" data-uid="Arithmetica.Quantum.QuantumCircuit" class="text-break">Class QuantumCircuit
+  <h1 id="Arithmetica_Quantum_QuantumCircuit" data-uid="Arithmetica.Quantum.QuantumCircuit">Class QuantumCircuit
   </h1>
   <div class="markdown level0 summary"><p>A quantum circuit is a model for quantum computation in which a computation is a sequence of quantum gates,
 which are reversible transformations on a quantum mechanical analog of an n-bit register.
 This analogous structure is referred to as an n-qubit register.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">QuantumCircuit</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -107,395 +108,822 @@ This analogous structure is referred to as an n-qubit register.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Quantum.html">Arithmetica.Quantum</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Arithmetica.Quantum.dll</h6>
+  
   <h5 id="Arithmetica_Quantum_QuantumCircuit_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class QuantumCircuit</code></pre>
   </div>
+
+  
+  
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.%23ctor(Arithmetica.Quantum.QuantumRegister%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.%23ctor(Arithmetica.Quantum.QuantumRegister%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L44">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L46" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit__ctor_" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor(Arithmetica.Quantum.QuantumRegister[])">QuantumCircuit(QuantumRegister[])</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor(Arithmetica.Quantum.QuantumRegister[])"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___" class="expander" data-toggle="collapse">QuantumCircuit(QuantumRegister[])</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Quantum.QuantumCircuit.html">QuantumCircuit</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public QuantumCircuit(params QuantumRegister[] registers)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a>[]</td>
-        <td><span class="parametername">registers</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a>[]</span>
+        <span class="parametername">registers</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.%23ctor(Arithmetica.Quantum.QuantumRegister%5B%5D%2CArithmetica.Quantum.CircuitProgram)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.%23ctor(Arithmetica.Quantum.QuantumRegister%5B%5D%2CArithmetica.Quantum.CircuitProgram)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L62">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L65" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit__ctor_" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor(Arithmetica.Quantum.QuantumRegister[],Arithmetica.Quantum.CircuitProgram)">QuantumCircuit(QuantumRegister[], CircuitProgram)</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_" data-uid="Arithmetica.Quantum.QuantumCircuit.#ctor(Arithmetica.Quantum.QuantumRegister[],Arithmetica.Quantum.CircuitProgram)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_" class="expander" data-toggle="collapse">QuantumCircuit(QuantumRegister[], CircuitProgram)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit__ctor_Arithmetica_Quantum_QuantumRegister___Arithmetica_Quantum_CircuitProgram_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Quantum.QuantumCircuit.html">QuantumCircuit</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public QuantumCircuit(QuantumRegister[] registers, CircuitProgram program)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a>[]</td>
-        <td><span class="parametername">registers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.CircuitProgram.html">CircuitProgram</a></td>
-        <td><span class="parametername">program</span></td>
-        <td><p>The program.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a>[]</span>
+        <span class="parametername">registers</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Arithmetica.Quantum.CircuitProgram.html">CircuitProgram</a></span>
+        <span class="parametername">program</span>
+        <p><p>The program.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Debug.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Debug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L38">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L40" title="View Source"><i class="fa fa-code"></i></a>
   </span>
-  <a id="Arithmetica_Quantum_QuantumCircuit_Debug_" data-uid="Arithmetica.Quantum.QuantumCircuit.Debug*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_Debug" data-uid="Arithmetica.Quantum.QuantumCircuit.Debug">Debug</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this <a class="xref" href="Arithmetica.Quantum.QuantumCircuit.html">QuantumCircuit</a> is debug.</p>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob_" data-uid="Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob" data-uid="Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob" class="expander" data-toggle="collapse">ExecuteWithJob</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating to run the circuit with a job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Debug { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ExecuteWithJob { get; set; }</code></pre>
   </div>
+
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if debug; otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if ExecuteWithJob; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Program.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Program%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Program.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Program%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L22">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_Program_" data-uid="Arithmetica.Quantum.QuantumCircuit.Program*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_Program" data-uid="Arithmetica.Quantum.QuantumCircuit.Program">Program</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Program" data-uid="Arithmetica.Quantum.QuantumCircuit.Program"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Program" class="expander" data-toggle="collapse">Program</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Program" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CircuitProgram Program { get; }</code></pre>
   </div>
+
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.CircuitProgram.html">CircuitProgram</a></td>
-        <td><p>The program.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Arithmetica.Quantum.CircuitProgram.html">CircuitProgram</a>
+        <p><p>The program.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Register.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Register.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L30">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_Register_" data-uid="Arithmetica.Quantum.QuantumCircuit.Register*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_Register" data-uid="Arithmetica.Quantum.QuantumCircuit.Register">Register</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Register" data-uid="Arithmetica.Quantum.QuantumCircuit.Register"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Register" class="expander" data-toggle="collapse">Register</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Register" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the register.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public QuantumRegister Register { get; }</code></pre>
   </div>
+
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a></td>
-        <td><p>The register.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Arithmetica.Quantum.QuantumRegister.html">QuantumRegister</a>
+        <p><p>The register.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.CNOT(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.CNOT(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L103">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L192" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_CNOT_" data-uid="Arithmetica.Quantum.QuantumCircuit.CNOT*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.CNOT(System.Int32,System.Int32)">CNOT(Int32, Int32)</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.CNOT(System.Int32,System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_" class="expander" data-toggle="collapse">CNOT(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_CNOT_System_Int32_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Apply the Controlled Not gate</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void CNOT(int firstBit, int secondBit)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">firstBit</span></td>
-        <td><p>The first bit.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">secondBit</span></td>
-        <td><p>The second bit.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">firstBit</span>
+        <p><p>The first bit.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">secondBit</span>
+        <p><p>The second bit.</p>
+</p>
+      </td>
+    </tr>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Collapse_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L118">View Source</a>
-  </span>
-  <a id="Arithmetica_Quantum_QuantumCircuit_Collapse_" data-uid="Arithmetica.Quantum.QuantumCircuit.Collapse*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_Collapse_System_Nullable_System_Int32__" data-uid="Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable{System.Int32})">Collapse(Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"><p>Apply the collapse gate to measure the quantum register</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Collapse(int? index = default(int? ))</code></pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Execute(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Execute(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L143">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L233" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_Execute_" data-uid="Arithmetica.Quantum.QuantumCircuit.Execute*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.Execute(System.Int32)">Execute(Int32)</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.Execute(System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_" class="expander" data-toggle="collapse">Execute(Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Executes the circuit and run for specified number of shots to capture all the possibilities.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Execute(int shots = 1024)</code></pre>
+    <pre><code class="lang-csharp hljs">public CircuitResult Execute(int shots = 1024)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">shots</span></td>
-        <td><p>The shots.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">shots</span>
+        <p><p>The shots.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Arithmetica.Quantum.CircuitResult.html">CircuitResult</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.QuantumException.html">QuantumException</a></td>
-        <td><p>Cannot execute job in debug mode</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Arithmetica.Quantum.QuantumException.html">QuantumException</a>
+        <p><p>Cannot execute job in debug mode</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_H_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.H(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_H_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.H(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L72">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L86" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_H_" data-uid="Arithmetica.Quantum.QuantumCircuit.H*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_H_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.H(System.Int32)">H(Int32)</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_H_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.H(System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_H_System_Int32_" class="expander" data-toggle="collapse">H(Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_H_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Apply the Hadamard gate</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void H(int index)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The index.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_X_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.X(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_INIT_System_Int32_Arithmetica_Quantum_Qubit_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.INIT(System.Int32%2CArithmetica.Quantum.Qubit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L87">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L71" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_INIT_" data-uid="Arithmetica.Quantum.QuantumCircuit.INIT*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_INIT_System_Int32_Arithmetica_Quantum_Qubit_" data-uid="Arithmetica.Quantum.QuantumCircuit.INIT(System.Int32,Arithmetica.Quantum.Qubit)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_INIT_System_Int32_Arithmetica_Quantum_Qubit_" class="expander" data-toggle="collapse">INIT(Int32, Qubit)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_INIT_System_Int32_Arithmetica_Quantum_Qubit_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void INIT(int index, Qubit initState)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Arithmetica.Quantum.Qubit.html">Qubit</a></span>
+        <span class="parametername">initState</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Measure_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L208" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Measure_" data-uid="Arithmetica.Quantum.QuantumCircuit.Measure*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Measure_System_Nullable_System_Int32__" data-uid="Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable{System.Int32})"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Measure_System_Nullable_System_Int32__" class="expander" data-toggle="collapse">Measure(Nullable&lt;Int32&gt;)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Measure_System_Nullable_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"><p>Apply the collapse gate to measure the quantum register</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Measure(int? index = default(int? ))</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">index</span>
+        <p><p>The index.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Rx_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Rx(System.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L146" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Rx_" data-uid="Arithmetica.Quantum.QuantumCircuit.Rx*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Rx_System_Int32_System_Double_" data-uid="Arithmetica.Quantum.QuantumCircuit.Rx(System.Int32,System.Double)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Rx_System_Int32_System_Double_" class="expander" data-toggle="collapse">Rx(Int32, Double)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Rx_System_Int32_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"><p>Apply Rotation X Gate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rx(int index, double theta)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">theta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Ry_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Ry(System.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L161" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Ry_" data-uid="Arithmetica.Quantum.QuantumCircuit.Ry*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Ry_System_Int32_System_Double_" data-uid="Arithmetica.Quantum.QuantumCircuit.Ry(System.Int32,System.Double)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Ry_System_Int32_System_Double_" class="expander" data-toggle="collapse">Ry(Int32, Double)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Ry_System_Int32_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Ry(int index, double theta)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">theta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Rz_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Rz(System.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L176" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Rz_" data-uid="Arithmetica.Quantum.QuantumCircuit.Rz*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Rz_System_Int32_System_Double_" data-uid="Arithmetica.Quantum.QuantumCircuit.Rz(System.Int32,System.Double)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Rz_System_Int32_System_Double_" class="expander" data-toggle="collapse">Rz(Int32, Double)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Rz_System_Int32_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rz(int index, double theta)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">theta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_X_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.X(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L101" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
   <a id="Arithmetica_Quantum_QuantumCircuit_X_" data-uid="Arithmetica.Quantum.QuantumCircuit.X*"></a>
-  <h4 id="Arithmetica_Quantum_QuantumCircuit_X_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.X(System.Int32)">X(Int32)</h4>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_X_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.X(System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_X_System_Int32_" class="expander" data-toggle="collapse">X(Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_X_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Apply the PauliX gate (NOT gate)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void X(int index)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The index.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Y_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Y(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L116" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Y_" data-uid="Arithmetica.Quantum.QuantumCircuit.Y*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Y_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.Y(System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Y_System_Int32_" class="expander" data-toggle="collapse">Y(Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Y_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Apply Pauli Y Gate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Y(int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit_Z_System_Int32_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit.Z(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L131" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Arithmetica_Quantum_QuantumCircuit_Z_" data-uid="Arithmetica.Quantum.QuantumCircuit.Z*"></a>
+  
+  <h4 id="Arithmetica_Quantum_QuantumCircuit_Z_System_Int32_" data-uid="Arithmetica.Quantum.QuantumCircuit.Z(System.Int32)"><a href="#collapsible-Arithmetica_Quantum_QuantumCircuit_Z_System_Int32_" class="expander" data-toggle="collapse">Z(Int32)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_QuantumCircuit_Z_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Apply Pauli Z Gate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Z(int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L16" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_QuantumCircuit.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.QuantumCircuit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/QuantumCircuit.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

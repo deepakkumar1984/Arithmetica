@@ -1,4 +1,6 @@
 ﻿using System;
+using Arithmetica.Geometry2D;
+using Arithmetica.LinearAlgebra.Single;
 
 namespace Examples
 {
@@ -6,6 +8,8 @@ namespace Examples
     {
         static void Main(string[] args)
         {
+            new Basics().Run();
+
             Console.ReadLine();
         }
     }

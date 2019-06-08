@@ -65,7 +65,7 @@ namespace Arithmetica.Quantum
                 Probability result = Result.FirstOrDefault(x => (x.QuantumValue == qvalue));
                 if (result == null)
                 {
-                    result = new Probability() { QuantumValue = qvalue, Count = 1 };
+                    result = new Probability() { QuantumValue = qvalue, Count = 0 };
                     Result.Add(result);
                 }
 
@@ -76,7 +76,7 @@ namespace Arithmetica.Quantum
                 Probability result = Result.FirstOrDefault(x => (x.QuantumValue == qvalue));
                 if (result == null)
                 {
-                    result = new Probability() { QuantumValue = qvalue, Count = 1 };
+                    result = new Probability() { QuantumValue = qvalue, Count = 0 };
                     Result.Add(result);
                 }
 

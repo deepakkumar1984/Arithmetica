@@ -1130,14 +1130,26 @@ namespace Arithmetica.LinearAlgebra.Single
 			}
 			return false;
 		}
+
 		/// <summary>
 		/// Returns a string representation of this object.
 		/// </summary>
 		/// <returns>A string representation of this object.</returns>
 		public override string ToString()
 		{
-			return string.Format("({0}, {1})", _real, _image);
+			return string.Format("({0}{1} {2} {3}i)", GetSign(_real), _real, GetSign(_image, 1), _image);
 		}
+
+        private string GetSign(float value, int index = 0)
+        {
+            if (index == 0)
+                return "";
+
+            if (value < 0)
+                return "-";
+
+                return "+";
+        }
 		#endregion
 
 		#region Comparison Operators

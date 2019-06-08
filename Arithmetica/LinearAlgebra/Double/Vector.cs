@@ -12,7 +12,7 @@ namespace Arithmetica.LinearAlgebra.Double
     /// </summary>
     /// <seealso cref="Arithmetica.LinearAlgebra.Vector{System.Double}" />
     /// <seealso cref="System.IFormattable" />
-    public class Vector : LinearAlgebra.Vector<double>, IFormattable
+    public class DoubleVector : LinearAlgebra.Vector<double>, IFormattable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector"/> class.
@@ -61,7 +61,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// </returns>
         public static implicit operator Vector(SuperArray variable)
         {
-            return new Vector(variable);
+            return new DoubleVector(variable);
         }
 
         /// <summary>

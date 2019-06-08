@@ -9268,6 +9268,73 @@ references:
   isSpec: "True"
   fullName: Arithmetica.LinearAlgebra.Double.ComplexVector.Zero
   nameWithType: ComplexVector.Zero
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector
+  name: DoubleVector
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html
+  commentId: T:Arithmetica.LinearAlgebra.Double.DoubleVector
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector
+  nameWithType: DoubleVector
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.#ctor(System.Int32)
+  name: DoubleVector(Int32)
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector__ctor_System_Int32_
+  commentId: M:Arithmetica.LinearAlgebra.Double.DoubleVector.#ctor(System.Int32)
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.DoubleVector(System.Int32)
+  nameWithType: DoubleVector.DoubleVector(Int32)
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.#ctor*
+  name: DoubleVector
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector__ctor_
+  commentId: Overload:Arithmetica.LinearAlgebra.Double.DoubleVector.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.DoubleVector
+  nameWithType: DoubleVector.DoubleVector
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.Item(System.Int32)
+  name: Item[Int32]
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_Item_System_Int32_
+  commentId: P:Arithmetica.LinearAlgebra.Double.DoubleVector.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.Item[System.Int32]
+  fullName.vb: Arithmetica.LinearAlgebra.Double.DoubleVector.Item(System.Int32)
+  nameWithType: DoubleVector.Item[Int32]
+  nameWithType.vb: DoubleVector.Item(Int32)
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.Item*
+  name: Item
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_Item_
+  commentId: Overload:Arithmetica.LinearAlgebra.Double.DoubleVector.Item
+  isSpec: "True"
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.Item
+  nameWithType: DoubleVector.Item
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Double.DoubleVector
+  name: Implicit(ArithArray to DoubleVector)
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_op_Implicit_Arithmetica_ArithArray__Arithmetica_LinearAlgebra_Double_DoubleVector
+  commentId: M:Arithmetica.LinearAlgebra.Double.DoubleVector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Double.DoubleVector
+  name.vb: Widening(ArithArray to DoubleVector)
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.Implicit(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Double.DoubleVector)
+  fullName.vb: Arithmetica.LinearAlgebra.Double.DoubleVector.Widening(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Double.DoubleVector)
+  nameWithType: DoubleVector.Implicit(ArithArray to DoubleVector)
+  nameWithType.vb: DoubleVector.Widening(ArithArray to DoubleVector)
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.op_Implicit*
+  name: Implicit
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_op_Implicit_
+  commentId: Overload:Arithmetica.LinearAlgebra.Double.DoubleVector.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.Implicit
+  fullName.vb: Arithmetica.LinearAlgebra.Double.DoubleVector.Widening
+  nameWithType: DoubleVector.Implicit
+  nameWithType.vb: DoubleVector.Widening
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.ToString
+  name: ToString()
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_ToString
+  commentId: M:Arithmetica.LinearAlgebra.Double.DoubleVector.ToString
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.ToString()
+  nameWithType: DoubleVector.ToString()
+- uid: Arithmetica.LinearAlgebra.Double.DoubleVector.ToString*
+  name: ToString
+  href: api/Arithmetica.LinearAlgebra.Double.DoubleVector.html#Arithmetica_LinearAlgebra_Double_DoubleVector_ToString_
+  commentId: Overload:Arithmetica.LinearAlgebra.Double.DoubleVector.ToString
+  isSpec: "True"
+  fullName: Arithmetica.LinearAlgebra.Double.DoubleVector.ToString
+  nameWithType: DoubleVector.ToString
 - uid: Arithmetica.LinearAlgebra.Double.Interval
   name: Interval
   href: api/Arithmetica.LinearAlgebra.Double.Interval.html
@@ -13609,73 +13676,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.LinearAlgebra.Double.Sampler.Uniform
   nameWithType: Sampler.Uniform
-- uid: Arithmetica.LinearAlgebra.Double.Vector
-  name: Vector
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html
-  commentId: T:Arithmetica.LinearAlgebra.Double.Vector
-  fullName: Arithmetica.LinearAlgebra.Double.Vector
-  nameWithType: Vector
-- uid: Arithmetica.LinearAlgebra.Double.Vector.#ctor(System.Int32)
-  name: Vector(Int32)
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector__ctor_System_Int32_
-  commentId: M:Arithmetica.LinearAlgebra.Double.Vector.#ctor(System.Int32)
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Vector(System.Int32)
-  nameWithType: Vector.Vector(Int32)
-- uid: Arithmetica.LinearAlgebra.Double.Vector.#ctor*
-  name: Vector
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector__ctor_
-  commentId: Overload:Arithmetica.LinearAlgebra.Double.Vector.#ctor
-  isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Vector
-  nameWithType: Vector.Vector
-- uid: Arithmetica.LinearAlgebra.Double.Vector.Item(System.Int32)
-  name: Item[Int32]
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_Item_System_Int32_
-  commentId: P:Arithmetica.LinearAlgebra.Double.Vector.Item(System.Int32)
-  name.vb: Item(Int32)
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Item[System.Int32]
-  fullName.vb: Arithmetica.LinearAlgebra.Double.Vector.Item(System.Int32)
-  nameWithType: Vector.Item[Int32]
-  nameWithType.vb: Vector.Item(Int32)
-- uid: Arithmetica.LinearAlgebra.Double.Vector.Item*
-  name: Item
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_Item_
-  commentId: Overload:Arithmetica.LinearAlgebra.Double.Vector.Item
-  isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Item
-  nameWithType: Vector.Item
-- uid: Arithmetica.LinearAlgebra.Double.Vector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Double.Vector
-  name: Implicit(ArithArray to Vector)
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_op_Implicit_Arithmetica_ArithArray__Arithmetica_LinearAlgebra_Double_Vector
-  commentId: M:Arithmetica.LinearAlgebra.Double.Vector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Double.Vector
-  name.vb: Widening(ArithArray to Vector)
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Implicit(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Double.Vector)
-  fullName.vb: Arithmetica.LinearAlgebra.Double.Vector.Widening(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Double.Vector)
-  nameWithType: Vector.Implicit(ArithArray to Vector)
-  nameWithType.vb: Vector.Widening(ArithArray to Vector)
-- uid: Arithmetica.LinearAlgebra.Double.Vector.op_Implicit*
-  name: Implicit
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_op_Implicit_
-  commentId: Overload:Arithmetica.LinearAlgebra.Double.Vector.op_Implicit
-  isSpec: "True"
-  name.vb: Widening
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.Implicit
-  fullName.vb: Arithmetica.LinearAlgebra.Double.Vector.Widening
-  nameWithType: Vector.Implicit
-  nameWithType.vb: Vector.Widening
-- uid: Arithmetica.LinearAlgebra.Double.Vector.ToString
-  name: ToString()
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_ToString
-  commentId: M:Arithmetica.LinearAlgebra.Double.Vector.ToString
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.ToString()
-  nameWithType: Vector.ToString()
-- uid: Arithmetica.LinearAlgebra.Double.Vector.ToString*
-  name: ToString
-  href: api/Arithmetica.LinearAlgebra.Double.Vector.html#Arithmetica_LinearAlgebra_Double_Vector_ToString_
-  commentId: Overload:Arithmetica.LinearAlgebra.Double.Vector.ToString
-  isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Double.Vector.ToString
-  nameWithType: Vector.ToString
 - uid: Arithmetica.LinearAlgebra.Double.Vector2
   name: Vector2
   href: api/Arithmetica.LinearAlgebra.Double.Vector2.html
@@ -18431,6 +18431,12 @@ references:
   commentId: M:Arithmetica.LinearAlgebra.Single.ComplexMatrix.op_Multiply(Arithmetica.LinearAlgebra.Single.ComplexMatrix,Arithmetica.LinearAlgebra.Single.ComplexMatrix)
   fullName: Arithmetica.LinearAlgebra.Single.ComplexMatrix.Multiply(Arithmetica.LinearAlgebra.Single.ComplexMatrix, Arithmetica.LinearAlgebra.Single.ComplexMatrix)
   nameWithType: ComplexMatrix.Multiply(ComplexMatrix, ComplexMatrix)
+- uid: Arithmetica.LinearAlgebra.Single.ComplexMatrix.op_Multiply(Arithmetica.LinearAlgebra.Single.ComplexMatrix,Arithmetica.LinearAlgebra.Single.ComplexVector)
+  name: Multiply(ComplexMatrix, ComplexVector)
+  href: api/Arithmetica.LinearAlgebra.Single.ComplexMatrix.html#Arithmetica_LinearAlgebra_Single_ComplexMatrix_op_Multiply_Arithmetica_LinearAlgebra_Single_ComplexMatrix_Arithmetica_LinearAlgebra_Single_ComplexVector_
+  commentId: M:Arithmetica.LinearAlgebra.Single.ComplexMatrix.op_Multiply(Arithmetica.LinearAlgebra.Single.ComplexMatrix,Arithmetica.LinearAlgebra.Single.ComplexVector)
+  fullName: Arithmetica.LinearAlgebra.Single.ComplexMatrix.Multiply(Arithmetica.LinearAlgebra.Single.ComplexMatrix, Arithmetica.LinearAlgebra.Single.ComplexVector)
+  nameWithType: ComplexMatrix.Multiply(ComplexMatrix, ComplexVector)
 - uid: Arithmetica.LinearAlgebra.Single.ComplexMatrix.op_Multiply*
   name: Multiply
   href: api/Arithmetica.LinearAlgebra.Single.ComplexMatrix.html#Arithmetica_LinearAlgebra_Single_ComplexMatrix_op_Multiply_
@@ -18836,6 +18842,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToArray
   nameWithType: ComplexMatrix.ToArray
+- uid: Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString
+  name: ToString()
+  href: api/Arithmetica.LinearAlgebra.Single.ComplexMatrix.html#Arithmetica_LinearAlgebra_Single_ComplexMatrix_ToString
+  commentId: M:Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString
+  fullName: Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString()
+  nameWithType: ComplexMatrix.ToString()
+- uid: Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString*
+  name: ToString
+  href: api/Arithmetica.LinearAlgebra.Single.ComplexMatrix.html#Arithmetica_LinearAlgebra_Single_ComplexMatrix_ToString_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString
+  isSpec: "True"
+  fullName: Arithmetica.LinearAlgebra.Single.ComplexMatrix.ToString
+  nameWithType: ComplexMatrix.ToString
 - uid: Arithmetica.LinearAlgebra.Single.ComplexMatrix.Trace(Arithmetica.LinearAlgebra.Single.ComplexMatrix)
   name: Trace(ComplexMatrix)
   href: api/Arithmetica.LinearAlgebra.Single.ComplexMatrix.html#Arithmetica_LinearAlgebra_Single_ComplexMatrix_Trace_Arithmetica_LinearAlgebra_Single_ComplexMatrix_
@@ -19188,6 +19207,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.LinearAlgebra.Single.ComplexVector.Square
   nameWithType: ComplexVector.Square
+- uid: Arithmetica.LinearAlgebra.Single.ComplexVector.ToString
+  name: ToString()
+  href: api/Arithmetica.LinearAlgebra.Single.ComplexVector.html#Arithmetica_LinearAlgebra_Single_ComplexVector_ToString
+  commentId: M:Arithmetica.LinearAlgebra.Single.ComplexVector.ToString
+  fullName: Arithmetica.LinearAlgebra.Single.ComplexVector.ToString()
+  nameWithType: ComplexVector.ToString()
+- uid: Arithmetica.LinearAlgebra.Single.ComplexVector.ToString*
+  name: ToString
+  href: api/Arithmetica.LinearAlgebra.Single.ComplexVector.html#Arithmetica_LinearAlgebra_Single_ComplexVector_ToString_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.ComplexVector.ToString
+  isSpec: "True"
+  fullName: Arithmetica.LinearAlgebra.Single.ComplexVector.ToString
+  nameWithType: ComplexVector.ToString
 - uid: Arithmetica.LinearAlgebra.Single.ComplexVector.Variable
   name: Variable
   href: api/Arithmetica.LinearAlgebra.Single.ComplexVector.html#Arithmetica_LinearAlgebra_Single_ComplexVector_Variable
@@ -23577,73 +23609,73 @@ references:
   isSpec: "True"
   fullName: Arithmetica.LinearAlgebra.Single.Sampler.Uniform
   nameWithType: Sampler.Uniform
-- uid: Arithmetica.LinearAlgebra.Single.Vector
-  name: Vector
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html
-  commentId: T:Arithmetica.LinearAlgebra.Single.Vector
-  fullName: Arithmetica.LinearAlgebra.Single.Vector
-  nameWithType: Vector
-- uid: Arithmetica.LinearAlgebra.Single.Vector.#ctor(System.Int32)
-  name: Vector(Int32)
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector__ctor_System_Int32_
-  commentId: M:Arithmetica.LinearAlgebra.Single.Vector.#ctor(System.Int32)
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Vector(System.Int32)
-  nameWithType: Vector.Vector(Int32)
-- uid: Arithmetica.LinearAlgebra.Single.Vector.#ctor*
-  name: Vector
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector__ctor_
-  commentId: Overload:Arithmetica.LinearAlgebra.Single.Vector.#ctor
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector
+  name: SingleVector
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html
+  commentId: T:Arithmetica.LinearAlgebra.Single.SingleVector
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector
+  nameWithType: SingleVector
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.#ctor(System.Int32)
+  name: SingleVector(Int32)
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector__ctor_System_Int32_
+  commentId: M:Arithmetica.LinearAlgebra.Single.SingleVector.#ctor(System.Int32)
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.SingleVector(System.Int32)
+  nameWithType: SingleVector.SingleVector(Int32)
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.#ctor*
+  name: SingleVector
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector__ctor_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.SingleVector.#ctor
   isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Vector
-  nameWithType: Vector.Vector
-- uid: Arithmetica.LinearAlgebra.Single.Vector.Item(System.Int32)
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.SingleVector
+  nameWithType: SingleVector.SingleVector
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.Item(System.Int32)
   name: Item[Int32]
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_Item_System_Int32_
-  commentId: P:Arithmetica.LinearAlgebra.Single.Vector.Item(System.Int32)
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_Item_System_Int32_
+  commentId: P:Arithmetica.LinearAlgebra.Single.SingleVector.Item(System.Int32)
   name.vb: Item(Int32)
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Item[System.Int32]
-  fullName.vb: Arithmetica.LinearAlgebra.Single.Vector.Item(System.Int32)
-  nameWithType: Vector.Item[Int32]
-  nameWithType.vb: Vector.Item(Int32)
-- uid: Arithmetica.LinearAlgebra.Single.Vector.Item*
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.Item[System.Int32]
+  fullName.vb: Arithmetica.LinearAlgebra.Single.SingleVector.Item(System.Int32)
+  nameWithType: SingleVector.Item[Int32]
+  nameWithType.vb: SingleVector.Item(Int32)
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.Item*
   name: Item
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_Item_
-  commentId: Overload:Arithmetica.LinearAlgebra.Single.Vector.Item
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_Item_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.SingleVector.Item
   isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Item
-  nameWithType: Vector.Item
-- uid: Arithmetica.LinearAlgebra.Single.Vector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Single.Vector
-  name: Implicit(ArithArray to Vector)
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_op_Implicit_Arithmetica_ArithArray__Arithmetica_LinearAlgebra_Single_Vector
-  commentId: M:Arithmetica.LinearAlgebra.Single.Vector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Single.Vector
-  name.vb: Widening(ArithArray to Vector)
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Implicit(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Single.Vector)
-  fullName.vb: Arithmetica.LinearAlgebra.Single.Vector.Widening(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Single.Vector)
-  nameWithType: Vector.Implicit(ArithArray to Vector)
-  nameWithType.vb: Vector.Widening(ArithArray to Vector)
-- uid: Arithmetica.LinearAlgebra.Single.Vector.op_Implicit*
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.Item
+  nameWithType: SingleVector.Item
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Single.SingleVector
+  name: Implicit(ArithArray to SingleVector)
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_op_Implicit_Arithmetica_ArithArray__Arithmetica_LinearAlgebra_Single_SingleVector
+  commentId: M:Arithmetica.LinearAlgebra.Single.SingleVector.op_Implicit(Arithmetica.ArithArray)~Arithmetica.LinearAlgebra.Single.SingleVector
+  name.vb: Widening(ArithArray to SingleVector)
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.Implicit(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Single.SingleVector)
+  fullName.vb: Arithmetica.LinearAlgebra.Single.SingleVector.Widening(Arithmetica.ArithArray to Arithmetica.LinearAlgebra.Single.SingleVector)
+  nameWithType: SingleVector.Implicit(ArithArray to SingleVector)
+  nameWithType.vb: SingleVector.Widening(ArithArray to SingleVector)
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.op_Implicit*
   name: Implicit
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_op_Implicit_
-  commentId: Overload:Arithmetica.LinearAlgebra.Single.Vector.op_Implicit
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_op_Implicit_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.SingleVector.op_Implicit
   isSpec: "True"
   name.vb: Widening
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.Implicit
-  fullName.vb: Arithmetica.LinearAlgebra.Single.Vector.Widening
-  nameWithType: Vector.Implicit
-  nameWithType.vb: Vector.Widening
-- uid: Arithmetica.LinearAlgebra.Single.Vector.ToString
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.Implicit
+  fullName.vb: Arithmetica.LinearAlgebra.Single.SingleVector.Widening
+  nameWithType: SingleVector.Implicit
+  nameWithType.vb: SingleVector.Widening
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.ToString
   name: ToString()
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_ToString
-  commentId: M:Arithmetica.LinearAlgebra.Single.Vector.ToString
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.ToString()
-  nameWithType: Vector.ToString()
-- uid: Arithmetica.LinearAlgebra.Single.Vector.ToString*
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_ToString
+  commentId: M:Arithmetica.LinearAlgebra.Single.SingleVector.ToString
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.ToString()
+  nameWithType: SingleVector.ToString()
+- uid: Arithmetica.LinearAlgebra.Single.SingleVector.ToString*
   name: ToString
-  href: api/Arithmetica.LinearAlgebra.Single.Vector.html#Arithmetica_LinearAlgebra_Single_Vector_ToString_
-  commentId: Overload:Arithmetica.LinearAlgebra.Single.Vector.ToString
+  href: api/Arithmetica.LinearAlgebra.Single.SingleVector.html#Arithmetica_LinearAlgebra_Single_SingleVector_ToString_
+  commentId: Overload:Arithmetica.LinearAlgebra.Single.SingleVector.ToString
   isSpec: "True"
-  fullName: Arithmetica.LinearAlgebra.Single.Vector.ToString
-  nameWithType: Vector.ToString
+  fullName: Arithmetica.LinearAlgebra.Single.SingleVector.ToString
+  nameWithType: SingleVector.ToString
 - uid: Arithmetica.LinearAlgebra.Single.Vector2
   name: Vector2
   href: api/Arithmetica.LinearAlgebra.Single.Vector2.html
@@ -27665,6 +27697,93 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.CircuitProgram.Codes
   nameWithType: CircuitProgram.Codes
+- uid: Arithmetica.Quantum.CircuitResult
+  name: CircuitResult
+  href: api/Arithmetica.Quantum.CircuitResult.html
+  commentId: T:Arithmetica.Quantum.CircuitResult
+  fullName: Arithmetica.Quantum.CircuitResult
+  nameWithType: CircuitResult
+- uid: Arithmetica.Quantum.CircuitResult.#ctor
+  name: CircuitResult()
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult__ctor
+  commentId: M:Arithmetica.Quantum.CircuitResult.#ctor
+  fullName: Arithmetica.Quantum.CircuitResult.CircuitResult()
+  nameWithType: CircuitResult.CircuitResult()
+- uid: Arithmetica.Quantum.CircuitResult.#ctor*
+  name: CircuitResult
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult__ctor_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.CircuitResult
+  nameWithType: CircuitResult.CircuitResult
+- uid: Arithmetica.Quantum.CircuitResult.Item(System.String)
+  name: Item[String]
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Item_System_String_
+  commentId: P:Arithmetica.Quantum.CircuitResult.Item(System.String)
+  name.vb: Item(String)
+  fullName: Arithmetica.Quantum.CircuitResult.Item[System.String]
+  fullName.vb: Arithmetica.Quantum.CircuitResult.Item(System.String)
+  nameWithType: CircuitResult.Item[String]
+  nameWithType.vb: CircuitResult.Item(String)
+- uid: Arithmetica.Quantum.CircuitResult.Item*
+  name: Item
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Item_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.Item
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.Item
+  nameWithType: CircuitResult.Item
+- uid: Arithmetica.Quantum.CircuitResult.Message
+  name: Message
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Message
+  commentId: P:Arithmetica.Quantum.CircuitResult.Message
+  fullName: Arithmetica.Quantum.CircuitResult.Message
+  nameWithType: CircuitResult.Message
+- uid: Arithmetica.Quantum.CircuitResult.Message*
+  name: Message
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Message_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.Message
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.Message
+  nameWithType: CircuitResult.Message
+- uid: Arithmetica.Quantum.CircuitResult.Result
+  name: Result
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Result
+  commentId: P:Arithmetica.Quantum.CircuitResult.Result
+  fullName: Arithmetica.Quantum.CircuitResult.Result
+  nameWithType: CircuitResult.Result
+- uid: Arithmetica.Quantum.CircuitResult.Result*
+  name: Result
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Result_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.Result
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.Result
+  nameWithType: CircuitResult.Result
+- uid: Arithmetica.Quantum.CircuitResult.Success
+  name: Success
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Success
+  commentId: P:Arithmetica.Quantum.CircuitResult.Success
+  fullName: Arithmetica.Quantum.CircuitResult.Success
+  nameWithType: CircuitResult.Success
+- uid: Arithmetica.Quantum.CircuitResult.Success*
+  name: Success
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_Success_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.Success
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.Success
+  nameWithType: CircuitResult.Success
+- uid: Arithmetica.Quantum.CircuitResult.ToJson
+  name: ToJson()
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_ToJson
+  commentId: M:Arithmetica.Quantum.CircuitResult.ToJson
+  fullName: Arithmetica.Quantum.CircuitResult.ToJson()
+  nameWithType: CircuitResult.ToJson()
+- uid: Arithmetica.Quantum.CircuitResult.ToJson*
+  name: ToJson
+  href: api/Arithmetica.Quantum.CircuitResult.html#Arithmetica_Quantum_CircuitResult_ToJson_
+  commentId: Overload:Arithmetica.Quantum.CircuitResult.ToJson
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.CircuitResult.ToJson
+  nameWithType: CircuitResult.ToJson
 - uid: Arithmetica.Quantum.Gate
   name: Arithmetica.Quantum.Gate
   href: api/Arithmetica.Quantum.Gate.html
@@ -27884,6 +28003,41 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.Gate.Identity.Identity
   nameWithType: Identity.Identity
+- uid: Arithmetica.Quantum.Gate.Initalize
+  name: Initalize
+  href: api/Arithmetica.Quantum.Gate.Initalize.html
+  commentId: T:Arithmetica.Quantum.Gate.Initalize
+  fullName: Arithmetica.Quantum.Gate.Initalize
+  nameWithType: Initalize
+- uid: Arithmetica.Quantum.Gate.Initalize.#ctor(Arithmetica.Quantum.Qubit)
+  name: Initalize(Qubit)
+  href: api/Arithmetica.Quantum.Gate.Initalize.html#Arithmetica_Quantum_Gate_Initalize__ctor_Arithmetica_Quantum_Qubit_
+  commentId: M:Arithmetica.Quantum.Gate.Initalize.#ctor(Arithmetica.Quantum.Qubit)
+  fullName: Arithmetica.Quantum.Gate.Initalize.Initalize(Arithmetica.Quantum.Qubit)
+  nameWithType: Initalize.Initalize(Qubit)
+- uid: Arithmetica.Quantum.Gate.Initalize.#ctor*
+  name: Initalize
+  href: api/Arithmetica.Quantum.Gate.Initalize.html#Arithmetica_Quantum_Gate_Initalize__ctor_
+  commentId: Overload:Arithmetica.Quantum.Gate.Initalize.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.Initalize.Initalize
+  nameWithType: Initalize.Initalize
+- uid: Arithmetica.Quantum.Gate.Initalize.Apply(Arithmetica.Quantum.Qubit[])
+  name: Apply(Qubit[])
+  href: api/Arithmetica.Quantum.Gate.Initalize.html#Arithmetica_Quantum_Gate_Initalize_Apply_Arithmetica_Quantum_Qubit___
+  commentId: M:Arithmetica.Quantum.Gate.Initalize.Apply(Arithmetica.Quantum.Qubit[])
+  name.vb: Apply(Qubit())
+  fullName: Arithmetica.Quantum.Gate.Initalize.Apply(Arithmetica.Quantum.Qubit[])
+  fullName.vb: Arithmetica.Quantum.Gate.Initalize.Apply(Arithmetica.Quantum.Qubit())
+  nameWithType: Initalize.Apply(Qubit[])
+  nameWithType.vb: Initalize.Apply(Qubit())
+- uid: Arithmetica.Quantum.Gate.Initalize.Apply*
+  name: Apply
+  href: api/Arithmetica.Quantum.Gate.Initalize.html#Arithmetica_Quantum_Gate_Initalize_Apply_
+  commentId: Overload:Arithmetica.Quantum.Gate.Initalize.Apply
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.Initalize.Apply
+  nameWithType: Initalize.Apply
 - uid: Arithmetica.Quantum.Gate.PauliX
   name: PauliX
   href: api/Arithmetica.Quantum.Gate.PauliX.html
@@ -28020,12 +28174,15 @@ references:
   commentId: T:Arithmetica.Quantum.Gate.QuantumGate
   fullName: Arithmetica.Quantum.Gate.QuantumGate
   nameWithType: QuantumGate
-- uid: Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String)
-  name: QuantumGate(String)
-  href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_
-  commentId: M:Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String)
-  fullName: Arithmetica.Quantum.Gate.QuantumGate.QuantumGate(System.String)
-  nameWithType: QuantumGate.QuantumGate(String)
+- uid: Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String,System.Nullable{Arithmetica.Quantum.QubitState})
+  name: QuantumGate(String, Nullable<QubitState>)
+  href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_System_Nullable_Arithmetica_Quantum_QubitState__
+  commentId: M:Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String,System.Nullable{Arithmetica.Quantum.QubitState})
+  name.vb: QuantumGate(String, Nullable(Of QubitState))
+  fullName: Arithmetica.Quantum.Gate.QuantumGate.QuantumGate(System.String, System.Nullable<Arithmetica.Quantum.QubitState>)
+  fullName.vb: Arithmetica.Quantum.Gate.QuantumGate.QuantumGate(System.String, System.Nullable(Of Arithmetica.Quantum.QubitState))
+  nameWithType: QuantumGate.QuantumGate(String, Nullable<QubitState>)
+  nameWithType.vb: QuantumGate.QuantumGate(String, Nullable(Of QubitState))
 - uid: Arithmetica.Quantum.Gate.QuantumGate.#ctor*
   name: QuantumGate
   href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate__ctor_
@@ -28049,6 +28206,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.Gate.QuantumGate.Apply
   nameWithType: QuantumGate.Apply
+- uid: Arithmetica.Quantum.Gate.QuantumGate.ApplyState
+  name: ApplyState
+  href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate_ApplyState
+  commentId: P:Arithmetica.Quantum.Gate.QuantumGate.ApplyState
+  fullName: Arithmetica.Quantum.Gate.QuantumGate.ApplyState
+  nameWithType: QuantumGate.ApplyState
+- uid: Arithmetica.Quantum.Gate.QuantumGate.ApplyState*
+  name: ApplyState
+  href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate_ApplyState_
+  commentId: Overload:Arithmetica.Quantum.Gate.QuantumGate.ApplyState
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.QuantumGate.ApplyState
+  nameWithType: QuantumGate.ApplyState
 - uid: Arithmetica.Quantum.Gate.QuantumGate.Matrix
   name: Matrix
   href: api/Arithmetica.Quantum.Gate.QuantumGate.html#Arithmetica_Quantum_Gate_QuantumGate_Matrix
@@ -28075,6 +28245,63 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.Gate.QuantumGate.Name
   nameWithType: QuantumGate.Name
+- uid: Arithmetica.Quantum.Gate.RotationX
+  name: RotationX
+  href: api/Arithmetica.Quantum.Gate.RotationX.html
+  commentId: T:Arithmetica.Quantum.Gate.RotationX
+  fullName: Arithmetica.Quantum.Gate.RotationX
+  nameWithType: RotationX
+- uid: Arithmetica.Quantum.Gate.RotationX.#ctor(System.Double)
+  name: RotationX(Double)
+  href: api/Arithmetica.Quantum.Gate.RotationX.html#Arithmetica_Quantum_Gate_RotationX__ctor_System_Double_
+  commentId: M:Arithmetica.Quantum.Gate.RotationX.#ctor(System.Double)
+  fullName: Arithmetica.Quantum.Gate.RotationX.RotationX(System.Double)
+  nameWithType: RotationX.RotationX(Double)
+- uid: Arithmetica.Quantum.Gate.RotationX.#ctor*
+  name: RotationX
+  href: api/Arithmetica.Quantum.Gate.RotationX.html#Arithmetica_Quantum_Gate_RotationX__ctor_
+  commentId: Overload:Arithmetica.Quantum.Gate.RotationX.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.RotationX.RotationX
+  nameWithType: RotationX.RotationX
+- uid: Arithmetica.Quantum.Gate.RotationY
+  name: RotationY
+  href: api/Arithmetica.Quantum.Gate.RotationY.html
+  commentId: T:Arithmetica.Quantum.Gate.RotationY
+  fullName: Arithmetica.Quantum.Gate.RotationY
+  nameWithType: RotationY
+- uid: Arithmetica.Quantum.Gate.RotationY.#ctor(System.Double)
+  name: RotationY(Double)
+  href: api/Arithmetica.Quantum.Gate.RotationY.html#Arithmetica_Quantum_Gate_RotationY__ctor_System_Double_
+  commentId: M:Arithmetica.Quantum.Gate.RotationY.#ctor(System.Double)
+  fullName: Arithmetica.Quantum.Gate.RotationY.RotationY(System.Double)
+  nameWithType: RotationY.RotationY(Double)
+- uid: Arithmetica.Quantum.Gate.RotationY.#ctor*
+  name: RotationY
+  href: api/Arithmetica.Quantum.Gate.RotationY.html#Arithmetica_Quantum_Gate_RotationY__ctor_
+  commentId: Overload:Arithmetica.Quantum.Gate.RotationY.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.RotationY.RotationY
+  nameWithType: RotationY.RotationY
+- uid: Arithmetica.Quantum.Gate.RotationZ
+  name: RotationZ
+  href: api/Arithmetica.Quantum.Gate.RotationZ.html
+  commentId: T:Arithmetica.Quantum.Gate.RotationZ
+  fullName: Arithmetica.Quantum.Gate.RotationZ
+  nameWithType: RotationZ
+- uid: Arithmetica.Quantum.Gate.RotationZ.#ctor(System.Double)
+  name: RotationZ(Double)
+  href: api/Arithmetica.Quantum.Gate.RotationZ.html#Arithmetica_Quantum_Gate_RotationZ__ctor_System_Double_
+  commentId: M:Arithmetica.Quantum.Gate.RotationZ.#ctor(System.Double)
+  fullName: Arithmetica.Quantum.Gate.RotationZ.RotationZ(System.Double)
+  nameWithType: RotationZ.RotationZ(Double)
+- uid: Arithmetica.Quantum.Gate.RotationZ.#ctor*
+  name: RotationZ
+  href: api/Arithmetica.Quantum.Gate.RotationZ.html#Arithmetica_Quantum_Gate_RotationZ__ctor_
+  commentId: Overload:Arithmetica.Quantum.Gate.RotationZ.#ctor
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Gate.RotationZ.RotationZ
+  nameWithType: RotationZ.RotationZ
 - uid: Arithmetica.Quantum.Gate.SqrtSwap
   name: SqrtSwap
   href: api/Arithmetica.Quantum.Gate.SqrtSwap.html
@@ -28199,6 +28426,64 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.Gate.Toffoli.Apply
   nameWithType: Toffoli.Apply
+- uid: Arithmetica.Quantum.Probability
+  name: Probability
+  href: api/Arithmetica.Quantum.Probability.html
+  commentId: T:Arithmetica.Quantum.Probability
+  fullName: Arithmetica.Quantum.Probability
+  nameWithType: Probability
+- uid: Arithmetica.Quantum.Probability.ClassicalValue
+  name: ClassicalValue
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_ClassicalValue
+  commentId: P:Arithmetica.Quantum.Probability.ClassicalValue
+  fullName: Arithmetica.Quantum.Probability.ClassicalValue
+  nameWithType: Probability.ClassicalValue
+- uid: Arithmetica.Quantum.Probability.ClassicalValue*
+  name: ClassicalValue
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_ClassicalValue_
+  commentId: Overload:Arithmetica.Quantum.Probability.ClassicalValue
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Probability.ClassicalValue
+  nameWithType: Probability.ClassicalValue
+- uid: Arithmetica.Quantum.Probability.Count
+  name: Count
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_Count
+  commentId: P:Arithmetica.Quantum.Probability.Count
+  fullName: Arithmetica.Quantum.Probability.Count
+  nameWithType: Probability.Count
+- uid: Arithmetica.Quantum.Probability.Count*
+  name: Count
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_Count_
+  commentId: Overload:Arithmetica.Quantum.Probability.Count
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Probability.Count
+  nameWithType: Probability.Count
+- uid: Arithmetica.Quantum.Probability.Percentage
+  name: Percentage
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_Percentage
+  commentId: P:Arithmetica.Quantum.Probability.Percentage
+  fullName: Arithmetica.Quantum.Probability.Percentage
+  nameWithType: Probability.Percentage
+- uid: Arithmetica.Quantum.Probability.Percentage*
+  name: Percentage
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_Percentage_
+  commentId: Overload:Arithmetica.Quantum.Probability.Percentage
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Probability.Percentage
+  nameWithType: Probability.Percentage
+- uid: Arithmetica.Quantum.Probability.QuantumValue
+  name: QuantumValue
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_QuantumValue
+  commentId: P:Arithmetica.Quantum.Probability.QuantumValue
+  fullName: Arithmetica.Quantum.Probability.QuantumValue
+  nameWithType: Probability.QuantumValue
+- uid: Arithmetica.Quantum.Probability.QuantumValue*
+  name: QuantumValue
+  href: api/Arithmetica.Quantum.Probability.html#Arithmetica_Quantum_Probability_QuantumValue_
+  commentId: Overload:Arithmetica.Quantum.Probability.QuantumValue
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Probability.QuantumValue
+  nameWithType: Probability.QuantumValue
 - uid: Arithmetica.Quantum.ProgramCode
   name: ProgramCode
   href: api/Arithmetica.Quantum.ProgramCode.html
@@ -28291,35 +28576,6 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumCircuit.CNOT
   nameWithType: QuantumCircuit.CNOT
-- uid: Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable{System.Int32})
-  name: Collapse(Nullable<Int32>)
-  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Collapse_System_Nullable_System_Int32__
-  commentId: M:Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable{System.Int32})
-  name.vb: Collapse(Nullable(Of Int32))
-  fullName: Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable<System.Int32>)
-  fullName.vb: Arithmetica.Quantum.QuantumCircuit.Collapse(System.Nullable(Of System.Int32))
-  nameWithType: QuantumCircuit.Collapse(Nullable<Int32>)
-  nameWithType.vb: QuantumCircuit.Collapse(Nullable(Of Int32))
-- uid: Arithmetica.Quantum.QuantumCircuit.Collapse*
-  name: Collapse
-  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Collapse_
-  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Collapse
-  isSpec: "True"
-  fullName: Arithmetica.Quantum.QuantumCircuit.Collapse
-  nameWithType: QuantumCircuit.Collapse
-- uid: Arithmetica.Quantum.QuantumCircuit.Debug
-  name: Debug
-  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Debug
-  commentId: P:Arithmetica.Quantum.QuantumCircuit.Debug
-  fullName: Arithmetica.Quantum.QuantumCircuit.Debug
-  nameWithType: QuantumCircuit.Debug
-- uid: Arithmetica.Quantum.QuantumCircuit.Debug*
-  name: Debug
-  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Debug_
-  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Debug
-  isSpec: "True"
-  fullName: Arithmetica.Quantum.QuantumCircuit.Debug
-  nameWithType: QuantumCircuit.Debug
 - uid: Arithmetica.Quantum.QuantumCircuit.Execute(System.Int32)
   name: Execute(Int32)
   href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Execute_System_Int32_
@@ -28333,6 +28589,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumCircuit.Execute
   nameWithType: QuantumCircuit.Execute
+- uid: Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob
+  name: ExecuteWithJob
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob
+  commentId: P:Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob
+  fullName: Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob
+  nameWithType: QuantumCircuit.ExecuteWithJob
+- uid: Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob*
+  name: ExecuteWithJob
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_ExecuteWithJob_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.ExecuteWithJob
+  nameWithType: QuantumCircuit.ExecuteWithJob
 - uid: Arithmetica.Quantum.QuantumCircuit.H(System.Int32)
   name: H(Int32)
   href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_H_System_Int32_
@@ -28346,6 +28615,35 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumCircuit.H
   nameWithType: QuantumCircuit.H
+- uid: Arithmetica.Quantum.QuantumCircuit.INIT(System.Int32,Arithmetica.Quantum.Qubit)
+  name: INIT(Int32, Qubit)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_INIT_System_Int32_Arithmetica_Quantum_Qubit_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.INIT(System.Int32,Arithmetica.Quantum.Qubit)
+  fullName: Arithmetica.Quantum.QuantumCircuit.INIT(System.Int32, Arithmetica.Quantum.Qubit)
+  nameWithType: QuantumCircuit.INIT(Int32, Qubit)
+- uid: Arithmetica.Quantum.QuantumCircuit.INIT*
+  name: INIT
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_INIT_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.INIT
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.INIT
+  nameWithType: QuantumCircuit.INIT
+- uid: Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable{System.Int32})
+  name: Measure(Nullable<Int32>)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Measure_System_Nullable_System_Int32__
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable{System.Int32})
+  name.vb: Measure(Nullable(Of Int32))
+  fullName: Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable<System.Int32>)
+  fullName.vb: Arithmetica.Quantum.QuantumCircuit.Measure(System.Nullable(Of System.Int32))
+  nameWithType: QuantumCircuit.Measure(Nullable<Int32>)
+  nameWithType.vb: QuantumCircuit.Measure(Nullable(Of Int32))
+- uid: Arithmetica.Quantum.QuantumCircuit.Measure*
+  name: Measure
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Measure_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Measure
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Measure
+  nameWithType: QuantumCircuit.Measure
 - uid: Arithmetica.Quantum.QuantumCircuit.Program
   name: Program
   href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Program
@@ -28372,6 +28670,45 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumCircuit.Register
   nameWithType: QuantumCircuit.Register
+- uid: Arithmetica.Quantum.QuantumCircuit.Rx(System.Int32,System.Double)
+  name: Rx(Int32, Double)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Rx_System_Int32_System_Double_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Rx(System.Int32,System.Double)
+  fullName: Arithmetica.Quantum.QuantumCircuit.Rx(System.Int32, System.Double)
+  nameWithType: QuantumCircuit.Rx(Int32, Double)
+- uid: Arithmetica.Quantum.QuantumCircuit.Rx*
+  name: Rx
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Rx_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Rx
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Rx
+  nameWithType: QuantumCircuit.Rx
+- uid: Arithmetica.Quantum.QuantumCircuit.Ry(System.Int32,System.Double)
+  name: Ry(Int32, Double)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Ry_System_Int32_System_Double_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Ry(System.Int32,System.Double)
+  fullName: Arithmetica.Quantum.QuantumCircuit.Ry(System.Int32, System.Double)
+  nameWithType: QuantumCircuit.Ry(Int32, Double)
+- uid: Arithmetica.Quantum.QuantumCircuit.Ry*
+  name: Ry
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Ry_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Ry
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Ry
+  nameWithType: QuantumCircuit.Ry
+- uid: Arithmetica.Quantum.QuantumCircuit.Rz(System.Int32,System.Double)
+  name: Rz(Int32, Double)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Rz_System_Int32_System_Double_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Rz(System.Int32,System.Double)
+  fullName: Arithmetica.Quantum.QuantumCircuit.Rz(System.Int32, System.Double)
+  nameWithType: QuantumCircuit.Rz(Int32, Double)
+- uid: Arithmetica.Quantum.QuantumCircuit.Rz*
+  name: Rz
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Rz_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Rz
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Rz
+  nameWithType: QuantumCircuit.Rz
 - uid: Arithmetica.Quantum.QuantumCircuit.X(System.Int32)
   name: X(Int32)
   href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_X_System_Int32_
@@ -28385,6 +28722,32 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumCircuit.X
   nameWithType: QuantumCircuit.X
+- uid: Arithmetica.Quantum.QuantumCircuit.Y(System.Int32)
+  name: Y(Int32)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Y_System_Int32_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Y(System.Int32)
+  fullName: Arithmetica.Quantum.QuantumCircuit.Y(System.Int32)
+  nameWithType: QuantumCircuit.Y(Int32)
+- uid: Arithmetica.Quantum.QuantumCircuit.Y*
+  name: Y
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Y_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Y
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Y
+  nameWithType: QuantumCircuit.Y
+- uid: Arithmetica.Quantum.QuantumCircuit.Z(System.Int32)
+  name: Z(Int32)
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Z_System_Int32_
+  commentId: M:Arithmetica.Quantum.QuantumCircuit.Z(System.Int32)
+  fullName: Arithmetica.Quantum.QuantumCircuit.Z(System.Int32)
+  nameWithType: QuantumCircuit.Z(Int32)
+- uid: Arithmetica.Quantum.QuantumCircuit.Z*
+  name: Z
+  href: api/Arithmetica.Quantum.QuantumCircuit.html#Arithmetica_Quantum_QuantumCircuit_Z_
+  commentId: Overload:Arithmetica.Quantum.QuantumCircuit.Z
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumCircuit.Z
+  nameWithType: QuantumCircuit.Z
 - uid: Arithmetica.Quantum.QuantumException
   name: QuantumException
   href: api/Arithmetica.Quantum.QuantumException.html
@@ -28559,19 +28922,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumRegister.Item
   nameWithType: QuantumRegister.Item
-- uid: Arithmetica.Quantum.QuantumRegister.PossibleStates
-  name: PossibleStates
-  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_PossibleStates
-  commentId: P:Arithmetica.Quantum.QuantumRegister.PossibleStates
-  fullName: Arithmetica.Quantum.QuantumRegister.PossibleStates
-  nameWithType: QuantumRegister.PossibleStates
-- uid: Arithmetica.Quantum.QuantumRegister.PossibleStates*
-  name: PossibleStates
-  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_PossibleStates_
-  commentId: Overload:Arithmetica.Quantum.QuantumRegister.PossibleStates
+- uid: Arithmetica.Quantum.QuantumRegister.Possiblities
+  name: Possiblities
+  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_Possiblities
+  commentId: P:Arithmetica.Quantum.QuantumRegister.Possiblities
+  fullName: Arithmetica.Quantum.QuantumRegister.Possiblities
+  nameWithType: QuantumRegister.Possiblities
+- uid: Arithmetica.Quantum.QuantumRegister.Possiblities*
+  name: Possiblities
+  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_Possiblities_
+  commentId: Overload:Arithmetica.Quantum.QuantumRegister.Possiblities
   isSpec: "True"
-  fullName: Arithmetica.Quantum.QuantumRegister.PossibleStates
-  nameWithType: QuantumRegister.PossibleStates
+  fullName: Arithmetica.Quantum.QuantumRegister.Possiblities
+  nameWithType: QuantumRegister.Possiblities
 - uid: Arithmetica.Quantum.QuantumRegister.Qubits
   name: Qubits
   href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_Qubits
@@ -28585,6 +28948,19 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.QuantumRegister.Qubits
   nameWithType: QuantumRegister.Qubits
+- uid: Arithmetica.Quantum.QuantumRegister.Reset
+  name: Reset()
+  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_Reset
+  commentId: M:Arithmetica.Quantum.QuantumRegister.Reset
+  fullName: Arithmetica.Quantum.QuantumRegister.Reset()
+  nameWithType: QuantumRegister.Reset()
+- uid: Arithmetica.Quantum.QuantumRegister.Reset*
+  name: Reset
+  href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_Reset_
+  commentId: Overload:Arithmetica.Quantum.QuantumRegister.Reset
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.QuantumRegister.Reset
+  nameWithType: QuantumRegister.Reset
 - uid: Arithmetica.Quantum.QuantumRegister.ToString
   name: ToString()
   href: api/Arithmetica.Quantum.QuantumRegister.html#Arithmetica_Quantum_QuantumRegister_ToString
@@ -28668,6 +29044,32 @@ references:
   isSpec: "True"
   fullName: Arithmetica.Quantum.Qubit.BitRegister
   nameWithType: Qubit.BitRegister
+- uid: Arithmetica.Quantum.Qubit.IsMinus
+  name: IsMinus
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_IsMinus
+  commentId: P:Arithmetica.Quantum.Qubit.IsMinus
+  fullName: Arithmetica.Quantum.Qubit.IsMinus
+  nameWithType: Qubit.IsMinus
+- uid: Arithmetica.Quantum.Qubit.IsMinus*
+  name: IsMinus
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_IsMinus_
+  commentId: Overload:Arithmetica.Quantum.Qubit.IsMinus
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.IsMinus
+  nameWithType: Qubit.IsMinus
+- uid: Arithmetica.Quantum.Qubit.IsPlus
+  name: IsPlus
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_IsPlus
+  commentId: P:Arithmetica.Quantum.Qubit.IsPlus
+  fullName: Arithmetica.Quantum.Qubit.IsPlus
+  nameWithType: Qubit.IsPlus
+- uid: Arithmetica.Quantum.Qubit.IsPlus*
+  name: IsPlus
+  href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_IsPlus_
+  commentId: Overload:Arithmetica.Quantum.Qubit.IsPlus
+  isSpec: "True"
+  fullName: Arithmetica.Quantum.Qubit.IsPlus
+  nameWithType: Qubit.IsPlus
 - uid: Arithmetica.Quantum.Qubit.Normalize
   name: Normalize()
   href: api/Arithmetica.Quantum.Qubit.html#Arithmetica_Quantum_Qubit_Normalize

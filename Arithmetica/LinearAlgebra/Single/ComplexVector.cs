@@ -381,7 +381,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Vector<float> Abs(ComplexVector vector)
         {
-            Vector result = new Vector(vector.Size);
+            SingleVector result = new SingleVector(vector.Size);
             Parallel.For(0, vector.Size, (i) => {
                 result[i] = Complex.Abs(vector[i]);
             });
@@ -464,6 +464,19 @@ namespace Arithmetica.LinearAlgebra.Single
             return result;
         }
         #endregion
+
+        public override string ToString()
+        {
+            string result = "";
+            for (int i = 0; i < Size; i++)
+            {
+                result += this[i].ToString();
+
+                result += "\n\n";
+            }
+
+            return result;
+        }
 
     }
 }

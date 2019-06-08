@@ -1,4 +1,5 @@
 ﻿using Arithmetica.LinearAlgebra.Single;
+using Arithmetica.Quantum.Gate;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,6 +18,14 @@ namespace Arithmetica.Quantum
         /// The register.
         /// </value>
         public ComplexVector BitRegister { get; set; }
+
+        /// <summary>
+        /// Gets or sets the entangled.
+        /// </summary>
+        /// <value>
+        /// The entangled.
+        /// </value>
+        internal Qubit Entangled { get; set; }
 
         /// <summary>
         /// Probability amplitude for state |0>
@@ -122,6 +131,12 @@ namespace Arithmetica.Quantum
 
                 BitRegister = collapsed;
             }
+
+            if (Entangled != null)
+            {
+                if(QState == QubitState.One)
+                    new ControlledNot().Apply(this, Entangled);
+            }
         }
 
         /// <summary>
@@ -163,16 +178,16 @@ namespace Arithmetica.Quantum
             get
             {
                 QubitState state = QubitState.Zero;
-                if (Math.Round(ZeroAmplitude.ModulusSquared, 1) == 1)
+                if (ZeroAmplitude.ModulusSquared == 1 && OneAmplitude.ModulusSquared == 0)
                 {
                     state = QubitState.Zero;
                 }
-                else if (Math.Round(OneAmplitude.ModulusSquared, 1) == 1)
+                else if (OneAmplitude.ModulusSquared == 1 && ZeroAmplitude.ModulusSquared == 0)
                 {
                     state = QubitState.One;
                 }
 
-                if (Math.Round(ZeroAmplitude.ModulusSquared, 1) == 0.5 && Math.Round(OneAmplitude.ModulusSquared, 1) == 0.5)
+                if (ZeroAmplitude.ModulusSquared != 0 && OneAmplitude.ModulusSquared != 0)
                 {
                     state = QubitState.Superposition;
                 }
@@ -199,6 +214,30 @@ namespace Arithmetica.Quantum
                     return new int[] { 0, 1 };
 
                 return null;
+            }
+        }
+
+        /// <summary>
+        /// Indicate if the qubit in + reference state
+        /// </summary>
+        /// <value></value>
+        public bool IsPlus
+        {
+            get
+            {
+                return ZeroAmplitude.Real > 0 || OneAmplitude.Real > 0;
+            }
+        }
+
+        // <summary>
+        /// Indicate if the qubit in - reference state
+        /// </summary>
+        /// <value></value>
+        public bool IsMinus
+        {
+            get
+            {
+                return ZeroAmplitude.Real < 0 || OneAmplitude.Real < 0;
             }
         }
 
@@ -236,11 +275,6 @@ namespace Arithmetica.Quantum
                         {
                             complexString += "(";
                         }
-
-                        //if (amplitude.Real != 0)
-                        //{
-                        //    complexString += amplitude.Real;
-                        //}
 
                         if (amplitude.Real != 0 && amplitude.Imaginary > 0)
                         {

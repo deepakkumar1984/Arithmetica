@@ -1,2 +1,7 @@
-- name: Introduction
-  href: intro.md
+- name: Nuget and Source
+  href: Nuget and Source.md
+- name: Release Notes
+  href: Release Notes.md
+
+- name: How to start?
+  href: How to start.md

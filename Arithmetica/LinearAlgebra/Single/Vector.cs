@@ -12,7 +12,7 @@ namespace Arithmetica.LinearAlgebra.Single
     /// </summary>
     /// <seealso cref="Arithmetica.LinearAlgebra.Vector{System.Single}" />
     /// <seealso cref="System.IFormattable" />
-    public class Vector : LinearAlgebra.Vector<float>, IFormattable
+    public class SingleVector : LinearAlgebra.Vector<float>, IFormattable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Vector"/> class.
@@ -61,7 +61,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </returns>
         public static implicit operator Vector(SuperArray variable)
         {
-            return new Vector(variable);
+            return new SingleVector(variable);
         }
 
         /// <summary>

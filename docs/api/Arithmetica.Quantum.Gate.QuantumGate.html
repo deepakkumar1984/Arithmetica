@@ -69,17 +69,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Arithmetica.Quantum.Gate.QuantumGate">
-  
-  
-  <h1 id="Arithmetica_Quantum_Gate_QuantumGate" data-uid="Arithmetica.Quantum.Gate.QuantumGate" class="text-break">Class QuantumGate
+  <h1 id="Arithmetica_Quantum_Gate_QuantumGate" data-uid="Arithmetica.Quantum.Gate.QuantumGate">Class QuantumGate
   </h1>
   <div class="markdown level0 summary"><p>Base class for the Quantum gate implementation</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">QuantumGate</span></div>
+  </div>
+  
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Collapse.html">Collapse</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.ControlledNot.html">ControlledNot</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.ControlledY.html">ControlledY</a></div>
@@ -87,16 +88,20 @@
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Fredkin.html">Fredkin</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Hadamard.html">Hadamard</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Identity.html">Identity</a></div>
+      <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Initalize.html">Initalize</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.PauliX.html">PauliX</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.PauliY.html">PauliY</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.PauliZ.html">PauliZ</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.PhaseShift.html">PhaseShift</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.QuantumFourierTransform.html">QuantumFourierTransform</a></div>
+      <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.RotationX.html">RotationX</a></div>
+      <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.RotationY.html">RotationY</a></div>
+      <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.RotationZ.html">RotationZ</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.SqrtSwap.html">SqrtSwap</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.SquareRootNot.html">SquareRootNot</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Swap.html">Swap</a></div>
       <div class="level2"><a class="xref" href="Arithmetica.Quantum.Gate.Toffoli.html">Toffoli</a></div>
-  </div>
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -121,167 +126,272 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Arithmetica.Quantum.Gate.html">Arithmetica.Quantum.Gate</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Arithmetica.Quantum.dll</h6>
+  
   <h5 id="Arithmetica_Quantum_Gate_QuantumGate_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class QuantumGate</code></pre>
   </div>
+
+  
+  
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_System_Nullable_Arithmetica_Quantum_QubitState__.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.%23ctor(System.String%2CSystem.Nullable%7BArithmetica.Quantum.QubitState%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L34">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L43" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_Gate_QuantumGate__ctor_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.#ctor*"></a>
-  <h4 id="Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String)">QuantumGate(String)</h4>
+  
+  <h4 id="Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_System_Nullable_Arithmetica_Quantum_QubitState__" data-uid="Arithmetica.Quantum.Gate.QuantumGate.#ctor(System.String,System.Nullable{Arithmetica.Quantum.QubitState})"><a href="#collapsible-Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_System_Nullable_Arithmetica_Quantum_QubitState__" class="expander" data-toggle="collapse">QuantumGate(String, Nullable&lt;QubitState&gt;)</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_Gate_QuantumGate__ctor_System_String_System_Nullable_Arithmetica_Quantum_QubitState__" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Arithmetica.Quantum.Gate.QuantumGate.html">QuantumGate</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QuantumGate(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public QuantumGate(string name, QubitState? applyState = default(QubitState? ))</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Arithmetica.Quantum.QubitState.html">QubitState</a>&gt;</span>
+        <span class="parametername">applyState</span>
+        <p><p>Apply the gate if the qubit state match.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Matrix.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Matrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_ApplyState.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.ApplyState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L28">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
+  <a id="Arithmetica_Quantum_Gate_QuantumGate_ApplyState_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.ApplyState*"></a>
+  
+  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_ApplyState" data-uid="Arithmetica.Quantum.Gate.QuantumGate.ApplyState"><a href="#collapsible-Arithmetica_Quantum_Gate_QuantumGate_ApplyState" class="expander" data-toggle="collapse">ApplyState</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_Gate_QuantumGate_ApplyState" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the state of the apply.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QubitState? ApplyState { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<a class="xref" href="Arithmetica.Quantum.QubitState.html">QubitState</a>&gt;
+        <p><p>The state of the apply.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Matrix.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Matrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L28" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
   <a id="Arithmetica_Quantum_Gate_QuantumGate_Matrix_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Matrix*"></a>
-  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Matrix" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Matrix">Matrix</h4>
+  
+  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Matrix" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Matrix"><a href="#collapsible-Arithmetica_Quantum_Gate_QuantumGate_Matrix" class="expander" data-toggle="collapse">Matrix</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_Gate_QuantumGate_Matrix" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the matrix which will transform the qubit</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ComplexMatrix Matrix { get; set; }</code></pre>
   </div>
+
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.LinearAlgebra.Single.ComplexMatrix.html">ComplexMatrix</a></td>
-        <td><p>The matrix.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Arithmetica.LinearAlgebra.Single.ComplexMatrix.html">ComplexMatrix</a>
+        <p><p>The matrix.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Name.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Name.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L20">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L20" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_Gate_QuantumGate_Name_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Name*"></a>
-  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Name" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Name">Name</h4>
+  
+  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Name" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Name"><a href="#collapsible-Arithmetica_Quantum_Gate_QuantumGate_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_Gate_QuantumGate_Name" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the name of the gate</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
+
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The name.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p>The name.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Apply(Arithmetica.Quantum.Qubit%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate.Apply(Arithmetica.Quantum.Qubit%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L43">View Source</a>
+    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L53" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Arithmetica_Quantum_Gate_QuantumGate_Apply_" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Apply*"></a>
-  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Apply(Arithmetica.Quantum.Qubit[])">Apply(Qubit[])</h4>
+  
+  <h4 id="Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___" data-uid="Arithmetica.Quantum.Gate.QuantumGate.Apply(Arithmetica.Quantum.Qubit[])"><a href="#collapsible-Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___" class="expander" data-toggle="collapse">Apply(Qubit[])</a></h4>
+  
+  <div id="collapsible-Arithmetica_Quantum_Gate_QuantumGate_Apply_Arithmetica_Quantum_Qubit___" class="collapse in">
   <div class="markdown level1 summary"><p>Appliy the gate to the one or more qubit</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Apply(params Qubit[] qubits)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Arithmetica.Quantum.Qubit.html">Qubit</a>[]</td>
-        <td><span class="parametername">qubits</span></td>
-        <td><p>The qubits.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Arithmetica.Quantum.Qubit.html">Qubit</a>[]</span>
+        <span class="parametername">qubits</span>
+        <p><p>The qubits.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L12" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica/new/master/apiSpec/new?filename=Arithmetica_Quantum_Gate_QuantumGate.md&amp;value=---%0Auid%3A%20Arithmetica.Quantum.Gate.QuantumGate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/deepakkumar1984/Arithmetica/blob/master/Arithmetica.Quantum/Gate/QuantumGate.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

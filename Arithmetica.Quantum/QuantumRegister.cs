@@ -88,6 +88,10 @@ namespace Arithmetica.Quantum
             {
                 return Qubits[index];
             }
+            set
+            {
+                Qubits[index].BitRegister = value.BitRegister;
+            }
         }
 
         /// <summary>
@@ -269,7 +273,7 @@ namespace Arithmetica.Quantum
         /// <value>
         /// The possible states.
         /// </value>
-        internal int[,] PossibleValues
+        internal Array PossibleValues
         {
             get
             {
@@ -280,10 +284,9 @@ namespace Arithmetica.Quantum
                     totalStates *= Qubits[i].Values.Length;
                 }
 
-                //Matrix states = new Matrix(totalStates, Qubits.Length);
-                //states.Fill(-1);
                 int[,] states = new int[totalStates, Qubits.Length];
                 int divider = 1;
+                
                 for (int i = 0; i < Qubits.Length; i++)
                 {
                     int k_times;
@@ -304,9 +307,9 @@ namespace Arithmetica.Quantum
                         for (int k = 0; k < k_times; k++)
                         {
                             if(Qubits[i].Values.Length == 1)
-                                states[counter, i] = Qubits[i].Values[0];
+                                states[counter, Qubits.Length - 1 - i] = Qubits[i].Values[0];
                             else
-                                states[counter, i] = Qubits[i].Values[valueIndex];
+                                states[counter, Qubits.Length - 1 - i] = Qubits[i].Values[valueIndex];
 
                             counter++;
                         }
@@ -340,13 +343,24 @@ namespace Arithmetica.Quantum
                     string representation = "";
                     for (int j = 0; j < p.GetLength(1); j++)
                     {
-                        representation += p[i, j].ToString();
+                        representation += p.GetValue(i, j).ToString();
                     }
 
                     result.Add(representation);
                 }
 
                 return result;
+            }
+        }
+
+        /// <summary>
+        /// Resets this instance.
+        /// </summary>
+        public void Reset()
+        {
+            for (int i = 0; i < Qubits.Length; i++)
+            {
+                Qubits[i].BitRegister = Qubit.Zero.BitRegister;
             }
         }
       
@@ -359,12 +373,13 @@ namespace Arithmetica.Quantum
         public override string ToString()
         {
             string representation = "";
-            var p = Possiblities;
+            var p = Possiblities.OrderBy(x=>(x));
+
 
             foreach (var item in p)
             {
                 if (!string.IsNullOrWhiteSpace(representation))
-                    representation += " + ";
+                    representation += " ~ ";
                 representation += string.Format("|{0}>", item);
             }
 

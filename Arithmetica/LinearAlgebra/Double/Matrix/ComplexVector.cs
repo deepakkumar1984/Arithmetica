@@ -378,7 +378,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns></returns>
         public static Vector<double> Abs(ComplexVector vector)
         {
-            Vector result = new Vector(vector.Size);
+            DoubleVector result = new DoubleVector(vector.Size);
             Parallel.For(0, vector.Size, (i) => {
                 result[i] = (float)Complex.Abs(vector[i]);
             });
