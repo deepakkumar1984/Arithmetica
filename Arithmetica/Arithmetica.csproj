@@ -2,7 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.8.0</Version>
+    <Version>0.8.4</Version>
+    <Authors>Deepak Battini</Authors>
+    <Company>Tech-Quantum</Company>
+    <Description>To summarise, arithmetica is developed to help students, professional or scientists to learn or prototype work related to applied mathematics and quantum physics.</Description>
+    <PackageLicenseFile>licence.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/tech-quantum/Arithmetica</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tech-quantum/Arithmetica</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>maths, geometry, quantum computing, linear algebra, image processing</PackageTags>
+    <PackageIconUrl>https://i.ibb.co/r4fNPQ5/tqlogo.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,5 +33,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SuperchargedArray\SuperchargedArray\SuperchargedArray.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\licence.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

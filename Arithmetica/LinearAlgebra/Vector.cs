@@ -33,9 +33,9 @@ namespace Arithmetica.LinearAlgebra
             Helper.Copy(vector.variable, variable);
         }
 
-        public static ArithArray LoadArray(params T[] data)
+        public static SuperArray LoadArray(params T[] data)
         {
-            ArithArray arithArray = new ArithArray(data.Length, 1);
+            SuperArray arithArray = new SuperArray(data.Length, 1);
             arithArray.LoadFrom(data);
             return arithArray;
         }

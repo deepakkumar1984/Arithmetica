@@ -18,7 +18,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector(int size) : base(size, 1, DType.Double)
+        public DoubleVector(int size) : base(size, 1, DType.Double)
         {
 
         }
@@ -27,7 +27,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector(SuperArray arithArray): base(arithArray)
+        internal DoubleVector(SuperArray arithArray): base(arithArray)
         {
 
         }
@@ -59,7 +59,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector(SuperArray variable)
+        public static implicit operator DoubleVector(SuperArray variable)
         {
             return new DoubleVector(variable);
         }

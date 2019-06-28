@@ -18,7 +18,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="size">The size.</param>
-        public Vector(int size) : base(size, 1, DType.Single)
+        public SingleVector(int size) : base(size, 1, DType.Single)
         {
 
         }
@@ -27,7 +27,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector(SuperArray arithArray): base(arithArray)
+        internal SingleVector(SuperArray arithArray): base(arithArray)
         {
 
         }
@@ -59,7 +59,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector(SuperArray variable)
+        public static implicit operator SingleVector(SuperArray variable)
         {
             return new SingleVector(variable);
         }

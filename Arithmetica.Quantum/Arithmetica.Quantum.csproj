@@ -2,7 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.8.0</Version>
+    <Version>0.8.4</Version>
+    <Authors>Deepak Battini</Authors>
+    <Product>Tech-Quantum</Product>
+    <Description>Build your quantum computing algorithm in C#, test the algorithm before running on real quantum computer</Description>
+    <PackageProjectUrl>https://github.com/tech-quantum/Arithmetica</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tech-quantum/Arithmetica</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>https://i.ibb.co/r4fNPQ5/tqlogo.png</PackageIconUrl>
+    <PackageTags>quantum computing, quantum physics</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
