@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,42 +12,42 @@ namespace Arithmetica.LinearAlgebra
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Sin(Vector<T> src) => Global.OP.Sin(src.variable);
+        public static NDArray Sin(Vector<T> src) => np.sin(src.variable);
 
         /// <summary>
         /// Performs Trigonometric cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Cos(Vector<T> src) => Global.OP.Cos(src.variable);
+        public static NDArray Cos(Vector<T> src) => np.cos(src.variable);
 
         /// <summary>
         /// Performs Trigonometric tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Tan(Vector<T> src) => Global.OP.Tan(src.variable);
+        public static NDArray Tan(Vector<T> src) => np.tan(src.variable);
 
         /// <summary>
         /// Performs inverse sine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Asin(Vector<T> src) => Global.OP.Asin(src.variable);
+        public static NDArray Asin(Vector<T> src) => np.arcsin(src.variable);
 
         /// <summary>
         /// Performs inverse cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Acos(Vector<T> src) => Global.OP.Acos(src.variable);
+        public static NDArray Acos(Vector<T> src) => np.arccos(src.variable);
 
         /// <summary>
         /// Performs inverse tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Atan(Vector<T> src) => Global.OP.Atan(src.variable);
+        public static NDArray Atan(Vector<T> src) => np.arctan(src.variable);
 
         /// <summary>
         /// Element-wise arc tangent of x1/x2 choosing the quadrant correctly.
@@ -55,28 +55,28 @@ namespace Arithmetica.LinearAlgebra
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Atan2(Vector<T> srcY, Vector<T> srcX) => Global.OP.Atan2(srcY.variable, srcX.variable);
+        public static NDArray Atan2(Vector<T> srcY, Vector<T> srcX) => np.arctan2(srcY.variable, srcX.variable);
 
         /// <summary>
         /// Performs hyperbolic sine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Sinh(Vector<T> src) => Global.OP.Sinh(src.variable);
+        public static NDArray Sinh(Vector<T> src) => np.sinh(src.variable);
 
         /// <summary>
         /// Performs hyperbolic cosine, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Cosh(Vector<T> src) => Global.OP.Cosh(src.variable);
+        public static NDArray Cosh(Vector<T> src) => np.cosh(src.variable);
 
         /// <summary>
         /// Performs hyperbolic tangent, element-wise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Tanh(Vector<T> src) => Global.OP.Tanh(src.variable);
+        public static NDArray Tanh(Vector<T> src) => np.tanh(src.variable);
 
 
     }

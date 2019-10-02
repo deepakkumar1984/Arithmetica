@@ -519,7 +519,7 @@ namespace Arithmetica.LinearAlgebra.Single
 		public static Matrix3 Transpose(Matrix3 m)
 		{
 			Matrix3 t = new Matrix3(m);
-			t.Transpose();
+			t.transpose();
 			return t;
 		}
 		#endregion

@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,14 +12,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Floor(Matrix src) => Matrix.Out(Global.OP.Floor(src.variable));
+        public static Matrix Floor(Matrix src) => Matrix.Out(np.floor(src.variable));
 
         /// <summary>
         /// Return the round of the input, element-wise to nearest integer
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Round(Matrix src) => Matrix.Out(Global.OP.Round(src.variable));
+        public static Matrix Round(Matrix src) => Matrix.Out(np.round(src.variable));
 
         /// <summary>
         /// Return the truncated value of the input, element-wise. The truncated value of the scalar x is the nearest integer i which is closer to zero than x is. In short, the fractional part of the signed number x is discarded.

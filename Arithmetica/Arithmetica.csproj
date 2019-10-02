@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Version>0.8.4</Version>
     <Authors>Deepak Battini</Authors>
     <Company>Tech-Quantum</Company>
@@ -32,13 +32,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SuperchargedArray\SuperchargedArray\SuperchargedArray.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\licence.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NumSharp\src\NumSharp.Core\NumSharp.Core.csproj" />
   </ItemGroup>
 </Project>

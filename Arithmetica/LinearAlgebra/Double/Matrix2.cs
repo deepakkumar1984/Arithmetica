@@ -407,7 +407,7 @@ namespace Arithmetica.LinearAlgebra.Double
 		public static Matrix2 Transpose(Matrix2 m)
 		{
 			Matrix2 t = new Matrix2(m);
-			t.Transpose();
+			t.transpose();
 			return t;
 		}
 		#endregion

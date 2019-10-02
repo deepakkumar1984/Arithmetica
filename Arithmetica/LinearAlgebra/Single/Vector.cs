@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
-using SuperchargedArray;
+using NumSharp;
 
 namespace Arithmetica.LinearAlgebra.Single
 {
@@ -27,7 +27,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal SingleVector(SuperArray arithArray): base(arithArray)
+        internal SingleVector(NDArray arithArray): base(arithArray)
         {
 
         }
@@ -44,22 +44,22 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return variable.GetElementAsFloat(index, 0);
+                return variable.GetSingle(index, 0);
             }
             set
             {
-                variable.SetElementAsFloat(value, index, 0);
+                variable.SetSingle(value, index, 0);
             }
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector"/>.
+        /// Performs an implicit conversion from <see cref="NDArray"/> to <see cref="Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator SingleVector(SuperArray variable)
+        public static implicit operator SingleVector(NDArray variable)
         {
             return new SingleVector(variable);
         }
@@ -95,7 +95,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector2Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector2Vector(SuperArray arithArray) : base(arithArray)
+        internal Vector2Vector(NDArray arithArray) : base(arithArray)
         {
 
         }
@@ -127,23 +127,23 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return new Single.Vector2(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1));
+                return new Single.Vector2(variable.GetSingle(index, 0), variable.GetSingle(index, 1));
             }
             set
             {
-                variable.SetElementAsFloat(value.X, index, 0);
-                variable.SetElementAsFloat(value.Y, index, 1);
+                variable.SetSingle(value.X, index, 0);
+                variable.SetSingle(value.Y, index, 1);
             }
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector2Vector"/>.
+        /// Performs an implicit conversion from <see cref="NDArray"/> to <see cref="Vector2Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector2Vector(SuperArray variable)
+        public static implicit operator Vector2Vector(NDArray variable)
         {
             return new Vector2Vector(variable);
         }
@@ -179,7 +179,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector3Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector3Vector(SuperArray arithArray) : base(arithArray)
+        internal Vector3Vector(NDArray arithArray) : base(arithArray)
         {
 
         }
@@ -211,24 +211,24 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return new Single.Vector3(variable.GetElementAsFloat(index, 0), variable.GetElementAsFloat(index, 1), variable.GetElementAsFloat(index, 2));
+                return new Single.Vector3(variable.GetSingle(index, 0), variable.GetSingle(index, 1), variable.GetSingle(index, 2));
             }
             set
             {
-                variable.SetElementAsFloat(value.X, index, 0);
-                variable.SetElementAsFloat(value.Y, index, 1);
-                variable.SetElementAsFloat(value.Z, index, 2);
+                variable.SetSingle(value.X, index, 0);
+                variable.SetSingle(value.Y, index, 1);
+                variable.SetSingle(value.Z, index, 2);
             }
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector3Vector"/>.
+        /// Performs an implicit conversion from <see cref="NDArray"/> to <see cref="Vector3Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector3Vector(SuperArray variable)
+        public static implicit operator Vector3Vector(NDArray variable)
         {
             return new Vector3Vector(variable);
         }
@@ -263,7 +263,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// Initializes a new instance of the <see cref="Vector4Vector"/> class.
         /// </summary>
         /// <param name="arithArray">The arith array.</param>
-        internal Vector4Vector(SuperArray arithArray) : base(arithArray)
+        internal Vector4Vector(NDArray arithArray) : base(arithArray)
         {
 
         }
@@ -295,28 +295,28 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return new Single.Vector4(variable.GetElementAsFloat(index, 0), 
-                            variable.GetElementAsFloat(index, 1),
-                            variable.GetElementAsFloat(index, 2),
-                            variable.GetElementAsFloat(index, 3));
+                return new Single.Vector4(variable.GetSingle(index, 0), 
+                            variable.GetSingle(index, 1),
+                            variable.GetSingle(index, 2),
+                            variable.GetSingle(index, 3));
             }
             set
             {
-                variable.SetElementAsFloat(value.X, index, 0);
-                variable.SetElementAsFloat(value.Y, index, 1);
-                variable.SetElementAsFloat(value.Z, index, 2);
-                variable.SetElementAsFloat(value.W, index, 3);
+                variable.SetSingle(value.X, index, 0);
+                variable.SetSingle(value.Y, index, 1);
+                variable.SetSingle(value.Z, index, 2);
+                variable.SetSingle(value.W, index, 3);
             }
         }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="SuperArray"/> to <see cref="Vector4Vector"/>.
+        /// Performs an implicit conversion from <see cref="NDArray"/> to <see cref="Vector4Vector"/>.
         /// </summary>
         /// <param name="variable">The variable.</param>
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Vector4Vector(SuperArray variable)
+        public static implicit operator Vector4Vector(NDArray variable)
         {
             return new Vector4Vector(variable);
         }

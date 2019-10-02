@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,7 +12,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static float Sum(Matrix src) => Global.OP.Sum(src.variable);
+        public static float Sum(Matrix src) => np.sum(src.variable);
 
         /// <summary>
         /// Reduced Sum of the matrix elements on a specific dimension.
@@ -20,14 +20,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="src">The source matrix.</param>
         /// <param name="dimension">The dimension.</param>
         /// <returns></returns>
-        public static Matrix Sum(Matrix src, int dimension) => Matrix.Out(Global.OP.Sum(src.variable, dimension));
+        public static Matrix Sum(Matrix src, int dimension) => Matrix.Out(np.sum(src.variable, dimension));
 
         /// <summary>
         /// Reduced Prod of the matrix elements on all dimension.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static float Prod(Matrix src) => Global.OP.Prod(src.variable);
+        public static float Prod(Matrix src) => np.prod(src.variable);
 
         /// <summary>
         /// Reduced Prod of the matrix elements on a specific dimension.
@@ -35,14 +35,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="src">The source matrix.</param>
         /// <param name="dimension">The dimension.</param>
         /// <returns></returns>
-        public static Matrix Prod(Matrix src, int dimension) => Matrix.Out(Global.OP.Prod(src.variable, dimension));
+        public static Matrix Prod(Matrix src, int dimension) => Matrix.Out(np.prod(src.variable, dimension));
 
         /// <summary>
         /// Reduced Mean of the matrix elements on all dimension.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static float Mean(Matrix src) => Global.OP.Mean(src.variable);
+        public static float Mean(Matrix src) => np.mean(src.variable);
 
         /// <summary>
         /// Reduced Mean of the matrix elements on a specific dimension.
@@ -50,14 +50,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="src">The source matrix.</param>
         /// <param name="dimension">The dimension.</param>
         /// <returns></returns>
-        public static Matrix Mean(Matrix src, int dimension) => Matrix.Out(Global.OP.Mean(src.variable, dimension));
+        public static Matrix Mean(Matrix src, int dimension) => Matrix.Out(np.mean(src.variable, dimension));
 
         /// <summary>
         /// Reduced Max of the matrix elements on all dimension.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static float Max(Matrix src) => Global.OP.Max(src.variable);
+        public static float Max(Matrix src) => np.max(src.variable);
 
         /// <summary>
         /// Reduced Max of the matrix elements on a specific dimension.
@@ -65,14 +65,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="src">The source matrix.</param>
         /// <param name="dimension">The dimension.</param>
         /// <returns></returns>
-        public static Matrix Max(Matrix src, int dimension) => Matrix.Out(Global.OP.Max(src.variable, dimension));
+        public static Matrix Max(Matrix src, int dimension) => Matrix.Out(np.max(src.variable, dimension));
 
         /// <summary>
         /// Reduced Min of the matrix elements on all dimension.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static float Min(Matrix src) => Global.OP.Min(src.variable);
+        public static float Min(Matrix src) => np.min(src.variable);
 
         ///// <summary>
         ///// Reduced Min of the matrix elements on a specific dimension.
@@ -80,7 +80,7 @@ namespace Arithmetica.LinearAlgebra.Single
         ///// <param name="src">The source matrix.</param>
         ///// <param name="dimension">The dimension.</param>
         ///// <returns></returns>
-        //public static Matrix Min(Matrix src, int dimension) => Matrix.Out(Global.OP.Min(src.variable, dimension));
+        //public static Matrix Min(Matrix src, int dimension) => Matrix.Out(np.min(src.variable, dimension));
 
         ///// <summary>
         ///// Reduced Norm of the matrix elements on all dimension.

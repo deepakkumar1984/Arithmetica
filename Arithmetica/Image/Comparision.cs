@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image GreaterThan(Image lhs, Image rhs) => Image.Out(Global.OP.GreaterThan(lhs.variable, rhs.variable));
+        public static Image GreaterThan(Image lhs, Image rhs) => Image.Out(lhs.variable > rhs.variable);
 
         /// <summary>
         /// Performs lhs > scalar elemenwise.
@@ -21,7 +21,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Image GreaterThan(Image lhs, float rhs) => Image.Out(Global.OP.GreaterThan(lhs.variable, rhs));
+        public static Image GreaterThan(Image lhs, float rhs) => Image.Out(lhs.variable > rhs);
 
         /// <summary>
         /// Performs lhs >= rhs elemenwise.
@@ -29,7 +29,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image GreaterEqual(Image lhs, Image rhs) => Image.Out(Global.OP.GreaterOrEqual(lhs.variable, rhs.variable));
+        public static Image GreaterEqual(Image lhs, Image rhs) => Image.Out(lhs.variable >= rhs.variable);
 
         /// <summary>
         /// Performs lhs >= float elemenwise.
@@ -37,7 +37,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Image GreaterEqual(Image lhs, float rhs) => Image.Out(Global.OP.GreaterOrEqual(lhs.variable, rhs));
+        public static Image GreaterEqual(Image lhs, float rhs) => Image.Out(lhs.variable >= rhs);
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; rhs elemenwise.]]>
@@ -45,7 +45,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image LessThan(Image lhs, Image rhs) => Image.Out(Global.OP.LessThan(lhs.variable, rhs.variable));
+        public static Image LessThan(Image lhs, Image rhs) => Image.Out(lhs.variable < rhs.variable);
 
         /// <summary>
         /// <![CDATA[Performs lhs &lt; scalar elemenwise.]]>
@@ -53,7 +53,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Image LessThan(Image lhs, float rhs) => Image.Out(Global.OP.LessThan(lhs.variable, rhs));
+        public static Image LessThan(Image lhs, float rhs) => Image.Out(lhs.variable < rhs);
 
         /// <summary>
         /// Performs lhs &lt;= rhs elemenwise.
@@ -61,7 +61,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image LessEqual(Image lhs, Image rhs) => Image.Out(Global.OP.LessOrEqual(lhs.variable, rhs.variable));
+        public static Image LessEqual(Image lhs, Image rhs) => Image.Out(lhs.variable <= rhs.variable);
 
         /// <summary>
         /// Performs lhs &lt;= scalar elemenwise.
@@ -69,7 +69,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Image LessEqual(Image lhs, float rhs) => Image.Out(Global.OP.LessOrEqual(lhs.variable, rhs));
+        public static Image LessEqual(Image lhs, float rhs) => Image.Out(lhs.variable <= rhs);
 
         /// <summary>
         /// Performs lhs == rhs elemenwise.
@@ -77,7 +77,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image EqualTo(Image lhs, Image rhs) => Image.Out(Global.OP.EqualTo(lhs.variable, rhs.variable));
+        public static Image EqualTo(Image lhs, Image rhs) => Image.Out(np.array_equal(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Performs lhs == scalar elemenwise.
@@ -85,7 +85,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS scalar float.</param>
         /// <returns></returns>
-        public static Image EqualTo(Image lhs, float rhs) => Image.Out(Global.OP.LessOrEqual(lhs.variable, rhs));
+        public static Image EqualTo(Image lhs, float rhs) => Image.Out(lhs.variable <= rhs);
 
         /// <summary>
         /// Performs lhs != rhs elemenwise.
@@ -109,7 +109,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image Maximum(Image lhs, Image rhs) => Image.Out(Global.OP.Maximum(lhs.variable, rhs.variable));
+        public static Image Maximum(Image lhs, Image rhs) => Image.Out(np.maximum(lhs.variable, rhs.variable));
 
         /// <summary>
         /// Find the maximum between Image and scalar value
@@ -117,7 +117,7 @@ namespace Arithmetica.Imaging
         /// <param name="lhs">The LHS Image.</param>
         /// <param name="rhs">The RHS Image.</param>
         /// <returns></returns>
-        public static Image Maximum(Image lhs, float rhs) => Image.Out(Global.OP.Maximum(lhs.variable, rhs));
+        public static Image Maximum(Image lhs, float rhs) => Image.Out(np.maximum(lhs.variable, rhs));
 
     }
 }

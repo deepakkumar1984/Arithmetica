@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using SuperchargedArray;
+using NumSharp;
 
 namespace Arithmetica.LinearAlgebra
 {
@@ -11,19 +11,19 @@ namespace Arithmetica.LinearAlgebra
     {
         public long Size => variable.Shape[0];
 
-        internal SuperArray variable = null;
+        internal NDArray variable = null;
 
         public Vector(int size)
         {
-            variable = new SuperArray(size, 1);
+            variable = new NDArray(size, 1);
         }
 
         internal Vector(int size, int dim_length, DType dtype)
         {
-            variable = new SuperArray(new long[] { size, dim_length }, dtype);
+            variable = new NDArray(new long[] { size, dim_length }, dtype);
         }
 
-        public Vector(SuperArray arithArray)
+        public Vector(NDArray arithArray)
         {
             variable = arithArray;
         }
@@ -33,9 +33,9 @@ namespace Arithmetica.LinearAlgebra
             Helper.Copy(vector.variable, variable);
         }
 
-        public static SuperArray LoadArray(params T[] data)
+        public static NDArray LoadArray(params T[] data)
         {
-            SuperArray arithArray = new SuperArray(data.Length, 1);
+            NDArray arithArray = new NDArray(data.Length, 1);
             arithArray.LoadFrom(data);
             return arithArray;
         }
@@ -58,7 +58,7 @@ namespace Arithmetica.LinearAlgebra
             variable.Print();
         }
 
-        public static Vector<T> Out(SuperArray arithArray)
+        public static Vector<T> Out(NDArray arithArray)
         {
             return new Vector<T>(arithArray);
         }
@@ -68,47 +68,47 @@ namespace Arithmetica.LinearAlgebra
             return "Vector: " + Size;
         }
 
-        public static SuperArray operator +(Vector<T> lhs, Vector<T> rhs) { return lhs.variable + rhs.variable; }
+        public static NDArray operator +(Vector<T> lhs, Vector<T> rhs) { return lhs.variable + rhs.variable; }
 
-        public static SuperArray operator +(Vector<T> lhs, float rhs) { return lhs.variable + rhs; }
+        public static NDArray operator +(Vector<T> lhs, float rhs) { return lhs.variable + rhs; }
 
-        public static SuperArray operator +(float lhs, Vector<T> rhs) { return lhs + rhs.variable; }
+        public static NDArray operator +(float lhs, Vector<T> rhs) { return lhs + rhs.variable; }
 
-        public static SuperArray operator -(Vector<T> lhs, Vector<T> rhs) { return lhs.variable - rhs.variable; }
+        public static NDArray operator -(Vector<T> lhs, Vector<T> rhs) { return lhs.variable - rhs.variable; }
 
-        public static SuperArray operator -(Vector<T> lhs, float rhs) { return lhs.variable - rhs; }
+        public static NDArray operator -(Vector<T> lhs, float rhs) { return lhs.variable - rhs; }
 
-        public static SuperArray operator -(float lhs, Vector<T> rhs) { return lhs - rhs.variable; }
+        public static NDArray operator -(float lhs, Vector<T> rhs) { return lhs - rhs.variable; }
 
-        public static SuperArray operator *(Vector<T> lhs, Vector<T> rhs) { return lhs.variable * rhs.variable; }
+        public static NDArray operator *(Vector<T> lhs, Vector<T> rhs) { return lhs.variable * rhs.variable; }
 
-        public static SuperArray operator *(Vector<T> lhs, float rhs) { return lhs.variable * rhs; }
+        public static NDArray operator *(Vector<T> lhs, float rhs) { return lhs.variable * rhs; }
 
-        public static SuperArray operator *(float lhs, Vector<T> rhs) { return lhs * rhs.variable; }
+        public static NDArray operator *(float lhs, Vector<T> rhs) { return lhs * rhs.variable; }
 
-        public static SuperArray operator /(Vector<T> lhs, Vector<T> rhs) { return lhs.variable / rhs.variable; }
+        public static NDArray operator /(Vector<T> lhs, Vector<T> rhs) { return lhs.variable / rhs.variable; }
 
-        public static SuperArray operator /(Vector<T> lhs, float rhs) { return lhs / rhs; }
+        public static NDArray operator /(Vector<T> lhs, float rhs) { return lhs / rhs; }
 
-        public static SuperArray operator /(float lhs, Vector<T> rhs) { return lhs / rhs; }
+        public static NDArray operator /(float lhs, Vector<T> rhs) { return lhs / rhs; }
 
-        public static SuperArray operator >(Vector<T> lhs, Vector<T> rhs) { return lhs > rhs; }
+        public static NDArray operator >(Vector<T> lhs, Vector<T> rhs) { return lhs > rhs; }
 
-        public static SuperArray operator >(Vector<T> lhs, float rhs) { return lhs > rhs; }
+        public static NDArray operator >(Vector<T> lhs, float rhs) { return lhs > rhs; }
 
-        public static SuperArray operator <(Vector<T> lhs, Vector<T> rhs) { return lhs < rhs; }
+        public static NDArray operator <(Vector<T> lhs, Vector<T> rhs) { return lhs < rhs; }
 
-        public static SuperArray operator <(Vector<T> lhs, float rhs) { return lhs < rhs; }
+        public static NDArray operator <(Vector<T> lhs, float rhs) { return lhs < rhs; }
 
-        public static SuperArray operator >=(Vector<T> lhs, Vector<T> rhs) { return lhs >= rhs; }
+        public static NDArray operator >=(Vector<T> lhs, Vector<T> rhs) { return lhs >= rhs; }
 
-        public static SuperArray operator >=(Vector<T> lhs, float rhs) { return lhs >= rhs; }
+        public static NDArray operator >=(Vector<T> lhs, float rhs) { return lhs >= rhs; }
 
-        public static SuperArray operator <=(Vector<T> lhs, Vector<T> rhs) { return lhs <= rhs; }
+        public static NDArray operator <=(Vector<T> lhs, Vector<T> rhs) { return lhs <= rhs; }
 
-        public static SuperArray operator <=(Vector<T> lhs, float rhs) { return lhs <= rhs; }
+        public static NDArray operator <=(Vector<T> lhs, float rhs) { return lhs <= rhs; }
 
-        public static implicit operator Vector<T>(SuperArray variable)
+        public static implicit operator Vector<T>(NDArray variable)
         {
             return new Vector<T>(variable);
         }

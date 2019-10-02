@@ -7,7 +7,7 @@ using System.IO;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using Arithmetica.LinearAlgebra.Single;
-using SuperchargedArray;
+using NumSharp;
 
 namespace Arithmetica.Imaging
 {
@@ -16,7 +16,7 @@ namespace Arithmetica.Imaging
     /// </summary>
     public partial class Image
     {
-        internal SuperArray variable;
+        internal NDArray variable;
 
         /// <summary>
         /// Gets the size of the image.
@@ -28,7 +28,7 @@ namespace Arithmetica.Imaging
         {
             get
             {
-                return (int)variable.Shape[0];
+                return variable.shape[0];
             }
         }
 
@@ -42,7 +42,7 @@ namespace Arithmetica.Imaging
         {
             get
             {
-                return (int)variable.Shape[1];
+                return variable.shape[1];
             }
         }
 
@@ -56,7 +56,7 @@ namespace Arithmetica.Imaging
         {
             get
             {
-                return (int)variable.Shape[3];
+                return variable.shape[3];
             }
         }
 
@@ -70,7 +70,7 @@ namespace Arithmetica.Imaging
         {
             get
             {
-                return (int)variable.Shape[2];
+                return variable.shape[2];
             }
         }
 
@@ -80,14 +80,14 @@ namespace Arithmetica.Imaging
         /// <param name="size">The size of the image.</param>
         public Image(int channel, int height, int width, int size = 1)
         {
-            variable = new SuperArray(size, channel, height, width);
+            variable = new NDArray(size, channel, height, width);
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Image"/> class.
         /// </summary>
         /// <param name="v">The arith array which is a generalised array.</param>
-        private Image(SuperArray v)
+        private Image(NDArray v)
         {
             variable = v;
         }
@@ -97,7 +97,7 @@ namespace Arithmetica.Imaging
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static SuperArray In(Image x)
+        internal static NDArray In(Image x)
         {
             return x.variable;
         }
@@ -107,7 +107,7 @@ namespace Arithmetica.Imaging
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        internal static Image Out(SuperArray x)
+        internal static Image Out(NDArray x)
         {
             return new Image(x);
         }
@@ -118,7 +118,7 @@ namespace Arithmetica.Imaging
         /// <value>
         /// The arith array.
         /// </value>
-        public SuperArray SuperArray
+        public NDArray NDArray
         {
             get
             {
@@ -174,9 +174,9 @@ namespace Arithmetica.Imaging
 
             var imgdata = ImgToFloat(mat, W, H, C);
 
-            SuperArray result = new SuperArray(1, H, W, C);
-            result.LoadFrom(imgdata);
-            result = result.Transpose(0, 3, 1, 2);
+            var result = np.array(imgdata);
+            result = result.reshape(new Shape(1, H, W, C));
+            result = result.transpose(new int[] { 0, 3, 1, 2 });
             return Out(result);
         }
 
@@ -195,9 +195,9 @@ namespace Arithmetica.Imaging
 
             var imgdata = ImgToFloat(mat, W, H, C);
 
-            SuperArray result = new SuperArray(1, H, W, C);
-            result.LoadFrom(imgdata);
-            result = result.Transpose(0, 3, 1, 2);
+            var result = np.array(imgdata);
+            result = result.reshape(new Shape(1, H, W, C));
+            result = result.transpose(new Shape(0, 3, 1, 2));
             return Out(result);
         }
 
@@ -274,9 +274,9 @@ namespace Arithmetica.Imaging
                 data.AddRange(imgdata);
             }
 
-            SuperArray result = new SuperArray(files.Count(), height, width, C);
+            NDArray result = new NDArray(files.Count(), height, width, C);
             result.LoadFrom(data.ToArray());
-            result = result.Transpose(0, 3, 1, 2);
+            result = result.transpose(0, 3, 1, 2);
             return Out(result);
         }
 
@@ -292,7 +292,6 @@ namespace Arithmetica.Imaging
         {
             get
             {
-                
                 var data = Helper.NewContiguous(variable.Select(0, index));
                 Image img = new Image(Channel, Height, Width);
                 img.LoadData(data.ToArray());
@@ -349,7 +348,7 @@ namespace Arithmetica.Imaging
         public Mat ToOpenCVMat(long index = 0)
         {
             Image img = this[index];
-            img.variable = img.variable.Transpose(0, 2, 3, 1);
+            img.variable = img.variable.transpose(0, 2, 3, 1);
 
             Mat mat;
 
@@ -602,9 +601,9 @@ namespace Arithmetica.Imaging
                 data.AddRange(ImgToFloat(mat, mat.Width, mat.Height, mat.Channels()));
             }
 
-            var result = new SuperArray(1, H, W, Channel);
+            var result = new NDArray(1, H, W, Channel);
             result.LoadFrom(data.ToArray());
-            result = result.Transpose(0, 3, 1, 2);
+            result = result.transpose(new int[] { 0, 3, 1, 2 });
             return Out(result);
         }
 
@@ -621,10 +620,11 @@ namespace Arithmetica.Imaging
             List<float> data = new List<float>();
             for (int i = 0; i < Size; i++)
             {
+                variable.
                 data.AddRange(variable.GetRegion(new long[] { i, 0, y, x }, new long[] { 1, Channel, width, height }).DataFloat);
             }
 
-            var result = new SuperArray(1, Channel, height, width);
+            var result = new NDArray(1, Channel, height, width);
             result.LoadFrom(data.ToArray());
             return Out(result);
         }
@@ -687,7 +687,7 @@ namespace Arithmetica.Imaging
 
             for (int i = 0; i < values.Length; i++)
             {
-                variable.SetElementAsFloat(values[i], 0, i, y, x);
+                variable.SetSingle(values[i], 0, i, y, x);
             }
         }
         #endregion

@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,29 +13,21 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="src">The source Vector<T>.</param>
         /// <param name="value">The scalar value.</param>
         /// <returns></returns>
-        public static SuperArray Pow(Vector<T> src, float value) => Global.OP.Pow(src.variable, value);
-
-        /// <summary>
-        /// Performs elementwise power to Vector<T> power operation elemenwise for a scalar
-        /// </summary>
-        /// <param name="value">The scalar value.</param>
-        /// <param name="src">The source Vector<T>.</param>
-        /// <returns></returns>
-        public static SuperArray Tpow(float value, Vector<T> src) => Global.OP.TPow(value, src.variable);
+        public static NDArray Pow(Vector<T> src, float value) => np.power(src.variable, value);
 
         /// <summary>
         /// Perform square root operation on the Vector<T> elemenwise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Sqrt(Vector<T> src) => Global.OP.Sqrt(src.variable);
+        public static NDArray Sqrt(Vector<T> src) => np.sqrt(src.variable);
 
         /// <summary>
         /// Perform square operation on the Vector<T> elemenwise.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static SuperArray Square(Vector<T> src) => Global.OP.Square(src.variable);
+        public static NDArray Square(Vector<T> src) => np.square(src.variable);
 
     }
 }

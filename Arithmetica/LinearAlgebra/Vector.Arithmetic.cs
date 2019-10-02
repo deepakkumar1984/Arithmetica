@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using SuperchargedArray;
+using NumSharp;
 
 namespace Arithmetica.LinearAlgebra
 {
@@ -14,7 +14,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The second Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> CrossProduct(Vector<T> lhs, Vector<T> rhs) => Global.OP.Dot(lhs.variable, rhs.variable.Transpose());
+        public static Vector<T> CrossProduct(Vector<T> lhs, Vector<T> rhs) => Global.OP.Dot(lhs.variable, rhs.variable.transpose());
 
         /// <summary>
         /// Performs elementwise add operation between two Vector<T>
@@ -22,7 +22,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The second Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Add(Vector<T> lhs, Vector<T> rhs) => Global.OP.Add(lhs.variable, rhs.variable);
+        public static Vector<T> Add(Vector<T> lhs, Vector<T> rhs) => np.add(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs elementwise add operation between Vector<T> and scalar
@@ -30,7 +30,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Add(Vector<T> lhs, float rhs) => Global.OP.Add(lhs.variable, rhs);
+        public static Vector<T> Add(Vector<T> lhs, float rhs) => np.add(lhs.variable, rhs);
 
         /// <summary>
         /// Performs elementwise add operation between scalar and Vector<T>
@@ -38,7 +38,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Add(float lhs, Vector<T> rhs) => Global.OP.Add(rhs.variable, lhs);
+        public static Vector<T> Add(float lhs, Vector<T> rhs) => np.add(rhs.variable, lhs);
 
         /// <summary>
         /// Performs elementwise subtract operation between two Vector<T>
@@ -46,7 +46,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The second Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Sub(Vector<T> lhs, Vector<T> rhs) => Global.OP.Sub(lhs.variable, rhs.variable);
+        public static Vector<T> Sub(Vector<T> lhs, Vector<T> rhs) => np.subtract(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs elementwise subtract operation between scalar and Vector<T>
@@ -54,7 +54,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Sub(Vector<T> lhs, float rhs) => Global.OP.Sub(lhs.variable, rhs);
+        public static Vector<T> Sub(Vector<T> lhs, float rhs) => np.subtract(lhs.variable, rhs);
 
         /// <summary>
         /// Performs elementwise multiplication operation between two Vector<T>
@@ -62,7 +62,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The second Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Sub(float lhs, Vector<T> rhs) => Global.OP.Sub(lhs, rhs.variable);
+        public static Vector<T> Sub(float lhs, Vector<T> rhs) => np.subtract(lhs, rhs.variable);
 
         /// <summary>
         /// Performs elementwise multiplication operation between Vector<T> and scalar
@@ -70,7 +70,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Mul(Vector<T> lhs, Vector<T> rhs) => Global.OP.Mul(lhs.variable, rhs.variable);
+        public static Vector<T> Mul(Vector<T> lhs, Vector<T> rhs) => np.multiply(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs elementwise multiplication operation between Vector<T> and scalar
@@ -78,7 +78,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Mul(Vector<T> lhs, float rhs) => Global.OP.Mul(lhs.variable, rhs);
+        public static Vector<T> Mul(Vector<T> lhs, float rhs) => np.multiply(lhs.variable, rhs);
 
         /// <summary>
         /// Performs elementwise multiplication operation between scalar and Vector<T>
@@ -86,7 +86,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Mul(float lhs, Vector<T> rhs) => Global.OP.Mul(rhs.variable, lhs);
+        public static Vector<T> Mul(float lhs, Vector<T> rhs) => np.multiply(rhs.variable, lhs);
 
         /// <summary>
         /// Performs elementwise divide operation between two Vector<T>
@@ -94,7 +94,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The second Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Div(Vector<T> lhs, Vector<T> rhs) => Global.OP.Div(lhs.variable, rhs.variable);
+        public static Vector<T> Div(Vector<T> lhs, Vector<T> rhs) => np.divide(lhs.variable, rhs.variable);
 
         /// <summary>
         /// Performs elementwise divide operation between Vector<T> and scalar
@@ -102,7 +102,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Div(Vector<T> lhs, float rhs) => Global.OP.Div(lhs.variable, rhs);
+        public static Vector<T> Div(Vector<T> lhs, float rhs) => np.divide(lhs.variable, rhs);
 
         /// <summary>
         /// Performs elementwise divide operation between scalar and Vector<T>
@@ -110,7 +110,7 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Div(float lhs, Vector<T> rhs) => Global.OP.Div(lhs, rhs.variable);
+        public static Vector<T> Div(float lhs, Vector<T> rhs) => np.divide(lhs, rhs.variable);
 
         /// <summary>
         /// Performs elementwise divide modulus for the first Vector<T> against a scalar value
@@ -118,21 +118,21 @@ namespace Arithmetica.LinearAlgebra
         /// <param name="lhs">The first Vector<T>.</param>
         /// <param name="rhs">The scalar value.</param>
         /// <returns></returns>
-        public static Vector<T> Mod(Vector<T> lhs, float rhs) => Global.OP.Mod(lhs.variable, rhs);
+        public static Vector<T> Mod(Vector<T> lhs, float rhs) => np.mod(lhs.variable, rhs);
 
         /// <summary>
         /// Negates the specified Vector<T>.
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Neg(Vector<T> src) => Global.OP.Neg(src.variable);
+        public static Vector<T> Neg(Vector<T> src) => np.negative(src.variable);
 
         /// <summary>
         /// Finds the elementwise absolute value of the Vector<T>
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Abs(Vector<T> src) => Global.OP.Abs(src.variable);
+        public static Vector<T> Abs(Vector<T> src) => np.abs(src.variable);
 
         /// <summary>
         /// Returns an element-wise indication of the sign of a number. The sign function returns -1 if x< 0, 0 if x==0, 1 if x> 0. nan is returned for nan inputs.
@@ -140,7 +140,7 @@ namespace Arithmetica.LinearAlgebra
         /// </summary>
         /// <param name="src">The source Vector<T>.</param>
         /// <returns></returns>
-        public static Vector<T> Sign(Vector<T> src) => Global.OP.Sign(src.variable);
+        public static Vector<T> Sign(Vector<T> src) => np.sign(src.variable);
 
         /// <summary>
         /// Finds the linear interpolation is a method of curve fitting using linear polynomials to construct new data points within the range of a discrete set of known data points.

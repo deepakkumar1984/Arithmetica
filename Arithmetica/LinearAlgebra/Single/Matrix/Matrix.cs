@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +10,7 @@ namespace Arithmetica.LinearAlgebra.Single
     /// </summary>
     public partial class Matrix
     {
-        internal SuperArray variable;
+        internal NDArray variable;
 
         /// <summary>
         /// Gets the rows of the matrix
@@ -47,7 +47,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="cols">The cols.</param>
         public Matrix(long rows, long cols)
         {
-            variable = new SuperArray(rows, cols);
+            variable = new NDArray(rows, cols);
         }
 
         /// <summary>
@@ -58,14 +58,14 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <param name="dataType">Type of the data.</param>
         public Matrix(long rows, long cols, DType dataType)
         {
-            variable = new SuperArray(new long[] { rows, cols }, dataType);
+            variable = new NDArray(new long[] { rows, cols }, dataType);
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Matrix"/> class.
         /// </summary>
         /// <param name="v">The arith array.</param>
-        private Matrix(SuperArray v)
+        private Matrix(NDArray v)
         {
             variable = v;
         }
@@ -77,7 +77,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Matrix3x2(params float[] data)
         {
-            var x = new SuperArray(new long[] { 3, 2 });
+            var x = new NDArray(new long[] { 3, 2 });
             if(data.Length == 6)
             {
                 x.LoadFrom(data);
@@ -93,7 +93,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Matrix4x4(params float[] data)
         {
-            var x = new SuperArray(new long[] { 4, 4 });
+            var x = new NDArray(new long[] { 4, 4 });
             if (data.Length == 8)
             {
                 x.LoadFrom(data);
@@ -110,7 +110,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Ones(int rows, int cols)
         {
-            var x = new SuperArray(new long[] { rows, cols });
+            var x = new NDArray(new long[] { rows, cols });
             x.Fill(1);
             return Out(x);
         }
@@ -123,7 +123,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Zeros(int rows, int cols)
         {
-            var x = new SuperArray(new long[] { rows, cols });
+            var x = new NDArray(new long[] { rows, cols });
             x.Fill(0);
             return Out(x);
         }
@@ -135,7 +135,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Diagonal(params float[] data)
         {
-            var x = new SuperArray(new long[] { data.Length, 1 });
+            var x = new NDArray(new long[] { data.Length, 1 });
             x.LoadFrom(data);
             x = Global.OP.Diag(x);
             return Out(x);
@@ -148,7 +148,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public static Matrix Identity(int diagElementCount)
         {
-            var x = new SuperArray(new long[] { diagElementCount });
+            var x = new NDArray(new long[] { diagElementCount });
             x.Fill(1);
             x = Global.OP.Diag(x);
             return Out(x);
@@ -176,20 +176,20 @@ namespace Arithmetica.LinearAlgebra.Single
         {
             get
             {
-                return variable.GetElementAsFloat(row, col);
+                return variable.GetSingle(row, col);
             }
             set
             {
-                variable.SetElementAsFloat(value, row, col);
+                variable.SetSingle(value, row, col);
             }
         }
 
-        internal static SuperArray In(Matrix x)
+        internal static NDArray In(Matrix x)
         {
             return x.variable;
         }
 
-        internal static Matrix Out(SuperArray x)
+        internal static Matrix Out(NDArray x)
         {
             return new Matrix(x);
         }
@@ -200,7 +200,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <value>
         /// The arith array.
         /// </value>
-        public SuperArray SuperArray
+        public NDArray NDArray
         {
             get
             {
@@ -245,7 +245,7 @@ namespace Arithmetica.LinearAlgebra.Single
         /// <returns></returns>
         public Matrix Transpose()
         {
-            return Out(variable.Transpose());
+            return Out(variable.transpose());
         }
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,7 +14,7 @@ namespace Arithmetica.Imaging
         /// <param name="p">The p.</param>
         /// <param name="seed">The seed.</param>
         public static void Bernoulli(Image src, float p, int? seed = null)
-            => Global.OP.RandomBernoulli(src.variable, p, seed);
+            => Randomizer.RandomBernoulli(src.variable, p, seed);
 
         /// <summary>
         /// Draw samples from a standard Cauchy distribution.
@@ -26,7 +26,7 @@ namespace Arithmetica.Imaging
         /// <param name="sigma">The sigma.</param>
         /// <param name="seed">The seed.</param>
         public static void Cauchy(Image src, float median, float sigma, int? seed = null)
-            => Global.OP.RandomCauchy(src.variable, median, sigma, seed);
+            => Randomizer.RandomCauchy(src.variable, median, sigma, seed);
 
         /// <summary>
         /// Draw samples from an exponential distribution. The exponential distribution is a continuous analogue of the geometric distribution. 
@@ -35,7 +35,7 @@ namespace Arithmetica.Imaging
         /// <param name="lambda">The lambda value.</param>
         /// <param name="seed">The seed.</param>
         public static void Exponential(Image src, float lambda, int? seed = null)
-            => Global.OP.RandomExponential(src.variable, lambda, seed);
+            => Randomizer.RandomExponential(src.variable, lambda, seed);
 
         /// <summary>
         /// Draw samples from the geometric distribution.
@@ -46,7 +46,7 @@ namespace Arithmetica.Imaging
         /// <param name="p">The probability value.</param>
         /// <param name="seed">The seed.</param>
         public static void Geometric(Image src, float p, int? seed = null)
-            => Global.OP.RandomGeometric(src.variable, p, seed);
+            => Randomizer.RandomGeometric(src.variable, p, seed);
 
         /// <summary>
         /// Draw samples from a log-normal distribution with specified mean, standard deviation, and Image shape. 
@@ -57,7 +57,7 @@ namespace Arithmetica.Imaging
         /// <param name="std">The standard deviation value.</param>
         /// <param name="seed">The seed.</param>
         public static void LogNormal(Image src, float mean, float std, int? seed = null)
-            => Global.OP.RandomLogNormal(src.variable, mean, std, seed);
+            => Randomizer.RandomLogNormal(src.variable, mean, std, seed);
 
         /// <summary>
         /// Draw random samples from a normal (Gaussian) distribution.
@@ -69,7 +69,7 @@ namespace Arithmetica.Imaging
         /// <param name="std">The standard deviation value.</param>
         /// <param name="seed">The seed.</param>
         public static void Normal(Image src, float mean, float std, int? seed = null)
-            => Global.OP.RandomNormal(src.variable, mean, std, seed);
+            => Randomizer.RandomNormal(src.variable, mean, std, seed);
 
         /// <summary>
         /// Samples are uniformly distributed over the half-open interval [min, max) (includes min, but excludes max). 
@@ -80,6 +80,6 @@ namespace Arithmetica.Imaging
         /// <param name="max">The maximum value.</param>
         /// <param name="seed">The seed.</param>
         public static void Uniform(Image src, float min, float max, int? seed = null)
-            => Global.OP.RandomUniform(src.variable, min, max, seed);
+            => Randomizer.RandomUniform(src.variable, min, max, seed);
     }
 }

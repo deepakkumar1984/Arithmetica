@@ -663,7 +663,7 @@ namespace Arithmetica.LinearAlgebra.Double
 		public static Matrix4 Transpose(Matrix4 m)
 		{
 			Matrix4 t = new Matrix4(m);
-			t.Transpose();
+			t.transpose();
 			return t;
 		}
 		#endregion

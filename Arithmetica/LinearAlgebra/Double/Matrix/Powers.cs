@@ -1,4 +1,4 @@
-﻿using SuperchargedArray;
+﻿using NumSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="src">The source matrix.</param>
         /// <param name="value">The scalar value.</param>
         /// <returns></returns>
-        public static Matrix Pow(Matrix src, float value) => Matrix.Out(Global.OP.Pow(src.variable, value));
+        public static Matrix Pow(Matrix src, float value) => Matrix.Out(np.power(src.variable, value));
 
         /// <summary>
         /// Performs elementwise power to matrix power operation elemenwise for a scalar
@@ -21,21 +21,21 @@ namespace Arithmetica.LinearAlgebra.Double
         /// <param name="value">The scalar value.</param>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Tpow(float value, Matrix src) => Matrix.Out(Global.OP.TPow(value, src.variable));
+        public static Matrix Tpow(float value, Matrix src) => Matrix.Out(np.power(value, src.variable));
 
         /// <summary>
         /// Perform square root operation on the matrix elemenwise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Sqrt(Matrix src) => Matrix.Out(Global.OP.Sqrt(src.variable));
+        public static Matrix Sqrt(Matrix src) => Matrix.Out(np.sqrt(src.variable));
 
         /// <summary>
         /// Perform square operation on the matrix elemenwise.
         /// </summary>
         /// <param name="src">The source matrix.</param>
         /// <returns></returns>
-        public static Matrix Square(Matrix src) => Matrix.Out(Global.OP.Square(src.variable));
+        public static Matrix Square(Matrix src) => Matrix.Out(np.square(src.variable));
 
     }
 }

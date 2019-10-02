@@ -1,7 +1,7 @@
 ﻿using System;
 using Arithmetica.Geometry2D;
 using Arithmetica.LinearAlgebra.Single;
-using SuperchargedArray;
+using NumSharp;
 
 namespace Examples
 {

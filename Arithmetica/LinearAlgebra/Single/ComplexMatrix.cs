@@ -1020,7 +1020,7 @@ namespace Arithmetica.LinearAlgebra.Single
                 throw new ArgumentException("Cannot invert non-square matrix.");
 
             if (m.IsReal && m.IsOrthogonal())
-                return m.Transpose;
+                return m.transpose;
             else if (m.IsUnitary())
                 return m.Adjoint;
 
