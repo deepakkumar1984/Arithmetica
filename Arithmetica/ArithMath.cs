@@ -1,6 +1,5 @@
 ﻿#region Using directives
 
-using Arithmetica.LinearAlgebra.Double;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -1,5 +1,4 @@
-﻿using Arithmetica.LinearAlgebra.Single;
-using Arithmetica.Quantum;
+﻿using Arithmetica;
 using System;
 using System.Collections.Generic;
 using System.Text;

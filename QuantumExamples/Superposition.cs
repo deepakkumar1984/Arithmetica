@@ -1,5 +1,5 @@
 using System;
-using Arithmetica.Quantum;
+using Arithmetica;
 
 namespace QuantumExamples
 {

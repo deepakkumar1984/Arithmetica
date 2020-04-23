@@ -1,5 +1,4 @@
-﻿using NumSharp;
-using System;
+﻿using System;
 
 namespace QuantumExamples
 {
@@ -7,7 +6,6 @@ namespace QuantumExamples
     {
         static void Main(string[] args)
         {
-            Global.UseAmplifier(0);
             string runEx = "0";
             IExample example = null;
             switch (runEx)
