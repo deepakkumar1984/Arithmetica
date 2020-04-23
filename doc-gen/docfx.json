@@ -4,8 +4,7 @@
       "src": [
         {
           "files": [
-            "Arithmetica/**.csproj",
-            "Arithmetica.Quantum/**.csproj"
+            "Arithmetica/**.csproj"
           ],
           "src": "../"
         }
