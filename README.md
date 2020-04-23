@@ -1,16 +1,4 @@
-# Welcome to the world of Arithmetica
-To summarise, arithmetica is developed to help students, professional or scientists to learn or prototype work related to applied mathematics and quantum physics.
-
-Following are the features:
-
-* Full-featured implementation of mathematical data types including complex numbers’ quaternion and various sizes of matrices and vectors.
-* Support for most of the math functions for basic maths, linear algebra, rounding, comparison, log, exp, powering etc.
-* Support single-precision and double-precision floating point types.
-* Covers most of the functions required to use Complex vectors and matrix.
-* Geometric data types and algorithms for 2D and 3D — distance and intersection methods, bounding volumes etc.
-* Random number and noise generation with around 10 algorithms
-* Strong-Typed collections for the library’s data types.
-* Support for Multi-Dimensional array in case 2D, 3D are not sufficient.
+This is a simple library to build and simulate your own quantum computing algorithms in C#, yes in C#.
 
 ## How to use the library
 * Create a new .NET core or Windows console project.
@@ -18,18 +6,6 @@ Following are the features:
 * Search for “Arithmetica”, select and install the latest version
 * Open the class file and import namespace “using Arithmetica” to start using the library and its functions.
 
-## Vector Example
-
-```csharp
-//Point A in the 2D space
-Vector2 A = new Vector2(10, 20);
-
-//Point B in the 2D space
-Vector2 B = new Vector2(70, 80);
-
-//Find the Euclidean distance
-var distance = DistanceMethods.Distance(A, B);
-```
 
 ## Complex Matrix Example
 
