@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace Arithmetica
@@ -110,7 +111,7 @@ namespace Arithmetica
                 {
                     for (int j = 0; j < ColumnCount; j++)
                     {
-                        m[i, j] = this[i, j].Conjugate;
+                        m[i, j] = Complex.Conjugate(this[i, j]);
                     }
                 }
 
@@ -181,8 +182,8 @@ namespace Arithmetica
             {
                 for (int i = 0; i < RowCount; i++)
                     for (int j = 0; j < ColumnCount; j++)
-                        if (!this[i, j].IsReal) return false;
-
+                        if (!this[i, j].IsReal()) return false;
+                
                 return true;
             }
         }
@@ -1095,7 +1096,7 @@ namespace Arithmetica
             for (int i = 0; i < n; i++)
             {
                 // Search pivot
-                float pivotValue = 0;
+                double pivotValue = 0;
                 int pivot = -1;
                 for (int row = i; row < n; row++)
                 {
@@ -1259,7 +1260,7 @@ namespace Arithmetica
 
                 // Search pivot element in the j-th column, starting with the i-th row
                 int pivot = 0;
-                float pivotValue = 0;
+                double pivotValue = 0;
 
                 for (int k = i; k < m.RowCount; k++)
                 {
@@ -1354,7 +1355,7 @@ namespace Arithmetica
         /// <returns>The maximum absolute column sum norm of m.</returns>
         public static double OneNorm(ComplexMatrix m)
         {
-            float norm = 0;
+            double norm = 0;
 
             if (m.IsVector)
             {
@@ -1381,11 +1382,11 @@ namespace Arithmetica
         /// <returns>The maximum absolute row sum norm of m.</returns>
         public static double InfinityNorm(ComplexMatrix m)
         {
-            float norm = 0;
+            double norm = 0;
 
             if (m.IsVector)
             {
-                float max = 0;
+                double max = 0;
 
                 for (int i = 0; i < m.Length; i++)
                 {
@@ -1944,12 +1945,12 @@ namespace Arithmetica
         /// <param name="index">A column index.</param>
         /// <returns>The sum of the absolute values of the elements of a column with the specified index.</returns>
         /// <exception cref="System.IndexOutOfRangeException">The index out of range.</exception>
-        public float AbsColumnSum(int index)
+        public double AbsColumnSum(int index)
         {
             if (index < 0 || index >= ColumnCount)
                 throw new IndexOutOfRangeException("The index out of range.");
 
-            float result = 0;
+            double result = 0;
 
             for (int i = 0; i < RowCount; i++)
                 result += Complex.Abs(this[i, index]);
@@ -1982,12 +1983,12 @@ namespace Arithmetica
         /// <param name="index">A row index.</param>
         /// <returns>The sum of the absolute values of the elements of a row with the specified index.</returns>
         /// <exception cref="System.IndexOutOfRangeException">The index out of range.</exception>
-        public float AbsRowSum(int index)
+        public double AbsRowSum(int index)
         {
             if (index < 0 || index >= RowCount)
                 throw new IndexOutOfRangeException("The index out of range.");
 
-            float result = 0;
+            double result = 0;
 
             for (int j = 0; j < ColumnCount; j++)
             {

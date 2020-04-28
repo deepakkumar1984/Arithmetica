@@ -1,6 +1,7 @@
 ﻿using Arithmetica.QuantumGates;
 using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace Arithmetica
@@ -177,16 +178,16 @@ namespace Arithmetica
             get
             {
                 QubitState state = QubitState.Zero;
-                if (ZeroAmplitude.ModulusSquared == 1 && OneAmplitude.ModulusSquared == 0)
+                if (ZeroAmplitude.ModulusSquared() == 1 && OneAmplitude.ModulusSquared() == 0)
                 {
                     state = QubitState.Zero;
                 }
-                else if (OneAmplitude.ModulusSquared == 1 && ZeroAmplitude.ModulusSquared == 0)
+                else if (OneAmplitude.ModulusSquared() == 1 && ZeroAmplitude.ModulusSquared() == 0)
                 {
                     state = QubitState.One;
                 }
 
-                if (ZeroAmplitude.ModulusSquared != 0 && OneAmplitude.ModulusSquared != 0)
+                if (ZeroAmplitude.ModulusSquared() != 0 && OneAmplitude.ModulusSquared() != 0)
                 {
                     state = QubitState.Superposition;
                 }

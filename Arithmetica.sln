@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{17
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumExamples", "QuantumExamples\QuantumExamples.csproj", "{CB389CA5-D7F5-4816-9220-4BD87E2F2304}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractualGenerator", "FractualGenerator\FractualGenerator.csproj", "{7927C874-133D-45EB-B916-A21BD7CD4362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Azure|Any CPU = Azure|Any CPU
@@ -88,12 +90,43 @@ Global
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x64.Build.0 = Release|Any CPU
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x86.ActiveCfg = Release|Any CPU
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304}.ReleaseCpuOnly|x86.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|Any CPU.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|Any CPU.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|x64.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|x64.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|x86.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Azure|x86.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|x64.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Debug|x86.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|Any CPU.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|Any CPU.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|x64.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|x64.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|x86.ActiveCfg = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Publish|x86.Build.0 = Debug|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|x64.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|x64.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|x86.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.Release|x86.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|Any CPU.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|Any CPU.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|x64.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|x64.Build.0 = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|x86.ActiveCfg = Release|Any CPU
+		{7927C874-133D-45EB-B916-A21BD7CD4362}.ReleaseCpuOnly|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CB389CA5-D7F5-4816-9220-4BD87E2F2304} = {1778D712-5B99-4AC4-8992-3B983B3D5A6C}
+		{7927C874-133D-45EB-B916-A21BD7CD4362} = {1778D712-5B99-4AC4-8992-3B983B3D5A6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9351F690-DA4A-4B35-91A2-1F6F22305F53}

@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 #endregion
@@ -129,8 +130,6 @@ namespace Arithmetica
 		public static readonly UnaryFunction<int> IntAbsFunction = new UnaryFunction<int>(System.Math.Abs);
 		#endregion
 
-
-
 		public static readonly UnaryFunction<double> DoubleSqrtFunction = new UnaryFunction<double>(System.Math.Sqrt);
 		#endregion
 
@@ -213,65 +212,6 @@ namespace Arithmetica
 		}
 		#endregion
 
-		#region Clamp
-		/// <summary>
-		/// Clamp a <paramref name="value"/> to <paramref name="calmpedValue"/> if it is withon the <paramref name="tolerance"/> range.
-		/// </summary>
-		/// <param name="value">The value to clamp.</param>
-		/// <param name="calmpedValue">The clamped value.</param>
-		/// <param name="tolerance">The tolerance value.</param>
-		/// <returns>
-		/// Returns the clamped value.
-		/// result = (tolerance > Abs(value-calmpedValue)) ? calmpedValue : value;
-		/// </returns>
-		public static double Clamp(double value, double calmpedValue, double tolerance)
-		{
-			return (tolerance > Abs(value - calmpedValue)) ? calmpedValue : value;
-		}
-		/// <summary>
-		/// Clamp a <paramref name="value"/> to <paramref name="calmpedValue"/> using the default tolerance value.
-		/// </summary>
-		/// <param name="value">The value to clamp.</param>
-		/// <param name="calmpedValue">The clamped value.</param>
-		/// <returns>
-		/// Returns the clamped value.
-		/// result = (EpsilonD > Abs(value-calmpedValue)) ? calmpedValue : value;
-		/// </returns>
-		/// <remarks><see cref="ArithMath.EpsilonD"/> is used for tolerance.</remarks>
-		public static double Clamp(double value, double calmpedValue)
-		{
-			return (EpsilonD > Abs(value - calmpedValue)) ? calmpedValue : value;
-		}
-		/// <summary>
-		/// Clamp a <paramref name="value"/> to <paramref name="calmpedValue"/> if it is withon the <paramref name="tolerance"/> range.
-		/// </summary>
-		/// <param name="value">The value to clamp.</param>
-		/// <param name="calmpedValue">The clamped value.</param>
-		/// <param name="tolerance">The tolerance value.</param>
-		/// <returns>
-		/// Returns the clamped value.
-		/// result = (tolerance > Abs(value-calmpedValue)) ? calmpedValue : value;
-		/// </returns>
-		public static float Clamp(float value, float calmpedValue, float tolerance)
-		{
-			return (tolerance > Abs(value - calmpedValue)) ? calmpedValue : value;
-		}
-		/// <summary>
-		/// Clamp a <paramref name="value"/> to <paramref name="calmpedValue"/> using the default tolerance value.
-		/// </summary>
-		/// <param name="value">The value to clamp.</param>
-		/// <param name="calmpedValue">The clamped value.</param>
-		/// <returns>
-		/// Returns the clamped value.
-		/// result = (EpsilonF > Abs(value-calmpedValue)) ? calmpedValue : value;
-		/// </returns>
-		/// <remarks><see cref="ArithMath.EpsilonF"/> is used for tolerance.</remarks>
-		public static float Clamp(float value, float calmpedValue)
-		{
-			return (EpsilonF > Abs(value - calmpedValue)) ? calmpedValue : value;
-		}
-		#endregion
-
 		#region Trigonometric Functions
 		public static double Sin(double value)
 		{
@@ -322,7 +262,7 @@ namespace Arithmetica
 		}
 		public static Complex Cot(Complex value)
 		{
-			return Complex.Cot(value);
+			return value.Cot();
 		}
 
 		public static double Sec(double value)
@@ -335,7 +275,7 @@ namespace Arithmetica
 		}
 		public static Complex Sec(Complex value)
 		{
-			return Complex.Sec(value);
+			return value.Sec();
 		}
 
 		public static double Csc(double value)
@@ -348,11 +288,15 @@ namespace Arithmetica
 		}
 		public static Complex Csc(Complex value)
 		{
-			return Complex.Csc(value);
+			return value.Csc();
 		}
 		#endregion
 
 		#region Trigonometric Arcus Functions
+		public static float Asin(float value)
+		{
+			return (float)System.Math.Asin(value);
+		}
 		public static double Asin(double value)
 		{
 			return System.Math.Asin(value);
@@ -362,6 +306,10 @@ namespace Arithmetica
 			return Complex.Asin(value);
 		}
 
+		public static float Acos(float value)
+		{
+			return (float)System.Math.Acos(value);
+		}
 		public static double Acos(double value)
 		{
 			return System.Math.Acos(value);
@@ -371,6 +319,10 @@ namespace Arithmetica
 			return Complex.Acos(value);
 		}
 
+		public static float Atan(float value)
+		{
+			return (float)System.Math.Atan(value);
+		}
 		public static double Atan(double value)
 		{
 			return System.Math.Atan(value);
@@ -380,35 +332,51 @@ namespace Arithmetica
 			return Complex.Atan(value);
 		}
 
+		public static float Acot(float value)
+		{
+			return (float)System.Math.Atan(1 / value);
+		}
 		public static double Acot(double value)
 		{
 			return System.Math.Atan(1 / value);
 		}
 		public static Complex Acot(Complex value)
 		{
-			return Complex.Acot(value);
+			return value.Acot();
 		}
 
+		public static float Asec(float value)
+		{
+			return (float)System.Math.Acos(1 / value);
+		}
 		public static double Asec(double value)
 		{
 			return System.Math.Acos(1 / value);
 		}
 		public static Complex Asec(Complex value)
 		{
-			return Complex.Asec(value);
+			return value.Asec();
 		}
 
+		public static float Acsc(float value)
+		{
+			return (float)System.Math.Asin(1 / value);
+		}
 		public static double Acsc(double value)
 		{
 			return System.Math.Asin(1 / value);
 		}
 		public static Complex Acsc(Complex value)
 		{
-			return Complex.Acsc(value);
+			return value.Acsc();
 		}
 		#endregion
 
 		#region Hyperbolic Functions
+		public static float Sinh(float value)
+		{
+			return (float)System.Math.Sinh(value);
+		}
 		public static double Sinh(double value) 
 		{
 			return System.Math.Sinh(value);
@@ -418,6 +386,10 @@ namespace Arithmetica
 			return Complex.Sinh(value);
 		}
 
+		public static float Cosh(float value)
+		{
+			return (float)System.Math.Cosh(value);
+		}
 		public static double Cosh(double value) 
 		{
 			return System.Math.Cosh(value);
@@ -427,6 +399,10 @@ namespace Arithmetica
 			return Complex.Cosh(value);
 		}
 
+		public static float Tanh(float value)
+		{
+			return (float)System.Math.Tanh(value);
+		}
 		public static double Tanh(double value) 
 		{
 			return System.Math.Tanh(value);
@@ -436,87 +412,278 @@ namespace Arithmetica
 			return Complex.Tanh(value);
 		}
 
+		public static float Coth(float value)
+		{
+			return 1 / (float)System.Math.Tanh(value);
+		}
 		public static double Coth(double value) 
 		{
 			return 1/System.Math.Tanh(value);
 		}
 		public static Complex Coth(Complex value)
 		{
-			return Complex.Coth(value);
+			return value.Coth();
 		}
 
+		public static float Sech(float value)
+		{
+			return 1 / (float)Cosh(value);
+		}
 		public static double Sech(double value) 
 		{
 			return 1/Cosh(value);
 		}
 		public static Complex Sech(Complex value)
 		{
-			return Complex.Sech(value);
+			return value.Sech();
 		}
 
+		public static float Csch(float value)
+		{
+			return 1 / (float)Sinh(value);
+		}
 		public static double Csch(double value) 
 		{
 			return 1/Sinh(value);
 		}
 		public static Complex Csch(Complex value)
 		{
-			return Complex.Csch(value);
+			return value.Csch();
 		}
 		#endregion
 
 		#region Hyperbolic Area Functions
+		public static float Asinh(float value)
+		{
+			return (float)System.Math.Log(value + System.Math.Sqrt(value * value + 1), System.Math.E);
+		}
+
 		public static double Asinh(double value)
 		{
 			return System.Math.Log(value + System.Math.Sqrt(value * value + 1), System.Math.E);
 		}
+
 		public static Complex Asinh(Complex value)
 		{
-			return Complex.Asinh(value);
+			return value.Asinh();
+		}
+
+		public static float Acosh(float value)
+		{
+			return (float)System.Math.Log(value + System.Math.Sqrt(value - 1) * System.Math.Sqrt(value + 1), System.Math.E);
 		}
 
 		public static double Acosh(double value)
 		{
 			return System.Math.Log(value + System.Math.Sqrt(value - 1) * System.Math.Sqrt(value + 1), System.Math.E);
 		}
+
 		public static Complex Acosh(Complex value)
 		{
-			return Complex.Acosh(value);
+			return value.Acosh();
+		}
+
+		public static float Atanh(float value)
+		{
+			return (float)(0.5 * System.Math.Log((1 + value) / (1 - value), System.Math.E));
 		}
 
 		public static double Atanh(double value)
 		{
 			return 0.5 * System.Math.Log((1 + value) / (1 - value), System.Math.E);
 		}
+
 		public static Complex Atanh(Complex value)
 		{
-			return Complex.Atanh(value);
+			return value.Atanh();
+		}
+
+		public static float Acoth(float value)
+		{
+			return 0.5f * (float)System.Math.Log((value + 1) / (value - 1), System.Math.E);
 		}
 
 		public static double Acoth(double value)
 		{
 			return 0.5 * System.Math.Log((value + 1) / (value - 1), System.Math.E);
 		}
+
 		public static Complex Acoth(Complex value)
 		{
-			return Complex.Acoth(value);
+			return value.Acoth();
+		}
+
+		public static float Asech(float value)
+		{
+			return Acosh(1 / value);
 		}
 
 		public static double Asech(double value)
 		{
 			return Acosh(1 / value);
 		}
+
 		public static Complex Asech(Complex value)
 		{
-			return Complex.Asech(value);
+			return value.Asech();
+		}
+
+		public static float Acsch(float value)
+		{
+			return Asinh(1 / value);
 		}
 
 		public static double Acsch(double value)
 		{
 			return Asinh(1 / value);
 		}
+
 		public static Complex Acsch(Complex value)
 		{
-			return Complex.Acsch(value);
+			return value.Acsch();
+		}
+		#endregion
+
+		#region Misc Functions
+		public static float Cbrt(float value)
+		{
+			return (float)System.Math.Cbrt(value);
+		}
+		public static double Cbrt(double value)
+		{
+			return System.Math.Cbrt(value);
+		}
+
+		public static float Ceiling(float value)
+		{
+			return (float)System.Math.Ceiling(value);
+		}
+		public static double Ceiling(double value)
+		{
+			return System.Math.Ceiling(value);
+		}
+
+		public static float Clamp(float value, float min, float max)
+		{
+			return System.Math.Clamp(value, min, max);
+		}
+		public static double Clamp(double value, double min, double max)
+		{
+			return System.Math.Clamp(value, min, max);
+		}
+
+		public static float Exp(float value)
+		{
+			return (float)System.Math.Exp(value);
+		}
+		public static double Exp(double value)
+		{
+			return System.Math.Exp(value);
+		}
+		public static Complex Exp(Complex value)
+		{
+			return Complex.Exp(value);
+		}
+
+		public static float Floor(float value)
+		{
+			return (float)System.Math.Floor(value);
+		}
+		public static double Floor(double value)
+		{
+			return System.Math.Floor(value);
+		}
+
+		public static float Log(float value)
+		{
+			return (float)System.Math.Log(value);
+		}
+		public static double Log(double value)
+		{
+			return System.Math.Log(value);
+		}
+		public static Complex Log(Complex value)
+		{
+			return Complex.Log(value);
+		}
+
+		public static float Log10(float value)
+		{
+			return (float)System.Math.Log10(value);
+		}
+		public static double Log10(double value)
+		{
+			return System.Math.Log10(value);
+		}
+
+		public static float Max(int val1, int val2)
+		{
+			return System.Math.Max(val1, val2);
+		}
+		public static float Max(float val1, float val2)
+		{
+			return (float)System.Math.Max(val1, val2);
+		}
+		public static double Max(double val1, double val2)
+		{
+			return System.Math.Max(val1, val2);
+		}
+
+		public static float Min(int val1, int val2)
+		{
+			return System.Math.Min(val1, val2);
+		}
+		public static float Min(float val1, float val2)
+		{
+			return System.Math.Min(val1, val2);
+		}
+		public static double Min(double val1, double val2)
+		{
+			return System.Math.Min(val1, val2);
+		}
+
+		public static float Round(float value)
+		{
+			return (float)System.Math.Round(value);
+		}
+		public static double Round(double value)
+		{
+			return System.Math.Round(value);
+		}
+
+		public static float Sqrt(float value)
+		{
+			return (float)System.Math.Sqrt(value);
+		}
+		public static double Sqrt(double value)
+		{
+			return System.Math.Sqrt(value);
+		}
+		public static Complex Sqrt(Complex value)
+		{
+			return Complex.Sqrt(value);
+		}
+
+		public static float Pow(float value, float power)
+		{
+			return (float)System.Math.Pow(value, power);
+		}
+		public static double Pow(double value, double power)
+		{
+			return System.Math.Pow(value, power);
+		}
+		public static Complex Sqrt(Complex value, Complex power)
+		{
+			return Complex.Pow(value, power);
+		}
+
+		public static float Truncate(float value)
+		{
+			return (float)System.Math.Truncate(value);
+		}
+		public static double Truncate(double value)
+		{
+			return System.Math.Truncate(value);
 		}
 		#endregion
 

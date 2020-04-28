@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Numerics;
+using System.Threading.Tasks;
 
 namespace Arithmetica
 {
@@ -71,7 +72,7 @@ namespace Arithmetica
             {
                 ComplexVector result = new ComplexVector(Size);
                 Parallel.For(0, Size, (i) => {
-                    result[i] = this[i].Conjugate;
+                    result[i] = Complex.Conjugate(this[i]);
                 });
 
                 return result;
@@ -413,7 +414,7 @@ namespace Arithmetica
         {
             ComplexVector result = new ComplexVector(vector.Size);
             Parallel.For(0, vector.Size, (i) => {
-                result[i] = Complex.Square(vector[i]);
+                result[i] = Complex.Pow(vector[i], 2);
             });
 
             return result;

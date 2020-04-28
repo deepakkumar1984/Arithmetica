@@ -642,6 +642,39 @@ namespace Arithmetica
 
 			return result;
 		}
+
+		/// <summary>
+		/// Calculates the square root of a complex number.
+		/// </summary>
+		/// <param name="complex">A <see cref="Complex"/> instance.</param>
+		/// <returns>The square root of the complex number given in <paramref name="complex"/>.</returns>
+		/// <remarks>See http://mathworld.wolfram.com/SquareRoot.html for further details.</remarks>
+		public static Complex Cbrt(Complex complex)
+		{
+			Complex result = Complex.Zero;
+
+			if ((complex.Real == 0.0f) && (complex.Imaginary == 0.0f))
+			{
+				return result;
+			}
+			else if (complex.IsReal)
+			{
+				result.Real = (complex.Real > 0) ? (float)System.Math.Cbrt(complex.Real) : (float)System.Math.Cbrt(-complex.Real);
+				result.Imaginary = 0.0f;
+			}
+			else
+			{
+				float modulus = complex.Modulus;
+
+				result.Real = (float)System.Math.Cbrt(0.5f * (modulus + complex.Real));
+				result.Imaginary = (float)System.Math.Cbrt(0.5f * (modulus - complex.Real));
+				if (complex.Imaginary < 0.0f)
+					result.Imaginary = -result.Imaginary;
+			}
+
+			return result;
+		}
+
 		/// <summary>
 		/// Calculates the logarithm of a specified complex number.
 		/// Calculates the natural (base e) logarithm of a specified complex number.
@@ -678,6 +711,7 @@ namespace Arithmetica
 
 			return result;
 		}
+
 		/// <summary>
 		/// Calculates the exponential of a specified complex number.
 		/// </summary>
@@ -692,6 +726,16 @@ namespace Arithmetica
 
 			return result;
 		}
+
+		public static Complex Ceiling(Complex complex)
+		{
+			Complex result = Complex.Zero;
+			result.Real = (float)System.Math.Ceiling(complex.Real);
+			result.Imaginary = (float)System.Math.Ceiling(complex.Imaginary);
+
+			return result;
+		}
+
 		/// <summary>
 		/// Calculates a specified complex number raised by a specified power.
 		/// </summary>
