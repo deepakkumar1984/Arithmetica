@@ -65,7 +65,7 @@ for (int i = 0; i < 25; i++)
 	//Store the first state
 	var res1 = register[0].QState;
 
-	//Now measue the second particle and store the value
+	//Measure the second particle and store the value
 	circuit.Measure(1);
 	var res2 = register[1].QState;
 
